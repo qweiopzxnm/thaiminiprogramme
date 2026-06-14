@@ -1,4 +1,3 @@
-// utils/dict.ts
 import { getUserDict } from './db';
 
 export interface DictWord {
@@ -88,7 +87,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "谢谢"
   },
   "สบายดีไหม": {
-    "phonetic": "sà-baai-dii mǎi",
+    "phonetic": "sà-baai-dii-mǎi",
     "meaning": "你好吗？"
   },
   "สบายดี": {
@@ -96,7 +95,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "很好 / 舒服"
   },
   "ไม่เป็นไร": {
-    "phonetic": "mâi pen rai",
+    "phonetic": "mâi-pen-rai",
     "meaning": "没关系 / 不用谢"
   },
   "ขอโทษ": {
@@ -108,7 +107,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "是 / 对"
   },
   "ไม่ใช่": {
-    "phonetic": "mâi châi",
+    "phonetic": "mâi-châi",
     "meaning": "不是"
   },
   "คุณ": {
@@ -122,10 +121,6 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
   "ฉัน": {
     "phonetic": "chǎn",
     "meaning": "我 (女性/通用)"
-  },
-  "我们": {
-    "phonetic": "rao",
-    "meaning": "我们"
   },
   "เรา": {
     "phonetic": "rao",
@@ -143,12 +138,8 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "phonetic": "phuuan-rao",
     "meaning": "我们"
   },
-  "他们": {
-    "phonetic": "phuuan-khao",
-    "meaning": "他们"
-  },
   "ที่ไหน": {
-    "phonetic": "thîi nǎi",
+    "phonetic": "thîi-nǎi",
     "meaning": "哪里"
   },
   "อย่างไร": {
@@ -156,7 +147,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "如何 / 怎么"
   },
   "ทำไม": {
-    "phonetic": "tham mai",
+    "phonetic": "tham-mai",
     "meaning": "为什么"
   },
   "อะไร": {
@@ -168,11 +159,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "谁"
   },
   "เมื่อไหร่": {
-    "phonetic": "mʉ̂a rài",
+    "phonetic": "mʉ̂a-rài",
     "meaning": "什么时候"
   },
   "เท่าไหร่": {
-    "phonetic": "thâo rài",
+    "phonetic": "thâo-rài",
     "meaning": "多少钱 / 多少"
   },
   "ไหม": {
@@ -184,7 +175,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "吗 (口语疑问词)"
   },
   "ต่ำที่สุด": {
-    "phonetic": "tàm thîi-sùt",
+    "phonetic": "tàm-thîi-sùt",
     "meaning": "最小 / 最低"
   },
   "ลูกค้า": {
@@ -216,7 +207,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "做"
   },
   "รับผิดชอบ": {
-    "phonetic": "ráp phìt chɔ̂ɔp",
+    "phonetic": "ráp-phìt-chɔ̂ɔp",
     "meaning": "负责"
   },
   "เรื่อง": {
@@ -232,11 +223,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "泰铢"
   },
   "อันนี้": {
-    "phonetic": "an níi",
+    "phonetic": "an-níi",
     "meaning": "这个"
   },
   "อันนั้น": {
-    "phonetic": "an nán",
+    "phonetic": "an-nán",
     "meaning": "那个"
   },
   "แพง": {
@@ -244,7 +235,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "贵"
   },
   "เกินไป": {
-    "phonetic": "gəən bpai",
+    "phonetic": "gəən-bpai",
     "meaning": "太 / 过分"
   },
   "ลด": {
@@ -256,11 +247,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "可以 / 能 / 获得"
   },
   "ไม่ได้": {
-    "phonetic": "mâi dâai",
+    "phonetic": "mâi-dâai",
     "meaning": "不行 / 不能"
   },
   "ได้ไหม": {
-    "phonetic": "dâai mǎi",
+    "phonetic": "dâai-mǎi",
     "meaning": "可以吗 / 行不行"
   },
   "อร่อย": {
@@ -284,7 +275,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "米饭 / 饭"
   },
   "กินข้าว": {
-    "phonetic": "gin khâaw",
+    "phonetic": "gin-khâaw",
     "meaning": "吃饭"
   },
   "ไป": {
@@ -300,43 +291,39 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "说"
   },
   "ภาษาไทย": {
-    "phonetic": "phaa-sǎa thai",
+    "phonetic": "phaa-sǎa-thai",
     "meaning": "泰语"
   },
   "ภาษาจีน": {
-    "phonetic": "phaa-sǎa jiin",
+    "phonetic": "phaa-sǎa-jiin",
     "meaning": "中文 / 汉语"
   },
   "เข้าใจ": {
-    "phonetic": "khâo jai",
+    "phonetic": "khâo-jai",
     "meaning": "明白 / 理解"
-  },
-  "不": {
-    "phonetic": "mâi",
-    "meaning": "不 / 没"
   },
   "ไม่": {
     "phonetic": "mâi",
     "meaning": "不 / 没"
   },
   "ไม่เข้าใจ": {
-    "phonetic": "mâi khâo jai",
+    "phonetic": "mâi-khâo-jai",
     "meaning": "不明白"
   },
   "โรงแรม": {
-    "phonetic": "roong raem",
+    "phonetic": "roong-raem",
     "meaning": "酒店"
   },
   "สนามบิน": {
-    "phonetic": "sà-nǎam bin",
+    "phonetic": "sà-nǎam-bin",
     "meaning": "机场"
   },
   "ห้องน้ำ": {
-    "phonetic": "hɔ̂ng náam",
+    "phonetic": "hɔ̂ng-náam",
     "meaning": "厕所 / 洗手间"
   },
   "อยู่ที่ไหน": {
-    "phonetic": "yùu thîi nǎi",
+    "phonetic": "yùu-thîi-nǎi",
     "meaning": "在哪里"
   },
   "ชอบ": {
@@ -347,10 +334,6 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "phonetic": "rák",
     "meaning": "爱"
   },
-  "和": {
-    "phonetic": "lae",
-    "meaning": "和"
-  },
   "และ": {
     "phonetic": "lae",
     "meaning": "和"
@@ -360,7 +343,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "有"
   },
   "ไม่มี": {
-    "phonetic": "mâi mii",
+    "phonetic": "mâi-mii",
     "meaning": "没有"
   },
   "อยาก": {
@@ -368,7 +351,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "想要"
   },
   "ต้องการ": {
-    "phonetic": "dtâung gaan",
+    "phonetic": "dtâung-gaan",
     "meaning": "需要 / 想要"
   },
   "คิด": {
@@ -404,7 +387,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "知道"
   },
   "รู้จัก": {
-    "phonetic": "rúu jàk",
+    "phonetic": "rúu-jàk",
     "meaning": "认识"
   },
   "จำ": {
@@ -423,17 +406,9 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "phonetic": "jà-ráp-phìt-chɔ̂ɔp",
     "meaning": "将负责"
   },
-  "去": {
-    "phonetic": "bpai",
-    "meaning": "去"
-  },
   "ลาก่อน": {
     "phonetic": "laa-kɔɔn",
     "meaning": "再见"
-  },
-  "喜欢": {
-    "phonetic": "chhɔɔp",
-    "meaning": "喜欢"
   },
   "เน": {
     "phonetic": "ne",
@@ -464,15 +439,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "唔"
   },
   "อะไรนะ": {
-    "phonetic": "oari na",
+    "phonetic": "oari-na",
     "meaning": "什么"
   },
   "แต่": {
-    "phonetic": "tæ",
+    "phonetic": "tae",
     "meaning": "但"
   },
   "เอาล่ะ": {
-    "phonetic": "oeaa la",
+    "phonetic": "oeaa-la",
     "meaning": "好的"
   },
   "พระเจ้า": {
@@ -480,15 +455,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "上帝"
   },
   "ฟังนะ": {
-    "phonetic": "fang na",
+    "phonetic": "fang-na",
     "meaning": "听"
   },
   "ได้โปรด": {
-    "phonetic": "di pord",
+    "phonetic": "di-pord",
     "meaning": "请"
   },
   "แน่นอน": {
-    "phonetic": "nænon",
+    "phonetic": "naenon",
     "meaning": "确实"
   },
   "ดี": {
@@ -496,7 +471,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "好的"
   },
   "แล้ว": {
-    "phonetic": "læw",
+    "phonetic": "laew",
     "meaning": "进而"
   },
   "ที่รัก": {
@@ -512,11 +487,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哦"
   },
   "เดี๋ยว": {
-    "phonetic": "deiiaw",
+    "phonetic": "diao",
     "meaning": "等待"
   },
   "ตอนนี้": {
-    "phonetic": "ton nii",
+    "phonetic": "ton-nii",
     "meaning": "现在"
   },
   "อ่า": {
@@ -528,7 +503,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "好的"
   },
   "แม่": {
-    "phonetic": "mæ",
+    "phonetic": "mae",
     "meaning": "母亲"
   },
   "พ่อ": {
@@ -544,15 +519,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哇"
   },
   "ไม่นะ": {
-    "phonetic": "mi na",
+    "phonetic": "mi-na",
     "meaning": "不"
   },
   "ใช่แล้ว": {
-    "phonetic": "chhı læw",
+    "phonetic": "chhai-laew",
     "meaning": "没错"
   },
   "ใช่ไหม": {
-    "phonetic": "chhı im",
+    "phonetic": "chhai-im",
     "meaning": "是这样吗"
   },
   "เปล่า": {
@@ -560,11 +535,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "不"
   },
   "ใช่มั้ย": {
-    "phonetic": "chhı may",
+    "phonetic": "chhai-may",
     "meaning": "是这样吗"
   },
   "ดังนั้น": {
-    "phonetic": "dang nan",
+    "phonetic": "dang-nan",
     "meaning": "所以"
   },
   "คือ": {
@@ -572,15 +547,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "那是"
   },
   "หวัดดี": {
-    "phonetic": "wad dii",
+    "phonetic": "wad-dii",
     "meaning": "你好"
   },
   "เพื่อน": {
-    "phonetic": "pheueon",
+    "phonetic": "phueaon",
     "meaning": "朋友们"
   },
   "ตกลง": {
-    "phonetic": "tklng",
+    "phonetic": "dtok-long",
     "meaning": "好的"
   },
   "อ้อ": {
@@ -596,7 +571,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "或者"
   },
   "เยี่ยม": {
-    "phonetic": "yeiiam",
+    "phonetic": "yiam",
     "meaning": "伟大的"
   },
   "เออ": {
@@ -604,7 +579,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "是的"
   },
   "คน": {
-    "phonetic": "khn",
+    "phonetic": "khon",
     "meaning": "人们"
   },
   "ไง": {
@@ -612,11 +587,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嘿"
   },
   "ฮัลโหล": {
-    "phonetic": "hal ol",
+    "phonetic": "hal-ol",
     "meaning": "你好"
   },
   "แต่ว่า": {
-    "phonetic": "tæ waa",
+    "phonetic": "tae-waa",
     "meaning": "但"
   },
   "หยุด": {
@@ -624,11 +599,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "停止"
   },
   "ขอโทษนะ": {
-    "phonetic": "khothosʹ na",
+    "phonetic": "kho-thot-na",
     "meaning": "对不起"
   },
   "ขอบใจ": {
-    "phonetic": "khobchı",
+    "phonetic": "khobchai",
     "meaning": "谢谢"
   },
   "นาที": {
@@ -636,11 +611,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "分钟"
   },
   "ว่าไง": {
-    "phonetic": "waa ngi",
+    "phonetic": "waa-ngi",
     "meaning": "你怎么说"
   },
   "ทำไมล่ะ": {
-    "phonetic": "thami la",
+    "phonetic": "thami-la",
     "meaning": "为什么"
   },
   "อา": {
@@ -660,15 +635,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嘿"
   },
   "โทษที": {
-    "phonetic": "thosʹ thii",
+    "phonetic": "thot-thii",
     "meaning": "对不起"
   },
   "ก็": {
-    "phonetic": "k",
+    "phonetic": "gɔ̂ɔ",
     "meaning": "出色地"
   },
   "มานี่": {
-    "phonetic": "maa nii",
+    "phonetic": "maa-nii",
     "meaning": "过来吧"
   },
   "นั่น": {
@@ -700,7 +675,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "是的"
   },
   "จริงๆ": {
-    "phonetic": "chring«",
+    "phonetic": "jing-jing",
     "meaning": "真的"
   },
   "บางที": {
@@ -712,7 +687,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "再见"
   },
   "ดีมาก": {
-    "phonetic": "dii maak",
+    "phonetic": "dii-maak",
     "meaning": "非常好"
   },
   "หา": {
@@ -724,35 +699,35 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "约翰"
   },
   "หยุดนะ": {
-    "phonetic": "yud na",
+    "phonetic": "yud-na",
     "meaning": "停止吧"
   },
   "พวก": {
-    "phonetic": "phwk",
+    "phonetic": "phuak",
     "meaning": "伙计们"
   },
   "ได้เลย": {
-    "phonetic": "di lei",
+    "phonetic": "di-lei",
     "meaning": "你可以"
   },
   "รู้มั้ย": {
-    "phonetic": "ruu may",
+    "phonetic": "ruu-may",
     "meaning": "你可知道"
   },
   "ไม่หรอก": {
-    "phonetic": "mi rok",
+    "phonetic": "mi-rok",
     "meaning": "一点也不"
   },
   "แซม": {
-    "phonetic": "sæm",
+    "phonetic": "saem",
     "meaning": "萨姆"
   },
   "ทุกคน": {
-    "phonetic": "thuk khn",
+    "phonetic": "thuk-khn",
     "meaning": "每个人"
   },
   "ได้สิ": {
-    "phonetic": "di si",
+    "phonetic": "di-si",
     "meaning": "当然"
   },
   "พี่": {
@@ -760,7 +735,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "兄弟"
   },
   "ถูกต้อง": {
-    "phonetic": "thuuk tong",
+    "phonetic": "thuuk-tong",
     "meaning": "这是正确的"
   },
   "อืมม": {
@@ -780,7 +755,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "耶"
   },
   "ไปเถอะ": {
-    "phonetic": "pi theoa",
+    "phonetic": "pi-theoa",
     "meaning": "我们走吧"
   },
   "เร็ว": {
@@ -796,7 +771,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "前进"
   },
   "มาเร็ว": {
-    "phonetic": "maa rew",
+    "phonetic": "maa-rew",
     "meaning": "快来吧"
   },
   "เอ๊ะ": {
@@ -804,11 +779,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "呃"
   },
   "มาเถอะ": {
-    "phonetic": "maa theoa",
+    "phonetic": "maa-theoa",
     "meaning": "快点"
   },
   "ฝ่าบาท": {
-    "phonetic": "faa baath",
+    "phonetic": "faa-baath",
     "meaning": "陛下"
   },
   "เลย": {
@@ -816,7 +791,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "黎府"
   },
   "ใช่เลย": {
-    "phonetic": "chhı lei",
+    "phonetic": "chhai-lei",
     "meaning": "这是正确的"
   },
   "ที่": {
@@ -824,7 +799,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "在"
   },
   "ใช่ครับ": {
-    "phonetic": "chhı khrab",
+    "phonetic": "chhai-khrab",
     "meaning": "是的"
   },
   "ท่าน": {
@@ -832,7 +807,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "先生"
   },
   "ถ้างั้น": {
-    "phonetic": "thaa ngan",
+    "phonetic": "thaa-ngan",
     "meaning": "然后"
   },
   "นาย": {
@@ -844,7 +819,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "啊"
   },
   "ออกไป": {
-    "phonetic": "ook pi",
+    "phonetic": "ook-pi",
     "meaning": "出去"
   },
   "ช่าย": {
@@ -852,7 +827,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "是的"
   },
   "แล้วก็": {
-    "phonetic": "læw k",
+    "phonetic": "laew-k",
     "meaning": "进而"
   },
   "โว้ว": {
@@ -860,19 +835,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哇"
   },
   "ทางนี้": {
-    "phonetic": "thaang nii",
+    "phonetic": "thaang-nii",
     "meaning": "这边走"
   },
   "อะไรน่ะ": {
-    "phonetic": "oari na",
+    "phonetic": "oari-na",
     "meaning": "什么"
   },
   "ไม่เลย": {
-    "phonetic": "mi lei",
+    "phonetic": "mi-lei",
     "meaning": "一点也不"
   },
   "ใช่ค่ะ": {
-    "phonetic": "chhı kha",
+    "phonetic": "chhai-kha",
     "meaning": "是的"
   },
   "วัน": {
@@ -880,11 +855,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "天"
   },
   "ไม่ครับ": {
-    "phonetic": "mi khrab",
+    "phonetic": "mi-khrab",
     "meaning": "不"
   },
   "ใช่สิ": {
-    "phonetic": "chhı si",
+    "phonetic": "chhai-si",
     "meaning": "没错"
   },
   "ไมค์": {
@@ -892,7 +867,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "麦克风"
   },
   "ไม่ค่ะ": {
-    "phonetic": "mi kha",
+    "phonetic": "mi-kha",
     "meaning": "不"
   },
   "จริง": {
@@ -900,19 +875,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "确实如此"
   },
   "ว่าไงนะ": {
-    "phonetic": "waa ngi na",
+    "phonetic": "waa-ngi-na",
     "meaning": "你怎么说"
   },
   "แค่": {
-    "phonetic": "khæ",
+    "phonetic": "khae",
     "meaning": "只是"
   },
   "มีอะไร": {
-    "phonetic": "mii oari",
+    "phonetic": "mii-oari",
     "meaning": "那里有什么"
   },
   "แล้วไง": {
-    "phonetic": "læw ngi",
+    "phonetic": "laew-ngi",
     "meaning": "所以呢"
   },
   "ดีน": {
@@ -928,7 +903,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "老板"
   },
   "ใน": {
-    "phonetic": "nı",
+    "phonetic": "nai",
     "meaning": "在"
   },
   "ชั่วโมง": {
@@ -936,19 +911,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "小时"
   },
   "ที่นี่": {
-    "phonetic": "thii nii",
+    "phonetic": "thii-nii",
     "meaning": "这里"
   },
   "ปีเตอร์": {
-    "phonetic": "pii teor",
+    "phonetic": "pii-teor",
     "meaning": "彼得"
   },
   "แจ็ค": {
-    "phonetic": "chækh",
+    "phonetic": "chaekh",
     "meaning": "杰克"
   },
   "ลูกรัก": {
-    "phonetic": "luuk rak",
+    "phonetic": "luuk-rak",
     "meaning": "我亲爱的孩子"
   },
   "ไมเคิล": {
@@ -960,7 +935,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嗯"
   },
   "ใจเย็น": {
-    "phonetic": "chıyen",
+    "phonetic": "chaiyen",
     "meaning": "冷静下来"
   },
   "สอง": {
@@ -968,7 +943,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "二"
   },
   "คือว่า": {
-    "phonetic": "khueo waa",
+    "phonetic": "khueo-waa",
     "meaning": "那是"
   },
   "หุบปาก": {
@@ -976,23 +951,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "住口"
   },
   "นี่คือ": {
-    "phonetic": "nii khueo",
+    "phonetic": "nii-khueo",
     "meaning": "这是"
   },
   "ขอบใจนะ": {
-    "phonetic": "khobchı na",
+    "phonetic": "khobchai-na",
     "meaning": "谢谢"
   },
   "วันนี้": {
-    "phonetic": "wan nii",
+    "phonetic": "wan-nii",
     "meaning": "今天"
   },
   "อะไรกัน": {
-    "phonetic": "oari kan",
+    "phonetic": "oari-kan",
     "meaning": "什么"
   },
   "ไปเลย": {
-    "phonetic": "pi lei",
+    "phonetic": "pi-lei",
     "meaning": "我们走吧"
   },
   "หนึ่ง": {
@@ -1000,7 +975,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "一"
   },
   "ไม่ๆ": {
-    "phonetic": "mi«",
+    "phonetic": "mai-mai",
     "meaning": "不"
   },
   "โอ๊ย": {
@@ -1012,7 +987,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "是的"
   },
   "ขอโทษที": {
-    "phonetic": "khothosʹ thii",
+    "phonetic": "kho-thot-thii",
     "meaning": "对不起"
   },
   "ระวัง": {
@@ -1024,7 +999,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哦"
   },
   "แหม": {
-    "phonetic": "æm",
+    "phonetic": "aem",
     "meaning": "哦"
   },
   "อีก": {
@@ -1036,7 +1011,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "很好"
   },
   "นี่ไง": {
-    "phonetic": "nii ngi",
+    "phonetic": "nii-ngi",
     "meaning": "这里是"
   },
   "นี้": {
@@ -1044,11 +1019,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "这"
   },
   "จริงหรอ": {
-    "phonetic": "chring ro",
+    "phonetic": "chring-ro",
     "meaning": "真的吗"
   },
   "ยังไง": {
-    "phonetic": "yang ngi",
+    "phonetic": "yang-ngi",
     "meaning": "如何"
   },
   "ซู": {
@@ -1056,7 +1031,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "苏"
   },
   "ใจเย็นๆ": {
-    "phonetic": "chı yen«",
+    "phonetic": "chai-yen",
     "meaning": "别紧张"
   },
   "นิค": {
@@ -1064,7 +1039,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "缺口"
   },
   "ชาร์ลี": {
-    "phonetic": "chhaar lii",
+    "phonetic": "chhaar-lii",
     "meaning": "查理"
   },
   "อ่อ": {
@@ -1072,19 +1047,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哦"
   },
   "รับทราบ": {
-    "phonetic": "rab thraab",
+    "phonetic": "rab-thraab",
     "meaning": "已获承认"
   },
   "ไปเร็ว": {
-    "phonetic": "pi rew",
+    "phonetic": "pi-rew",
     "meaning": "快点走吧"
   },
   "รอก่อน": {
-    "phonetic": "ro kon",
+    "phonetic": "ro-kon",
     "meaning": "等待"
   },
   "หมายถึง": {
-    "phonetic": "maay thueng",
+    "phonetic": "maay-thueng",
     "meaning": "方法"
   },
   "วิ่ง": {
@@ -1096,7 +1071,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嗯"
   },
   "แม่คะ": {
-    "phonetic": "mæ kha",
+    "phonetic": "mae-kha",
     "meaning": "妈妈"
   },
   "อ้าว": {
@@ -1108,15 +1083,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "李"
   },
   "มอร์แกน": {
-    "phonetic": "mor kæn",
+    "phonetic": "mor-kaen",
     "meaning": "摩根"
   },
   "โอเคไหม": {
-    "phonetic": "oo khe im",
+    "phonetic": "oo-khe-im",
     "meaning": "可以吗"
   },
   "บ้าจริง": {
-    "phonetic": "baa chring",
+    "phonetic": "baa-chring",
     "meaning": "真的很疯狂"
   },
   "ครั้ง": {
@@ -1128,15 +1103,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "的"
   },
   "ได้ครับ": {
-    "phonetic": "di khrab",
+    "phonetic": "di-khrab",
     "meaning": "是的是的"
   },
   "ดูนี่สิ": {
-    "phonetic": "duu nii s��i",
+    "phonetic": "duu-nii-si",
     "meaning": "看看这个"
   },
   "พ่อคะ": {
-    "phonetic": "pho kha",
+    "phonetic": "pho-kha",
     "meaning": "爸爸"
   },
   "สาม": {
@@ -1144,7 +1119,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "三"
   },
   "แบบว่า": {
-    "phonetic": "bæb waa",
+    "phonetic": "baeb-waa",
     "meaning": "就这样"
   },
   "ไฮ": {
@@ -1152,7 +1127,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "你好"
   },
   "ถอยไป": {
-    "phonetic": "thoy pi",
+    "phonetic": "thoy-pi",
     "meaning": "走开"
   },
   "จาก": {
@@ -1160,11 +1135,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "从"
   },
   "แก": {
-    "phonetic": "kæ",
+    "phonetic": "kae",
     "meaning": "你"
   },
   "ครับผม": {
-    "phonetic": "khrab phm",
+    "phonetic": "khrab-phm",
     "meaning": "是的先生"
   },
   "อ๊า": {
@@ -1172,7 +1147,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "啊"
   },
   "ด้วย": {
-    "phonetic": "dwy",
+    "phonetic": "duay",
     "meaning": "还"
   },
   "ยัง": {
@@ -1188,11 +1163,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "说 / 表示 / 是否"
   },
   "ตกลงไหม": {
-    "phonetic": "tklng im",
+    "phonetic": "tklng-im",
     "meaning": "这样可以吗"
   },
   "ได้ค่ะ": {
-    "phonetic": "di kha",
+    "phonetic": "di-kha",
     "meaning": "是的"
   },
   "ทอม": {
@@ -1200,11 +1175,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "汤姆"
   },
   "เหรียญ": {
-    "phonetic": "eriiay",
+    "phonetic": "riai",
     "meaning": "硬币"
   },
   "เอาน่า": {
-    "phonetic": "oeaa naa",
+    "phonetic": "oeaa-naa",
     "meaning": "快点"
   },
   "เพราะ": {
@@ -1212,7 +1187,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "因为"
   },
   "นั่นไง": {
-    "phonetic": "nan ngi",
+    "phonetic": "nan-ngi",
     "meaning": "就是这样"
   },
   "ลูก": {
@@ -1228,23 +1203,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "老师"
   },
   "ไม่ล่ะ": {
-    "phonetic": "mi la",
+    "phonetic": "mi-la",
     "meaning": "不"
   },
   "จริงๆนะ": {
-    "phonetic": "chring«na",
+    "phonetic": "jing-jingna",
     "meaning": "真的"
   },
   "เฮนรี่": {
-    "phonetic": "he nrii",
+    "phonetic": "he-nrii",
     "meaning": "亨利"
   },
   "ลุกขึ้น": {
-    "phonetic": "luk khuen",
+    "phonetic": "luk-khuen",
     "meaning": "起床"
   },
   "เด็กๆ": {
-    "phonetic": "dek«",
+    "phonetic": "dek-dek",
     "meaning": "孩子们"
   },
   "กัปตัน": {
@@ -1252,7 +1227,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "队长"
   },
   "แม่ครับ": {
-    "phonetic": "mæ khrab",
+    "phonetic": "mae-khrab",
     "meaning": "妈妈"
   },
   "โจ": {
@@ -1264,23 +1239,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "保罗"
   },
   "เดือน": {
-    "phonetic": "deueon",
+    "phonetic": "duean",
     "meaning": "月"
   },
   "ดีแล้ว": {
-    "phonetic": "diilæw",
+    "phonetic": "diilaew",
     "meaning": "那挺好的"
   },
   "เอมิลี่": {
-    "phonetic": "oe mi lii",
+    "phonetic": "oe-mi-lii",
     "meaning": "艾米丽"
   },
   "ที่จริง": {
-    "phonetic": "thii chring",
+    "phonetic": "thii-chring",
     "meaning": "实际上"
   },
   "เห็นไหม": {
-    "phonetic": "en im",
+    "phonetic": "en-im",
     "meaning": "你看到了吗"
   },
   "น่ะ": {
@@ -1292,19 +1267,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哦"
   },
   "บ้าเอ๊ย": {
-    "phonetic": "baa oei",
+    "phonetic": "baa-oei",
     "meaning": "疯狂的"
   },
   "คืนนี้": {
-    "phonetic": "khuen nii",
+    "phonetic": "khuen-nii",
     "meaning": "今晚"
   },
   "ปีก่อน": {
-    "phonetic": "pii kon",
+    "phonetic": "pii-kon",
     "meaning": "一年前"
   },
   "นี่มัน": {
-    "phonetic": "nii man",
+    "phonetic": "nii-man",
     "meaning": "就是这样"
   },
   "วินาที": {
@@ -1324,11 +1299,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "简"
   },
   "พี่ชาย": {
-    "phonetic": "phii chhaay",
+    "phonetic": "phii-chhaay",
     "meaning": "兄弟"
   },
   "ใช่ๆ": {
-    "phonetic": "chhı«",
+    "phonetic": "chhai",
     "meaning": "这是正确的"
   },
   "เจค": {
@@ -1336,7 +1311,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "杰克"
   },
   "นั่งลง": {
-    "phonetic": "nang lng",
+    "phonetic": "nang-lng",
     "meaning": "坐下"
   },
   "ห๊ะ": {
@@ -1344,7 +1319,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "呵呵"
   },
   "อเล็กซ์": {
-    "phonetic": "o lek s",
+    "phonetic": "o-lek-s",
     "meaning": "亚历克斯"
   },
   "เป็น": {
@@ -1352,7 +1327,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "这是"
   },
   "ตอนที่": {
-    "phonetic": "ton thii",
+    "phonetic": "ton-thii",
     "meaning": "插曲"
   },
   "เอ้อ": {
@@ -1360,11 +1335,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "呃"
   },
   "นั่นมัน": {
-    "phonetic": "nan man",
+    "phonetic": "nan-man",
     "meaning": "就是这样"
   },
   "ขวบ": {
-    "phonetic": "khwb",
+    "phonetic": "khuap",
     "meaning": "岁了"
   },
   "โอ้ย": {
@@ -1372,11 +1347,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哦"
   },
   "ก็ใช่": {
-    "phonetic": "k chhı",
+    "phonetic": "k-chhai",
     "meaning": "这是正确的"
   },
   "โอเคนะ": {
-    "phonetic": "oo khen a",
+    "phonetic": "oo-khen-a",
     "meaning": "好的"
   },
   "ฮ่า": {
@@ -1384,11 +1359,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哈"
   },
   "พอแล้ว": {
-    "phonetic": "pholæw",
+    "phonetic": "pholaew",
     "meaning": "这就够了"
   },
   "ไอ้หนู": {
-    "phonetic": "oi nuu",
+    "phonetic": "oi-nuu",
     "meaning": "男生"
   },
   "เฮ้อ": {
@@ -1396,7 +1371,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "叹"
   },
   "ดร": {
-    "phonetic": "dr",
+    "phonetic": "daawk-dtəə",
     "meaning": "博士"
   },
   "เอิ่ม": {
@@ -1412,11 +1387,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "现在"
   },
   "อาจจะ": {
-    "phonetic": "oaach cha",
+    "phonetic": "oaach-cha",
     "meaning": "或许"
   },
   "ตรงนี้": {
-    "phonetic": "trng nii",
+    "phonetic": "trng-nii",
     "meaning": "就在这里"
   },
   "เอ้า": {
@@ -1432,11 +1407,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "笑"
   },
   "เมื่อ": {
-    "phonetic": "meueo",
+    "phonetic": "muea",
     "meaning": "什么时候"
   },
   "ใช่มั๊ย": {
-    "phonetic": "chhı may",
+    "phonetic": "chhai-may",
     "meaning": "是这样吗"
   },
   "ขอร้อง": {
@@ -1444,11 +1419,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "请"
   },
   "เร็วๆ": {
-    "phonetic": "rew«",
+    "phonetic": "rew-rew",
     "meaning": "匆忙"
   },
   "ดีเลย": {
-    "phonetic": "dii lei",
+    "phonetic": "dii-lei",
     "meaning": "那挺好的"
   },
   "ไปสิ": {
@@ -1456,15 +1431,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "去"
   },
   "ได้แล้ว": {
-    "phonetic": "di læw",
+    "phonetic": "di-laew",
     "meaning": "知道了"
   },
   "เอเลน่า": {
-    "phonetic": "oe len aa",
+    "phonetic": "oe-len-aa",
     "meaning": "埃琳娜"
   },
   "นี่อะไร": {
-    "phonetic": "nii oari",
+    "phonetic": "nii-oari",
     "meaning": "这是什么"
   },
   "อ่ะ": {
@@ -1472,23 +1447,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "啊"
   },
   "สาวๆ": {
-    "phonetic": "saaw«",
+    "phonetic": "sao-sao",
     "meaning": "女孩们"
   },
   "มาเลย": {
-    "phonetic": "maa lei",
+    "phonetic": "maa-lei",
     "meaning": "快点"
   },
   "สเตฟาน": {
-    "phonetic": "s te faan",
+    "phonetic": "s-te-faan",
     "meaning": "斯特凡"
   },
   "เข้ามา": {
-    "phonetic": "kheaa maa",
+    "phonetic": "kheaa-maa",
     "meaning": "进来吧"
   },
   "มานี่สิ": {
-    "phonetic": "maa nii si",
+    "phonetic": "maa-nii-si",
     "meaning": "过来吧"
   },
   "ถ้า": {
@@ -1496,15 +1471,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "如果"
   },
   "เอาหล่ะ": {
-    "phonetic": "oeaa la",
+    "phonetic": "oeaa-la",
     "meaning": "好的"
   },
   "โชคดี": {
-    "phonetic": "chhokh dii",
+    "phonetic": "chhokh-dii",
     "meaning": "祝你好运"
   },
   "เจสัน": {
-    "phonetic": "che san",
+    "phonetic": "che-san",
     "meaning": "杰森"
   },
   "บิล": {
@@ -1512,19 +1487,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "账单"
   },
   "ไม่ต้อง": {
-    "phonetic": "mi tong",
+    "phonetic": "mi-tong",
     "meaning": "不必"
   },
   "แคลร์": {
-    "phonetic": "khæ lr",
+    "phonetic": "khae-lr",
     "meaning": "克莱尔"
   },
   "ตายแล้ว": {
-    "phonetic": "taay læw",
+    "phonetic": "taay-laew",
     "meaning": "死的"
   },
   "ทอมมี่": {
-    "phonetic": "thom mii",
+    "phonetic": "thom-mii",
     "meaning": "汤米"
   },
   "เฮ": {
@@ -1540,15 +1515,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "吉姆"
   },
   "แดน": {
-    "phonetic": "dæn",
+    "phonetic": "daen",
     "meaning": "担"
   },
   "ให้ตาย": {
-    "phonetic": "ı taay",
+    "phonetic": "ai-taay",
     "meaning": "去死吧"
   },
   "อย่านะ": {
-    "phonetic": "oyaa na",
+    "phonetic": "oyaa-na",
     "meaning": "不"
   },
   "ไมล์": {
@@ -1568,19 +1543,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "金"
   },
   "ซาร่า": {
-    "phonetic": "saa raa",
+    "phonetic": "saa-raa",
     "meaning": "萨拉"
   },
   "จริงสิ": {
-    "phonetic": "chring si",
+    "phonetic": "chring-si",
     "meaning": "这是真的"
   },
   "เอาสิ": {
-    "phonetic": "oeaa si",
+    "phonetic": "oeaa-si",
     "meaning": "拿走吧"
   },
   "แม็กซ์": {
-    "phonetic": "mæks",
+    "phonetic": "maeks",
     "meaning": "最大限度"
   },
   "เจฟ": {
@@ -1596,7 +1571,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "死"
   },
   "อะไรล่ะ": {
-    "phonetic": "oari la",
+    "phonetic": "oari-la",
     "meaning": "什么"
   },
   "เดอะ": {
@@ -1604,19 +1579,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "这"
   },
   "ไม่สิ": {
-    "phonetic": "mi si",
+    "phonetic": "mi-si",
     "meaning": "不"
   },
   "ชม": {
-    "phonetic": "chhm",
+    "phonetic": "chom",
     "meaning": "小时"
   },
   "ซูซาน": {
-    "phonetic": "suu saan",
+    "phonetic": "suu-saan",
     "meaning": "苏珊"
   },
   "แดนนี่": {
-    "phonetic": "dæn nii",
+    "phonetic": "daen-nii",
     "meaning": "丹尼"
   },
   "น้อย": {
@@ -1624,11 +1599,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "小的"
   },
   "แมรี่": {
-    "phonetic": "mærii",
+    "phonetic": "maerii",
     "meaning": "玛丽"
   },
   "สาวน้อย": {
-    "phonetic": "saaw noy",
+    "phonetic": "saaw-noy",
     "meaning": "小女孩"
   },
   "ชั้น": {
@@ -1636,7 +1611,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "地面"
   },
   "แฟรงค์": {
-    "phonetic": "færngkh",
+    "phonetic": "faerngkh",
     "meaning": "坦率"
   },
   "จอร์จ": {
@@ -1648,7 +1623,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "姓名"
   },
   "ปีแล้ว": {
-    "phonetic": "pii læw",
+    "phonetic": "pii-laew",
     "meaning": "已经一年了"
   },
   "ไม่รู้": {
@@ -1664,19 +1639,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "大约"
   },
   "บ้าเอ้ย": {
-    "phonetic": "baa oe y",
+    "phonetic": "baa-oe-y",
     "meaning": "该死的"
   },
   "เร็วสิ": {
-    "phonetic": "rew si",
+    "phonetic": "rew-si",
     "meaning": "匆忙"
   },
   "โทษทีนะ": {
-    "phonetic": "thosʹ thii na",
+    "phonetic": "thot-thii-na",
     "meaning": "对不起"
   },
   "โชคดีนะ": {
-    "phonetic": "chhokh dii na",
+    "phonetic": "chhokh-dii-na",
     "meaning": "祝你好运"
   },
   "เรเชล": {
@@ -1684,11 +1659,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "雷切尔"
   },
   "พ่อครับ": {
-    "phonetic": "pho khrab",
+    "phonetic": "pho-khrab",
     "meaning": "爸爸"
   },
   "ของฉัน": {
-    "phonetic": "khong chhan",
+    "phonetic": "khong-chhan",
     "meaning": "矿"
   },
   "อะ": {
@@ -1700,23 +1675,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "全部"
   },
   "ดูนี่": {
-    "phonetic": "duu nii",
+    "phonetic": "duu-nii",
     "meaning": "看看这个"
   },
   "หรือว่า": {
-    "phonetic": "rueo waa",
+    "phonetic": "rueo-waa",
     "meaning": "或者那样"
   },
   "เป็นไง": {
-    "phonetic": "pen ngi",
+    "phonetic": "pen-ngi",
     "meaning": "你好吗"
   },
   "ไม่เอา": {
-    "phonetic": "mi oeaa",
+    "phonetic": "mi-oeaa",
     "meaning": "我不想要它"
   },
   "นั่นสิ": {
-    "phonetic": "nan si",
+    "phonetic": "nan-si",
     "meaning": "就是这样"
   },
   "หมอ": {
@@ -1724,27 +1699,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "医生"
   },
   "บ๊อบบี้": {
-    "phonetic": "b ob bii",
+    "phonetic": "b-ob-bii",
     "meaning": "鲍比"
   },
   "แจ๊ค": {
-    "phonetic": "chækh",
+    "phonetic": "chaekh",
     "meaning": "杰克"
   },
   "แบลร์": {
-    "phonetic": "bæ lr",
+    "phonetic": "bae-lr",
     "meaning": "布莱尔"
   },
   "สุดยอด": {
-    "phonetic": "sud yod",
+    "phonetic": "sud-yod",
     "meaning": "惊人的"
   },
   "คืออะไร": {
-    "phonetic": "khueo oari",
+    "phonetic": "khueo-oari",
     "meaning": "它是什么"
   },
   "ต่อไป": {
-    "phonetic": "to pi",
+    "phonetic": "to-pi",
     "meaning": "下一个"
   },
   "ไปซะ": {
@@ -1752,7 +1727,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "去"
   },
   "วันที่": {
-    "phonetic": "wan thii",
+    "phonetic": "wan-thii",
     "meaning": "日期"
   },
   "อย่าง": {
@@ -1772,31 +1747,31 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "射击"
   },
   "ไปกัน": {
-    "phonetic": "pi kan",
+    "phonetic": "pi-kan",
     "meaning": "我们走吧"
   },
   "เจนนี่": {
-    "phonetic": "chen nii",
+    "phonetic": "chen-nii",
     "meaning": "珍妮"
   },
   "แอนดี้": {
-    "phonetic": "oæn dii",
+    "phonetic": "oaen-dii",
     "meaning": "安迪"
   },
   "จากนั้น": {
-    "phonetic": "chaak nan",
+    "phonetic": "chaak-nan",
     "meaning": "然后"
   },
   "พวกเขา": {
-    "phonetic": "phwk kheaa",
+    "phonetic": "phwk-kheaa",
     "meaning": "他们"
   },
   "ไอ้บ้า": {
-    "phonetic": "oi baa",
+    "phonetic": "oi-baa",
     "meaning": "疯狂的"
   },
   "เถอะน่า": {
-    "phonetic": "theoa naa",
+    "phonetic": "theoa-naa",
     "meaning": "快点"
   },
   "เจ๋ง": {
@@ -1812,7 +1787,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "克里斯"
   },
   "แดเนียล": {
-    "phonetic": "dæ neiia l",
+    "phonetic": "dae-neia-l",
     "meaning": "丹尼尔"
   },
   "จอช": {
@@ -1820,35 +1795,35 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "乔什"
   },
   "เงียบ": {
-    "phonetic": "ngeiiab",
+    "phonetic": "ngiap",
     "meaning": "安静的"
   },
   "ก็แค่": {
-    "phonetic": "k khæ",
+    "phonetic": "k-khae",
     "meaning": "只是"
   },
   "ไปได้": {
-    "phonetic": "pi di",
+    "phonetic": "pi-di",
     "meaning": "你可以走了"
   },
   "โอเค้": {
-    "phonetic": "oo khe",
+    "phonetic": "oo-khe",
     "meaning": "好的"
   },
   "ของคุณ": {
-    "phonetic": "khong khun",
+    "phonetic": "khong-khun",
     "meaning": "你的"
   },
   "หมอบลง": {
-    "phonetic": "mob lng",
+    "phonetic": "mob-lng",
     "meaning": "蹲下"
   },
   "แอนนี่": {
-    "phonetic": "oæ n nii",
+    "phonetic": "oae-n-nii",
     "meaning": "安妮"
   },
   "รู้แล้ว": {
-    "phonetic": "ruu læw",
+    "phonetic": "ruu-laew",
     "meaning": "我知道"
   },
   "เดฟ": {
@@ -1856,15 +1831,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "戴夫"
   },
   "ไม่ๆๆ": {
-    "phonetic": "mi« «",
+    "phonetic": "mai-mai-mai",
     "meaning": "不不不"
   },
   "แน่ใจนะ": {
-    "phonetic": "næchı na",
+    "phonetic": "naechai-na",
     "meaning": "我敢肯定"
   },
   "งั้นก็": {
-    "phonetic": "ngan k",
+    "phonetic": "ngan-k",
     "meaning": "所以"
   },
   "โอว": {
@@ -1872,7 +1847,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哦"
   },
   "นายท่าน": {
-    "phonetic": "naay thaan",
+    "phonetic": "naay-thaan",
     "meaning": "先生"
   },
   "มาร์ค": {
@@ -1888,7 +1863,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "例如"
   },
   "ว่าแต่": {
-    "phonetic": "waa tæ",
+    "phonetic": "waa-tae",
     "meaning": "但"
   },
   "เคท": {
@@ -1896,11 +1871,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "凯特"
   },
   "ไทเลอร์": {
-    "phonetic": "thi leo r",
+    "phonetic": "thi-leo-r",
     "meaning": "泰勒"
   },
   "เอมี่": {
-    "phonetic": "oe mii",
+    "phonetic": "oe-mii",
     "meaning": "艾米"
   },
   "ล้าน": {
@@ -1912,7 +1887,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "音乐"
   },
   "แย่แล้ว": {
-    "phonetic": "yæ læw",
+    "phonetic": "yae-laew",
     "meaning": "那很糟糕"
   },
   "ดื่ม": {
@@ -1920,7 +1895,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "喝"
   },
   "ว่ามั้ย": {
-    "phonetic": "waa may",
+    "phonetic": "waa-may",
     "meaning": "你这样认为吗"
   },
   "ถูก": {
@@ -1928,23 +1903,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "便宜的"
   },
   "นั่นคือ": {
-    "phonetic": "nan khueo",
+    "phonetic": "nan-khueo",
     "meaning": "那是"
   },
   "แฮร์รี่": {
-    "phonetic": "hær rii",
+    "phonetic": "haer-rii",
     "meaning": "哈利"
   },
   "ผู้หญิง": {
-    "phonetic": "phuu ying",
+    "phonetic": "phuu-ying",
     "meaning": "女性"
   },
   "งั้นหรอ": {
-    "phonetic": "ngan ro",
+    "phonetic": "ngan-ro",
     "meaning": "所以"
   },
   "รุ่นพี่": {
-    "phonetic": "run phii",
+    "phonetic": "run-phii",
     "meaning": "高级的"
   },
   "บี": {
@@ -1956,31 +1931,31 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嘿"
   },
   "พวกนาย": {
-    "phonetic": "phwk naay",
+    "phonetic": "phwk-naay",
     "meaning": "你们"
   },
   "มาแล้ว": {
-    "phonetic": "maa læw",
+    "phonetic": "maa-laew",
     "meaning": "它已经到了"
   },
   "ไม่จริง": {
-    "phonetic": "mi chring",
+    "phonetic": "mi-chring",
     "meaning": "不正确"
   },
   "คุณพ่อ": {
-    "phonetic": "khun pho",
+    "phonetic": "khun-pho",
     "meaning": "父亲"
   },
   "จิมมี่": {
-    "phonetic": "chi m mii",
+    "phonetic": "chi-m-mii",
     "meaning": "吉米"
   },
   "เดม่อน": {
-    "phonetic": "de mon",
+    "phonetic": "de-mon",
     "meaning": "达蒙"
   },
   "แม่ง": {
-    "phonetic": "mæng",
+    "phonetic": "maeng",
     "meaning": "他妈的"
   },
   "ฟุต": {
@@ -2000,7 +1975,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "为了"
   },
   "มาร์ติน": {
-    "phonetic": "maar tin",
+    "phonetic": "maar-tin",
     "meaning": "马丁"
   },
   "โย่": {
@@ -2016,7 +1991,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "内特"
   },
   "คุณหมอ": {
-    "phonetic": "khun mo",
+    "phonetic": "khun-mo",
     "meaning": "医生"
   },
   "โมง": {
@@ -2028,7 +2003,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "是的"
   },
   "พี่คะ": {
-    "phonetic": "phii kha",
+    "phonetic": "phii-kha",
     "meaning": "兄弟"
   },
   "นั้น": {
@@ -2036,23 +2011,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "那"
   },
   "ซาร่าห์": {
-    "phonetic": "saa raa",
+    "phonetic": "saa-raa",
     "meaning": "莎拉"
   },
   "อาเบด": {
-    "phonetic": "oaa bed",
+    "phonetic": "oaa-bed",
     "meaning": "阿贝德"
   },
   "เควิน": {
-    "phonetic": "khe win",
+    "phonetic": "khe-win",
     "meaning": "凯文"
   },
   "โทษนะ": {
-    "phonetic": "thosʹ na",
+    "phonetic": "thot-na",
     "meaning": "对不起"
   },
   "ออกมา": {
-    "phonetic": "ook maa",
+    "phonetic": "ook-maa",
     "meaning": "出来"
   },
   "ทรอย": {
@@ -2064,15 +2039,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "时间"
   },
   "ไม่เคย": {
-    "phonetic": "mi khei",
+    "phonetic": "mi-khei",
     "meaning": "绝不"
   },
   "ก็คือ": {
-    "phonetic": "k khueo",
+    "phonetic": "k-khueo",
     "meaning": "那是"
   },
   "โอเค๊": {
-    "phonetic": "oo khe",
+    "phonetic": "oo-khe",
     "meaning": "好的"
   },
   "เจ้า": {
@@ -2080,19 +2055,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "你"
   },
   "เซรีน่า": {
-    "phonetic": "se rii naa",
+    "phonetic": "se-rii-naa",
     "meaning": "瑟琳娜"
   },
   "เจ้านาย": {
-    "phonetic": "cheaa naay",
+    "phonetic": "cheaa-naay",
     "meaning": "老板"
   },
   "และก็": {
-    "phonetic": "læa k",
+    "phonetic": "laea-k",
     "meaning": "还有"
   },
   "ตรงนั้น": {
-    "phonetic": "trng nan",
+    "phonetic": "trng-nan",
     "meaning": "那里"
   },
   "หนู": {
@@ -2116,15 +2091,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "在哪里"
   },
   "บอนนี่": {
-    "phonetic": "bon nii",
+    "phonetic": "bon-nii",
     "meaning": "邦妮"
   },
   "ดีจัง": {
-    "phonetic": "dii chang",
+    "phonetic": "dii-chang",
     "meaning": "非常好"
   },
   "เวรเอ้ย": {
-    "phonetic": "wer oe y",
+    "phonetic": "wer-oe-y",
     "meaning": "拉屎"
   },
   "วอน": {
@@ -2144,11 +2119,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "芬奇"
   },
   "อยู่": {
-    "phonetic": "oy��",
+    "phonetic": "yuu",
     "meaning": "停留"
   },
   "เจสซี่": {
-    "phonetic": "ches sii",
+    "phonetic": "ches-sii",
     "meaning": "杰西"
   },
   "โดย": {
@@ -2160,19 +2135,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "百合"
   },
   "เอาหละ": {
-    "phonetic": "oeaa la",
+    "phonetic": "oeaa-la",
     "meaning": "好的"
   },
   "ริชาร์ด": {
-    "phonetic": "ri chhaard",
+    "phonetic": "ri-chhaard",
     "meaning": "理查德"
   },
   "แอนนา": {
-    "phonetic": "oæ n naa",
+    "phonetic": "oae-n-naa",
     "meaning": "安娜"
   },
   "กลับมา": {
-    "phonetic": "klab maa",
+    "phonetic": "klab-maa",
     "meaning": "回来"
   },
   "เหมือน": {
@@ -2180,7 +2155,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "喜欢"
   },
   "ตกลงนะ": {
-    "phonetic": "tklng na",
+    "phonetic": "tklng-na",
     "meaning": "好的"
   },
   "เย่": {
@@ -2192,7 +2167,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "呐"
   },
   "ท่านพ่อ": {
-    "phonetic": "thaan pho",
+    "phonetic": "thaan-pho",
     "meaning": "父亲"
   },
   "ห๊า": {
@@ -2204,11 +2179,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "杰西"
   },
   "ถูกไหม": {
-    "phonetic": "thuuk im",
+    "phonetic": "thuuk-im",
     "meaning": "是这样吗"
   },
   "นี่ครับ": {
-    "phonetic": "nii khrab",
+    "phonetic": "nii-khrab",
     "meaning": "这里"
   },
   "โบ": {
@@ -2220,15 +2195,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "钱"
   },
   "ดูนั่น": {
-    "phonetic": "duu nan",
+    "phonetic": "duu-nan",
     "meaning": "看看那个"
   },
   "พี่สาว": {
-    "phonetic": "phii saaw",
+    "phonetic": "phii-saaw",
     "meaning": "姐姐"
   },
   "หรือไม่": {
-    "phonetic": "rueo mi",
+    "phonetic": "rueo-mi",
     "meaning": "或不"
   },
   "เวร": {
@@ -2244,7 +2219,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "史蒂夫"
   },
   "นี่คุณ": {
-    "phonetic": "nii khun",
+    "phonetic": "nii-khun",
     "meaning": "这就是你"
   },
   "คุณนาย": {
@@ -2252,11 +2227,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "女士"
   },
   "พร้อมนะ": {
-    "phonetic": "phrom na",
+    "phonetic": "phrom-na",
     "meaning": "准备好"
   },
   "อแมนด้า": {
-    "phonetic": "o mæn daa",
+    "phonetic": "o-maen-daa",
     "meaning": "阿曼达"
   },
   "เกรซ": {
@@ -2264,15 +2239,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "优雅"
   },
   "ทำไมละ": {
-    "phonetic": "thami la",
+    "phonetic": "thami-la",
     "meaning": "为什么"
   },
   "ตอนนั้น": {
-    "phonetic": "ton nan",
+    "phonetic": "ton-nan",
     "meaning": "当时"
   },
   "แบบนี้": {
-    "phonetic": "bæb nii",
+    "phonetic": "baeb-nii",
     "meaning": "像这样"
   },
   "ก็นะ": {
@@ -2280,11 +2255,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "出色地"
   },
   "อะไรวะ": {
-    "phonetic": "oari wa",
+    "phonetic": "oari-wa",
     "meaning": "搞什么鬼"
   },
   "ดีค่ะ": {
-    "phonetic": "dii kha",
+    "phonetic": "dii-kha",
     "meaning": "好的"
   },
   "อลิซ": {
@@ -2292,7 +2267,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "爱丽丝"
   },
   "แบบ": {
-    "phonetic": "bæb",
+    "phonetic": "baeb",
     "meaning": "模型"
   },
   "กัน": {
@@ -2300,7 +2275,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "一起"
   },
   "ได้มั้ย": {
-    "phonetic": "di may",
+    "phonetic": "di-may",
     "meaning": "我能拿到吗"
   },
   "ขวา": {
@@ -2308,27 +2283,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "正确的"
   },
   "ดงอุค": {
-    "phonetic": "dng oukh",
+    "phonetic": "dng-oukh",
     "meaning": "东旭"
   },
   "ในปี": {
-    "phonetic": "nıpii",
+    "phonetic": "naipii",
     "meaning": "当年"
   },
   "เดี๋ยวๆ": {
-    "phonetic": "deiiaw«",
+    "phonetic": "diao",
     "meaning": "等一下"
   },
   "ทุกๆ": {
-    "phonetic": "thuk«",
+    "phonetic": "thuk-thuk",
     "meaning": "每一个"
   },
   "เคลียร์": {
-    "phonetic": "kheliiar",
+    "phonetic": "khlia",
     "meaning": "清除"
   },
   "เช่นกัน": {
-    "phonetic": "chhen kan",
+    "phonetic": "chhen-kan",
     "meaning": "以及"
   },
   "เคน": {
@@ -2336,19 +2311,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "肯"
   },
   "บอกว่า": {
-    "phonetic": "bok waa",
+    "phonetic": "bok-waa",
     "meaning": "说"
   },
   "โคลอี้": {
-    "phonetic": "khol oii",
+    "phonetic": "khol-oii",
     "meaning": "克洛伊"
   },
   "บิลลี่": {
-    "phonetic": "bil lii",
+    "phonetic": "bil-lii",
     "meaning": "比利"
   },
   "ใต้เท้า": {
-    "phonetic": "tıtheaa",
+    "phonetic": "taitheaa",
     "meaning": "脚下"
   },
   "ผอ": {
@@ -2368,7 +2343,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "插曲"
   },
   "จริงไหม": {
-    "phonetic": "chring im",
+    "phonetic": "chring-im",
     "meaning": "这是真的吗"
   },
   "สี่": {
@@ -2380,11 +2355,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "请"
   },
   "ไรอัน": {
-    "phonetic": "ri oan",
+    "phonetic": "ri-oan",
     "meaning": "瑞安"
   },
   "ทำอะไร": {
-    "phonetic": "tha oari",
+    "phonetic": "tha-oari",
     "meaning": "你在干什么"
   },
   "ทุก": {
@@ -2392,11 +2367,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "每一个"
   },
   "พอเถอะ": {
-    "phonetic": "pho theoa",
+    "phonetic": "pho-theoa",
     "meaning": "这就够了"
   },
   "ไบรอัน": {
-    "phonetic": "bi roan",
+    "phonetic": "bi-roan",
     "meaning": "布莱恩"
   },
   "จ่า": {
@@ -2404,11 +2379,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "中士"
   },
   "โทนี่": {
-    "phonetic": "tho nii",
+    "phonetic": "tho-nii",
     "meaning": "托尼"
   },
   "ไปตายซะ": {
-    "phonetic": "pi taay sa",
+    "phonetic": "pi-taay-sa",
     "meaning": "去死吧"
   },
   "หมายเลข": {
@@ -2432,11 +2407,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "M"
   },
   "ผู้พัน": {
-    "phonetic": "phuu phan",
+    "phonetic": "phuu-phan",
     "meaning": "上校"
   },
   "เจ้าหนู": {
-    "phonetic": "cheaa nuu",
+    "phonetic": "cheaa-nuu",
     "meaning": "青少年"
   },
   "ฮึ": {
@@ -2444,7 +2419,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "啊"
   },
   "ข้ารู้": {
-    "phonetic": "khaa ruu",
+    "phonetic": "khaa-ruu",
     "meaning": "我知道"
   },
   "ฟินน์": {
@@ -2452,7 +2427,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "芬恩"
   },
   "นั่นล่ะ": {
-    "phonetic": "nan la",
+    "phonetic": "nan-la",
     "meaning": "就是这样"
   },
   "ตื่น": {
@@ -2464,11 +2439,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "再见"
   },
   "เก่งมาก": {
-    "phonetic": "keng maak",
+    "phonetic": "keng-maak",
     "meaning": "非常好"
   },
   "เจอแล้ว": {
-    "phonetic": "cheo læw",
+    "phonetic": "cheo-laew",
     "meaning": "找到了"
   },
   "คัง": {
@@ -2480,7 +2455,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "磅"
   },
   "อยู่ไหน": {
-    "phonetic": "oyuu in",
+    "phonetic": "oyuu-in",
     "meaning": "你在哪里"
   },
   "เอเดน": {
@@ -2488,15 +2463,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "伊甸园"
   },
   "คุณแม่": {
-    "phonetic": "khun mæ",
+    "phonetic": "khun-mae",
     "meaning": "母亲"
   },
   "ลิซ่า": {
-    "phonetic": "li saa",
+    "phonetic": "li-saa",
     "meaning": "丽莎"
   },
   "เอาเถอะ": {
-    "phonetic": "oeaa theoa",
+    "phonetic": "oeaa-theoa",
     "meaning": "快点"
   },
   "วิล": {
@@ -2508,7 +2483,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "有"
   },
   "แค่นั้น": {
-    "phonetic": "khæ nan",
+    "phonetic": "khae-nan",
     "meaning": "就是这样"
   },
   "เชิญ": {
@@ -2544,35 +2519,35 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "房间"
   },
   "น้องชาย": {
-    "phonetic": "nong chhaay",
+    "phonetic": "nong-chhaay",
     "meaning": "弟弟"
   },
   "มานี่มา": {
-    "phonetic": "maa nii maa",
+    "phonetic": "maa-nii-maa",
     "meaning": "过来吧"
   },
   "คิดว่า": {
-    "phonetic": "khid waa",
+    "phonetic": "khid-waa",
     "meaning": "我认为"
   },
   "เลยนะ": {
-    "phonetic": "lei na",
+    "phonetic": "lei-na",
     "meaning": "马上"
   },
   "ใช่มัย": {
-    "phonetic": "chhı may",
+    "phonetic": "chhai-may",
     "meaning": "是这样吗"
   },
   "นี่ค่ะ": {
-    "phonetic": "nii kha",
+    "phonetic": "nii-kha",
     "meaning": "这里"
   },
   "บอกมา": {
-    "phonetic": "bok maa",
+    "phonetic": "bok-maa",
     "meaning": "告诉我"
   },
   "วิลล์": {
-    "phonetic": "wi ll",
+    "phonetic": "wi-ll",
     "meaning": "将要"
   },
   "ชิน": {
@@ -2580,7 +2555,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "习惯它"
   },
   "อีกแล้ว": {
-    "phonetic": "oiik læw",
+    "phonetic": "oiik-laew",
     "meaning": "再次"
   },
   "วู้": {
@@ -2588,15 +2563,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "呜"
   },
   "อีธาน": {
-    "phonetic": "oii thaan",
+    "phonetic": "oii-thaan",
     "meaning": "伊森"
   },
   "เอ้านี่": {
-    "phonetic": "oe aa nii",
+    "phonetic": "oe-aa-nii",
     "meaning": "这里是"
   },
   "เอฟบีไอ": {
-    "phonetic": "oefbii oi",
+    "phonetic": "oefbii-oi",
     "meaning": "联邦调查局"
   },
   "ยู": {
@@ -2612,7 +2587,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "玫瑰"
   },
   "ปธน": {
-    "phonetic": "pthn",
+    "phonetic": "bpa-thaa-naa-thi-baa-dii",
     "meaning": "总裁"
   },
   "ผู้ชาย": {
@@ -2632,11 +2607,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "艾玛"
   },
   "จริงอ่ะ": {
-    "phonetic": "chring oa",
+    "phonetic": "chring-oa",
     "meaning": "这是真的"
   },
   "ดีครับ": {
-    "phonetic": "dii khrab",
+    "phonetic": "dii-khrab",
     "meaning": "好的"
   },
   "เบ็น": {
@@ -2644,15 +2619,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "本"
   },
   "ถูกแล้ว": {
-    "phonetic": "thuuk læw",
+    "phonetic": "thuuk-laew",
     "meaning": "这是正确的"
   },
   "แซลลี่": {
-    "phonetic": "sæ l lii",
+    "phonetic": "sae-l-lii",
     "meaning": "莎莉"
   },
   "แจ๋ว": {
-    "phonetic": "chæw",
+    "phonetic": "chaew",
     "meaning": "凉爽的"
   },
   "คู่หู": {
@@ -2664,7 +2639,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "斤"
   },
   "ของเรา": {
-    "phonetic": "khong reaa",
+    "phonetic": "khong-reaa",
     "meaning": "我们的"
   },
   "เยน": {
@@ -2672,11 +2647,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "日元"
   },
   "พ่อค่ะ": {
-    "phonetic": "pho kha",
+    "phonetic": "pho-kha",
     "meaning": "爸爸"
   },
   "เปลี่ยน": {
-    "phonetic": "peliian",
+    "phonetic": "pelian",
     "meaning": "改变"
   },
   "ขอรับ": {
@@ -2684,7 +2659,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "请接受"
   },
   "หนุ่มๆ": {
-    "phonetic": "num«",
+    "phonetic": "num-num",
     "meaning": "年轻人"
   },
   "มากกว่า": {
@@ -2692,11 +2667,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "多于"
   },
   "อีริค": {
-    "phonetic": "oii rikh",
+    "phonetic": "oii-rikh",
     "meaning": "埃里克"
   },
   "เพียร์ซ": {
-    "phonetic": "pheiiar s",
+    "phonetic": "pheiar-s",
     "meaning": "刺穿"
   },
   "ทั้ง": {
@@ -2708,15 +2683,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "J"
   },
   "ลูซี่": {
-    "phonetic": "luu sii",
+    "phonetic": "luu-sii",
     "meaning": "露西"
   },
   "เอียน": {
-    "phonetic": "oeiian",
+    "phonetic": "oeian",
     "meaning": "伊恩"
   },
   "โทมัส": {
-    "phonetic": "tho mas",
+    "phonetic": "tho-mas",
     "meaning": "托马斯"
   },
   "เดอ": {
@@ -2724,7 +2699,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "德"
   },
   "ตามมา": {
-    "phonetic": "taam maa",
+    "phonetic": "taam-maa",
     "meaning": "跟着走吧"
   },
   "ต่อ": {
@@ -2732,15 +2707,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "继续"
   },
   "แอรอน": {
-    "phonetic": "oæ ron",
+    "phonetic": "oae-ron",
     "meaning": "亚伦"
   },
   "พวกคุณ": {
-    "phonetic": "phwk khun",
+    "phonetic": "phwk-khun",
     "meaning": "你们"
   },
   "พะยะค่ะ": {
-    "phonetic": "pha ya kha",
+    "phonetic": "pha-ya-kha",
     "meaning": "帕亚"
   },
   "ดอลลาร์": {
@@ -2752,11 +2727,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "家"
   },
   "รู้มั๊ย": {
-    "phonetic": "ruu may",
+    "phonetic": "ruu-may",
     "meaning": "你可知道"
   },
   "นั่นใคร": {
-    "phonetic": "nan khır",
+    "phonetic": "nan-khair",
     "meaning": "那是谁"
   },
   "อลัน": {
@@ -2772,7 +2747,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "预订"
   },
   "ไม่เหรอ": {
-    "phonetic": "mi e ro",
+    "phonetic": "mi-e-ro",
     "meaning": "不"
   },
   "ขออภัย": {
@@ -2780,7 +2755,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "对不起"
   },
   "ความรัก": {
-    "phonetic": "khwaam rak",
+    "phonetic": "khwaam-rak",
     "meaning": "爱"
   },
   "อึน": {
@@ -2788,7 +2763,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "恩"
   },
   "คลาร์ก": {
-    "phonetic": "khlaa rk",
+    "phonetic": "khlaa-rk",
     "meaning": "克拉克"
   },
   "ซ้าย": {
@@ -2796,11 +2771,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "左边"
   },
   "บริษัท": {
-    "phonetic": "brisʹath",
+    "phonetic": "bo-ri-sat",
     "meaning": "公司"
   },
   "โอเคๆ": {
-    "phonetic": "oo khe«",
+    "phonetic": "oo-khe-he",
     "meaning": "好的"
   },
   "เยส": {
@@ -2808,7 +2783,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "是的"
   },
   "ช้าๆ": {
-    "phonetic": "chhaa«",
+    "phonetic": "chaa-chaa",
     "meaning": "慢慢地"
   },
   "ปล่อย": {
@@ -2816,15 +2791,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "发布"
   },
   "ทุกๆคน": {
-    "phonetic": "thuk«khn",
+    "phonetic": "thuk-thukkhn",
     "meaning": "每个人"
   },
   "นี่แหละ": {
-    "phonetic": "nii æla",
+    "phonetic": "nii-aela",
     "meaning": "就是这样"
   },
   "เปล่านะ": {
-    "phonetic": "pelaa na",
+    "phonetic": "pelaa-na",
     "meaning": "不"
   },
   "เมตร": {
@@ -2832,11 +2807,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "仪表"
   },
   "ฆ่ามัน": {
-    "phonetic": "khaa man",
+    "phonetic": "khaa-man",
     "meaning": "杀掉它"
   },
   "ผู้กอง": {
-    "phonetic": "phuu kong",
+    "phonetic": "phuu-kong",
     "meaning": "队长"
   },
   "สก็อต": {
@@ -2844,7 +2819,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "斯科特"
   },
   "จริงดิ": {
-    "phonetic": "chring di",
+    "phonetic": "chring-di",
     "meaning": "真的"
   },
   "โคล": {
@@ -2856,7 +2831,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "卡洛斯"
   },
   "เพื่อ": {
-    "phonetic": "pheueo",
+    "phonetic": "phueao",
     "meaning": "为了"
   },
   "บัซ": {
@@ -2868,19 +2843,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "进去吧"
   },
   "โอเคค่ะ": {
-    "phonetic": "oo khe kha",
+    "phonetic": "oo-khe-kha",
     "meaning": "好的"
   },
   "โจนส์": {
-    "phonetic": "chon s",
+    "phonetic": "chon-s",
     "meaning": "琼斯"
   },
   "ไอ้โง่": {
-    "phonetic": "oi ngo",
+    "phonetic": "oi-ngo",
     "meaning": "愚蠢的混蛋"
   },
   "และฉัน": {
-    "phonetic": "læa chhan",
+    "phonetic": "laea-chhan",
     "meaning": "还有我"
   },
   "นะคะ": {
@@ -2892,7 +2867,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "查尔斯"
   },
   "แน่ล่ะ": {
-    "phonetic": "næ la",
+    "phonetic": "nae-la",
     "meaning": "确实"
   },
   "พีท": {
@@ -2904,11 +2879,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "信封"
   },
   "แมท": {
-    "phonetic": "mæth",
+    "phonetic": "maeth",
     "meaning": "马特"
   },
   "โอ้วว": {
-    "phonetic": "oo ww",
+    "phonetic": "oo-ww",
     "meaning": "哦哇"
   },
   "เท็ด": {
@@ -2916,11 +2891,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "特德"
   },
   "ขยช": {
-    "phonetic": "khychh",
+    "phonetic": "khaw-yaw-chaw",
     "meaning": "京奥"
   },
   "นั่งสิ": {
-    "phonetic": "nang si",
+    "phonetic": "nang-si",
     "meaning": "坐"
   },
   "รขโ": {
@@ -2928,27 +2903,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "拉科"
   },
   "เอ็ดดี้": {
-    "phonetic": "oed dii",
+    "phonetic": "oed-dii",
     "meaning": "艾迪"
   },
   "รึเปล่า": {
-    "phonetic": "rue pelaa",
+    "phonetic": "rue-pelaa",
     "meaning": "或不"
   },
   "ว่าไหม": {
-    "phonetic": "waa im",
+    "phonetic": "waa-im",
     "meaning": "你这样认为吗"
   },
   "อะไรคะ": {
-    "phonetic": "oari kha",
+    "phonetic": "oari-kha",
     "meaning": "什么"
   },
   "เอานี่": {
-    "phonetic": "oeaa nii",
+    "phonetic": "oeaa-nii",
     "meaning": "这里是"
   },
   "แต่ฉัน": {
-    "phonetic": "tæ chhan",
+    "phonetic": "tae-chhan",
     "meaning": "但我"
   },
   "มาก": {
@@ -2956,7 +2931,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "很多"
   },
   "ผู้หมวด": {
-    "phonetic": "phuu mwd",
+    "phonetic": "phuu-mwd",
     "meaning": "中尉"
   },
   "สัปดาห์": {
@@ -2964,7 +2939,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "星期"
   },
   "ภายใน": {
-    "phonetic": "phhaaynı",
+    "phonetic": "phhaaynai",
     "meaning": "里面"
   },
   "พอ": {
@@ -2972,7 +2947,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "足够的"
   },
   "แย่จัง": {
-    "phonetic": "yæ chang",
+    "phonetic": "yae-chang",
     "meaning": "太糟糕了"
   },
   "บ๊อบ": {
@@ -2992,23 +2967,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "斗争"
   },
   "แฮงค์": {
-    "phonetic": "hængkh",
+    "phonetic": "haengkh",
     "meaning": "汉克"
   },
   "ดงชอล": {
-    "phonetic": "dng chhol",
+    "phonetic": "dng-chhol",
     "meaning": "东哲"
   },
   "ว่ามา": {
-    "phonetic": "waa maa",
+    "phonetic": "waa-maa",
     "meaning": "说吧"
   },
   "ตื่นสิ": {
-    "phonetic": "tuen si",
+    "phonetic": "tuen-si",
     "meaning": "醒来吧"
   },
   "นะครับ": {
-    "phonetic": "na khrab",
+    "phonetic": "na-khrab",
     "meaning": "请"
   },
   "องศา": {
@@ -3016,7 +2991,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "度"
   },
   "เด็กดี": {
-    "phonetic": "dek dii",
+    "phonetic": "dek-dii",
     "meaning": "好孩子"
   },
   "ฮ้า": {
@@ -3028,23 +3003,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哟"
   },
   "แฮนน่า": {
-    "phonetic": "hæ n naa",
+    "phonetic": "hae-n-naa",
     "meaning": "汉娜"
   },
   "ยังเลย": {
-    "phonetic": "yang lei",
+    "phonetic": "yang-lei",
     "meaning": "还没有"
   },
   "แอ๊บบี้": {
-    "phonetic": "oæb bii",
+    "phonetic": "oaeb-bii",
     "meaning": "艾比"
   },
   "ดีล่ะ": {
-    "phonetic": "dii la",
+    "phonetic": "dii-la",
     "meaning": "好的"
   },
   "ลูอิส": {
-    "phonetic": "luu ois",
+    "phonetic": "luu-ois",
     "meaning": "刘易斯"
   },
   "อีไล": {
@@ -3052,15 +3027,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "伊莱"
   },
   "ตลอดไป": {
-    "phonetic": "tlod pi",
+    "phonetic": "tlod-pi",
     "meaning": "永远"
   },
   "จูเลียต": {
-    "phonetic": "chuu leiia t",
+    "phonetic": "chuu-leia-t",
     "meaning": "朱丽叶"
   },
   "ทาร่า": {
-    "phonetic": "thaa raa",
+    "phonetic": "thaa-raa",
     "meaning": "塔拉"
   },
   "หึ": {
@@ -3068,15 +3043,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "呵呵"
   },
   "รปภ": {
-    "phonetic": "rpphh",
+    "phonetic": "raaw-bpaaw-phaaw",
     "meaning": "保安员"
   },
   "ไม่งั้น": {
-    "phonetic": "mi ngan",
+    "phonetic": "mi-ngan",
     "meaning": "否则"
   },
   "ฮิโระ": {
-    "phonetic": "hi roa",
+    "phonetic": "hi-roa",
     "meaning": "宏"
   },
   "เอ็ด": {
@@ -3092,27 +3067,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "我"
   },
   "เอริค": {
-    "phonetic": "oe rikh",
+    "phonetic": "oe-rikh",
     "meaning": "埃里克"
   },
   "ฟังผมนะ": {
-    "phonetic": "fang phm na",
+    "phonetic": "fang-phm-na",
     "meaning": "听我说"
   },
   "พี่ครับ": {
-    "phonetic": "phii khrab",
+    "phonetic": "phii-khrab",
     "meaning": "兄弟"
   },
   "เจนน่า": {
-    "phonetic": "chen naa",
+    "phonetic": "chen-naa",
     "meaning": "珍娜"
   },
   "ปล่อยนะ": {
-    "phonetic": "ploy na",
+    "phonetic": "ploy-na",
     "meaning": "松手"
   },
   "แฟรงกี้": {
-    "phonetic": "fæ rng kii",
+    "phonetic": "fae-rng-kii",
     "meaning": "弗兰基"
   },
   "ทุ่ม": {
@@ -3120,7 +3095,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "晚上7点"
   },
   "ก็จริง": {
-    "phonetic": "k chring",
+    "phonetic": "k-chring",
     "meaning": "这是真的"
   },
   "จี": {
@@ -3128,31 +3103,31 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "G"
   },
   "โทบี้": {
-    "phonetic": "tho bii",
+    "phonetic": "tho-bii",
     "meaning": "托比"
   },
   "ใช้": {
-    "phonetic": "chhı",
+    "phonetic": "chhai",
     "meaning": "使用"
   },
   "แคส": {
-    "phonetic": "khæs",
+    "phonetic": "khaes",
     "meaning": "卡斯"
   },
   "ได้ๆ": {
-    "phonetic": "di«",
+    "phonetic": "di-di",
     "meaning": "好的"
   },
   "หยุดเลย": {
-    "phonetic": "yud lei",
+    "phonetic": "yud-lei",
     "meaning": "停止吧"
   },
   "แม่ค่ะ": {
-    "phonetic": "mæ kha",
+    "phonetic": "mae-kha",
     "meaning": "妈妈"
   },
   "ตอบด้วย": {
-    "phonetic": "tob dwy",
+    "phonetic": "tob-dwy",
     "meaning": "请回答"
   },
   "บริค": {
@@ -3160,15 +3135,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "砖"
   },
   "คุณปู่": {
-    "phonetic": "khun puu",
+    "phonetic": "khun-puu",
     "meaning": "爷爷"
   },
   "อะไรหรอ": {
-    "phonetic": "oari ro",
+    "phonetic": "oari-ro",
     "meaning": "它是什么"
   },
   "เจ้าโง่": {
-    "phonetic": "cheaa ngo",
+    "phonetic": "cheaa-ngo",
     "meaning": "你这个傻瓜"
   },
   "นาฬิกา": {
@@ -3176,23 +3151,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "钟"
   },
   "แห่ง": {
-    "phonetic": "æng",
+    "phonetic": "aeng",
     "meaning": "的"
   },
   "บ็อบบี้": {
-    "phonetic": "bob bii",
+    "phonetic": "bob-bii",
     "meaning": "鲍比"
   },
   "และนี่": {
-    "phonetic": "læa nii",
+    "phonetic": "laea-nii",
     "meaning": "还有这个"
   },
   "มาเรีย": {
-    "phonetic": "maa reiia",
+    "phonetic": "maa-reia",
     "meaning": "玛丽亚"
   },
   "เบลล่า": {
-    "phonetic": "bel laa",
+    "phonetic": "bel-laa",
     "meaning": "贝拉"
   },
   "สุดท้าย": {
@@ -3208,7 +3183,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "奶奶"
   },
   "ไม่อ่ะ": {
-    "phonetic": "mi oa",
+    "phonetic": "mi-oa",
     "meaning": "不"
   },
   "ลูกชาย": {
@@ -3220,11 +3195,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "朱"
   },
   "เย็นไว้": {
-    "phonetic": "yen wi",
+    "phonetic": "yen-wi",
     "meaning": "保持冷静"
   },
   "ตั้งแต่": {
-    "phonetic": "tangtæ",
+    "phonetic": "tangtae",
     "meaning": "自从"
   },
   "ทหาร": {
@@ -3232,11 +3207,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "士兵"
   },
   "แวน": {
-    "phonetic": "wæn",
+    "phonetic": "waen",
     "meaning": "范"
   },
   "ไกอัส": {
-    "phonetic": "ki oas",
+    "phonetic": "ki-oas",
     "meaning": "盖乌斯"
   },
   "เข้า": {
@@ -3244,11 +3219,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "进入"
   },
   "โอ้โห": {
-    "phonetic": "oo o",
+    "phonetic": "oo-o",
     "meaning": "哦哇"
   },
   "อาเรีย": {
-    "phonetic": "oaa reiia",
+    "phonetic": "oaa-reia",
     "meaning": "咏叹调"
   },
   "ขอ": {
@@ -3260,23 +3235,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "无线"
   },
   "ค่อยๆ": {
-    "phonetic": "khoy«",
+    "phonetic": "khoy-khoy",
     "meaning": "逐步地"
   },
   "แคร์รี่": {
-    "phonetic": "khær rii",
+    "phonetic": "khaer-rii",
     "meaning": "嘉莉"
   },
   "กลับไป": {
-    "phonetic": "klab pi",
+    "phonetic": "klab-pi",
     "meaning": "回去"
   },
   "ระวังนะ": {
-    "phonetic": "rawang na",
+    "phonetic": "rawang-na",
     "meaning": "当心"
   },
   "อย่าไป": {
-    "phonetic": "oyaa pi",
+    "phonetic": "oyaa-pi",
     "meaning": "别走"
   },
   "ดูนะ": {
@@ -3292,11 +3267,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哦"
   },
   "จอร์แดน": {
-    "phonetic": "chordæn",
+    "phonetic": "chordaen",
     "meaning": "约旦"
   },
   "เหรอคะ": {
-    "phonetic": "e ro kha",
+    "phonetic": "e-ro-kha",
     "meaning": "真的吗"
   },
   "เอา": {
@@ -3304,7 +3279,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "拿"
   },
   "หลบไป": {
-    "phonetic": "lb pi",
+    "phonetic": "lb-pi",
     "meaning": "逃跑"
   },
   "อี": {
@@ -3312,7 +3287,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "E"
   },
   "คุณหนู": {
-    "phonetic": "khun nuu",
+    "phonetic": "khun-nuu",
     "meaning": "小姐"
   },
   "มาดาม": {
@@ -3324,7 +3299,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "科布"
   },
   "ไปไหน": {
-    "phonetic": "pi in",
+    "phonetic": "pi-in",
     "meaning": "你要去哪里"
   },
   "บริตต้า": {
@@ -3332,7 +3307,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "布丽塔"
   },
   "เฮ้ๆ": {
-    "phonetic": "he«",
+    "phonetic": "he-he",
     "meaning": "嘿嘿"
   },
   "ไอ": {
@@ -3340,27 +3315,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "我"
   },
   "แซมมี่": {
-    "phonetic": "sæm mii",
+    "phonetic": "saem-mii",
     "meaning": "萨米"
   },
   "โธ่เว้ย": {
-    "phonetic": "tho wei",
+    "phonetic": "tho-wei",
     "meaning": "哦不"
   },
   "โรเจอร์": {
-    "phonetic": "ro cheor",
+    "phonetic": "ro-cheor",
     "meaning": "罗杰"
   },
   "เอมม่า": {
-    "phonetic": "oem maa",
+    "phonetic": "oem-maa",
     "meaning": "艾玛"
   },
   "ไปแล้ว": {
-    "phonetic": "pi læw",
+    "phonetic": "pi-laew",
     "meaning": "走了"
   },
   "เอาไป": {
-    "phonetic": "oeaa pi",
+    "phonetic": "oeaa-pi",
     "meaning": "拿走吧"
   },
   "จีน": {
@@ -3368,23 +3343,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "中国"
   },
   "ตามสบาย": {
-    "phonetic": "taam sbaay",
+    "phonetic": "taam-sbaay",
     "meaning": "如你所愿"
   },
   "กอร์ดอน": {
-    "phonetic": "kor don",
+    "phonetic": "kor-don",
     "meaning": "戈登"
   },
   "แฮรี่": {
-    "phonetic": "hæ rii",
+    "phonetic": "hae-rii",
     "meaning": "哈利"
   },
   "สโนว์": {
-    "phonetic": "s now",
+    "phonetic": "s-now",
     "meaning": "雪"
   },
   "อยู่นี่": {
-    "phonetic": "oyuu nii",
+    "phonetic": "oyuu-nii",
     "meaning": "这里"
   },
   "ออก": {
@@ -3396,7 +3371,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嘘"
   },
   "เชลดอน": {
-    "phonetic": "chhe ldon",
+    "phonetic": "chhe-ldon",
     "meaning": "谢尔顿"
   },
   "ไชโย": {
@@ -3412,7 +3387,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "啊"
   },
   "เลขที่": {
-    "phonetic": "lekh thii",
+    "phonetic": "lekh-thii",
     "meaning": "不"
   },
   "บรูซ": {
@@ -3420,11 +3395,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "布鲁斯"
   },
   "เสียใจ": {
-    "phonetic": "seiiachı",
+    "phonetic": "seiachai",
     "meaning": "对不起"
   },
   "หลีกไป": {
-    "phonetic": "liik pi",
+    "phonetic": "liik-pi",
     "meaning": "逃离"
   },
   "รอย": {
@@ -3432,7 +3407,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "罗伊"
   },
   "จริงนะ": {
-    "phonetic": "chring na",
+    "phonetic": "chring-na",
     "meaning": "这是真的"
   },
   "ลุง": {
@@ -3440,7 +3415,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "叔叔"
   },
   "ท่านแม่": {
-    "phonetic": "thaan mæ",
+    "phonetic": "thaan-mae",
     "meaning": "母亲"
   },
   "เคลย์": {
@@ -3456,7 +3431,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "团队"
   },
   "ลุยเลย": {
-    "phonetic": "luy lei",
+    "phonetic": "luy-lei",
     "meaning": "前进"
   },
   "รี้ด": {
@@ -3464,7 +3439,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "芦苇"
   },
   "เสียง": {
-    "phonetic": "seiiang",
+    "phonetic": "seiang",
     "meaning": "声音"
   },
   "โบนส์": {
@@ -3476,7 +3451,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "肖恩"
   },
   "ราเชล": {
-    "phonetic": "raa chhel",
+    "phonetic": "raa-chhel",
     "meaning": "雷切尔"
   },
   "ไอ้": {
@@ -3496,7 +3471,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "茶"
   },
   "โนอาห์": {
-    "phonetic": "no oaa",
+    "phonetic": "no-oaa",
     "meaning": "诺亚"
   },
   "เพคะ": {
@@ -3504,19 +3479,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "唷"
   },
   "สตาร์ค": {
-    "phonetic": "s taarkh",
+    "phonetic": "s-taarkh",
     "meaning": "斯塔克"
   },
   "กับฉัน": {
-    "phonetic": "kab chhan",
+    "phonetic": "kab-chhan",
     "meaning": "与我一起"
   },
   "มิตะซัง": {
-    "phonetic": "mi ta sang",
+    "phonetic": "mi-ta-sang",
     "meaning": "三田桑"
   },
   "แมทธิว": {
-    "phonetic": "mæ ththi w",
+    "phonetic": "mae-ththi-w",
     "meaning": "马修"
   },
   "จุน": {
@@ -3524,11 +3499,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "六月"
   },
   "รูฟัส": {
-    "phonetic": "ruu fas",
+    "phonetic": "ruu-fas",
     "meaning": "鲁弗斯"
   },
   "จูเลีย": {
-    "phonetic": "chuu leiia",
+    "phonetic": "chuu-leia",
     "meaning": "朱莉娅"
   },
   "ที": {
@@ -3544,7 +3519,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "展位"
   },
   "คุณลุง": {
-    "phonetic": "khun lung",
+    "phonetic": "khun-lung",
     "meaning": "叔叔"
   },
   "สัญญา": {
@@ -3552,23 +3527,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "承诺"
   },
   "เชิญเลย": {
-    "phonetic": "chheia lei",
+    "phonetic": "chheia-lei",
     "meaning": "快点"
   },
   "แฮนนา": {
-    "phonetic": "hæ n naa",
+    "phonetic": "hae-n-naa",
     "meaning": "汉娜"
   },
   "ไม่นี่": {
-    "phonetic": "mi nii",
+    "phonetic": "mi-nii",
     "meaning": "不在这里"
   },
   "ของเขา": {
-    "phonetic": "khong kheaa",
+    "phonetic": "khong-kheaa",
     "meaning": "他的"
   },
   "จันดี": {
-    "phonetic": "chan dii",
+    "phonetic": "chan-dii",
     "meaning": "昌迪"
   },
   "อู้": {
@@ -3584,27 +3559,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "侦探"
   },
   "พูดสิ": {
-    "phonetic": "phuud si",
+    "phonetic": "phuud-si",
     "meaning": "说吧"
   },
   "โธ่เอ๊ย": {
-    "phonetic": "tho oei",
+    "phonetic": "tho-oei",
     "meaning": "天哪"
   },
   "ขึ้นมา": {
-    "phonetic": "khuen maa",
+    "phonetic": "khuen-maa",
     "meaning": "过来"
   },
   "วันก่อน": {
-    "phonetic": "wan kon",
+    "phonetic": "wan-kon",
     "meaning": "前一天"
   },
   "ถูกมั้ย": {
-    "phonetic": "thuuk may",
+    "phonetic": "thuuk-may",
     "meaning": "是这样吗"
   },
   "บ้าชิบ": {
-    "phonetic": "baa chhib",
+    "phonetic": "baa-chhib",
     "meaning": "疯狂的"
   },
   "ชาลี": {
@@ -3612,7 +3587,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "查理"
   },
   "จีฮุน": {
-    "phonetic": "chii hun",
+    "phonetic": "chii-hun",
     "meaning": "志勋"
   },
   "เริ่ม": {
@@ -3632,7 +3607,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "德尔"
   },
   "แปลว่า": {
-    "phonetic": "pæl waa",
+    "phonetic": "pael-waa",
     "meaning": "意义"
   },
   "ดอน": {
@@ -3640,23 +3615,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "大学教师"
   },
   "หก": {
-    "phonetic": "k",
+    "phonetic": "hok",
     "meaning": "六"
   },
   "จริงรึ": {
-    "phonetic": "chring rue",
+    "phonetic": "chring-rue",
     "meaning": "真的吗"
   },
   "ซุกกี้": {
-    "phonetic": "suk kii",
+    "phonetic": "suk-kii",
     "meaning": "苏琪"
   },
   "ก็ดีนะ": {
-    "phonetic": "k dii na",
+    "phonetic": "k-dii-na",
     "meaning": "那挺好的"
   },
   "ฝันดี": {
-    "phonetic": "fan dii",
+    "phonetic": "fan-dii",
     "meaning": "甜蜜的梦"
   },
   "วอลท์": {
@@ -3664,11 +3639,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "沃尔特"
   },
   "ท่านหมอ": {
-    "phonetic": "thaan mo",
+    "phonetic": "thaan-mo",
     "meaning": "医生"
   },
   "แม่จ๋า": {
-    "phonetic": "mæ chaa",
+    "phonetic": "mae-chaa",
     "meaning": "母亲"
   },
   "เพนนี": {
@@ -3676,19 +3651,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "一分钱"
   },
   "เด็กซ์": {
-    "phonetic": "dek s",
+    "phonetic": "dek-s",
     "meaning": "德克斯"
   },
   "หลังจาก": {
-    "phonetic": "lang chaak",
+    "phonetic": "lang-chaak",
     "meaning": "后"
   },
   "ผู้การ": {
-    "phonetic": "phuu kaar",
+    "phonetic": "phuu-kaar",
     "meaning": "指挥官"
   },
   "น่ารัก": {
-    "phonetic": "naa rak",
+    "phonetic": "naa-rak",
     "meaning": "可爱的"
   },
   "นิ้ว": {
@@ -3696,19 +3671,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "英寸"
   },
   "ที่นั่น": {
-    "phonetic": "thii nan",
+    "phonetic": "thii-nan",
     "meaning": "那里"
   },
   "พอกันที": {
-    "phonetic": "phokan thii",
+    "phonetic": "phokan-thii",
     "meaning": "这就够了"
   },
   "คราวนี้": {
-    "phonetic": "khraaw nii",
+    "phonetic": "khraaw-nii",
     "meaning": "这次"
   },
   "แม่ฮะ": {
-    "phonetic": "mæ ha",
+    "phonetic": "mae-ha",
     "meaning": "妈妈"
   },
   "เชน": {
@@ -3720,7 +3695,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "朋友们"
   },
   "เอางี้": {
-    "phonetic": "oeaa ngii",
+    "phonetic": "oeaa-ngii",
     "meaning": "拿这个"
   },
   "ราย": {
@@ -3732,19 +3707,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "吼"
   },
   "ตายจริง": {
-    "phonetic": "taay chring",
+    "phonetic": "taay-chring",
     "meaning": "真的死了"
   },
   "แบส": {
-    "phonetic": "bæs",
+    "phonetic": "baes",
     "meaning": "低音"
   },
   "เจอกัน": {
-    "phonetic": "cheo kan",
+    "phonetic": "cheo-kan",
     "meaning": "再见"
   },
   "เคลลี่": {
-    "phonetic": "khel lii",
+    "phonetic": "khel-lii",
     "meaning": "凯莉"
   },
   "ะต": {
@@ -3756,11 +3731,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "菲尔"
   },
   "จับไว้": {
-    "phonetic": "chab wi",
+    "phonetic": "chab-wi",
     "meaning": "握住它"
   },
   "โนแลน": {
-    "phonetic": "no læn",
+    "phonetic": "no-laen",
     "meaning": "诺兰"
   },
   "โก": {
@@ -3768,15 +3743,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "去"
   },
   "อีดงชอล": {
-    "phonetic": "oii dng chhol",
+    "phonetic": "oii-dng-chhol",
     "meaning": "李东哲"
   },
   "แน่ใจ": {
-    "phonetic": "næchı",
+    "phonetic": "naechai",
     "meaning": "当然"
   },
   "คงงั้น": {
-    "phonetic": "khng ngan",
+    "phonetic": "khng-ngan",
     "meaning": "大概是这样"
   },
   "ปลอดภัย": {
@@ -3784,15 +3759,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "安全的"
   },
   "เมษายน": {
-    "phonetic": "mesʹaayn",
+    "phonetic": "mee-saa-yon",
     "meaning": "四月"
   },
   "ท่านคะ": {
-    "phonetic": "thaan kha",
+    "phonetic": "thaan-kha",
     "meaning": "先生"
   },
   "น่าสนใจ": {
-    "phonetic": "naa snchı",
+    "phonetic": "naa-snchai",
     "meaning": "有趣的"
   },
   "เค": {
@@ -3808,11 +3783,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "是的"
   },
   "แม็กกี้": {
-    "phonetic": "mæ kkii",
+    "phonetic": "mae-kkii",
     "meaning": "玛吉"
   },
   "อย่ายิง": {
-    "phonetic": "oyaa ying",
+    "phonetic": "oyaa-ying",
     "meaning": "别开枪"
   },
   "เอส": {
@@ -3820,11 +3795,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "S"
   },
   "อ่าฮะ": {
-    "phonetic": "oaa ha",
+    "phonetic": "oaa-ha",
     "meaning": "啊哈"
   },
   "ไม่ๆๆๆ": {
-    "phonetic": "mi« ««",
+    "phonetic": "mai-mai-mai",
     "meaning": "不不不"
   },
   "ชอว์น": {
@@ -3844,7 +3819,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "荣格"
   },
   "เจ้าชาย": {
-    "phonetic": "cheaa chhaay",
+    "phonetic": "cheaa-chhaay",
     "meaning": "王子"
   },
   "คิว": {
@@ -3852,7 +3827,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "队列"
   },
   "ออกไปซะ": {
-    "phonetic": "ook pi sa",
+    "phonetic": "ook-pi-sa",
     "meaning": "出去"
   },
   "ฮัน": {
@@ -3860,7 +3835,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "韩"
   },
   "โอ้ไม่": {
-    "phonetic": "oo mi",
+    "phonetic": "oo-mi",
     "meaning": "哦不"
   },
   "โซฟี": {
@@ -3884,15 +3859,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "啊"
   },
   "มนุษย์": {
-    "phonetic": "mnusʹy",
+    "phonetic": "ma-nut",
     "meaning": "人类"
   },
   "น้องสาว": {
-    "phonetic": "nong saaw",
+    "phonetic": "nong-saaw",
     "meaning": "妹妹"
   },
   "ทราวิส": {
-    "phonetic": "thraa wis",
+    "phonetic": "thraa-wis",
     "meaning": "特拉维斯"
   },
   "รอบ": {
@@ -3904,39 +3879,39 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "唔"
   },
   "สวย": {
-    "phonetic": "swy",
+    "phonetic": "suay",
     "meaning": "美丽的"
   },
   "และคุณ": {
-    "phonetic": "læa khun",
+    "phonetic": "laea-khun",
     "meaning": "你呢"
   },
   "งี่เง่า": {
-    "phonetic": "ngii ngeaa",
+    "phonetic": "ngii-ngeaa",
     "meaning": "愚蠢的"
   },
   "ชั้นรู้": {
-    "phonetic": "chhan ruu",
+    "phonetic": "chhan-ruu",
     "meaning": "我知道"
   },
   "มาใน": {
-    "phonetic": "maanı",
+    "phonetic": "maanai",
     "meaning": "进来吧"
   },
   "เอลลี่": {
-    "phonetic": "oe l lii",
+    "phonetic": "oe-l-lii",
     "meaning": "艾莉"
   },
   "เวรเอ๊ย": {
-    "phonetic": "wer oei",
+    "phonetic": "wer-oei",
     "meaning": "拉屎"
   },
   "เชิญค่ะ": {
-    "phonetic": "chheia kha",
+    "phonetic": "chheia-kha",
     "meaning": "请来"
   },
   "จำไว้": {
-    "phonetic": "cha wi",
+    "phonetic": "cha-wi",
     "meaning": "记住"
   },
   "ทำงาน": {
@@ -3944,11 +3919,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "工作"
   },
   "คำว่า": {
-    "phonetic": "kha waa",
+    "phonetic": "kha-waa",
     "meaning": "这个词"
   },
   "จุนพโย": {
-    "phonetic": "chu nph yo",
+    "phonetic": "chu-nph-yo",
     "meaning": "杓俊"
   },
   "ฮุน": {
@@ -3960,15 +3935,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "卢卡斯"
   },
   "คะแนน": {
-    "phonetic": "khanæn",
+    "phonetic": "khanaen",
     "meaning": "分数"
   },
   "บ๊ายบาย": {
-    "phonetic": "baay baay",
+    "phonetic": "baay-baay",
     "meaning": "再见"
   },
   "อย่าเลย": {
-    "phonetic": "oyaa lei",
+    "phonetic": "oyaa-lei",
     "meaning": "不"
   },
   "ปืน": {
@@ -3976,7 +3951,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "枪"
   },
   "ใบ": {
-    "phonetic": "bı",
+    "phonetic": "bai",
     "meaning": "树叶"
   },
   "ลอเรล": {
@@ -3984,7 +3959,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "劳雷尔"
   },
   "ก็เลย": {
-    "phonetic": "k lei",
+    "phonetic": "k-lei",
     "meaning": "所以"
   },
   "อืมมมม": {
@@ -3992,7 +3967,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嗯嗯"
   },
   "แน่สิ": {
-    "phonetic": "næ si",
+    "phonetic": "nae-si",
     "meaning": "确实"
   },
   "ผิด": {
@@ -4004,7 +3979,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哦"
   },
   "ตอนแรก": {
-    "phonetic": "ton ræk",
+    "phonetic": "ton-raek",
     "meaning": "第一集"
   },
   "วู": {
@@ -4012,39 +3987,39 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "呜"
   },
   "เชื่อสิ": {
-    "phonetic": "chheueo si",
+    "phonetic": "chhueao-si",
     "meaning": "相信它"
   },
   "โซเฟีย": {
-    "phonetic": "sofeiia",
+    "phonetic": "sofeia",
     "meaning": "索菲亚"
   },
   "ทำไมคะ": {
-    "phonetic": "thami kha",
+    "phonetic": "thami-kha",
     "meaning": "为什么"
   },
   "หนีไป": {
-    "phonetic": "nii pi",
+    "phonetic": "nii-pi",
     "meaning": "逃跑"
   },
   "ไอ้เวร": {
-    "phonetic": "oi wer",
+    "phonetic": "oi-wer",
     "meaning": "混蛋"
   },
   "มอลลี่": {
-    "phonetic": "mo l lii",
+    "phonetic": "mo-l-lii",
     "meaning": "莫莉"
   },
   "เชลด้อน": {
-    "phonetic": "chhe ldon",
+    "phonetic": "chhe-ldon",
     "meaning": "谢尔顿"
   },
   "คุณป้า": {
-    "phonetic": "khun paa",
+    "phonetic": "khun-paa",
     "meaning": "阿姨"
   },
   "นอร่า": {
-    "phonetic": "no raa",
+    "phonetic": "no-raa",
     "meaning": "诺拉"
   },
   "ซิด": {
@@ -4068,19 +4043,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "阿姨"
   },
   "เลือด": {
-    "phonetic": "leueod",
+    "phonetic": "lueaod",
     "meaning": "血"
   },
   "แคสเซิล": {
-    "phonetic": "khæ s seil",
+    "phonetic": "khae-s-seil",
     "meaning": "城堡"
   },
   "คนเดียว": {
-    "phonetic": "khn deiiaw",
+    "phonetic": "khn-diao",
     "meaning": "独自的"
   },
   "เฮเลน": {
-    "phonetic": "he len",
+    "phonetic": "he-len",
     "meaning": "海伦"
   },
   "ริว": {
@@ -4088,7 +4063,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "隆"
   },
   "โบรดี้": {
-    "phonetic": "bo rdii",
+    "phonetic": "bo-rdii",
     "meaning": "布罗迪"
   },
   "ยูริ": {
@@ -4096,19 +4071,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "尤里"
   },
   "พูดว่า": {
-    "phonetic": "phuud waa",
+    "phonetic": "phuud-waa",
     "meaning": "说"
   },
   "แล้วนะ": {
-    "phonetic": "læw na",
+    "phonetic": "laew-na",
     "meaning": "已经"
   },
   "สู้ๆ": {
-    "phonetic": "suu«",
+    "phonetic": "suu-suu",
     "meaning": "斗争"
   },
   "ไร้สาระ": {
-    "phonetic": "ri saara",
+    "phonetic": "ri-saara",
     "meaning": "废话"
   },
   "เจ็บ": {
@@ -4116,23 +4091,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "好痛"
   },
   "จนท": {
-    "phonetic": "chnth",
+    "phonetic": "jaaw-naaw-thaaw",
     "meaning": "军官"
   },
   "ไปเหอะ": {
-    "phonetic": "pi eoa",
+    "phonetic": "pi-eoa",
     "meaning": "我们走吧"
   },
   "ลินดา": {
-    "phonetic": "lin daa",
+    "phonetic": "lin-daa",
     "meaning": "琳达"
   },
   "เคนซี่": {
-    "phonetic": "khen sii",
+    "phonetic": "khen-sii",
     "meaning": "肯西"
   },
   "ไอ้เลว": {
-    "phonetic": "oi lew",
+    "phonetic": "oi-lew",
     "meaning": "混蛋"
   },
   "สาว": {
@@ -4152,11 +4127,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "先生"
   },
   "พวกนั้น": {
-    "phonetic": "phwk nan",
+    "phonetic": "phwk-nan",
     "meaning": "那些"
   },
   "แจ็คสัน": {
-    "phonetic": "chækh san",
+    "phonetic": "chaekh-san",
     "meaning": "杰克逊"
   },
   "ไว้": {
@@ -4164,11 +4139,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "保留它"
   },
   "จัสติน": {
-    "phonetic": "chas tin",
+    "phonetic": "chas-tin",
     "meaning": "贾斯汀"
   },
   "แม้ว่า": {
-    "phonetic": "mæwaa",
+    "phonetic": "maewaa",
     "meaning": "虽然"
   },
   "อัน": {
@@ -4192,15 +4167,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "女王"
   },
   "เจมี่": {
-    "phonetic": "che mii",
+    "phonetic": "che-mii",
     "meaning": "杰米"
   },
   "หายไป": {
-    "phonetic": "aay pi",
+    "phonetic": "aay-pi",
     "meaning": "消失了"
   },
   "พี่ค่ะ": {
-    "phonetic": "phii kha",
+    "phonetic": "phii-kha",
     "meaning": "兄弟"
   },
   "ไคล์": {
@@ -4208,7 +4183,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "凯尔"
   },
   "รู้สิ": {
-    "phonetic": "ruu si",
+    "phonetic": "ruu-si",
     "meaning": "你知道"
   },
   "ชีวิต": {
@@ -4216,11 +4191,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "生活"
   },
   "ไม่ละ": {
-    "phonetic": "mi la",
+    "phonetic": "mi-la",
     "meaning": "不"
   },
   "คนต่อไป": {
-    "phonetic": "khn to pi",
+    "phonetic": "khn-to-pi",
     "meaning": "下一个人"
   },
   "เจ็ด": {
@@ -4228,15 +4203,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "七"
   },
   "ทุกท่าน": {
-    "phonetic": "thuk thaan",
+    "phonetic": "thuk-thaan",
     "meaning": "每个人"
   },
   "โจนาธาน": {
-    "phonetic": "cho naa thaan",
+    "phonetic": "cho-naa-thaan",
     "meaning": "乔纳森"
   },
   "ควินน์": {
-    "phonetic": "kh win n",
+    "phonetic": "kh-win-n",
     "meaning": "奎因"
   },
   "ชอย": {
@@ -4248,11 +4223,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "经过"
   },
   "แหงล่ะ": {
-    "phonetic": "æng la",
+    "phonetic": "aeng-la",
     "meaning": "当然"
   },
   "เจเรมี่": {
-    "phonetic": "che re mii",
+    "phonetic": "che-re-mii",
     "meaning": "杰里米"
   },
   "สก๊อต": {
@@ -4260,11 +4235,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "苏格兰人"
   },
   "ในอีก": {
-    "phonetic": "nı oiik",
+    "phonetic": "nai-oiik",
     "meaning": "在另一个"
   },
   "เซเรน่า": {
-    "phonetic": "se re naa",
+    "phonetic": "se-re-naa",
     "meaning": "瑟琳娜"
   },
   "ลงไป": {
@@ -4280,7 +4255,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "戴安娜"
   },
   "คาร่า": {
-    "phonetic": "khaa raa",
+    "phonetic": "khaa-raa",
     "meaning": "卡拉"
   },
   "ตลอด": {
@@ -4292,27 +4267,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "阿蒂"
   },
   "พรรคพวก": {
-    "phonetic": "phrrkh phwk",
+    "phonetic": "phak-phuak",
     "meaning": "盟国"
   },
   "เปล่าๆ": {
-    "phonetic": "pelaa«",
+    "phonetic": "bplao-bplao",
     "meaning": "不"
   },
   "วิลลี่": {
-    "phonetic": "wi l lii",
+    "phonetic": "wi-l-lii",
     "meaning": "威利"
   },
   "ยังไงซะ": {
-    "phonetic": "yang ngi sa",
+    "phonetic": "yang-ngi-sa",
     "meaning": "反正"
   },
   "แบร์รี่": {
-    "phonetic": "bær rii",
+    "phonetic": "baer-rii",
     "meaning": "巴里"
   },
   "ด้วยกัน": {
-    "phonetic": "dwy kan",
+    "phonetic": "dwy-kan",
     "meaning": "一起"
   },
   "จูน": {
@@ -4328,15 +4303,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "沃"
   },
   "นี่นาย": {
-    "phonetic": "nii naay",
+    "phonetic": "nii-naay",
     "meaning": "这就是你"
   },
   "เชียร์": {
-    "phonetic": "chheiiar",
+    "phonetic": "chheiar",
     "meaning": "欢呼"
   },
   "ไม่ไม่": {
-    "phonetic": "mi mi",
+    "phonetic": "mi-mi",
     "meaning": "不不"
   },
   "พอที": {
@@ -4344,7 +4319,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "足够的"
   },
   "สวยมาก": {
-    "phonetic": "swy maak",
+    "phonetic": "swy-maak",
     "meaning": "很漂亮"
   },
   "เอง": {
@@ -4352,19 +4327,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "我"
   },
   "ช้าก่อน": {
-    "phonetic": "chhaa kon",
+    "phonetic": "chhaa-kon",
     "meaning": "先慢点"
   },
   "คนสวย": {
-    "phonetic": "khn swy",
+    "phonetic": "khon-suay",
     "meaning": "美丽的人"
   },
   "โทษครับ": {
-    "phonetic": "thosʹ khrab",
+    "phonetic": "thot-khrab",
     "meaning": "对不起"
   },
   "ว้าวว": {
-    "phonetic": "waa ww",
+    "phonetic": "waa-ww",
     "meaning": "哇"
   },
   "โด": {
@@ -4372,15 +4347,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "做"
   },
   "ลง": {
-    "phonetic": "lng",
+    "phonetic": "long",
     "meaning": "向下"
   },
   "แบบนั้น": {
-    "phonetic": "b��b nan",
+    "phonetic": "baep-nan",
     "meaning": "就这样"
   },
   "แครอล": {
-    "phonetic": "khæ rol",
+    "phonetic": "khae-rol",
     "meaning": "颂歌"
   },
   "ปัง": {
@@ -4388,15 +4363,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "砰"
   },
   "ดีกว่า": {
-    "phonetic": "dii kwaa",
+    "phonetic": "dii-kwaa",
     "meaning": "更好的"
   },
   "ยอดเลย": {
-    "phonetic": "yod lei",
+    "phonetic": "yod-lei",
     "meaning": "出色的"
   },
   "นิกิต้า": {
-    "phonetic": "ni kitaa",
+    "phonetic": "ni-kitaa",
     "meaning": "尼基塔"
   },
   "เมย์": {
@@ -4404,15 +4379,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "可能"
   },
   "ใช่ไม๊": {
-    "phonetic": "chhı mi",
+    "phonetic": "chhai-mi",
     "meaning": "是这样吗"
   },
   "หายใจ": {
-    "phonetic": "aaychı",
+    "phonetic": "aaychai",
     "meaning": "呼吸"
   },
   "รอด้วย": {
-    "phonetic": "ro dwy",
+    "phonetic": "ro-dwy",
     "meaning": "请稍等"
   },
   "เ่อ่อ": {
@@ -4420,15 +4395,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嗯嗯"
   },
   "บอกฉัน": {
-    "phonetic": "bok chhan",
+    "phonetic": "bok-chhan",
     "meaning": "告诉我"
   },
   "จับมัน": {
-    "phonetic": "chab man",
+    "phonetic": "chab-man",
     "meaning": "抓住它"
   },
   "งั้นรึ": {
-    "phonetic": "ngan rue",
+    "phonetic": "ngan-rue",
     "meaning": "所以"
   },
   "ลู": {
@@ -4448,7 +4423,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "向上"
   },
   "มาร์ตี้": {
-    "phonetic": "maar tii",
+    "phonetic": "maar-tii",
     "meaning": "马蒂"
   },
   "ยุน": {
@@ -4456,19 +4431,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "尹"
   },
   "นี่ๆ": {
-    "phonetic": "nii«",
+    "phonetic": "nii-nii",
     "meaning": "这里"
   },
   "ทำได้ดี": {
-    "phonetic": "thadi dii",
+    "phonetic": "thadi-dii",
     "meaning": "干得好"
   },
   "โมงเช้า": {
-    "phonetic": "mong chheaa",
+    "phonetic": "mong-chheaa",
     "meaning": "早晨"
   },
   "หลวงพ่อ": {
-    "phonetic": "lwng pho",
+    "phonetic": "lwng-pho",
     "meaning": "父亲"
   },
   "จอน": {
@@ -4480,11 +4455,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哦"
   },
   "เออใช่": {
-    "phonetic": "oeo chhı",
+    "phonetic": "oeo-chhai",
     "meaning": "哦是的"
   },
   "หวังว่า": {
-    "phonetic": "wang waa",
+    "phonetic": "wang-waa",
     "meaning": "希望"
   },
   "งาน": {
@@ -4496,7 +4471,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "杰伊"
   },
   "กับคุณ": {
-    "phonetic": "kab khun",
+    "phonetic": "kab-khun",
     "meaning": "与你"
   },
   "อ่าา": {
@@ -4516,7 +4491,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "路易斯"
   },
   "ท่านพี่": {
-    "phonetic": "thaan phii",
+    "phonetic": "thaan-phii",
     "meaning": "兄弟"
   },
   "ฆ่า": {
@@ -4528,7 +4503,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "页"
   },
   "ทุกวัน": {
-    "phonetic": "thuk wan",
+    "phonetic": "thuk-wan",
     "meaning": "每天"
   },
   "ระยำ": {
@@ -4540,7 +4515,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "在"
   },
   "หนีเร็ว": {
-    "phonetic": "nii rew",
+    "phonetic": "nii-rew",
     "meaning": "奔驰"
   },
   "ย้าย": {
@@ -4548,11 +4523,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "移动"
   },
   "นาธาน": {
-    "phonetic": "naa thaan",
+    "phonetic": "naa-thaan",
     "meaning": "内森"
   },
   "ต่างหาก": {
-    "phonetic": "taang aak",
+    "phonetic": "taang-aak",
     "meaning": "分别地"
   },
   "เจเจ": {
@@ -4564,7 +4539,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "我们走吧"
   },
   "ของผม": {
-    "phonetic": "khong phm",
+    "phonetic": "khong-phm",
     "meaning": "这是我的"
   },
   "นัด": {
@@ -4572,7 +4547,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "预约"
   },
   "คาเรน": {
-    "phonetic": "khaa ren",
+    "phonetic": "khaa-ren",
     "meaning": "凯伦"
   },
   "คัท": {
@@ -4580,19 +4555,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "切"
   },
   "จูลี่": {
-    "phonetic": "chuu lii",
+    "phonetic": "chuu-lii",
     "meaning": "朱莉"
   },
   "ไซมอน": {
-    "phonetic": "si mon",
+    "phonetic": "si-mon",
     "meaning": "西蒙"
   },
   "ไม่น่ะ": {
-    "phonetic": "mi na",
+    "phonetic": "mi-na",
     "meaning": "不"
   },
   "ฟังสิ": {
-    "phonetic": "fang si",
+    "phonetic": "fang-si",
     "meaning": "听着"
   },
   "โฮ่": {
@@ -4616,19 +4591,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "或者"
   },
   "แอน": {
-    "phonetic": "oæn",
+    "phonetic": "oaen",
     "meaning": "安"
   },
   "ดีมั้ย": {
-    "phonetic": "dii may",
+    "phonetic": "dii-may",
     "meaning": "好不好"
   },
   "โซอี้": {
-    "phonetic": "so oii",
+    "phonetic": "so-oii",
     "meaning": "佐伊"
   },
   "เดมอน": {
-    "phonetic": "de mon",
+    "phonetic": "de-mon",
     "meaning": "达蒙"
   },
   "ฮืมม": {
@@ -4636,11 +4611,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "唔"
   },
   "มานี่ซิ": {
-    "phonetic": "maa nii si",
+    "phonetic": "maa-nii-si",
     "meaning": "过来吧"
   },
   "เนี่ย": {
-    "phonetic": "neiia",
+    "phonetic": "neia",
     "meaning": "这"
   },
   "ถอย": {
@@ -4648,7 +4623,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "撤退"
   },
   "ลองดูสิ": {
-    "phonetic": "long duu si",
+    "phonetic": "long-duu-si",
     "meaning": "尝试一下"
   },
   "อาเมน": {
@@ -4656,7 +4631,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "阿门"
   },
   "ให้ฉัน": {
-    "phonetic": "ı chhan",
+    "phonetic": "ai-chhan",
     "meaning": "把它给我"
   },
   "ยา": {
@@ -4668,15 +4643,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嘿"
   },
   "ฟังก่อน": {
-    "phonetic": "fang kon",
+    "phonetic": "fang-kon",
     "meaning": "先听听"
   },
   "ถนน": {
-    "phonetic": "thnn",
+    "phonetic": "tha-non",
     "meaning": "路"
   },
   "แย่จริง": {
-    "phonetic": "yæ chring",
+    "phonetic": "yae-chring",
     "meaning": "真的很糟糕"
   },
   "ะฐั": {
@@ -4692,11 +4667,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "不"
   },
   "นิโคลัส": {
-    "phonetic": "ni khola s",
+    "phonetic": "ni-khola-s",
     "meaning": "尼古拉斯"
   },
   "ไม่เลว": {
-    "phonetic": "mi lew",
+    "phonetic": "mi-lew",
     "meaning": "不错"
   },
   "ซึ่ง": {
@@ -4708,15 +4683,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "曾经"
   },
   "คูเปอร์": {
-    "phonetic": "khuu peor",
+    "phonetic": "khuu-peor",
     "meaning": "库珀"
   },
   "เทรซี่": {
-    "phonetic": "ther sii",
+    "phonetic": "ther-sii",
     "meaning": "特雷西"
   },
   "เนี่ยนะ": {
-    "phonetic": "neiia na",
+    "phonetic": "neia-na",
     "meaning": "就是这样"
   },
   "ระเบิด": {
@@ -4732,11 +4707,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "唔"
   },
   "อะไรคือ": {
-    "phonetic": "oari khueo",
+    "phonetic": "oari-khueo",
     "meaning": "什么是"
   },
   "หนูน้อย": {
-    "phonetic": "nuu noy",
+    "phonetic": "nuu-noy",
     "meaning": "小一个"
   },
   "อู": {
@@ -4744,31 +4719,31 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哦"
   },
   "นายหญิง": {
-    "phonetic": "naay ying",
+    "phonetic": "naay-ying",
     "meaning": "情妇"
   },
   "คุณยาย": {
-    "phonetic": "khun yaay",
+    "phonetic": "khun-yaay",
     "meaning": "奶奶"
   },
   "ทีน่า": {
-    "phonetic": "thii naa",
+    "phonetic": "thii-naa",
     "meaning": "蒂娜"
   },
   "ช่วย": {
-    "phonetic": "chhwy",
+    "phonetic": "chuay",
     "meaning": "帮助"
   },
   "ขึ้นรถ": {
-    "phonetic": "khuen rth",
+    "phonetic": "khuen-rth",
     "meaning": "上车吧"
   },
   "ริต้า": {
-    "phonetic": "ri taa",
+    "phonetic": "ri-taa",
     "meaning": "丽塔"
   },
   "ไฟไหม้": {
-    "phonetic": "fi im",
+    "phonetic": "fi-im",
     "meaning": "火"
   },
   "ฌอน": {
@@ -4776,7 +4751,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "肖恩"
   },
   "เอลเลน": {
-    "phonetic": "oel len",
+    "phonetic": "oel-len",
     "meaning": "艾伦"
   },
   "ฮ่ะ": {
@@ -4788,7 +4763,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哭了"
   },
   "เบ็ตตี้": {
-    "phonetic": "bet tii",
+    "phonetic": "bet-tii",
     "meaning": "贝蒂"
   },
   "อาหาร": {
@@ -4796,19 +4771,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "食物"
   },
   "แกบบี้": {
-    "phonetic": "kæb bii",
+    "phonetic": "kaeb-bii",
     "meaning": "爱嘉比"
   },
   "แคท": {
-    "phonetic": "khæth",
+    "phonetic": "khaeth",
     "meaning": "吉"
   },
   "กาแฟ": {
-    "phonetic": "kaafæ",
+    "phonetic": "kaafae",
     "meaning": "咖啡"
   },
   "แน่": {
-    "phonetic": "næ",
+    "phonetic": "nae",
     "meaning": "确实"
   },
   "ชู่ว์": {
@@ -4824,19 +4799,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "逃脱"
   },
   "แบรด": {
-    "phonetic": "bærd",
+    "phonetic": "baerd",
     "meaning": "布拉德"
   },
   "โลแกน": {
-    "phonetic": "lo kæn",
+    "phonetic": "lo-kaen",
     "meaning": "洛根"
   },
   "วันนั้น": {
-    "phonetic": "wan nan",
+    "phonetic": "wan-nan",
     "meaning": "当天"
   },
   "ทางนั้น": {
-    "phonetic": "thaang nan",
+    "phonetic": "thaang-nan",
     "meaning": "那样"
   },
   "ซุก": {
@@ -4844,19 +4819,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "藏起来了"
   },
   "โคดี้": {
-    "phonetic": "kho dii",
+    "phonetic": "kho-dii",
     "meaning": "科迪"
   },
   "พ่อรู้": {
-    "phonetic": "pho ruu",
+    "phonetic": "pho-ruu",
     "meaning": "爸爸知道"
   },
   "เชื่อผม": {
-    "phonetic": "chheueo phm",
+    "phonetic": "chhueao-phm",
     "meaning": "相信我"
   },
   "เรียก": {
-    "phonetic": "reiiak",
+    "phonetic": "reiak",
     "meaning": "称呼"
   },
   "อ้ะ": {
@@ -4864,7 +4839,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "啊"
   },
   "แต่นี่": {
-    "phonetic": "tæ nii",
+    "phonetic": "tae-nii",
     "meaning": "但是这个"
   },
   "เห้": {
@@ -4872,15 +4847,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嘿"
   },
   "องค์ชาย": {
-    "phonetic": "ongkh chhaay",
+    "phonetic": "ongkh-chhaay",
     "meaning": "王子"
   },
   "คนนั้น": {
-    "phonetic": "khn nan",
+    "phonetic": "khn-nan",
     "meaning": "那个人"
   },
   "คิดดูสิ": {
-    "phonetic": "khid duu si",
+    "phonetic": "khid-duu-si",
     "meaning": "想一想"
   },
   "เอ้ย": {
@@ -4892,11 +4867,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "好的"
   },
   "แอล": {
-    "phonetic": "oæl",
+    "phonetic": "oael",
     "meaning": "L"
   },
   "ไงจ๊ะ": {
-    "phonetic": "ngi cha",
+    "phonetic": "ngi-cha",
     "meaning": "怎么了"
   },
   "ฆาตกร": {
@@ -4904,19 +4879,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "凶手"
   },
   "ตกลงค่ะ": {
-    "phonetic": "tklng kha",
+    "phonetic": "tklng-kha",
     "meaning": "好的"
   },
   "ตายล่ะ": {
-    "phonetic": "taay la",
+    "phonetic": "taay-la",
     "meaning": "我死了"
   },
   "คืองี้": {
-    "phonetic": "khueo ngii",
+    "phonetic": "khueo-ngii",
     "meaning": "是这样的"
   },
   "แม่เจ้า": {
-    "phonetic": "mæ cheaa",
+    "phonetic": "mae-cheaa",
     "meaning": "我的天啊"
   },
   "หะ": {
@@ -4928,7 +4903,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "城市"
   },
   "แจ": {
-    "phonetic": "chæ",
+    "phonetic": "chae",
     "meaning": "杰"
   },
   "ชู่": {
@@ -4940,19 +4915,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "放"
   },
   "เคซี่": {
-    "phonetic": "khe sii",
+    "phonetic": "khe-sii",
     "meaning": "凯西"
   },
   "ใช": {
-    "phonetic": "chhı",
+    "phonetic": "chhai",
     "meaning": "是的"
   },
   "แกรี่": {
-    "phonetic": "kæ rii",
+    "phonetic": "kae-rii",
     "meaning": "加里"
   },
   "จะไปไหน": {
-    "phonetic": "cha pi in",
+    "phonetic": "cha-pi-in",
     "meaning": "你要去哪里"
   },
   "ปีศาจ": {
@@ -4960,27 +4935,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "魔鬼"
   },
   "ฉลาดมาก": {
-    "phonetic": "chhlaad maak",
+    "phonetic": "chhlaad-maak",
     "meaning": "非常聪明"
   },
   "เจอรี่": {
-    "phonetic": "cheo rii",
+    "phonetic": "cheo-rii",
     "meaning": "杰瑞"
   },
   "รถ": {
-    "phonetic": "rth",
+    "phonetic": "rot",
     "meaning": "车"
   },
   "เมสัน": {
-    "phonetic": "me san",
+    "phonetic": "me-san",
     "meaning": "石匠"
   },
   "เงียบนะ": {
-    "phonetic": "ngeiiab na",
+    "phonetic": "ngiap-na",
     "meaning": "安静"
   },
   "แหวะ": {
-    "phonetic": "æwa",
+    "phonetic": "aewa",
     "meaning": "哈哈"
   },
   "ชาร์ลส์": {
@@ -4988,7 +4963,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "查尔斯"
   },
   "ที่นี้": {
-    "phonetic": "thii nii",
+    "phonetic": "thii-nii",
     "meaning": "这里"
   },
   "จาง": {
@@ -4996,7 +4971,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "褪色了"
   },
   "ใช่มะ": {
-    "phonetic": "chhı ma",
+    "phonetic": "chhai-ma",
     "meaning": "这是正确的"
   },
   "โถ": {
@@ -5004,7 +4979,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "罐"
   },
   "จู่ๆ": {
-    "phonetic": "chuu«",
+    "phonetic": "chuu-chuu",
     "meaning": "突然"
   },
   "เอ้": {
@@ -5012,15 +4987,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "呃"
   },
   "ซวยแล้ว": {
-    "phonetic": "swy læw",
+    "phonetic": "swy-laew",
     "meaning": "已经很倒霉了"
   },
   "เจฟฟรี่": {
-    "phonetic": "chef frii",
+    "phonetic": "chef-frii",
     "meaning": "杰弗里"
   },
   "แมกซ์": {
-    "phonetic": "mæk s",
+    "phonetic": "maek-s",
     "meaning": "最大限度"
   },
   "ลอเรน": {
@@ -5032,19 +5007,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "德布"
   },
   "คนนี้": {
-    "phonetic": "khn nii",
+    "phonetic": "khn-nii",
     "meaning": "这个人"
   },
   "ไอ้น้อง": {
-    "phonetic": "oi nong",
+    "phonetic": "oi-nong",
     "meaning": "小兄弟"
   },
   "แท": {
-    "phonetic": "thæ",
+    "phonetic": "thae",
     "meaning": "泰"
   },
   "เวลานี้": {
-    "phonetic": "welaa nii",
+    "phonetic": "welaa-nii",
     "meaning": "这次"
   },
   "โง่": {
@@ -5060,11 +5035,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "除了"
   },
   "แม่รู้": {
-    "phonetic": "mæ ruu",
+    "phonetic": "mae-ruu",
     "meaning": "妈妈知道"
   },
   "ไหนดูซิ": {
-    "phonetic": "in duu si",
+    "phonetic": "in-duu-si",
     "meaning": "让我们来看看"
   },
   "ตุลาคม": {
@@ -5076,7 +5051,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "铁"
   },
   "เดนนิส": {
-    "phonetic": "den nis",
+    "phonetic": "den-nis",
     "meaning": "丹尼斯"
   },
   "อ๋า": {
@@ -5088,15 +5063,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嘿"
   },
   "ไปๆ": {
-    "phonetic": "pi«",
+    "phonetic": "pi-pi",
     "meaning": "去"
   },
   "พวกมัน": {
-    "phonetic": "phwk man",
+    "phonetic": "phwk-man",
     "meaning": "他们"
   },
   "แปลกจัง": {
-    "phonetic": "pælk chang",
+    "phonetic": "paelk-chang",
     "meaning": "太奇怪了"
   },
   "ชิ": {
@@ -5104,7 +5079,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "施"
   },
   "แก๊บบี้": {
-    "phonetic": "kæb bii",
+    "phonetic": "kaeb-bii",
     "meaning": "爱嘉比"
   },
   "ลุย": {
@@ -5116,7 +5091,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "妈"
   },
   "ขณะนี้": {
-    "phonetic": "khna nii",
+    "phonetic": "khna-nii",
     "meaning": "现在"
   },
   "กว่า": {
@@ -5124,7 +5099,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "比"
   },
   "ฟังฉัน": {
-    "phonetic": "fang chhan",
+    "phonetic": "fang-chhan",
     "meaning": "听我说"
   },
   "สูง": {
@@ -5132,7 +5107,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "高的"
   },
   "ในอนาคต": {
-    "phonetic": "nı onaakht",
+    "phonetic": "nai-onaakht",
     "meaning": "将来"
   },
   "อเมริกา": {
@@ -5144,11 +5119,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "贡"
   },
   "ออร์สัน": {
-    "phonetic": "oor san",
+    "phonetic": "oor-san",
     "meaning": "奥森"
   },
   "ดีจริงๆ": {
-    "phonetic": "dii chring«",
+    "phonetic": "dii-jing-jing",
     "meaning": "真的很好"
   },
   "บอส": {
@@ -5156,27 +5131,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "老板"
   },
   "พ่อฮะ": {
-    "phonetic": "pho ha",
+    "phonetic": "pho-ha",
     "meaning": "爸爸"
   },
   "แอบบี้": {
-    "phonetic": "oæb bii",
+    "phonetic": "oaeb-bii",
     "meaning": "艾比"
   },
   "จริงอะ": {
-    "phonetic": "chring oa",
+    "phonetic": "chring-oa",
     "meaning": "真的"
   },
   "ทำไมหรอ": {
-    "phonetic": "thami ro",
+    "phonetic": "thami-ro",
     "meaning": "为什么"
   },
   "ปล่าว": {
-    "phonetic": "p laa w",
+    "phonetic": "p-laa-w",
     "meaning": "不"
   },
   "เงียบๆ": {
-    "phonetic": "ngeiiab«",
+    "phonetic": "ngiap",
     "meaning": "静静地"
   },
   "ฉลาด": {
@@ -5184,23 +5159,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "聪明的"
   },
   "ไปล่ะ": {
-    "phonetic": "pi la",
+    "phonetic": "pi-la",
     "meaning": "我们走吧"
   },
   "อดทนไว้": {
-    "phonetic": "odthn wi",
+    "phonetic": "odthn-wi",
     "meaning": "要有耐心"
   },
   "อีดงอุค": {
-    "phonetic": "oii dng oukh",
+    "phonetic": "oii-dng-oukh",
     "meaning": "李栋旭"
   },
   "จำไว้นะ": {
-    "phonetic": "cha wi na",
+    "phonetic": "cha-wi-na",
     "meaning": "记住这一点"
   },
   "ก็ได้ๆ": {
-    "phonetic": "k di«",
+    "phonetic": "k-di-di",
     "meaning": "好的"
   },
   "รอสซี่": {
@@ -5208,7 +5183,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "罗西"
   },
   "ยังหรอก": {
-    "phonetic": "yang rok",
+    "phonetic": "yang-rok",
     "meaning": "还没有"
   },
   "โธมัส": {
@@ -5216,7 +5191,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "托马斯"
   },
   "มยองฮุน": {
-    "phonetic": "m yong hun",
+    "phonetic": "m-yong-hun",
     "meaning": "明勋"
   },
   "ฮัลโล": {
@@ -5224,11 +5199,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "你好"
   },
   "แฟรงก์": {
-    "phonetic": "fæ rngk",
+    "phonetic": "fae-rngk",
     "meaning": "坦率"
   },
   "โจเซฟ": {
-    "phonetic": "cho sef",
+    "phonetic": "cho-sef",
     "meaning": "约瑟夫"
   },
   "จัง": {
@@ -5236,15 +5211,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "真的"
   },
   "แองกัส": {
-    "phonetic": "oæ ngkas",
+    "phonetic": "oae-ngkas",
     "meaning": "安格斯"
   },
   "ไดสัน": {
-    "phonetic": "di san",
+    "phonetic": "di-san",
     "meaning": "戴森"
   },
   "อะไรนี่": {
-    "phonetic": "oari nii",
+    "phonetic": "oari-nii",
     "meaning": "这是什么"
   },
   "เฮอะ": {
@@ -5252,7 +5227,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嘿"
   },
   "ศพ": {
-    "phonetic": "sph",
+    "phonetic": "sop",
     "meaning": "尸体"
   },
   "หลา": {
@@ -5264,15 +5239,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "繁荣"
   },
   "คล้าก": {
-    "phonetic": "khlaa k",
+    "phonetic": "khlaa-k",
     "meaning": "克拉克"
   },
   "อะไรอีก": {
-    "phonetic": "oari oiik",
+    "phonetic": "oari-oiik",
     "meaning": "还有什么"
   },
   "แคซซี่": {
-    "phonetic": "khæs sii",
+    "phonetic": "khaes-sii",
     "meaning": "卡西"
   },
   "สัก": {
@@ -5280,7 +5255,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "纹身"
   },
   "คนอื่นๆ": {
-    "phonetic": "khn ouen«",
+    "phonetic": "khn-ouen",
     "meaning": "别人"
   },
   "ออ": {
@@ -5288,19 +5263,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "或者"
   },
   "เนลสัน": {
-    "phonetic": "nel san",
+    "phonetic": "nel-san",
     "meaning": "纳尔逊"
   },
   "ดีแลน": {
-    "phonetic": "dii læn",
+    "phonetic": "dii-laen",
     "meaning": "迪伦"
   },
   "วิเวียน": {
-    "phonetic": "wi weiian",
+    "phonetic": "wi-weian",
     "meaning": "维维安"
   },
   "ดีไหม": {
-    "phonetic": "dii im",
+    "phonetic": "dii-im",
     "meaning": "好不好"
   },
   "โลก": {
@@ -5312,19 +5287,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "由希"
   },
   "แปลก": {
-    "phonetic": "pælk",
+    "phonetic": "paelk",
     "meaning": "奇怪的"
   },
   "หยุดมัน": {
-    "phonetic": "yud man",
+    "phonetic": "yud-man",
     "meaning": "停止吧"
   },
   "สิ่งที่": {
-    "phonetic": "sing thii",
+    "phonetic": "sing-thii",
     "meaning": "事物"
   },
   "ง่ายๆ": {
-    "phonetic": "ngaay«",
+    "phonetic": "ngaay-ngaay",
     "meaning": "简单的"
   },
   "ฮือ": {
@@ -5336,11 +5311,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "翁"
   },
   "กุญแจ": {
-    "phonetic": "kuychæ",
+    "phonetic": "kuychae",
     "meaning": "钥匙"
   },
   "และผม": {
-    "phonetic": "læa phm",
+    "phonetic": "laea-phm",
     "meaning": "还有我"
   },
   "ซิ": {
@@ -5348,15 +5323,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "斯"
   },
   "ไม่ก็": {
-    "phonetic": "mi k",
+    "phonetic": "mi-k",
     "meaning": "或不"
   },
   "ยิงเลย": {
-    "phonetic": "ying lei",
+    "phonetic": "ying-lei",
     "meaning": "现在拍摄"
   },
   "แทซอง": {
-    "phonetic": "th�� song",
+    "phonetic": "thae-song",
     "meaning": "泰成"
   },
   "กรีน": {
@@ -5372,7 +5347,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "拉"
   },
   "ทำดีมาก": {
-    "phonetic": "tha dii maak",
+    "phonetic": "tha-dii-maak",
     "meaning": "做得很好"
   },
   "ฆาตกรรม": {
@@ -5380,23 +5355,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "谋杀"
   },
   "เอเมน": {
-    "phonetic": "oe men",
+    "phonetic": "oe-men",
     "meaning": "阿门"
   },
   "สตีเฟ่น": {
-    "phonetic": "stii fen",
+    "phonetic": "stii-fen",
     "meaning": "史蒂芬"
   },
   "เอาอีก": {
-    "phonetic": "oeaa oiik",
+    "phonetic": "oeaa-oiik",
     "meaning": "让我们再做一次"
   },
   "เว้นแต่": {
-    "phonetic": "wen tæ",
+    "phonetic": "wen-tae",
     "meaning": "除了"
   },
   "แต่คุณ": {
-    "phonetic": "tæ khun",
+    "phonetic": "tae-khun",
     "meaning": "但你"
   },
   "เสมอ": {
@@ -5408,7 +5383,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "喊"
   },
   "ลินเน็ท": {
-    "phonetic": "li nneth",
+    "phonetic": "li-nneth",
     "meaning": "莱内特"
   },
   "เกวน": {
@@ -5416,7 +5391,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "格温"
   },
   "โอเว่น": {
-    "phonetic": "oo wen",
+    "phonetic": "oo-wen",
     "meaning": "欧文"
   },
   "เครน": {
@@ -5432,19 +5407,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "菲耶"
   },
   "โอ้ใช่": {
-    "phonetic": "oo chhı",
+    "phonetic": "oo-chhai",
     "meaning": "哦是的"
   },
   "ถามจริง": {
-    "phonetic": "thaam chring",
+    "phonetic": "thaam-chring",
     "meaning": "真的问"
   },
   "โรบิน": {
-    "phonetic": "ro bin",
+    "phonetic": "ro-bin",
     "meaning": "罗宾"
   },
   "ลิซซี่": {
-    "phonetic": "lis sii",
+    "phonetic": "lis-sii",
     "meaning": "丽兹"
   },
   "ยินดี": {
@@ -5452,11 +5427,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "恭喜"
   },
   "บางทีนะ": {
-    "phonetic": "baangthii na",
+    "phonetic": "baangthii-na",
     "meaning": "或许"
   },
   "อ่ะนี่": {
-    "phonetic": "oa nii",
+    "phonetic": "oa-nii",
     "meaning": "啊在这里"
   },
   "วู้ว": {
@@ -5464,7 +5439,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "呜呼"
   },
   "ลูกแม่": {
-    "phonetic": "luuk mæ",
+    "phonetic": "luuk-mae",
     "meaning": "母亲的孩子"
   },
   "บัดนี้": {
@@ -5476,11 +5451,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "微笑"
   },
   "มม": {
-    "phonetic": "mm",
+    "phonetic": "maw-maw",
     "meaning": "毫米"
   },
   "แวมไพร์": {
-    "phonetic": "wæmphir",
+    "phonetic": "waemphir",
     "meaning": "吸血鬼"
   },
   "มิส": {
@@ -5496,7 +5471,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "离开"
   },
   "โซวูจิน": {
-    "phonetic": "so wuu chin",
+    "phonetic": "so-wuu-chin",
     "meaning": "所以吴镇"
   },
   "ซาน": {
@@ -5504,23 +5479,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "桑"
   },
   "เท็ดดี้": {
-    "phonetic": "thed dii",
+    "phonetic": "thed-dii",
     "meaning": "泰迪"
   },
   "คิดสิ": {
-    "phonetic": "khid si",
+    "phonetic": "khid-si",
     "meaning": "想一想"
   },
   "มอนโร": {
-    "phonetic": "mon ro",
+    "phonetic": "mon-ro",
     "meaning": "门罗"
   },
   "นั่นน่ะ": {
-    "phonetic": "nan na",
+    "phonetic": "nan-na",
     "meaning": "就是这样"
   },
   "เดินไป": {
-    "phonetic": "dein pi",
+    "phonetic": "dein-pi",
     "meaning": "走开"
   },
   "เจฟฟ์": {
@@ -5528,7 +5503,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "杰夫"
   },
   "ได้ซิ": {
-    "phonetic": "di si",
+    "phonetic": "di-si",
     "meaning": "你可以"
   },
   "บอก": {
@@ -5536,7 +5511,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "告诉"
   },
   "เอามา": {
-    "phonetic": "oeaa maa",
+    "phonetic": "oeaa-maa",
     "meaning": "带上它"
   },
   "คิง": {
@@ -5544,11 +5519,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "国王"
   },
   "เกรย์": {
-    "phonetic": "ke ry",
+    "phonetic": "ke-ry",
     "meaning": "灰色的"
   },
   "ดันแฮม": {
-    "phonetic": "dan hæm",
+    "phonetic": "dan-haem",
     "meaning": "邓纳姆"
   },
   "ประตู": {
@@ -5568,11 +5543,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "贝丝"
   },
   "ฟิลลิป": {
-    "phonetic": "fil lip",
+    "phonetic": "fil-lip",
     "meaning": "菲利普"
   },
   "ที่ดี": {
-    "phonetic": "thii dii",
+    "phonetic": "thii-dii",
     "meaning": "那挺好的"
   },
   "เล็ก": {
@@ -5584,7 +5559,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "前夕"
   },
   "คนที่": {
-    "phonetic": "khn thii",
+    "phonetic": "khn-thii",
     "meaning": "那个人"
   },
   "รุกะ": {
@@ -5592,7 +5567,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "鲁卡"
   },
   "อือฮึ": {
-    "phonetic": "oueo hue",
+    "phonetic": "oueo-hue",
     "meaning": "啊"
   },
   "มั้ง": {
@@ -5600,15 +5575,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "或许"
   },
   "แอนด์": {
-    "phonetic": "oænd",
+    "phonetic": "oaend",
     "meaning": "和"
   },
   "ขอโทษคะ": {
-    "phonetic": "khothosʹ kha",
+    "phonetic": "kho-thot-kha",
     "meaning": "对不起"
   },
   "น้อยๆ": {
-    "phonetic": "noy«",
+    "phonetic": "noy-noy",
     "meaning": "一点"
   },
   "ชัวร์": {
@@ -5624,7 +5599,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "查"
   },
   "แย่มาก": {
-    "phonetic": "yæ maak",
+    "phonetic": "yae-maak",
     "meaning": "非常糟糕"
   },
   "กิโล": {
@@ -5632,19 +5607,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "公斤"
   },
   "อ๋อเหรอ": {
-    "phonetic": "oo e ro",
+    "phonetic": "oo-e-ro",
     "meaning": "哦对吧"
   },
   "ลาน่า": {
-    "phonetic": "laa naa",
+    "phonetic": "laa-naa",
     "meaning": "拉娜"
   },
   "วิลสัน": {
-    "phonetic": "wi l san",
+    "phonetic": "wi-l-san",
     "meaning": "威尔逊"
   },
   "โจอี้": {
-    "phonetic": "cho oii",
+    "phonetic": "cho-oii",
     "meaning": "乔伊"
   },
   "เบลค": {
@@ -5652,31 +5627,31 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "布莱克"
   },
   "โมงเย็น": {
-    "phonetic": "mong yen",
+    "phonetic": "mong-yen",
     "meaning": "下午"
   },
   "วู้ดดี้": {
-    "phonetic": "wuu d dii",
+    "phonetic": "wuu-d-dii",
     "meaning": "伍迪"
   },
   "ทั้งๆ": {
-    "phonetic": "thang«",
+    "phonetic": "thang-thang",
     "meaning": "尽管"
   },
   "นายพล": {
-    "phonetic": "naay phl",
+    "phonetic": "naay-phl",
     "meaning": "一般的"
   },
   "เจมม่า": {
-    "phonetic": "chem maa",
+    "phonetic": "chem-maa",
     "meaning": "芽"
   },
   "มิเชล": {
-    "phonetic": "mi chhel",
+    "phonetic": "mi-chhel",
     "meaning": "米歇尔"
   },
   "ฝันดีนะ": {
-    "phonetic": "fan dii na",
+    "phonetic": "fan-dii-na",
     "meaning": "甜蜜的梦"
   },
   "ชาย": {
@@ -5684,35 +5659,35 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "男性"
   },
   "คุณตา": {
-    "phonetic": "khun taa",
+    "phonetic": "khun-taa",
     "meaning": "爷爷"
   },
   "แปด": {
-    "phonetic": "pæd",
+    "phonetic": "paed",
     "meaning": "八"
   },
   "เอ่ออ": {
-    "phonetic": "oeo o",
+    "phonetic": "oeo-o",
     "meaning": "呃A"
   },
   "แมนนี่": {
-    "phonetic": "mæn nii",
+    "phonetic": "maen-nii",
     "meaning": "曼尼"
   },
   "ไรลี่ย์": {
-    "phonetic": "ri lii y",
+    "phonetic": "ri-lii-y",
     "meaning": "莱利"
   },
   "ใช่จ้ะ": {
-    "phonetic": "chhı cha",
+    "phonetic": "chhai-cha",
     "meaning": "这是正确的"
   },
   "แต่ก็": {
-    "phonetic": "tæ k",
+    "phonetic": "tae-k",
     "meaning": "但"
   },
   "แลนซ์": {
-    "phonetic": "læn s",
+    "phonetic": "laen-s",
     "meaning": "槊"
   },
   "เฮลโล": {
@@ -5720,7 +5695,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "你好"
   },
   "ปีต่อมา": {
-    "phonetic": "pii to maa",
+    "phonetic": "pii-to-maa",
     "meaning": "多年以后"
   },
   "คุณครู": {
@@ -5728,11 +5703,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "老师"
   },
   "เจ็บนะ": {
-    "phonetic": "cheb na",
+    "phonetic": "cheb-na",
     "meaning": "好痛"
   },
   "ลิเดีย": {
-    "phonetic": "li deiia",
+    "phonetic": "li-deia",
     "meaning": "莉迪亚"
   },
   "เดเร็ค": {
@@ -5740,15 +5715,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "德里克"
   },
   "ยังไงก็": {
-    "phonetic": "yang ngi k",
+    "phonetic": "yang-ngi-k",
     "meaning": "反正"
   },
   "หนูรู้": {
-    "phonetic": "nuu ruu",
+    "phonetic": "nuu-ruu",
     "meaning": "我知道"
   },
   "รอนนี่": {
-    "phonetic": "ron nii",
+    "phonetic": "ron-nii",
     "meaning": "罗尼"
   },
   "มีนาคม": {
@@ -5756,35 +5731,35 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "行进"
   },
   "มาน่า": {
-    "phonetic": "maa naa",
+    "phonetic": "maa-naa",
     "meaning": "法力"
   },
   "เอพริล": {
-    "phonetic": "oe phril",
+    "phonetic": "oe-phril",
     "meaning": "四月"
   },
   "ดูคุณสิ": {
-    "phonetic": "duu khun si",
+    "phonetic": "duu-khun-si",
     "meaning": "看看你"
   },
   "เพื่อนๆ": {
-    "phonetic": "pheueon«",
+    "phonetic": "phueaon",
     "meaning": "朋友们"
   },
   "ดีนี่": {
-    "phonetic": "dii nii",
+    "phonetic": "dii-nii",
     "meaning": "这里很好"
   },
   "แต่งงาน": {
-    "phonetic": "tængngaan",
+    "phonetic": "taengngaan",
     "meaning": "已婚"
   },
   "ขอตัวนะ": {
-    "phonetic": "khotaw na",
+    "phonetic": "khotaw-na",
     "meaning": "打扰一下"
   },
   "บอกมาสิ": {
-    "phonetic": "bok maa si",
+    "phonetic": "bok-maa-si",
     "meaning": "告诉我"
   },
   "ปกติ": {
@@ -5792,7 +5767,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "普通的"
   },
   "นีน่า": {
-    "phonetic": "nii naa",
+    "phonetic": "nii-naa",
     "meaning": "尼娜"
   },
   "สารวัตร": {
@@ -5800,43 +5775,43 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "督察"
   },
   "โธ่เอ้ย": {
-    "phonetic": "tho oe y",
+    "phonetic": "tho-oe-y",
     "meaning": "天哪"
   },
   "แนนซี่": {
-    "phonetic": "næn sii",
+    "phonetic": "naen-sii",
     "meaning": "南希"
   },
   "ตามผมมา": {
-    "phonetic": "taam phm maa",
+    "phonetic": "taam-phm-maa",
     "meaning": "跟我来"
   },
   "แต่ผม": {
-    "phonetic": "tæ phm",
+    "phonetic": "tae-phm",
     "meaning": "但我"
   },
   "จบ": {
-    "phonetic": "chb",
+    "phonetic": "chop",
     "meaning": "完成了"
   },
   "เดวิส": {
-    "phonetic": "de wis",
+    "phonetic": "de-wis",
     "meaning": "戴维斯"
   },
   "ไออิกู": {
-    "phonetic": "oi oikuu",
+    "phonetic": "oi-oikuu",
     "meaning": "爱久"
   },
   "นี่เหรอ": {
-    "phonetic": "nii e ro",
+    "phonetic": "nii-e-ro",
     "meaning": "是这个吗"
   },
   "แต่ก็นะ": {
-    "phonetic": "tæ k na",
+    "phonetic": "tae-k-na",
     "meaning": "但无论如何"
   },
   "กำลังไป": {
-    "phonetic": "kalang pi",
+    "phonetic": "kalang-pi",
     "meaning": "我要去"
   },
   "ลูกพี่": {
@@ -5844,15 +5819,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "我的儿子"
   },
   "ลอร่า": {
-    "phonetic": "l oraa",
+    "phonetic": "l-oraa",
     "meaning": "劳拉"
   },
   "ทำไงดี": {
-    "phonetic": "tha ngi dii",
+    "phonetic": "tha-ngi-dii",
     "meaning": "我应该怎么办"
   },
   "รับสิ": {
-    "phonetic": "rab si",
+    "phonetic": "rab-si",
     "meaning": "拿走吧"
   },
   "ค่า": {
@@ -5860,7 +5835,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "价值"
   },
   "ลูกพ่อ": {
-    "phonetic": "luuk pho",
+    "phonetic": "luuk-pho",
     "meaning": "父亲的儿子"
   },
   "เอฟ": {
@@ -5876,7 +5851,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "抢"
   },
   "ได้ไง": {
-    "phonetic": "di ngi",
+    "phonetic": "di-ngi",
     "meaning": "我该怎么办"
   },
   "อาา": {
@@ -5888,7 +5863,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "韦恩"
   },
   "ถึงแล้ว": {
-    "phonetic": "thueng læw",
+    "phonetic": "thueng-laew",
     "meaning": "我们到了"
   },
   "ดิ": {
@@ -5896,15 +5871,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "这"
   },
   "คนอื่น": {
-    "phonetic": "khn ouen",
+    "phonetic": "khn-ouen",
     "meaning": "别人"
   },
   "สวยจัง": {
-    "phonetic": "swy chang",
+    "phonetic": "swy-chang",
     "meaning": "如此美丽"
   },
   "ในนี้": {
-    "phonetic": "nı nii",
+    "phonetic": "nai-nii",
     "meaning": "在此"
   },
   "ว้า": {
@@ -5912,7 +5887,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哇"
   },
   "แพทริค": {
-    "phonetic": "phæ thrikh",
+    "phonetic": "phae-thrikh",
     "meaning": "帕特里克"
   },
   "ซอล": {
@@ -5920,11 +5895,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "索尔"
   },
   "และนั่น": {
-    "phonetic": "læa nan",
+    "phonetic": "laea-nan",
     "meaning": "还有那个"
   },
   "บอกแล้ว": {
-    "phonetic": "bok læw",
+    "phonetic": "bok-laew",
     "meaning": "我告诉你了"
   },
   "ครู": {
@@ -5932,11 +5907,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "老师"
   },
   "แพม": {
-    "phonetic": "phæm",
+    "phonetic": "phaem",
     "meaning": "帕姆"
   },
   "ฮ่าๆ": {
-    "phonetic": "haa«",
+    "phonetic": "haa-haa",
     "meaning": "哈哈"
   },
   "ย่า": {
@@ -5944,7 +5919,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "奶奶"
   },
   "สตีเว่น": {
-    "phonetic": "stii wen",
+    "phonetic": "stii-wen",
     "meaning": "史蒂文"
   },
   "โม": {
@@ -5960,7 +5935,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "我重复一遍"
   },
   "สเปนซ์": {
-    "phonetic": "spen s",
+    "phonetic": "spen-s",
     "meaning": "斯彭斯"
   },
   "ชิ้น": {
@@ -5968,19 +5943,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "件"
   },
   "แย่": {
-    "phonetic": "yæ",
+    "phonetic": "yae",
     "meaning": "坏的"
   },
   "ก็อาจจะ": {
-    "phonetic": "k oaach cha",
+    "phonetic": "k-oaach-cha",
     "meaning": "或许"
   },
   "ส่วน": {
-    "phonetic": "swn",
+    "phonetic": "suan",
     "meaning": "部分"
   },
   "สัญญานะ": {
-    "phonetic": "sayyaa na",
+    "phonetic": "sayyaa-na",
     "meaning": "承诺"
   },
   "เคธี่": {
@@ -5988,31 +5963,31 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "凯蒂"
   },
   "ไลล่า": {
-    "phonetic": "li laa",
+    "phonetic": "li-laa",
     "meaning": "莉拉"
   },
   "ออกไปนะ": {
-    "phonetic": "ook pi na",
+    "phonetic": "ook-pi-na",
     "meaning": "出去"
   },
   "ตลอดกาล": {
-    "phonetic": "tlod kaal",
+    "phonetic": "tlod-kaal",
     "meaning": "永远"
   },
   "ไม่อะ": {
-    "phonetic": "mi oa",
+    "phonetic": "mi-oa",
     "meaning": "不"
   },
   "ดูเขาสิ": {
-    "phonetic": "duu kheaa si",
+    "phonetic": "duu-kheaa-si",
     "meaning": "看看他"
   },
   "ผิดแล้ว": {
-    "phonetic": "phid læw",
+    "phonetic": "phid-laew",
     "meaning": "这是错误的"
   },
   "เบียร์": {
-    "phonetic": "beiiar",
+    "phonetic": "beiar",
     "meaning": "啤酒"
   },
   "เวด": {
@@ -6020,27 +5995,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "韦德"
   },
   "ไอแซค": {
-    "phonetic": "oi sækh",
+    "phonetic": "oi-saekh",
     "meaning": "艾萨克"
   },
   "อนาคิน": {
-    "phonetic": "o naakhi n",
+    "phonetic": "o-naakhi-n",
     "meaning": "阿纳金"
   },
   "รีบไป": {
-    "phonetic": "riib pi",
+    "phonetic": "riib-pi",
     "meaning": "匆忙"
   },
   "แบทแมน": {
-    "phonetic": "bæ th mæn",
+    "phonetic": "bae-th-maen",
     "meaning": "蝙蝠侠"
   },
   "ลูกๆ": {
-    "phonetic": "luuk«",
+    "phonetic": "luuk-luuk",
     "meaning": "孩子们"
   },
   "ความตาย": {
-    "phonetic": "khwaam taay",
+    "phonetic": "khwaam-taay",
     "meaning": "死亡"
   },
   "บ็อบ": {
@@ -6048,19 +6023,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "鲍勃"
   },
   "รัสเซล": {
-    "phonetic": "ras sel",
+    "phonetic": "ras-sel",
     "meaning": "拉塞尔"
   },
   "เคซี่ย์": {
-    "phonetic": "khe sii y",
+    "phonetic": "khe-sii-y",
     "meaning": "凯西"
   },
   "แดวุง": {
-    "phonetic": "dæ wung",
+    "phonetic": "dae-wung",
     "meaning": "大雄"
   },
   "อีวาน": {
-    "phonetic": "oii waan",
+    "phonetic": "oii-waan",
     "meaning": "伊万"
   },
   "ดั๊ก": {
@@ -6068,15 +6043,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "道格"
   },
   "ตามใจ": {
-    "phonetic": "taamchı",
+    "phonetic": "taamchai",
     "meaning": "如你所愿"
   },
   "แอนดรู": {
-    "phonetic": "oæn druu",
+    "phonetic": "oaen-druu",
     "meaning": "安德鲁"
   },
   "ลองดู": {
-    "phonetic": "long duu",
+    "phonetic": "long-duu",
     "meaning": "尝试一下"
   },
   "บิงโก": {
@@ -6084,15 +6059,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "宾果游戏"
   },
   "คือฉัน": {
-    "phonetic": "khueo chhan",
+    "phonetic": "khueo-chhan",
     "meaning": "这就是我"
   },
   "ชิบอน": {
-    "phonetic": "chhi bon",
+    "phonetic": "chhi-bon",
     "meaning": "西邦"
   },
   "แครี่": {
-    "phonetic": "khæ rii",
+    "phonetic": "khae-rii",
     "meaning": "凯里"
   },
   "ทริค": {
@@ -6100,7 +6075,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "诡计"
   },
   "จูดี้": {
-    "phonetic": "chuu dii",
+    "phonetic": "chuu-dii",
     "meaning": "朱迪"
   },
   "ปารีส": {
@@ -6108,7 +6083,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "巴黎"
   },
   "เหลวไหล": {
-    "phonetic": "elw il",
+    "phonetic": "elw-il",
     "meaning": "废话"
   },
   "เฮล": {
@@ -6116,7 +6091,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哈尔"
   },
   "เกร็ก": {
-    "phonetic": "ke rk",
+    "phonetic": "ke-rk",
     "meaning": "格雷格"
   },
   "ข้อความ": {
@@ -6124,11 +6099,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "信息"
   },
   "แท็กซี่": {
-    "phonetic": "thæksii",
+    "phonetic": "thaeksii",
     "meaning": "出租车"
   },
   "คอนราด": {
-    "phonetic": "khon raad",
+    "phonetic": "khon-raad",
     "meaning": "康拉德"
   },
   "เบบี้": {
@@ -6136,11 +6111,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "婴儿"
   },
   "แองจี้": {
-    "phonetic": "oæng chii",
+    "phonetic": "oaeng-chii",
     "meaning": "安吉"
   },
   "ฮารุฮิ": {
-    "phonetic": "haa ru hi",
+    "phonetic": "haa-ru-hi",
     "meaning": "春日"
   },
   "โฮ้": {
@@ -6152,15 +6127,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "呻吟"
   },
   "โดโรต้า": {
-    "phonetic": "do ro taa",
+    "phonetic": "do-ro-taa",
     "meaning": "多罗塔"
   },
   "พี่น้อง": {
-    "phonetic": "phii nong",
+    "phonetic": "phii-nong",
     "meaning": "兄弟姐妹们"
   },
   "ยัยบ้า": {
-    "phonetic": "yay baa",
+    "phonetic": "yay-baa",
     "meaning": "疯狂的女孩"
   },
   "เห": {
@@ -6176,7 +6151,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "呃"
   },
   "ลอรี่": {
-    "phonetic": "l orii",
+    "phonetic": "l-orii",
     "meaning": "劳瑞"
   },
   "กรุ๊ป": {
@@ -6188,15 +6163,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "迦勒"
   },
   "ไม่ดี": {
-    "phonetic": "mi dii",
+    "phonetic": "mi-dii",
     "meaning": "不好"
   },
   "ข้อแรก": {
-    "phonetic": "kho ræk",
+    "phonetic": "kho-raek",
     "meaning": "第一点"
   },
   "บ้าน่า": {
-    "phonetic": "baa naa",
+    "phonetic": "baa-naa",
     "meaning": "疯狂的"
   },
   "ฮาน": {
@@ -6216,11 +6191,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "匆忙"
   },
   "มองฉัน": {
-    "phonetic": "mong chhan",
+    "phonetic": "mong-chhan",
     "meaning": "看着我"
   },
   "โมน่า": {
-    "phonetic": "mo naa",
+    "phonetic": "mo-naa",
     "meaning": "莫娜"
   },
   "บา": {
@@ -6228,7 +6203,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "巴"
   },
   "แด": {
-    "phonetic": "dæ",
+    "phonetic": "dae",
     "meaning": "岱"
   },
   "กลับ": {
@@ -6244,11 +6219,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "施密特"
   },
   "เดี่ยว": {
-    "phonetic": "deiiaw",
+    "phonetic": "diao",
     "meaning": "单身的"
   },
   "ช่วยฉัน": {
-    "phonetic": "chhwy chhan",
+    "phonetic": "chhwy-chhan",
     "meaning": "帮我"
   },
   "เก้า": {
@@ -6256,7 +6231,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "九"
   },
   "เทเลอร์": {
-    "phonetic": "the leo r",
+    "phonetic": "the-leo-r",
     "meaning": "泰勒"
   },
   "ฮารุ": {
@@ -6264,7 +6239,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哈鲁"
   },
   "ทำต่อไป": {
-    "phonetic": "tha to pi",
+    "phonetic": "tha-to-pi",
     "meaning": "继续做吧"
   },
   "เบ็คก้า": {
@@ -6272,11 +6247,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "贝卡"
   },
   "ฮง": {
-    "phonetic": "hng",
+    "phonetic": "hong",
     "meaning": "洪"
   },
   "จบแล้ว": {
-    "phonetic": "chb læw",
+    "phonetic": "chb-laew",
     "meaning": "完成了"
   },
   "ราชินี": {
@@ -6284,23 +6259,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "女王"
   },
   "ไซม่อน": {
-    "phonetic": "si mon",
+    "phonetic": "si-mon",
     "meaning": "西蒙"
   },
   "เปิดสิ": {
-    "phonetic": "peid si",
+    "phonetic": "peid-si",
     "meaning": "打开它"
   },
   "วินซ์": {
-    "phonetic": "win s",
+    "phonetic": "win-s",
     "meaning": "文斯"
   },
   "สแตน": {
-    "phonetic": "stæn",
+    "phonetic": "staen",
     "meaning": "斯坦"
   },
   "เกือบ": {
-    "phonetic": "keueob",
+    "phonetic": "kueaob",
     "meaning": "几乎"
   },
   "เร็กซ์": {
@@ -6308,7 +6283,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "雷克斯"
   },
   "เรจิน่า": {
-    "phonetic": "re chi naa",
+    "phonetic": "re-chi-naa",
     "meaning": "雷吉娜"
   },
   "ชิพ": {
@@ -6316,11 +6291,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "芯片"
   },
   "แอ็กเซล": {
-    "phonetic": "oæk sel",
+    "phonetic": "oaek-sel",
     "meaning": "阿克塞尔"
   },
   "ไม่เชิง": {
-    "phonetic": "mi chheing",
+    "phonetic": "mi-chheing",
     "meaning": "并不真地"
   },
   "ไงคะ": {
@@ -6328,7 +6303,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "这是怎么回事"
   },
   "แน่ละ": {
-    "phonetic": "næ la",
+    "phonetic": "nae-la",
     "meaning": "确实"
   },
   "ได้ยิน": {
@@ -6344,7 +6319,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "坠落"
   },
   "สบายมาก": {
-    "phonetic": "sbaay maak",
+    "phonetic": "sbaay-maak",
     "meaning": "很舒服"
   },
   "โดด": {
@@ -6352,7 +6327,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "跳"
   },
   "น่าจะ": {
-    "phonetic": "naa cha",
+    "phonetic": "naa-cha",
     "meaning": "大概"
   },
   "ต้อง": {
@@ -6360,11 +6335,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "必须"
   },
   "ไงล่ะ": {
-    "phonetic": "ngi la",
+    "phonetic": "ngi-la",
     "meaning": "反正"
   },
   "ยืนขึ้น": {
-    "phonetic": "yuen khuen",
+    "phonetic": "yuen-khuen",
     "meaning": "起来"
   },
   "สตู": {
@@ -6376,7 +6351,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "做吧"
   },
   "พระเยซู": {
-    "phonetic": "phra yesuu",
+    "phonetic": "phra-yesuu",
     "meaning": "耶稣"
   },
   "รหัส": {
@@ -6388,27 +6363,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嘘"
   },
   "แอช": {
-    "phonetic": "oæchh",
+    "phonetic": "oaechh",
     "meaning": "灰"
   },
   "นาโอกิ": {
-    "phonetic": "naa ooki",
+    "phonetic": "naa-ooki",
     "meaning": "直树"
   },
   "สเตซี่": {
-    "phonetic": "s te sii",
+    "phonetic": "s-te-sii",
     "meaning": "史黛西"
   },
   "แต่มัน": {
-    "phonetic": "tæ man",
+    "phonetic": "tae-man",
     "meaning": "但它"
   },
   "นี่นะ": {
-    "phonetic": "nii na",
+    "phonetic": "nii-na",
     "meaning": "就是这样"
   },
   "นี่เป็น": {
-    "phonetic": "nii pen",
+    "phonetic": "nii-pen",
     "meaning": "这是"
   },
   "บ๊าย": {
@@ -6416,15 +6391,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "再见"
   },
   "อีกที": {
-    "phonetic": "oiik thii",
+    "phonetic": "oiik-thii",
     "meaning": "再一次"
   },
   "หยุดยิง": {
-    "phonetic": "yud ying",
+    "phonetic": "yud-ying",
     "meaning": "停止射击"
   },
   "แล้วนี่": {
-    "phonetic": "læw nii",
+    "phonetic": "laew-nii",
     "meaning": "还有这个"
   },
   "รัช": {
@@ -6432,11 +6407,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "匆忙"
   },
   "ตลกดีนะ": {
-    "phonetic": "tlk dii na",
+    "phonetic": "tlk-dii-na",
     "meaning": "那很好笑"
   },
   "แฟน": {
-    "phonetic": "fæn",
+    "phonetic": "faen",
     "meaning": "男朋友"
   },
   "เย": {
@@ -6448,7 +6423,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "爷爷"
   },
   "เคที่": {
-    "phonetic": "khe thii",
+    "phonetic": "khe-thii",
     "meaning": "凯蒂"
   },
   "จนกว่า": {
@@ -6456,7 +6431,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "直到"
   },
   "มาดูกัน": {
-    "phonetic": "maa duu kan",
+    "phonetic": "maa-duu-kan",
     "meaning": "让我们来看看"
   },
   "ช้า": {
@@ -6472,7 +6447,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "收到"
   },
   "ลอยด์": {
-    "phonetic": "loy d",
+    "phonetic": "loy-d",
     "meaning": "劳埃德"
   },
   "วี": {
@@ -6484,11 +6459,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "那个"
   },
   "พอเลย": {
-    "phonetic": "pho lei",
+    "phonetic": "pho-lei",
     "meaning": "这就够了"
   },
   "แลร์รี่": {
-    "phonetic": "lær rii",
+    "phonetic": "laer-rii",
     "meaning": "拉里"
   },
   "อาร์": {
@@ -6496,7 +6471,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "R"
   },
   "วันแล้ว": {
-    "phonetic": "wan læw",
+    "phonetic": "wan-laew",
     "meaning": "已经过去一天了"
   },
   "โอ๋": {
@@ -6504,7 +6479,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哦"
   },
   "ด่วน": {
-    "phonetic": "dwn",
+    "phonetic": "duan",
     "meaning": "紧迫的"
   },
   "ปิด": {
@@ -6516,11 +6491,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "英雄"
   },
   "เจนิส": {
-    "phonetic": "che nis",
+    "phonetic": "che-nis",
     "meaning": "贾尼斯"
   },
   "และแล้ว": {
-    "phonetic": "læa læw",
+    "phonetic": "laea-laew",
     "meaning": "进而"
   },
   "เดิน": {
@@ -6528,7 +6503,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "走"
   },
   "เทเรซ่า": {
-    "phonetic": "the re saa",
+    "phonetic": "the-re-saa",
     "meaning": "特蕾莎"
   },
   "อาห์": {
@@ -6536,11 +6511,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "啊"
   },
   "นักข่าว": {
-    "phonetic": "nak khaaw",
+    "phonetic": "nak-khaaw",
     "meaning": "记者"
   },
   "คือผม": {
-    "phonetic": "khueo phm",
+    "phonetic": "khueo-phm",
     "meaning": "这就是我"
   },
   "หลัง": {
@@ -6548,15 +6523,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "后"
   },
   "เบาๆ": {
-    "phonetic": "beaa«",
+    "phonetic": "bao-bao",
     "meaning": "轻轻地"
   },
   "ปีนี้": {
-    "phonetic": "pii nii",
+    "phonetic": "pii-nii",
     "meaning": "今年"
   },
   "ไม่ว่า": {
-    "phonetic": "mi waa",
+    "phonetic": "mi-waa",
     "meaning": "不管"
   },
   "ชะ": {
@@ -6564,11 +6539,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "查"
   },
   "ตามนั้น": {
-    "phonetic": "taam nan",
+    "phonetic": "taam-nan",
     "meaning": "据此"
   },
   "วัตสัน": {
-    "phonetic": "wat san",
+    "phonetic": "wat-san",
     "meaning": "华生"
   },
   "ปาร์ตี้": {
@@ -6588,7 +6563,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "车道"
   },
   "ฮิโร่": {
-    "phonetic": "hi ro",
+    "phonetic": "hi-ro",
     "meaning": "宏"
   },
   "ดีนะ": {
@@ -6596,11 +6571,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "好的"
   },
   "เพียง": {
-    "phonetic": "pheiiang",
+    "phonetic": "pheiang",
     "meaning": "只是"
   },
   "รีบๆ": {
-    "phonetic": "riib«",
+    "phonetic": "riip-riip",
     "meaning": "匆忙"
   },
   "เต้น": {
@@ -6608,23 +6583,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "舞蹈"
   },
   "หมวด": {
-    "phonetic": "mwd",
+    "phonetic": "muat",
     "meaning": "类别"
   },
   "ปล่อยผม": {
-    "phonetic": "ploy phm",
+    "phonetic": "ploy-phm",
     "meaning": "让我走吧"
   },
   "ชนแก้ว": {
-    "phonetic": "chhn kæw",
+    "phonetic": "chhn-kaew",
     "meaning": "为眼镜干杯"
   },
   "สตีเฟน": {
-    "phonetic": "stii fen",
+    "phonetic": "stii-fen",
     "meaning": "史蒂芬"
   },
   "จำได้": {
-    "phonetic": "cha di",
+    "phonetic": "cha-di",
     "meaning": "我记得"
   },
   "ไอกู": {
@@ -6632,15 +6607,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "伊古"
   },
   "วันนึง": {
-    "phonetic": "wan nueng",
+    "phonetic": "wan-nueng",
     "meaning": "一天"
   },
   "เบนนี่": {
-    "phonetic": "ben nii",
+    "phonetic": "ben-nii",
     "meaning": "本尼"
   },
   "เจ๋งมาก": {
-    "phonetic": "cheng maak",
+    "phonetic": "cheng-maak",
     "meaning": "非常酷"
   },
   "ลอนดอน": {
@@ -6648,47 +6623,47 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "伦敦"
   },
   "แต่แล้ว": {
-    "phonetic": "tæ læw",
+    "phonetic": "tae-laew",
     "meaning": "但然后"
   },
   "อัลเลน": {
-    "phonetic": "oal len",
+    "phonetic": "oal-len",
     "meaning": "艾伦"
   },
   "เอาเหอะ": {
-    "phonetic": "oeaa eoa",
+    "phonetic": "oeaa-eoa",
     "meaning": "快点"
   },
   "คนทรยศ": {
-    "phonetic": "khn thrys",
+    "phonetic": "khon-tha-ra-yot",
     "meaning": "叛徒"
   },
   "จริงน่ะ": {
-    "phonetic": "chring na",
+    "phonetic": "chring-na",
     "meaning": "这是真的"
   },
   "เกล็น": {
-    "phonetic": "ke ln",
+    "phonetic": "ke-ln",
     "meaning": "格伦"
   },
   "ขอล่ะ": {
-    "phonetic": "kho la",
+    "phonetic": "kho-la",
     "meaning": "请"
   },
   "คนโง่": {
-    "phonetic": "khn ngo",
+    "phonetic": "khn-ngo",
     "meaning": "傻子"
   },
   "ตอนอายุ": {
-    "phonetic": "ton oaayu",
+    "phonetic": "ton-oaayu",
     "meaning": "到了年龄"
   },
   "มาเหอะ": {
-    "phonetic": "maa eoa",
+    "phonetic": "maa-eoa",
     "meaning": "快点"
   },
   "แอนน์": {
-    "phonetic": "oæ nn",
+    "phonetic": "oae-nn",
     "meaning": "安妮"
   },
   "เอริ": {
@@ -6700,11 +6675,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "维克"
   },
   "ดูนี่ซิ": {
-    "phonetic": "duu nii si",
+    "phonetic": "duu-nii-si",
     "meaning": "看看这个"
   },
   "นังบ้า": {
-    "phonetic": "nang baa",
+    "phonetic": "nang-baa",
     "meaning": "疯狂的母狗"
   },
   "บ้าง": {
@@ -6716,19 +6691,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嗯"
   },
   "ไปที่": {
-    "phonetic": "pi thii",
+    "phonetic": "pi-thii",
     "meaning": "前往"
   },
   "ยิงมัน": {
-    "phonetic": "ying man",
+    "phonetic": "ying-man",
     "meaning": "射击它"
   },
   "แบมบี้": {
-    "phonetic": "bæm bii",
+    "phonetic": "baem-bii",
     "meaning": "小鹿斑比"
   },
   "แด่": {
-    "phonetic": "dæ",
+    "phonetic": "dae",
     "meaning": "到"
   },
   "จิล": {
@@ -6744,15 +6719,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "格姆"
   },
   "เอาละนะ": {
-    "phonetic": "oeaala na",
+    "phonetic": "oeaala-na",
     "meaning": "好的"
   },
   "แล้วคุณ": {
-    "phonetic": "læw khun",
+    "phonetic": "laew-khun",
     "meaning": "你呢"
   },
   "โคเมะ": {
-    "phonetic": "kho mea",
+    "phonetic": "kho-mea",
     "meaning": "科梅"
   },
   "ฮันท์": {
@@ -6772,15 +6747,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "萨基"
   },
   "อ้อใช่": {
-    "phonetic": "oo chhı",
+    "phonetic": "oo-chhai",
     "meaning": "哦是的"
   },
   "แบรี่": {
-    "phonetic": "bæ rii",
+    "phonetic": "bae-rii",
     "meaning": "巴里"
   },
   "แพตตี้": {
-    "phonetic": "phæ t tii",
+    "phonetic": "phae-t-tii",
     "meaning": "帕蒂"
   },
   "วอลเลซ": {
@@ -6788,7 +6763,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "华莱士"
   },
   "ร็อบบี้": {
-    "phonetic": "r ob bii",
+    "phonetic": "r-ob-bii",
     "meaning": "罗比"
   },
   "ทันที": {
@@ -6796,7 +6771,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "立即地"
   },
   "น่ากลัว": {
-    "phonetic": "naa klaw",
+    "phonetic": "naa-klaw",
     "meaning": "可怕的"
   },
   "เล่น": {
@@ -6804,7 +6779,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "玩"
   },
   "ใช่คะ": {
-    "phonetic": "chhı kha",
+    "phonetic": "chhai-kha",
     "meaning": "是的"
   },
   "ยาหยี": {
@@ -6812,15 +6787,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "怡药"
   },
   "หรือไง": {
-    "phonetic": "rueo ngi",
+    "phonetic": "rueo-ngi",
     "meaning": "或者什么"
   },
   "วิคกี้": {
-    "phonetic": "wikh kii",
+    "phonetic": "wikh-kii",
     "meaning": "维姬"
   },
   "ยูกิจัง": {
-    "phonetic": "yuu kicha ng",
+    "phonetic": "yuu-kicha-ng",
     "meaning": "佑希酱"
   },
   "หนุ่ม": {
@@ -6828,7 +6803,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "年轻人"
   },
   "ดีขึ้น": {
-    "phonetic": "dii khuen",
+    "phonetic": "dii-khuen",
     "meaning": "更好的"
   },
   "ซีซี": {
@@ -6844,23 +6819,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "腌制的"
   },
   "สิ่งนี้": {
-    "phonetic": "sing nii",
+    "phonetic": "sing-nii",
     "meaning": "这件事"
   },
   "วิเศษ": {
-    "phonetic": "wis��esʹ",
+    "phonetic": "wi-set",
     "meaning": "精彩的"
   },
   "ในช่วง": {
-    "phonetic": "nı chhwng",
+    "phonetic": "nai-chhwng",
     "meaning": "期间"
   },
   "ยังก่อน": {
-    "phonetic": "yang kon",
+    "phonetic": "yang-kon",
     "meaning": "还没有"
   },
   "นอร์แมน": {
-    "phonetic": "nor mæn",
+    "phonetic": "nor-maen",
     "meaning": "诺曼"
   },
   "หนังสือ": {
@@ -6868,11 +6843,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "图书"
   },
   "เจ้าบ้า": {
-    "phonetic": "cheaa baa",
+    "phonetic": "cheaa-baa",
     "meaning": "你这个疯狂的人"
   },
   "หรอกนะ": {
-    "phonetic": "rok na",
+    "phonetic": "rok-na",
     "meaning": "这是正确的"
   },
   "ยอน": {
@@ -6884,7 +6859,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "偷"
   },
   "อัลเฟรด": {
-    "phonetic": "oalfe rd",
+    "phonetic": "oalfe-rd",
     "meaning": "阿尔弗雷德"
   },
   "เค้า": {
@@ -6892,7 +6867,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "他"
   },
   "แต่ทำไม": {
-    "phonetic": "tæ thami",
+    "phonetic": "tae-thami",
     "meaning": "但为什么"
   },
   "ตี": {
@@ -6908,11 +6883,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "刀"
   },
   "มาจาก": {
-    "phonetic": "maa chaak",
+    "phonetic": "maa-chaak",
     "meaning": "来自"
   },
   "ตัวเอง": {
-    "phonetic": "taw oeng",
+    "phonetic": "taw-oeng",
     "meaning": "你自己"
   },
   "อื่น": {
@@ -6920,19 +6895,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "其他"
   },
   "ของนาย": {
-    "phonetic": "khong naay",
+    "phonetic": "khong-naay",
     "meaning": "你的"
   },
   "รพ": {
-    "phonetic": "rph",
+    "phonetic": "raaw-phaaw",
     "meaning": "医院"
   },
   "ชีบอน": {
-    "phonetic": "chhii bon",
+    "phonetic": "chhii-bon",
     "meaning": "西邦"
   },
   "ริโกะ": {
-    "phonetic": "ri koa",
+    "phonetic": "ri-koa",
     "meaning": "理子"
   },
   "โทร": {
@@ -6940,7 +6915,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "称呼"
   },
   "แน่ๆ": {
-    "phonetic": "næ«",
+    "phonetic": "nae",
     "meaning": "确实"
   },
   "ดัน": {
@@ -6948,19 +6923,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "推"
   },
   "ค่ะท่าน": {
-    "phonetic": "kha thaan",
+    "phonetic": "kha-thaan",
     "meaning": "是的先生"
   },
   "อลิสัน": {
-    "phonetic": "o li san",
+    "phonetic": "o-li-san",
     "meaning": "艾莉森"
   },
   "ดีๆ": {
-    "phonetic": "dii«",
+    "phonetic": "dii",
     "meaning": "好的"
   },
   "กำลังมา": {
-    "phonetic": "kalang maa",
+    "phonetic": "kalang-maa",
     "meaning": "未来"
   },
   "รองเท้า": {
@@ -6968,7 +6943,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "鞋"
   },
   "แสดงว่า": {
-    "phonetic": "sædng waa",
+    "phonetic": "saedng-waa",
     "meaning": "表明这一点"
   },
   "นางฟ้า": {
@@ -6976,7 +6951,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "天使"
   },
   "โอ้ววว": {
-    "phonetic": "oo www",
+    "phonetic": "oo-www",
     "meaning": "哦哇"
   },
   "กิล": {
@@ -6984,35 +6959,35 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "吉尔"
   },
   "ช่างมัน": {
-    "phonetic": "chhaang man",
+    "phonetic": "chhaang-man",
     "meaning": "没关系"
   },
   "แอนดริว": {
-    "phonetic": "oæn driw",
+    "phonetic": "oaen-driw",
     "meaning": "安德鲁"
   },
   "เมดิสัน": {
-    "phonetic": "medi san",
+    "phonetic": "medi-san",
     "meaning": "麦迪逊"
   },
   "เร็วซิ": {
-    "phonetic": "rew si",
+    "phonetic": "rew-si",
     "meaning": "匆忙"
   },
   "สักวัน": {
-    "phonetic": "sak wan",
+    "phonetic": "sak-wan",
     "meaning": "有一天"
   },
   "ไหนๆ": {
-    "phonetic": "in«",
+    "phonetic": "in",
     "meaning": "在哪里"
   },
   "แมต": {
-    "phonetic": "mæt",
+    "phonetic": "maet",
     "meaning": "马特"
   },
   "ว่าทำไม": {
-    "phonetic": "waa thami",
+    "phonetic": "waa-thami",
     "meaning": "为什么"
   },
   "ดอม": {
@@ -7020,15 +6995,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "多姆"
   },
   "ข้างนอก": {
-    "phonetic": "khaang nok",
+    "phonetic": "khaang-nok",
     "meaning": "外部"
   },
   "หลบ": {
-    "phonetic": "lb",
+    "phonetic": "lop",
     "meaning": "躲闪"
   },
   "นายล่ะ": {
-    "phonetic": "naay la",
+    "phonetic": "naay-la",
     "meaning": "你呢"
   },
   "เหอะ": {
@@ -7044,11 +7019,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "总统"
   },
   "มากๆ": {
-    "phonetic": "maak«",
+    "phonetic": "maak-maak",
     "meaning": "非常"
   },
   "จับเขา": {
-    "phonetic": "chab kheaa",
+    "phonetic": "chab-kheaa",
     "meaning": "抓住他"
   },
   "ฮัท": {
@@ -7056,7 +7031,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "小屋"
   },
   "ต่อมา": {
-    "phonetic": "to maa",
+    "phonetic": "to-maa",
     "meaning": "之后"
   },
   "คืน": {
@@ -7064,15 +7039,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "返回"
   },
   "เฮ้ๆๆ": {
-    "phonetic": "he««",
+    "phonetic": "he-he",
     "meaning": "嘿嘿"
   },
   "อีดี้": {
-    "phonetic": "oii dii",
+    "phonetic": "oii-dii",
     "meaning": "伊迪"
   },
   "หน่วย": {
-    "phonetic": "nwy",
+    "phonetic": "nuay",
     "meaning": "单元"
   },
   "ฮยอน": {
@@ -7080,11 +7055,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "炫"
   },
   "วินสตัน": {
-    "phonetic": "win s tan",
+    "phonetic": "win-s-tan",
     "meaning": "温斯顿"
   },
   "ตายซะ": {
-    "phonetic": "taay sa",
+    "phonetic": "taay-sa",
     "meaning": "死"
   },
   "โจมตี": {
@@ -7092,23 +7067,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "攻击"
   },
   "แคล": {
-    "phonetic": "khæl",
+    "phonetic": "khael",
     "meaning": "卡尔"
   },
   "แซค": {
-    "phonetic": "sækh",
+    "phonetic": "saekh",
     "meaning": "扎克"
   },
   "ลินเน็ต": {
-    "phonetic": "li n net",
+    "phonetic": "li-n-net",
     "meaning": "莱内特"
   },
   "ทุกๆวัน": {
-    "phonetic": "thuk«wan",
+    "phonetic": "thuk-thukwan",
     "meaning": "每天"
   },
   "เอาไปสิ": {
-    "phonetic": "oeaa pi si",
+    "phonetic": "oeaa-pi-si",
     "meaning": "拿走吧"
   },
   "กล้อง": {
@@ -7128,11 +7103,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "武器"
   },
   "ๆๆ": {
-    "phonetic": "««",
+    "phonetic": "ha-ha",
     "meaning": "哈哈"
   },
   "ทำไมกัน": {
-    "phonetic": "thami kan",
+    "phonetic": "thami-kan",
     "meaning": "为什么"
   },
   "ฉิบหาย": {
@@ -7140,7 +7115,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "真可悲"
   },
   "งั้นสิ": {
-    "phonetic": "ngan si",
+    "phonetic": "ngan-si",
     "meaning": "所以"
   },
   "ลีโอ": {
@@ -7148,47 +7123,47 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "利奥"
   },
   "นาโอมิ": {
-    "phonetic": "naa oo mi",
+    "phonetic": "naa-oo-mi",
     "meaning": "内奥米"
   },
   "ฟื้นสิ": {
-    "phonetic": "fuen si",
+    "phonetic": "fuen-si",
     "meaning": "恢复"
   },
   "ถ้าคุณ": {
-    "phonetic": "thaa khun",
+    "phonetic": "thaa-khun",
     "meaning": "如果你"
   },
   "ฮิวส์": {
-    "phonetic": "hi ws",
+    "phonetic": "hi-ws",
     "meaning": "休斯"
   },
   "โมนิก้า": {
-    "phonetic": "mo ni kaa",
+    "phonetic": "mo-ni-kaa",
     "meaning": "莫妮卡"
   },
   "เจคอบ": {
-    "phonetic": "che khob",
+    "phonetic": "che-khob",
     "meaning": "雅各布"
   },
   "แต้ม": {
-    "phonetic": "tæm",
+    "phonetic": "taem",
     "meaning": "积分"
   },
   "ไลโอเนล": {
-    "phonetic": "li oo nel",
+    "phonetic": "li-oo-nel",
     "meaning": "莱昂内尔"
   },
   "ทำไมหละ": {
-    "phonetic": "thami la",
+    "phonetic": "thami-la",
     "meaning": "为什么"
   },
   "ยังครับ": {
-    "phonetic": "yang khrab",
+    "phonetic": "yang-khrab",
     "meaning": "还没有"
   },
   "ไรลีย์": {
-    "phonetic": "ri liia",
+    "phonetic": "ri-lia",
     "meaning": "莱利"
   },
   "เจอ": {
@@ -7196,7 +7171,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "成立"
   },
   "สตาร์": {
-    "phonetic": "s taar",
+    "phonetic": "s-taar",
     "meaning": "星星"
   },
   "คำถาม": {
@@ -7204,7 +7179,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "问题"
   },
   "เวนดี้": {
-    "phonetic": "wen dii",
+    "phonetic": "wen-dii",
     "meaning": "温迪"
   },
   "อาลี": {
@@ -7216,11 +7191,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "吻"
   },
   "มีค่ะ": {
-    "phonetic": "mii kha",
+    "phonetic": "mii-kha",
     "meaning": "有"
   },
   "ดันแคน": {
-    "phonetic": "dan khæn",
+    "phonetic": "dan-khaen",
     "meaning": "邓肯"
   },
   "นานา": {
@@ -7228,19 +7203,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "各种各样的"
   },
   "น่ะเหรอ": {
-    "phonetic": "na e ro",
+    "phonetic": "na-e-ro",
     "meaning": "是这样吗"
   },
   "บราวน์": {
-    "phonetic": "braa wn",
+    "phonetic": "braa-wn",
     "meaning": "棕色的"
   },
   "อะแฮ่ม": {
-    "phonetic": "oa hæ m",
+    "phonetic": "oa-hae-m",
     "meaning": "咳咳"
   },
   "ใช่ซิ": {
-    "phonetic": "chhı si",
+    "phonetic": "chhai-si",
     "meaning": "这是正确的"
   },
   "ชัดเจน": {
@@ -7248,11 +7223,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "清楚地"
   },
   "ขึ้นไป": {
-    "phonetic": "khuen pi",
+    "phonetic": "khuen-pi",
     "meaning": "向上"
   },
   "นรก": {
-    "phonetic": "nrk",
+    "phonetic": "na-rok",
     "meaning": "地狱"
   },
   "ยูน": {
@@ -7260,7 +7235,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "云"
   },
   "เมแกน": {
-    "phonetic": "me kæn",
+    "phonetic": "me-kaen",
     "meaning": "梅根"
   },
   "มาริ": {
@@ -7268,7 +7243,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "马里"
   },
   "ดูฉันสิ": {
-    "phonetic": "duu chhan si",
+    "phonetic": "duu-chhan-si",
     "meaning": "看着我"
   },
   "รา": {
@@ -7276,7 +7251,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "模具"
   },
   "เพรนทิส": {
-    "phonetic": "phe rn this",
+    "phonetic": "phe-rn-this",
     "meaning": "普伦蒂斯"
   },
   "เลดี้": {
@@ -7284,7 +7259,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "女士"
   },
   "นาโอะ": {
-    "phonetic": "naa ooa",
+    "phonetic": "naa-ooa",
     "meaning": "奈奥"
   },
   "จำกัด": {
@@ -7292,11 +7267,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "有限公司"
   },
   "เคโต้": {
-    "phonetic": "khe to",
+    "phonetic": "khe-to",
     "meaning": "酮"
   },
   "มันช่าง": {
-    "phonetic": "man chhaang",
+    "phonetic": "man-chhaang",
     "meaning": "太酷了"
   },
   "ภรรยา": {
@@ -7304,15 +7279,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "妻子"
   },
   "กินซะ": {
-    "phonetic": "kin sa",
+    "phonetic": "kin-sa",
     "meaning": "吃吧"
   },
   "เกาะไว้": {
-    "phonetic": "keaaa wi",
+    "phonetic": "keaaa-wi",
     "meaning": "坚持稍等"
   },
   "ความลับ": {
-    "phonetic": "khwaam lab",
+    "phonetic": "khwaam-lab",
     "meaning": "秘密"
   },
   "พยาบาล": {
@@ -7320,7 +7295,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "护士"
   },
   "แคสซี่": {
-    "phonetic": "khæs sii",
+    "phonetic": "khaes-sii",
     "meaning": "卡西"
   },
   "จูบ": {
@@ -7332,11 +7307,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "管理"
   },
   "หยุดรถ": {
-    "phonetic": "yud rth",
+    "phonetic": "yud-rth",
     "meaning": "停车"
   },
   "นาทีนะ": {
-    "phonetic": "naathii na",
+    "phonetic": "naathii-na",
     "meaning": "一分钟"
   },
   "สาย": {
@@ -7352,7 +7327,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "天空"
   },
   "คำเตือน": {
-    "phonetic": "kha teueon",
+    "phonetic": "kha-tueaon",
     "meaning": "警告"
   },
   "ย่าห์": {
@@ -7360,7 +7335,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "耶"
   },
   "อู้วว": {
-    "phonetic": "ouu ww",
+    "phonetic": "ouu-ww",
     "meaning": "哦"
   },
   "รอส": {
@@ -7372,7 +7347,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "洗"
   },
   "ฮัดสัน": {
-    "phonetic": "had san",
+    "phonetic": "had-san",
     "meaning": "哈德森"
   },
   "สำเร็จ": {
@@ -7380,15 +7355,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "成功的"
   },
   "นี่ล่ะ": {
-    "phonetic": "nii la",
+    "phonetic": "nii-la",
     "meaning": "就是这样"
   },
   "ทั้งคู่": {
-    "phonetic": "thang khuu",
+    "phonetic": "thang-khuu",
     "meaning": "两个都"
   },
   "อยู่ที่": {
-    "phonetic": "oyuu thii",
+    "phonetic": "oyuu-thii",
     "meaning": "在"
   },
   "ลอง": {
@@ -7396,11 +7371,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "尝试一下"
   },
   "อิซาเบล": {
-    "phonetic": "oi saa bel",
+    "phonetic": "oi-saa-bel",
     "meaning": "伊莎贝尔"
   },
   "ตรงไหน": {
-    "phonetic": "trng in",
+    "phonetic": "trng-in",
     "meaning": "在哪里"
   },
   "มอส": {
@@ -7408,7 +7383,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "苔藓"
   },
   "ออสการ์": {
-    "phonetic": "oo skaa r",
+    "phonetic": "oo-skaa-r",
     "meaning": "奥斯卡"
   },
   "ราจ": {
@@ -7416,7 +7391,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "拉杰"
   },
   "ซูซี่": {
-    "phonetic": "suu sii",
+    "phonetic": "suu-sii",
     "meaning": "苏西"
   },
   "โอม": {
@@ -7424,15 +7399,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "欧姆"
   },
   "ทาเครุ": {
-    "phonetic": "thaa khe ru",
+    "phonetic": "thaa-khe-ru",
     "meaning": "武"
   },
   "เคียวเฮ": {
-    "phonetic": "kheiiaw he",
+    "phonetic": "kheiaw-he",
     "meaning": "恭平"
   },
   "ดีจริง": {
-    "phonetic": "dii chring",
+    "phonetic": "dii-chring",
     "meaning": "真的很好"
   },
   "เอ๊": {
@@ -7444,39 +7419,39 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "布里格斯"
   },
   "พูดมา": {
-    "phonetic": "phuud maa",
+    "phonetic": "phuud-maa",
     "meaning": "说话"
   },
   "เลนนี่": {
-    "phonetic": "len nii",
+    "phonetic": "len-nii",
     "meaning": "莱尼"
   },
   "เอริก้า": {
-    "phonetic": "oe rik aa",
+    "phonetic": "oe-rik-aa",
     "meaning": "艾丽卡"
   },
   "แมค": {
-    "phonetic": "mækh",
+    "phonetic": "maekh",
     "meaning": "苹果"
   },
   "เอซร่า": {
-    "phonetic": "oes raa",
+    "phonetic": "oes-raa",
     "meaning": "以斯拉"
   },
   "ถ้าไม่": {
-    "phonetic": "thaa mi",
+    "phonetic": "thaa-mi",
     "meaning": "如果不"
   },
   "ล้านเยน": {
-    "phonetic": "laan yen",
+    "phonetic": "laan-yen",
     "meaning": "百万日元"
   },
   "ดอนน่า": {
-    "phonetic": "don naa",
+    "phonetic": "don-naa",
     "meaning": "唐娜"
   },
   "อยากสิ": {
-    "phonetic": "oyaak si",
+    "phonetic": "oyaak-si",
     "meaning": "我要它"
   },
   "นาง": {
@@ -7484,19 +7459,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "夫人"
   },
   "เถอะนะ": {
-    "phonetic": "theoa na",
+    "phonetic": "theoa-na",
     "meaning": "来吧"
   },
   "ดูนี่นะ": {
-    "phonetic": "duu nii na",
+    "phonetic": "duu-nii-na",
     "meaning": "看看这个"
   },
   "โจแอนนา": {
-    "phonetic": "cho oæ n naa",
+    "phonetic": "cho-oae-n-naa",
     "meaning": "琼"
   },
   "ไม่แน่": {
-    "phonetic": "mi næ",
+    "phonetic": "mi-nae",
     "meaning": "或许"
   },
   "สงคราม": {
@@ -7508,19 +7483,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "麦"
   },
   "ล้อเล่น": {
-    "phonetic": "lo len",
+    "phonetic": "lo-len",
     "meaning": "只是在开玩笑"
   },
   "จะว่าไป": {
-    "phonetic": "cha waa pi",
+    "phonetic": "cha-waa-pi",
     "meaning": "我会这么说"
   },
   "เดาว่า": {
-    "phonetic": "deaa waa",
+    "phonetic": "deaa-waa",
     "meaning": "猜测"
   },
   "แมตต์": {
-    "phonetic": "mætt",
+    "phonetic": "maett",
     "meaning": "马特"
   },
   "มือ": {
@@ -7532,11 +7507,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "案件"
   },
   "ดง": {
-    "phonetic": "dng",
+    "phonetic": "dong",
     "meaning": "东"
   },
   "ซาราห์": {
-    "phonetic": "saa raa",
+    "phonetic": "saa-raa",
     "meaning": "莎拉"
   },
   "ยืนยัน": {
@@ -7544,7 +7519,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "确认"
   },
   "เวรแล้ว": {
-    "phonetic": "wer læw",
+    "phonetic": "wer-laew",
     "meaning": "该死的"
   },
   "เหอ": {
@@ -7552,11 +7527,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "他"
   },
   "เจ๋งเลย": {
-    "phonetic": "cheng lei",
+    "phonetic": "cheng-lei",
     "meaning": "这很酷"
   },
   "อยู่ๆ": {
-    "phonetic": "oyuu«",
+    "phonetic": "oyuu",
     "meaning": "突然"
   },
   "โน": {
@@ -7568,7 +7543,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "内德"
   },
   "ลีออน": {
-    "phonetic": "lii oon",
+    "phonetic": "lii-oon",
     "meaning": "莱昂"
   },
   "คัน": {
@@ -7580,19 +7555,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "切"
   },
   "เฮาส์": {
-    "phonetic": "heaa s",
+    "phonetic": "heaa-s",
     "meaning": "房子"
   },
   "บางคน": {
-    "phonetic": "baang khn",
+    "phonetic": "baang-khn",
     "meaning": "有些人"
   },
   "ไอ้ระยำ": {
-    "phonetic": "oi raya",
+    "phonetic": "oi-raya",
     "meaning": "他妈的混蛋"
   },
   "ล้านวอน": {
-    "phonetic": "laan won",
+    "phonetic": "laan-won",
     "meaning": "百万赢了"
   },
   "ดงจู": {
@@ -7600,7 +7575,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "东居"
   },
   "ที่ว่า": {
-    "phonetic": "thii waa",
+    "phonetic": "thii-waa",
     "meaning": "就是这样说的"
   },
   "โปรด": {
@@ -7608,7 +7583,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "请"
   },
   "มากับผม": {
-    "phonetic": "maa kab phm",
+    "phonetic": "maa-kab-phm",
     "meaning": "跟我来吧"
   },
   "อื่ม": {
@@ -7616,23 +7591,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "唔"
   },
   "เอลล่า": {
-    "phonetic": "oe l laa",
+    "phonetic": "oe-l-laa",
     "meaning": "艾拉"
   },
   "ไอ้งั่ง": {
-    "phonetic": "oi ngang",
+    "phonetic": "oi-ngang",
     "meaning": "你这个白痴"
   },
   "โทษนะคะ": {
-    "phonetic": "thosʹ na kha",
+    "phonetic": "thot-na-kha",
     "meaning": "对不起"
   },
   "มัลคอม": {
-    "phonetic": "mal khom",
+    "phonetic": "mal-khom",
     "meaning": "马尔科姆"
   },
   "เฮ้พวก": {
-    "phonetic": "he phwk",
+    "phonetic": "he-phwk",
     "meaning": "嘿伙计们"
   },
   "เชฟ": {
@@ -7652,15 +7627,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "莉兹"
   },
   "พวกนี้": {
-    "phonetic": "phwk nii",
+    "phonetic": "phwk-nii",
     "meaning": "这些"
   },
   "เดียว": {
-    "phonetic": "deiiaw",
+    "phonetic": "diao",
     "meaning": "一"
   },
   "อะไรอ่ะ": {
-    "phonetic": "oari oa",
+    "phonetic": "oari-oa",
     "meaning": "什么"
   },
   "มารี": {
@@ -7668,19 +7643,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "玛丽"
   },
   "ยังค่ะ": {
-    "phonetic": "yang kha",
+    "phonetic": "yang-kha",
     "meaning": "还没有"
   },
   "ส่ง": {
-    "phonetic": "sng",
+    "phonetic": "song",
     "meaning": "发送"
   },
   "คาสเซิล": {
-    "phonetic": "khaas seil",
+    "phonetic": "khaas-seil",
     "meaning": "城堡"
   },
   "ไมกี้": {
-    "phonetic": "mi kii",
+    "phonetic": "mi-kii",
     "meaning": "麦基"
   },
   "ดีเจ": {
@@ -7688,7 +7663,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "DJ"
   },
   "เทอรี่": {
-    "phonetic": "the orii",
+    "phonetic": "the-orii",
     "meaning": "特里"
   },
   "เบลน": {
@@ -7700,7 +7675,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "飞"
   },
   "เมเรดิธ": {
-    "phonetic": "me redith",
+    "phonetic": "me-redith",
     "meaning": "梅雷迪思"
   },
   "เอิร์ล": {
@@ -7716,15 +7691,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "敲"
   },
   "ของขวัญ": {
-    "phonetic": "khong khway",
+    "phonetic": "khong-khway",
     "meaning": "礼物"
   },
   "ตายละ": {
-    "phonetic": "taay la",
+    "phonetic": "taay-la",
     "meaning": "我死了"
   },
   "ช่วยที": {
-    "phonetic": "chhwy thii",
+    "phonetic": "chhwy-thii",
     "meaning": "请帮忙"
   },
   "ช่ายย": {
@@ -7736,15 +7711,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "音乐"
   },
   "ที่ๆ": {
-    "phonetic": "thii«",
+    "phonetic": "thii",
     "meaning": "那个地方"
   },
   "ฟลินน์": {
-    "phonetic": "f li nn",
+    "phonetic": "f-li-nn",
     "meaning": "弗林"
   },
   "ชินอิจิ": {
-    "phonetic": "chhi noi chi",
+    "phonetic": "chhi-noi-chi",
     "meaning": "新一"
   },
   "อ๊าา": {
@@ -7752,7 +7727,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "啊"
   },
   "ดื่มซะ": {
-    "phonetic": "duem sa",
+    "phonetic": "duem-sa",
     "meaning": "喝吧"
   },
   "ไบรซ์": {
@@ -7760,19 +7735,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "布莱斯"
   },
   "ฮาร์วี่": {
-    "phonetic": "haar wii",
+    "phonetic": "haar-wii",
     "meaning": "哈维"
   },
   "เร็วๆสิ": {
-    "phonetic": "rew«si",
+    "phonetic": "rew-rewsi",
     "meaning": "匆忙"
   },
   "อินกริด": {
-    "phonetic": "oin krid",
+    "phonetic": "oin-krid",
     "meaning": "英格丽德"
   },
   "เฟรย่า": {
-    "phonetic": "fer yaa",
+    "phonetic": "fer-yaa",
     "meaning": "芙蕾雅"
   },
   "มามะ": {
@@ -7780,11 +7755,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "快点"
   },
   "กินสิ": {
-    "phonetic": "kin si",
+    "phonetic": "kin-si",
     "meaning": "吃"
   },
   "ลาร์รี่": {
-    "phonetic": "laar rii",
+    "phonetic": "laar-rii",
     "meaning": "拉里"
   },
   "พระองค์": {
@@ -7792,47 +7767,47 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "他"
   },
   "ใหญ่": {
-    "phonetic": "ıy",
+    "phonetic": "aiy",
     "meaning": "大的"
   },
   "มินวู": {
-    "phonetic": "mi nwuu",
+    "phonetic": "mi-nwuu",
     "meaning": "珉宇"
   },
   "ลินน์": {
-    "phonetic": "li nn",
+    "phonetic": "li-nn",
     "meaning": "林恩"
   },
   "นายรู้": {
-    "phonetic": "naay ruu",
+    "phonetic": "naay-ruu",
     "meaning": "你知道"
   },
   "แอคเซิล": {
-    "phonetic": "oæ kh seil",
+    "phonetic": "oae-kh-seil",
     "meaning": "阿克塞尔"
   },
   "ชื่อว่า": {
-    "phonetic": "chhueo waa",
+    "phonetic": "chhueo-waa",
     "meaning": "它被称为"
   },
   "พิเศษ": {
-    "phonetic": "phisesʹ",
+    "phonetic": "phi-set",
     "meaning": "特别的"
   },
   "แปลโดย": {
-    "phonetic": "pæl doy",
+    "phonetic": "pael-doy",
     "meaning": "翻译自"
   },
   "ไม่ไป": {
-    "phonetic": "mi pi",
+    "phonetic": "mi-pi",
     "meaning": "我不去"
   },
   "โอ๊ะโอ": {
-    "phonetic": "ooa oo",
+    "phonetic": "ooa-oo",
     "meaning": "哎呀"
   },
   "พฤษภาคม": {
-    "phonetic": "phvsʹphhaakhm",
+    "phonetic": "phruet-sa-pha-khom",
     "meaning": "可能"
   },
   "กลัว": {
@@ -7840,23 +7815,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "害怕的"
   },
   "และเอ่อ": {
-    "phonetic": "læa oeo",
+    "phonetic": "laea-oeo",
     "meaning": "还有呃"
   },
   "อังกฤษ": {
-    "phonetic": "oangkvsʹ",
+    "phonetic": "ang-grit",
     "meaning": "英语"
   },
   "ชิบาตะ": {
-    "phonetic": "chhi baa ta",
+    "phonetic": "chhi-baa-ta",
     "meaning": "柴田"
   },
   "ทำไมคุณ": {
-    "phonetic": "thami khun",
+    "phonetic": "thami-khun",
     "meaning": "你为什么呢"
   },
   "ขอย้ำ": {
-    "phonetic": "kho ya",
+    "phonetic": "kho-ya",
     "meaning": "我重复一遍"
   },
   "ลัย": {
@@ -7864,11 +7839,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "赖"
   },
   "เงียบซะ": {
-    "phonetic": "ngeiiab sa",
+    "phonetic": "ngiap-sa",
     "meaning": "安静"
   },
   "ดอนนี่": {
-    "phonetic": "don nii",
+    "phonetic": "don-nii",
     "meaning": "唐尼"
   },
   "วอร์ด": {
@@ -7876,15 +7851,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "病房"
   },
   "นั้นมัน": {
-    "phonetic": "nan man",
+    "phonetic": "nan-man",
     "meaning": "就是这样"
   },
   "หยุดพูด": {
-    "phonetic": "yud phuud",
+    "phonetic": "yud-phuud",
     "meaning": "别说话了"
   },
   "แอชลีย์": {
-    "phonetic": "oæ chhlii y",
+    "phonetic": "oae-chhlii-y",
     "meaning": "阿什利"
   },
   "โรมัน": {
@@ -7892,15 +7867,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "罗马"
   },
   "บน": {
-    "phonetic": "bn",
+    "phonetic": "bon",
     "meaning": "在"
   },
   "ว้าววว": {
-    "phonetic": "waa www",
+    "phonetic": "waa-www",
     "meaning": "哇"
   },
   "แม่มด": {
-    "phonetic": "mæmd",
+    "phonetic": "maemd",
     "meaning": "巫婆"
   },
   "ต้นไม้": {
@@ -7908,7 +7883,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "树"
   },
   "นั่นเขา": {
-    "phonetic": "nan kheaa",
+    "phonetic": "nan-kheaa",
     "meaning": "就是他"
   },
   "ดิ๊ก": {
@@ -7916,7 +7891,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "迪克"
   },
   "ได้ละ": {
-    "phonetic": "di la",
+    "phonetic": "di-la",
     "meaning": "知道了"
   },
   "โคเฮ": {
@@ -7924,7 +7899,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "科赫"
   },
   "ไม่มาก": {
-    "phonetic": "mi maak",
+    "phonetic": "mi-maak",
     "meaning": "不多"
   },
   "เฮ่อ": {
@@ -7932,31 +7907,31 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嘿"
   },
   "ก็ดีค่ะ": {
-    "phonetic": "k dii kha",
+    "phonetic": "k-dii-kha",
     "meaning": "很好"
   },
   "พูดตรงๆ": {
-    "phonetic": "phuud trng«",
+    "phonetic": "phuud-trong-trong",
     "meaning": "坦白地说"
   },
   "ตรวจสอบ": {
-    "phonetic": "trwch sob",
+    "phonetic": "trwch-sob",
     "meaning": "查看"
   },
   "ทำเลย": {
-    "phonetic": "tha lei",
+    "phonetic": "tha-lei",
     "meaning": "现在就做吧"
   },
   "อย่าลืม": {
-    "phonetic": "oyaa luem",
+    "phonetic": "oyaa-luem",
     "meaning": "别忘了"
   },
   "ตลกมาก": {
-    "phonetic": "tlk maak",
+    "phonetic": "tlk-maak",
     "meaning": "很搞笑"
   },
   "แจ๋วเลย": {
-    "phonetic": "chæw lei",
+    "phonetic": "chaew-lei",
     "meaning": "太酷了"
   },
   "หญิง": {
@@ -7964,51 +7939,51 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "女性"
   },
   "ฟังผม": {
-    "phonetic": "fang phm",
+    "phonetic": "fang-phm",
     "meaning": "听我说"
   },
   "ท่านปธน": {
-    "phonetic": "thaan p thn",
+    "phonetic": "thaan-p-thn",
     "meaning": "总裁"
   },
   "มิเกล": {
-    "phonetic": "mi kel",
+    "phonetic": "mi-kel",
     "meaning": "米格尔"
   },
   "มาร์ธา": {
-    "phonetic": "maar thaa",
+    "phonetic": "maar-thaa",
     "meaning": "玛莎"
   },
   "ข้างบน": {
-    "phonetic": "khaang bn",
+    "phonetic": "khaang-bn",
     "meaning": "多于"
   },
   "แม้แต่": {
-    "phonetic": "mætæ",
+    "phonetic": "maetae",
     "meaning": "甚至"
   },
   "โอลีฟ": {
-    "phonetic": "oo liif",
+    "phonetic": "oo-liif",
     "meaning": "橄榄"
   },
   "แดซอง": {
-    "phonetic": "dæ song",
+    "phonetic": "dae-song",
     "meaning": "大成"
   },
   "ไอวี่": {
-    "phonetic": "oi wii",
+    "phonetic": "oi-wii",
     "meaning": "常春藤"
   },
   "เรือ": {
-    "phonetic": "reueo",
+    "phonetic": "rueao",
     "meaning": "船"
   },
   "แอนทอน": {
-    "phonetic": "oæ nthon",
+    "phonetic": "oae-nthon",
     "meaning": "安托万"
   },
   "นอนลง": {
-    "phonetic": "non lng",
+    "phonetic": "non-lng",
     "meaning": "躺"
   },
   "ว้าย": {
@@ -8024,19 +7999,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "院长"
   },
   "พาโบล": {
-    "phonetic": "phaa bol",
+    "phonetic": "phaa-bol",
     "meaning": "巴勃罗"
   },
   "แฮโรลด์": {
-    "phonetic": "hæ ro ld",
+    "phonetic": "hae-ro-ld",
     "meaning": "哈罗德"
   },
   "ฆ่าเขา": {
-    "phonetic": "khaa kheaa",
+    "phonetic": "khaa-kheaa",
     "meaning": "杀了他"
   },
   "แม็ท": {
-    "phonetic": "mæth",
+    "phonetic": "maeth",
     "meaning": "马特"
   },
   "ธีโอ": {
@@ -8052,11 +8027,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "唔"
   },
   "ชารอน": {
-    "phonetic": "chhaa ron",
+    "phonetic": "chhaa-ron",
     "meaning": "莎伦"
   },
   "หมดเวลา": {
-    "phonetic": "md welaa",
+    "phonetic": "md-welaa",
     "meaning": "时间到了"
   },
   "คนดี": {
@@ -8064,23 +8039,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "好人"
   },
   "มิจิรุ": {
-    "phonetic": "mi chi ru",
+    "phonetic": "mi-chi-ru",
     "meaning": "满"
   },
   "มีครับ": {
-    "phonetic": "mii khrab",
+    "phonetic": "mii-khrab",
     "meaning": "有"
   },
   "รับไป": {
-    "phonetic": "rab pi",
+    "phonetic": "rab-pi",
     "meaning": "拿走吧"
   },
   "นี่แน่ะ": {
-    "phonetic": "nii næa",
+    "phonetic": "nii-naea",
     "meaning": "看哪"
   },
   "เช้านี้": {
-    "phonetic": "chheaa nii",
+    "phonetic": "chheaa-nii",
     "meaning": "今晨"
   },
   "อิม": {
@@ -8096,11 +8071,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "裴"
   },
   "ไดแอน": {
-    "phonetic": "di oæn",
+    "phonetic": "di-oaen",
     "meaning": "黛安"
   },
   "หยุดสิ": {
-    "phonetic": "yud si",
+    "phonetic": "yud-si",
     "meaning": "停止吧"
   },
   "โอ๊ว": {
@@ -8112,11 +8087,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "米卡"
   },
   "ฆ่าฉัน": {
-    "phonetic": "khaa chhan",
+    "phonetic": "khaa-chhan",
     "meaning": "杀了我"
   },
   "ฟอร์ด": {
-    "phonetic": "f ord",
+    "phonetic": "f-ord",
     "meaning": "福特"
   },
   "อากาศ": {
@@ -8124,7 +8099,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "天气"
   },
   "บราโว่": {
-    "phonetic": "braa wo",
+    "phonetic": "braa-wo",
     "meaning": "太棒了"
   },
   "ไมลส์": {
@@ -8132,19 +8107,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "迈尔斯"
   },
   "ซีไอเอ": {
-    "phonetic": "sii oi oe",
+    "phonetic": "sii-oi-oe",
     "meaning": "中央情报局"
   },
   "อ้าาา": {
-    "phonetic": "oaa aaaa",
+    "phonetic": "oaa-aaaa",
     "meaning": "啊哈"
   },
   "ไม่คะ": {
-    "phonetic": "mi kha",
+    "phonetic": "mi-kha",
     "meaning": "不"
   },
   "ข้าเอง": {
-    "phonetic": "khaa oeng",
+    "phonetic": "khaa-oeng",
     "meaning": "是我"
   },
   "โต๊ะ": {
@@ -8152,19 +8127,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "桌子"
   },
   "เชลลี่": {
-    "phonetic": "chhel lii",
+    "phonetic": "chhel-lii",
     "meaning": "雪莉"
   },
   "แบบไหน": {
-    "phonetic": "bæb in",
+    "phonetic": "baeb-in",
     "meaning": "什么样的"
   },
   "แต่เป็น": {
-    "phonetic": "tæ pen",
+    "phonetic": "tae-pen",
     "meaning": "但确实如此"
   },
   "นิคกี้": {
-    "phonetic": "nikh kii",
+    "phonetic": "nikh-kii",
     "meaning": "尼基"
   },
   "ระดับ": {
@@ -8172,11 +8147,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "等级"
   },
   "นายน่ะ": {
-    "phonetic": "naay na",
+    "phonetic": "naay-na",
     "meaning": "你"
   },
   "กับใคร": {
-    "phonetic": "kab khır",
+    "phonetic": "kab-khair",
     "meaning": "和谁一起"
   },
   "ซะ": {
@@ -8184,11 +8159,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "萨"
   },
   "ข้อสอง": {
-    "phonetic": "kho song",
+    "phonetic": "kho-song",
     "meaning": "第二"
   },
   "ข้าว่า": {
-    "phonetic": "khaa waa",
+    "phonetic": "khaa-waa",
     "meaning": "我说"
   },
   "คี": {
@@ -8196,11 +8171,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "记"
   },
   "แต่ถ้า": {
-    "phonetic": "tæ thaa",
+    "phonetic": "tae-thaa",
     "meaning": "但如果"
   },
   "อลิเซีย": {
-    "phonetic": "o li seiia",
+    "phonetic": "o-li-seia",
     "meaning": "艾丽西娅"
   },
   "ร้อง": {
@@ -8208,11 +8183,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哭"
   },
   "สจ๊วต": {
-    "phonetic": "schwt",
+    "phonetic": "sa-juat",
     "meaning": "管家"
   },
   "เบทซี่": {
-    "phonetic": "beth sii",
+    "phonetic": "beth-sii",
     "meaning": "贝特西"
   },
   "บัดซบ": {
@@ -8220,7 +8195,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "该死的"
   },
   "โทดที": {
-    "phonetic": "thod thii",
+    "phonetic": "thod-thii",
     "meaning": "对不起"
   },
   "บิ๊ก": {
@@ -8228,27 +8203,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "大的"
   },
   "โตเกียว": {
-    "phonetic": "tokeiiaw",
+    "phonetic": "tokeiaw",
     "meaning": "东京"
   },
   "ยามาดะ": {
-    "phonetic": "yaa maa da",
+    "phonetic": "yaa-maa-da",
     "meaning": "山田"
   },
   "รูบี้": {
-    "phonetic": "ruu bii",
+    "phonetic": "ruu-bii",
     "meaning": "红宝石"
   },
   "ฟิโอนา": {
-    "phonetic": "fi oo naa",
+    "phonetic": "fi-oo-naa",
     "meaning": "菲奥娜"
   },
   "ยูชอน": {
-    "phonetic": "yuu chhon",
+    "phonetic": "yuu-chhon",
     "meaning": "有春"
   },
   "ฮิลล์": {
-    "phonetic": "hi ll",
+    "phonetic": "hi-ll",
     "meaning": "爬坡道"
   },
   "ดูซะ": {
@@ -8256,19 +8231,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "看"
   },
   "อาจจะนะ": {
-    "phonetic": "oaach chana",
+    "phonetic": "oaach-chana",
     "meaning": "或许"
   },
   "กับผม": {
-    "phonetic": "kab phm",
+    "phonetic": "kab-phm",
     "meaning": "与我一起"
   },
   "ให้ไว": {
-    "phonetic": "ı wi",
+    "phonetic": "ai-wi",
     "meaning": "快点"
   },
   "นิโคล": {
-    "phonetic": "ni khol",
+    "phonetic": "ni-khol",
     "meaning": "妮可"
   },
   "คีธ": {
@@ -8280,7 +8255,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "小子"
   },
   "ฮอลลี่": {
-    "phonetic": "hol lii",
+    "phonetic": "hol-lii",
     "meaning": "冬青"
   },
   "คาล": {
@@ -8288,27 +8263,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "卡尔"
   },
   "วางลง": {
-    "phonetic": "waang lng",
+    "phonetic": "waang-lng",
     "meaning": "把它放下"
   },
   "อะไรรึ": {
-    "phonetic": "oari rue",
+    "phonetic": "oari-rue",
     "meaning": "什么"
   },
   "โอ้อึ": {
-    "phonetic": "oo oue",
+    "phonetic": "oo-oue",
     "meaning": "妈的"
   },
   "ไปต่อ": {
-    "phonetic": "pi to",
+    "phonetic": "pi-to",
     "meaning": "继续"
   },
   "ไปๆๆ": {
-    "phonetic": "pi««",
+    "phonetic": "pi-pi",
     "meaning": "去去去"
   },
   "ก่อนที่": {
-    "phonetic": "kon thii",
+    "phonetic": "kon-thii",
     "meaning": "前"
   },
   "ฮาชิ": {
@@ -8316,7 +8291,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "八"
   },
   "แก้ว": {
-    "phonetic": "kæw",
+    "phonetic": "kaew",
     "meaning": "玻璃"
   },
   "ดะ": {
@@ -8324,7 +8299,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "达"
   },
   "ใช่จ๊ะ": {
-    "phonetic": "chhı cha",
+    "phonetic": "chhai-cha",
     "meaning": "是的"
   },
   "เดเรค": {
@@ -8332,7 +8307,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "德里克"
   },
   "ลูกจ๋า": {
-    "phonetic": "luuk chaa",
+    "phonetic": "luuk-chaa",
     "meaning": "我的儿子"
   },
   "สามี": {
@@ -8340,43 +8315,43 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "丈夫"
   },
   "ออลลี่": {
-    "phonetic": "oo l lii",
+    "phonetic": "oo-l-lii",
     "meaning": "奥利"
   },
   "และใช่": {
-    "phonetic": "læa chhı",
+    "phonetic": "laea-chhai",
     "meaning": "是的"
   },
   "ลิเลียน": {
-    "phonetic": "li leiian",
+    "phonetic": "li-leian",
     "meaning": "莉莲"
   },
   "แคม": {
-    "phonetic": "khæm",
+    "phonetic": "khaem",
     "meaning": "阴唇"
   },
   "มาๆ": {
-    "phonetic": "maa«",
+    "phonetic": "maa",
     "meaning": "快点"
   },
   "ไม่เห็น": {
-    "phonetic": "mi en",
+    "phonetic": "mi-en",
     "meaning": "看不到"
   },
   "แซนดี้": {
-    "phonetic": "sæn dii",
+    "phonetic": "saen-dii",
     "meaning": "沙"
   },
   "อย่าพูด": {
-    "phonetic": "oyaa phuud",
+    "phonetic": "oyaa-phuud",
     "meaning": "别说话"
   },
   "ทำให้": {
-    "phonetic": "thaı",
+    "phonetic": "thaai",
     "meaning": "制作"
   },
   "สวรรค์": {
-    "phonetic": "swrrkh",
+    "phonetic": "sa-wan",
     "meaning": "天堂"
   },
   "เซ": {
@@ -8396,7 +8371,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "看"
   },
   "ซึคาสะ": {
-    "phonetic": "sue khaa sa",
+    "phonetic": "sue-khaa-sa",
     "meaning": "司"
   },
   "ผู้คน": {
@@ -8404,7 +8379,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "人们"
   },
   "เพค่ะ": {
-    "phonetic": "phe kha",
+    "phonetic": "phe-kha",
     "meaning": "唷"
   },
   "เจ้าค่ะ": {
@@ -8412,11 +8387,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "你"
   },
   "ฮ่าฮ่า": {
-    "phonetic": "haa haa",
+    "phonetic": "haa-haa",
     "meaning": "哈哈"
   },
   "แชด": {
-    "phonetic": "chhæd",
+    "phonetic": "chhaed",
     "meaning": "乍得"
   },
   "เดท": {
@@ -8428,11 +8403,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "顺"
   },
   "แมน": {
-    "phonetic": "mæn",
+    "phonetic": "maen",
     "meaning": "男人"
   },
   "แปลกนะ": {
-    "phonetic": "pælk na",
+    "phonetic": "paelk-na",
     "meaning": "很奇怪"
   },
   "เกย์": {
@@ -8440,7 +8415,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "同性恋"
   },
   "นาตาลี": {
-    "phonetic": "naa taa lii",
+    "phonetic": "naa-taa-lii",
     "meaning": "娜塔莉"
   },
   "เครื่อง": {
@@ -8464,11 +8439,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "腿"
   },
   "อัลลีย์": {
-    "phonetic": "oal liia",
+    "phonetic": "oal-lia",
     "meaning": "胡同"
   },
   "ฉบับที่": {
-    "phonetic": "chhbab thii",
+    "phonetic": "chhbab-thii",
     "meaning": "问题"
   },
   "อีวา": {
@@ -8480,11 +8455,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "里斯"
   },
   "พ่อฉัน": {
-    "phonetic": "pho chhan",
+    "phonetic": "pho-chhan",
     "meaning": "我的父亲"
   },
   "กม": {
-    "phonetic": "km",
+    "phonetic": "ko-mo",
     "meaning": "公里"
   },
   "เกม": {
@@ -8492,7 +8467,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "游戏"
   },
   "กอนวุค": {
-    "phonetic": "ko nwukh",
+    "phonetic": "ko-nwukh",
     "meaning": "枪旭"
   },
   "หืมมม": {
@@ -8500,15 +8475,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嗯"
   },
   "ดาร์วิน": {
-    "phonetic": "daar win",
+    "phonetic": "daar-win",
     "meaning": "达尔文"
   },
   "ยอดมาก": {
-    "phonetic": "yod maak",
+    "phonetic": "yod-maak",
     "meaning": "非常酷"
   },
   "ตลกน่า": {
-    "phonetic": "tlk naa",
+    "phonetic": "tlk-naa",
     "meaning": "有趣的"
   },
   "ซี่": {
@@ -8516,7 +8491,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "辐条"
   },
   "ทำมัน": {
-    "phonetic": "tha man",
+    "phonetic": "tha-man",
     "meaning": "做吧"
   },
   "มังก์": {
@@ -8528,15 +8503,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "七月"
   },
   "มาร์แชล": {
-    "phonetic": "maarchhæl",
+    "phonetic": "maarchhael",
     "meaning": "马歇尔"
   },
   "เมือง": {
-    "phonetic": "meueong",
+    "phonetic": "mueang",
     "meaning": "城市"
   },
   "ทำไมไม่": {
-    "phonetic": "thami mi",
+    "phonetic": "thami-mi",
     "meaning": "为什么不呢"
   },
   "โป": {
@@ -8560,7 +8535,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "花朵"
   },
   "แมว": {
-    "phonetic": "mæw",
+    "phonetic": "maew",
     "meaning": "猫"
   },
   "มาซิ": {
@@ -8568,7 +8543,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "来"
   },
   "หัวใจ": {
-    "phonetic": "awchı",
+    "phonetic": "awchai",
     "meaning": "心"
   },
   "เอ๊ย": {
@@ -8580,7 +8555,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哪个"
   },
   "ไปไกลๆ": {
-    "phonetic": "pi kil«",
+    "phonetic": "pi-kil",
     "meaning": "走远点吧"
   },
   "ไก่": {
@@ -8588,7 +8563,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "鸡"
   },
   "มินามิ": {
-    "phonetic": "mi naa mi",
+    "phonetic": "mi-naa-mi",
     "meaning": "南"
   },
   "ศูนย์": {
@@ -8596,7 +8571,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "中心"
   },
   "อากิระ": {
-    "phonetic": "oaa ki ra",
+    "phonetic": "oaa-ki-ra",
     "meaning": "阿基拉"
   },
   "วาว": {
@@ -8604,11 +8579,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哇"
   },
   "โฮดอร์": {
-    "phonetic": "ho d or",
+    "phonetic": "ho-d-or",
     "meaning": "阿多尔"
   },
   "เดน่า": {
-    "phonetic": "den aa",
+    "phonetic": "den-aa",
     "meaning": "达纳"
   },
   "เขต": {
@@ -8616,23 +8591,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "区"
   },
   "อบิเกล": {
-    "phonetic": "obi kel",
+    "phonetic": "obi-kel",
     "meaning": "阿比盖尔"
   },
   "โรซี่": {
-    "phonetic": "ro sii",
+    "phonetic": "ro-sii",
     "meaning": "罗西"
   },
   "นี่ใคร": {
-    "phonetic": "nii khır",
+    "phonetic": "nii-khair",
     "meaning": "这是谁"
   },
   "เด็กโง่": {
-    "phonetic": "dek ngo",
+    "phonetic": "dek-ngo",
     "meaning": "傻孩子"
   },
   "แปลกมาก": {
-    "phonetic": "pælk maak",
+    "phonetic": "paelk-maak",
     "meaning": "很奇怪"
   },
   "คลับ": {
@@ -8640,11 +8615,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "俱乐部"
   },
   "ห่วยแตก": {
-    "phonetic": "wy tæk",
+    "phonetic": "wy-taek",
     "meaning": "糟透了"
   },
   "มากขึ้น": {
-    "phonetic": "maak khuen",
+    "phonetic": "maak-khuen",
     "meaning": "越来越多"
   },
   "อ่าว": {
@@ -8652,11 +8627,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "湾"
   },
   "สีแดง": {
-    "phonetic": "sii dæng",
+    "phonetic": "sii-daeng",
     "meaning": "红色的"
   },
   "สถานที่": {
-    "phonetic": "sthaan thii",
+    "phonetic": "sthaan-thii",
     "meaning": "地点"
   },
   "จอร์น": {
@@ -8668,11 +8643,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "呵呵"
   },
   "เอาล่ะๆ": {
-    "phonetic": "oeaa la«",
+    "phonetic": "oeaa-la",
     "meaning": "好的"
   },
   "เดเนียล": {
-    "phonetic": "de neiia l",
+    "phonetic": "de-neia-l",
     "meaning": "丹尼尔"
   },
   "โกรธ": {
@@ -8680,15 +8655,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "生气的"
   },
   "เคนนี่": {
-    "phonetic": "khen nii",
+    "phonetic": "khen-nii",
     "meaning": "肯尼"
   },
   "เคยสิ": {
-    "phonetic": "khei si",
+    "phonetic": "khei-si",
     "meaning": "我以前也是这样"
   },
   "ฉันท้อง": {
-    "phonetic": "chhan thong",
+    "phonetic": "chhan-thong",
     "meaning": "我怀孕了"
   },
   "ไลท์": {
@@ -8696,11 +8671,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "光"
   },
   "สู้เขา": {
-    "phonetic": "suu kheaa",
+    "phonetic": "suu-kheaa",
     "meaning": "与他战斗"
   },
   "โซซึเกะ": {
-    "phonetic": "so sue kea",
+    "phonetic": "so-sue-kea",
     "meaning": "宗介"
   },
   "เท็กซัส": {
@@ -8712,7 +8687,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "受害者"
   },
   "เหอะน่า": {
-    "phonetic": "eoa naa",
+    "phonetic": "eoa-naa",
     "meaning": "呵呵"
   },
   "ยูมิ": {
@@ -8720,15 +8695,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "由美"
   },
   "ยุนซอง": {
-    "phonetic": "yun song",
+    "phonetic": "yun-song",
     "meaning": "尹成"
   },
   "แผน": {
-    "phonetic": "phæn",
+    "phonetic": "phaen",
     "meaning": "计划"
   },
   "ดีมากๆ": {
-    "phonetic": "dii maak«",
+    "phonetic": "dii-maak-maak",
     "meaning": "非常好"
   },
   "เคย์": {
@@ -8760,15 +8735,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "啊"
   },
   "เคยเป็น": {
-    "phonetic": "khei pen",
+    "phonetic": "khei-pen",
     "meaning": "曾经是"
   },
   "โชคร้าย": {
-    "phonetic": "chhokh raay",
+    "phonetic": "chhokh-raay",
     "meaning": "厄运"
   },
   "ง่ายมาก": {
-    "phonetic": "ngaay maak",
+    "phonetic": "ngaay-maak",
     "meaning": "很容易"
   },
   "รายงาน": {
@@ -8776,11 +8751,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "报告"
   },
   "แป๊บนึง": {
-    "phonetic": "pæb nueng",
+    "phonetic": "paeb-nueng",
     "meaning": "一会儿"
   },
   "คาเมรอน": {
-    "phonetic": "khaa me ron",
+    "phonetic": "khaa-me-ron",
     "meaning": "卡梅伦"
   },
   "ชู่ววว": {
@@ -8788,7 +8763,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嘘"
   },
   "คริสติน": {
-    "phonetic": "kh ri sti n",
+    "phonetic": "kh-ri-sti-n",
     "meaning": "克里斯汀"
   },
   "ม่าย": {
@@ -8800,7 +8775,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "下跪"
   },
   "ไม่นาน": {
-    "phonetic": "mi naan",
+    "phonetic": "mi-naan",
     "meaning": "不长"
   },
   "อุ้ย": {
@@ -8808,7 +8783,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哎哟"
   },
   "วูดดี้": {
-    "phonetic": "wuud dii",
+    "phonetic": "wuud-dii",
     "meaning": "伍迪"
   },
   "สวยงาม": {
@@ -8816,15 +8791,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "美丽的"
   },
   "ฮาโหล": {
-    "phonetic": "haa ol",
+    "phonetic": "haa-ol",
     "meaning": "你好"
   },
   "ขั้นแรก": {
-    "phonetic": "khan ræk",
+    "phonetic": "khan-raek",
     "meaning": "第一步"
   },
   "มาก่อน": {
-    "phonetic": "maa kon",
+    "phonetic": "maa-kon",
     "meaning": "先来吧"
   },
   "จอร์ช": {
@@ -8832,11 +8807,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "乔治"
   },
   "เวรกรรม": {
-    "phonetic": "wer krrm",
+    "phonetic": "wer-krrm",
     "meaning": "业力"
   },
   "ร่วมเพศ": {
-    "phonetic": "rwm phes",
+    "phonetic": "rwm-phes",
     "meaning": "他妈的"
   },
   "ยกเลิก": {
@@ -8844,11 +8819,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "取消"
   },
   "ที่อยู่": {
-    "phonetic": "thii oyuu",
+    "phonetic": "thii-oyuu",
     "meaning": "地址"
   },
   "เอลลิส": {
-    "phonetic": "oe l lis",
+    "phonetic": "oe-l-lis",
     "meaning": "埃利斯"
   },
   "เอช": {
@@ -8860,15 +8835,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "拉斯"
   },
   "ราโมน": {
-    "phonetic": "raa mon",
+    "phonetic": "raa-mon",
     "meaning": "拉蒙"
   },
   "จุนซู": {
-    "phonetic": "chun suu",
+    "phonetic": "chun-suu",
     "meaning": "俊苏"
   },
   "ขอเถอะ": {
-    "phonetic": "kho theoa",
+    "phonetic": "kho-theoa",
     "meaning": "请"
   },
   "ชิบ": {
@@ -8876,7 +8851,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "芯片"
   },
   "ดีจ้ะ": {
-    "phonetic": "dii cha",
+    "phonetic": "dii-cha",
     "meaning": "好的"
   },
   "รู้สึก": {
@@ -8884,19 +8859,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "感觉"
   },
   "เซ็นต์": {
-    "phonetic": "sen t",
+    "phonetic": "sen-t",
     "meaning": "分"
   },
   "ซินดี้": {
-    "phonetic": "sin dii",
+    "phonetic": "sin-dii",
     "meaning": "辛迪"
   },
   "มารุโอะ": {
-    "phonetic": "maa ru ooa",
+    "phonetic": "maa-ru-ooa",
     "meaning": "丸尾"
   },
   "อย่าทำ": {
-    "phonetic": "oyaa tha",
+    "phonetic": "oyaa-tha",
     "meaning": "不要这样做"
   },
   "ชุด": {
@@ -8908,15 +8883,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "弗雷德"
   },
   "พอลลี่": {
-    "phonetic": "pho l lii",
+    "phonetic": "pho-l-lii",
     "meaning": "波莉"
   },
   "คนบ้า": {
-    "phonetic": "khn baa",
+    "phonetic": "khn-baa",
     "meaning": "疯狂的人"
   },
   "โทรมา": {
-    "phonetic": "thor maa",
+    "phonetic": "thor-maa",
     "meaning": "打电话给我"
   },
   "จิ": {
@@ -8924,7 +8899,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "吉"
   },
   "ฟรานซิส": {
-    "phonetic": "f raan sis",
+    "phonetic": "f-raan-sis",
     "meaning": "弗朗西斯"
   },
   "โอ้ะ": {
@@ -8932,7 +8907,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哦"
   },
   "กลอเรีย": {
-    "phonetic": "kl oreiia",
+    "phonetic": "kl-oreia",
     "meaning": "格洛丽亚"
   },
   "ลิฟ": {
@@ -8940,7 +8915,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "丽芙"
   },
   "เร็วอีก": {
-    "phonetic": "rew oiik",
+    "phonetic": "rew-oiik",
     "meaning": "更快"
   },
   "ดูดี": {
@@ -8948,19 +8923,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "看起来不错"
   },
   "คุณน้า": {
-    "phonetic": "khun naa",
+    "phonetic": "khun-naa",
     "meaning": "阿姨"
   },
   "ไงครับ": {
-    "phonetic": "ngi khrab",
+    "phonetic": "ngi-khrab",
     "meaning": "嘿"
   },
   "วูจิน": {
-    "phonetic": "wuu chin",
+    "phonetic": "wuu-chin",
     "meaning": "宇进"
   },
   "แจจุง": {
-    "phonetic": "chæ chung",
+    "phonetic": "chae-chung",
     "meaning": "杰中"
   },
   "ไปละ": {
@@ -8976,11 +8951,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "呼"
   },
   "ได้เสมอ": {
-    "phonetic": "di semo",
+    "phonetic": "di-semo",
     "meaning": "你永远可以"
   },
   "ไหนล่ะ": {
-    "phonetic": "in la",
+    "phonetic": "in-la",
     "meaning": "在哪里"
   },
   "ทีวี": {
@@ -8988,7 +8963,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "电视"
   },
   "คิมนานา": {
-    "phonetic": "khi mnaa naa",
+    "phonetic": "khi-mnaa-naa",
     "meaning": "金娜娜"
   },
   "สิงหาคม": {
@@ -9000,31 +8975,31 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "舒服的"
   },
   "แลรี่": {
-    "phonetic": "læ rii",
+    "phonetic": "lae-rii",
     "meaning": "拉里"
   },
   "ใหม่": {
-    "phonetic": "ım",
+    "phonetic": "aim",
     "meaning": "新的"
   },
   "ฟังดูดี": {
-    "phonetic": "fang duu dii",
+    "phonetic": "fang-duu-dii",
     "meaning": "听起来不错"
   },
   "ได้รับ": {
-    "phonetic": "di rab",
+    "phonetic": "di-rab",
     "meaning": "已收到"
   },
   "พูดถูก": {
-    "phonetic": "phuud thuuk",
+    "phonetic": "phuud-thuuk",
     "meaning": "你说得对"
   },
   "ฮ่าๆๆ": {
-    "phonetic": "haa« «",
+    "phonetic": "haa-haa-",
     "meaning": "哈哈哈"
   },
   "ใช้ได้": {
-    "phonetic": "chhıdi",
+    "phonetic": "chhaidi",
     "meaning": "可以使用"
   },
   "ลำ": {
@@ -9032,7 +9007,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "林"
   },
   "เด็บบี้": {
-    "phonetic": "deb bii",
+    "phonetic": "deb-bii",
     "meaning": "黛比"
   },
   "เร้ด": {
@@ -9040,15 +9015,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "红色的"
   },
   "บอกผมสิ": {
-    "phonetic": "bok phm si",
+    "phonetic": "bok-phm-si",
     "meaning": "告诉我"
   },
   "เออนี่": {
-    "phonetic": "oeo nii",
+    "phonetic": "oeo-nii",
     "meaning": "嗯在这里"
   },
   "พ่อจ๋า": {
-    "phonetic": "pho chaa",
+    "phonetic": "pho-chaa",
     "meaning": "爸爸"
   },
   "เกิด": {
@@ -9056,15 +9031,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "出生了"
   },
   "นี่จ้ะ": {
-    "phonetic": "nii cha",
+    "phonetic": "nii-cha",
     "meaning": "就是这样"
   },
   "ตลก": {
-    "phonetic": "tlk",
+    "phonetic": "ta-lok",
     "meaning": "有趣的"
   },
   "ธอร์น": {
-    "phonetic": "th orn",
+    "phonetic": "th-orn",
     "meaning": "刺"
   },
   "มากมาย": {
@@ -9072,11 +9047,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "许多"
   },
   "ไม่แล้ว": {
-    "phonetic": "mi læw",
+    "phonetic": "mi-laew",
     "meaning": "不再"
   },
   "ไงก็ตาม": {
-    "phonetic": "ngi ktaam",
+    "phonetic": "ngi-ktaam",
     "meaning": "反正"
   },
   "ลูกสาว": {
@@ -9092,15 +9067,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "梅古"
   },
   "เมอลิน": {
-    "phonetic": "me o lin",
+    "phonetic": "me-o-lin",
     "meaning": "梅林"
   },
   "นายด้วย": {
-    "phonetic": "naay dwy",
+    "phonetic": "naay-dwy",
     "meaning": "你也是"
   },
   "ไม่น่า": {
-    "phonetic": "mi naa",
+    "phonetic": "mi-naa",
     "meaning": "不太可能"
   },
   "สตีล": {
@@ -9108,7 +9083,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "钢"
   },
   "ซิดนี่": {
-    "phonetic": "si d nii",
+    "phonetic": "si-d-nii",
     "meaning": "西德尼"
   },
   "ลุก": {
@@ -9116,51 +9091,51 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "起床"
   },
   "อ๋อใช่": {
-    "phonetic": "oo chhı",
+    "phonetic": "oo-chhai",
     "meaning": "哦是的"
   },
   "อิซซี่": {
-    "phonetic": "ois sii",
+    "phonetic": "ois-sii",
     "meaning": "伊兹"
   },
   "หลานรัก": {
-    "phonetic": "laan rak",
+    "phonetic": "laan-rak",
     "meaning": "亲爱的孙子"
   },
   "แค่นี้": {
-    "phonetic": "khæ nii",
+    "phonetic": "khae-nii",
     "meaning": "就这样"
   },
   "ไมค์กี้": {
-    "phonetic": "mikh kii",
+    "phonetic": "mikh-kii",
     "meaning": "麦基"
   },
   "ยูจีน": {
-    "phonetic": "yuu chiin",
+    "phonetic": "yuu-chiin",
     "meaning": "尤金"
   },
   "ไม่ใช": {
-    "phonetic": "mi chhı",
+    "phonetic": "mi-chhai",
     "meaning": "不"
   },
   "แมดดี้": {
-    "phonetic": "mæd dii",
+    "phonetic": "maed-dii",
     "meaning": "麦迪"
   },
   "บอกเขา": {
-    "phonetic": "bok kheaa",
+    "phonetic": "bok-kheaa",
     "meaning": "告诉他"
   },
   "ส่งมา": {
-    "phonetic": "sng maa",
+    "phonetic": "sng-maa",
     "meaning": "发送了"
   },
   "อ่าาา": {
-    "phonetic": "oaa aaaa",
+    "phonetic": "oaa-aaaa",
     "meaning": "啊"
   },
   "ครูโซ": {
-    "phonetic": "khruu so",
+    "phonetic": "khruu-so",
     "meaning": "克鲁索"
   },
   "กี": {
@@ -9168,15 +9143,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "基"
   },
   "ได้ล่ะ": {
-    "phonetic": "di la",
+    "phonetic": "di-la",
     "meaning": "好的"
   },
   "ไม่จ้ะ": {
-    "phonetic": "mi cha",
+    "phonetic": "mi-cha",
     "meaning": "不"
   },
   "ไอริส": {
-    "phonetic": "oi ris",
+    "phonetic": "oi-ris",
     "meaning": "鸢尾花"
   },
   "คาวบอย": {
@@ -9196,11 +9171,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "葡萄酒"
   },
   "ว่าไงคะ": {
-    "phonetic": "waa ngi kha",
+    "phonetic": "waa-ngi-kha",
     "meaning": "你怎么说"
   },
   "ร้อยโท": {
-    "phonetic": "roy tho",
+    "phonetic": "roy-tho",
     "meaning": "中尉"
   },
   "สก็อตต์": {
@@ -9212,7 +9187,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哟"
   },
   "มันยาก": {
-    "phonetic": "man yaak",
+    "phonetic": "man-yaak",
     "meaning": "它很难"
   },
   "ปลา": {
@@ -9220,15 +9195,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "鱼"
   },
   "จัดไป": {
-    "phonetic": "chad pi",
+    "phonetic": "chad-pi",
     "meaning": "我们走吧"
   },
   "ใช่ใช่": {
-    "phonetic": "chhı chhı",
+    "phonetic": "chhai-chhai",
     "meaning": "是的是的"
   },
   "โทษค่ะ": {
-    "phonetic": "thosʹ kha",
+    "phonetic": "thot-kha",
     "meaning": "对不起"
   },
   "ไฮ้": {
@@ -9236,7 +9211,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "你好"
   },
   "จากใคร": {
-    "phonetic": "chaak khır",
+    "phonetic": "chaak-khair",
     "meaning": "来自谁"
   },
   "คำ": {
@@ -9244,27 +9219,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "字"
   },
   "คอลลิน": {
-    "phonetic": "kho l lin",
+    "phonetic": "kho-l-lin",
     "meaning": "科林"
   },
   "พอเหอะ": {
-    "phonetic": "pho eoa",
+    "phonetic": "pho-eoa",
     "meaning": "足够的"
   },
   "ให้คุณ": {
-    "phonetic": "ı khun",
+    "phonetic": "ai-khun",
     "meaning": "给你"
   },
   "รู้อะไร": {
-    "phonetic": "ruu oari",
+    "phonetic": "ruu-oari",
     "meaning": "你知道什么"
   },
   "คอลิน": {
-    "phonetic": "kho lin",
+    "phonetic": "kho-lin",
     "meaning": "科林"
   },
   "ฮอตช์": {
-    "phonetic": "hot chh",
+    "phonetic": "hot-chh",
     "meaning": "霍奇"
   },
   "ฮยอง": {
@@ -9280,11 +9255,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "主"
   },
   "แดริล": {
-    "phonetic": "dæ ril",
+    "phonetic": "dae-ril",
     "meaning": "达里尔"
   },
   "ไคโตะ": {
-    "phonetic": "khi toa",
+    "phonetic": "khi-toa",
     "meaning": "凯托"
   },
   "บัด": {
@@ -9296,23 +9271,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "格斯"
   },
   "บาร์ท": {
-    "phonetic": "baar th",
+    "phonetic": "baar-th",
     "meaning": "巴特"
   },
   "มาเร็วๆ": {
-    "phonetic": "maa rew«",
+    "phonetic": "maa-rew-rew",
     "meaning": "快来吧"
   },
   "แหงสิ": {
-    "phonetic": "æng si",
+    "phonetic": "aeng-si",
     "meaning": "当然"
   },
   "แหวน": {
-    "phonetic": "æwn",
+    "phonetic": "aewn",
     "meaning": "戒指"
   },
   "เดซี่": {
-    "phonetic": "de sii",
+    "phonetic": "de-sii",
     "meaning": "雏菊"
   },
   "เช็ค": {
@@ -9320,7 +9295,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "查看"
   },
   "ที่บ้าน": {
-    "phonetic": "thii baan",
+    "phonetic": "thii-baan",
     "meaning": "在家里"
   },
   "ร็อค": {
@@ -9328,7 +9303,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "岩石"
   },
   "อะไรๆ": {
-    "phonetic": "oari«",
+    "phonetic": "oari",
     "meaning": "任何事物"
   },
   "รัน": {
@@ -9336,7 +9311,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "跑步"
   },
   "ใช่เหรอ": {
-    "phonetic": "chhı e ro",
+    "phonetic": "chhai-e-ro",
     "meaning": "是这样吗"
   },
   "ข่าว": {
@@ -9344,11 +9319,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "消息"
   },
   "ความสุข": {
-    "phonetic": "khwaam sukh",
+    "phonetic": "khwaam-sukh",
     "meaning": "幸福"
   },
   "ก้มลง": {
-    "phonetic": "km lng",
+    "phonetic": "gom-long",
     "meaning": "跪拜"
   },
   "นิว": {
@@ -9356,7 +9331,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "新的"
   },
   "คนไหน": {
-    "phonetic": "khn in",
+    "phonetic": "khn-in",
     "meaning": "哪一个"
   },
   "หมู": {
@@ -9364,23 +9339,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "猪"
   },
   "ไงพวก": {
-    "phonetic": "ngi phwk",
+    "phonetic": "ngi-phwk",
     "meaning": "嘿伙计们"
   },
   "ความฝัน": {
-    "phonetic": "khwaam fan",
+    "phonetic": "khwaam-fan",
     "meaning": "梦"
   },
   "ขับไป": {
-    "phonetic": "khab pi",
+    "phonetic": "khab-pi",
     "meaning": "赶走"
   },
   "แชง": {
-    "phonetic": "chhæng",
+    "phonetic": "chhaeng",
     "meaning": "张"
   },
   "คนตาย": {
-    "phonetic": "khn taay",
+    "phonetic": "khn-taay",
     "meaning": "死人了"
   },
   "เบิร์ก": {
@@ -9388,15 +9363,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "伯格"
   },
   "แต่อะไร": {
-    "phonetic": "tæ oari",
+    "phonetic": "tae-oari",
     "meaning": "但什么"
   },
   "คาโอรุ": {
-    "phonetic": "khaa oo ru",
+    "phonetic": "khaa-oo-ru",
     "meaning": "薰"
   },
   "เป็นใคร": {
-    "phonetic": "pen khır",
+    "phonetic": "pen-khair",
     "meaning": "你是谁"
   },
   "หมอบ": {
@@ -9404,7 +9379,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "蹲"
   },
   "ช่วงนี้": {
-    "phonetic": "chhwng nii",
+    "phonetic": "chhwng-nii",
     "meaning": "这段时间"
   },
   "โอ้โฮ": {
@@ -9412,7 +9387,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哇哦"
   },
   "เอานะ": {
-    "phonetic": "oeaa na",
+    "phonetic": "oeaa-na",
     "meaning": "快点"
   },
   "นาน": {
@@ -9424,19 +9399,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "动物"
   },
   "บทที่": {
-    "phonetic": "bth thii",
+    "phonetic": "bth-thii",
     "meaning": "章"
   },
   "แทโฮ": {
-    "phonetic": "thæho",
+    "phonetic": "thaeho",
     "meaning": "泰浩"
   },
   "เชี่ย": {
-    "phonetic": "chheiia",
+    "phonetic": "chheia",
     "meaning": "他妈的"
   },
   "ภาษา": {
-    "phonetic": "phhaasʹaa",
+    "phonetic": "phaa-saa",
     "meaning": "语言"
   },
   "เฮ่ย": {
@@ -9448,7 +9423,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "这"
   },
   "แต่ไม่": {
-    "phonetic": "tæ mi",
+    "phonetic": "tae-mi",
     "meaning": "但没有"
   },
   "เม": {
@@ -9456,31 +9431,31 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "四月"
   },
   "แพททริค": {
-    "phonetic": "phæth thrikh",
+    "phonetic": "phaeth-thrikh",
     "meaning": "帕特里克"
   },
   "เมื่อไร": {
-    "phonetic": "meueori",
+    "phonetic": "mueari",
     "meaning": "什么时候"
   },
   "มือถือ": {
-    "phonetic": "mueo thueo",
+    "phonetic": "mueo-thueo",
     "meaning": "手机"
   },
   "เข้าใจ๋": {
-    "phonetic": "kheaa chı",
+    "phonetic": "kheaa-chai",
     "meaning": "我明白"
   },
   "แบรนแดน": {
-    "phonetic": "bæ rn dæn",
+    "phonetic": "bae-rn-daen",
     "meaning": "布兰丹"
   },
   "นายคือ": {
-    "phonetic": "naay khueo",
+    "phonetic": "naay-khueo",
     "meaning": "你是"
   },
   "ออกัส": {
-    "phonetic": "ooka s",
+    "phonetic": "ooka-s",
     "meaning": "八月"
   },
   "ทดสอบ": {
@@ -9504,15 +9479,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "就是这样"
   },
   "ด้วยนะ": {
-    "phonetic": "dwy na",
+    "phonetic": "dwy-na",
     "meaning": "也"
   },
   "หลักฐาน": {
-    "phonetic": "lak thaan",
+    "phonetic": "lak-thaan",
     "meaning": "证据"
   },
   "แต่นั่น": {
-    "phonetic": "tæ nan",
+    "phonetic": "tae-nan",
     "meaning": "但那样"
   },
   "ผี": {
@@ -9524,11 +9499,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "夫妻"
   },
   "ชาโรน่า": {
-    "phonetic": "chhaa ro naa",
+    "phonetic": "chhaa-ro-naa",
     "meaning": "莎罗娜"
   },
   "น่านะ": {
-    "phonetic": "naa na",
+    "phonetic": "naa-na",
     "meaning": "好的"
   },
   "เกิร์ล": {
@@ -9544,51 +9519,51 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "甜的"
   },
   "แถว": {
-    "phonetic": "thæw",
+    "phonetic": "thaew",
     "meaning": "排"
   },
   "ไรเดอร์": {
-    "phonetic": "ri de or",
+    "phonetic": "ri-de-or",
     "meaning": "骑士"
   },
   "ไปไหนมา": {
-    "phonetic": "pi in maa",
+    "phonetic": "pi-in-maa",
     "meaning": "你去哪儿了"
   },
   "ก็เพราะ": {
-    "phonetic": "k pheraaa",
+    "phonetic": "k-pheraaa",
     "meaning": "因为"
   },
   "ไม่หรอ": {
-    "phonetic": "mi ro",
+    "phonetic": "mi-ro",
     "meaning": "不"
   },
   "กด": {
-    "phonetic": "kd",
+    "phonetic": "got",
     "meaning": "按"
   },
   "บิลล์": {
-    "phonetic": "bil l",
+    "phonetic": "bil-l",
     "meaning": "账单"
   },
   "หรือยัง": {
-    "phonetic": "rueo yang",
+    "phonetic": "rueo-yang",
     "meaning": "或者还没有"
   },
   "จอนนี่": {
-    "phonetic": "chon nii",
+    "phonetic": "chon-nii",
     "meaning": "乔尼"
   },
   "ออเดรย์": {
-    "phonetic": "oo dery",
+    "phonetic": "oo-dery",
     "meaning": "奥黛丽"
   },
   "ทานากะ": {
-    "phonetic": "thaa naa ka",
+    "phonetic": "thaa-naa-ka",
     "meaning": "田中"
   },
   "สองคน": {
-    "phonetic": "song khn",
+    "phonetic": "song-khn",
     "meaning": "两个人"
   },
   "ค่อย": {
@@ -9596,19 +9571,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "慢慢地"
   },
   "พระราชา": {
-    "phonetic": "phra raachhaa",
+    "phonetic": "phra-raachhaa",
     "meaning": "国王"
   },
   "พี่ใหญ่": {
-    "phonetic": "phii ıy",
+    "phonetic": "phii-aiy",
     "meaning": "大哥"
   },
   "อาร์ลีน": {
-    "phonetic": "oaar liin",
+    "phonetic": "oaar-liin",
     "meaning": "阿琳"
   },
   "ทำไมนะ": {
-    "phonetic": "thami na",
+    "phonetic": "thami-na",
     "meaning": "为什么"
   },
   "บิชอป": {
@@ -9620,7 +9595,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "十几个"
   },
   "จุ๊บๆ": {
-    "phonetic": "chub«",
+    "phonetic": "chub",
     "meaning": "吻吻"
   },
   "มิค": {
@@ -9636,19 +9611,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "JT"
   },
   "ดูนายสิ": {
-    "phonetic": "duu naay si",
+    "phonetic": "duu-naay-si",
     "meaning": "看看你"
   },
   "เบรนด้า": {
-    "phonetic": "be rn daa",
+    "phonetic": "be-rn-daa",
     "meaning": "布伦达"
   },
   "ไม่ๆๆๆๆ": {
-    "phonetic": "mi« «««",
+    "phonetic": "mai-mai-mai",
     "meaning": "不不不不"
   },
   "เยจิน": {
-    "phonetic": "ye chin",
+    "phonetic": "ye-chin",
     "meaning": "业进"
   },
   "คริสตัล": {
@@ -9656,7 +9631,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "水晶"
   },
   "นี่พวก": {
-    "phonetic": "nii phwk",
+    "phonetic": "nii-phwk",
     "meaning": "他们在这里"
   },
   "จอย": {
@@ -9664,7 +9639,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "喜悦"
   },
   "อาร์ทู": {
-    "phonetic": "oaar thuu",
+    "phonetic": "oaar-thuu",
     "meaning": "阿图"
   },
   "ธนาคาร": {
@@ -9676,11 +9651,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "阿米"
   },
   "วิกกี้": {
-    "phonetic": "wik kii",
+    "phonetic": "wik-kii",
     "meaning": "维姬"
   },
   "ยังอยู่": {
-    "phonetic": "yang oyuu",
+    "phonetic": "yang-oyuu",
     "meaning": "还在这里"
   },
   "มู": {
@@ -9688,15 +9663,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "亩"
   },
   "เล็กซี่": {
-    "phonetic": "lek sii",
+    "phonetic": "lek-sii",
     "meaning": "莱克西"
   },
   "และเขา": {
-    "phonetic": "læa kheaa",
+    "phonetic": "laea-kheaa",
     "meaning": "还有他"
   },
   "รับบท": {
-    "phonetic": "rab bth",
+    "phonetic": "rab-bth",
     "meaning": "担当这个角色"
   },
   "พยายาม": {
@@ -9704,7 +9679,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "尝试"
   },
   "น้ำผึ้ง": {
-    "phonetic": "na phueng",
+    "phonetic": "na-phueng",
     "meaning": "蜂蜜"
   },
   "ไปซิ": {
@@ -9724,15 +9699,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "品尝"
   },
   "นิกกี้": {
-    "phonetic": "ni kkii",
+    "phonetic": "ni-kkii",
     "meaning": "尼基"
   },
   "ไม่ฮะ": {
-    "phonetic": "mi ha",
+    "phonetic": "mi-ha",
     "meaning": "不"
   },
   "เควนติน": {
-    "phonetic": "khe wn tin",
+    "phonetic": "khe-wn-tin",
     "meaning": "昆汀"
   },
   "โนอา": {
@@ -9748,19 +9723,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "缺口"
   },
   "แพทริก": {
-    "phonetic": "phæ thrik",
+    "phonetic": "phae-thrik",
     "meaning": "帕特里克"
   },
   "เอเรีย": {
-    "phonetic": "oe reiia",
+    "phonetic": "oe-reia",
     "meaning": "咏叹调"
   },
   "เฮลโหล": {
-    "phonetic": "hel ol",
+    "phonetic": "hel-ol",
     "meaning": "你好"
   },
   "คาลวิน": {
-    "phonetic": "khaa l win",
+    "phonetic": "khaa-l-win",
     "meaning": "卡尔文"
   },
   "โอะ": {
@@ -9768,11 +9743,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哦"
   },
   "ลูก้า": {
-    "phonetic": "luuk aa",
+    "phonetic": "luuk-aa",
     "meaning": "卢卡"
   },
   "เคย์ซี่": {
-    "phonetic": "khei sii",
+    "phonetic": "khei-sii",
     "meaning": "凯西"
   },
   "ขนาด": {
@@ -9784,11 +9759,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "什么"
   },
   "ไลเคน": {
-    "phonetic": "li khen",
+    "phonetic": "li-khen",
     "meaning": "地衣"
   },
   "แบรนดอน": {
-    "phonetic": "bæ rn don",
+    "phonetic": "bae-rn-don",
     "meaning": "布兰登"
   },
   "กลุ่ม": {
@@ -9820,27 +9795,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "我"
   },
   "โยโกะ": {
-    "phonetic": "yo koa",
+    "phonetic": "yo-koa",
     "meaning": "洋子"
   },
   "นั่นละ": {
-    "phonetic": "nan la",
+    "phonetic": "nan-la",
     "meaning": "就是这样"
   },
   "เชียร์ส": {
-    "phonetic": "chheiiar s",
+    "phonetic": "chheiar-s",
     "meaning": "干杯"
   },
   "สกปรก": {
-    "phonetic": "skprk",
+    "phonetic": "sok-ka-prok",
     "meaning": "肮脏的"
   },
   "ถูกเผง": {
-    "phonetic": "thuuk pheng",
+    "phonetic": "thuuk-pheng",
     "meaning": "这是正确的"
   },
   "นายน้อย": {
-    "phonetic": "naay noy",
+    "phonetic": "naay-noy",
     "meaning": "少爷"
   },
   "มีอา": {
@@ -9856,7 +9831,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "摩西"
   },
   "ทำยังไง": {
-    "phonetic": "tha yang ngi",
+    "phonetic": "tha-yang-ngi",
     "meaning": "怎么做呢"
   },
   "เชอะ": {
@@ -9868,19 +9843,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "樱花"
   },
   "เอดิสัน": {
-    "phonetic": "oe di san",
+    "phonetic": "oe-di-san",
     "meaning": "爱迪生"
   },
   "จริงซิ": {
-    "phonetic": "chring si",
+    "phonetic": "chring-si",
     "meaning": "这是真的"
   },
   "ตอนเช้า": {
-    "phonetic": "ton chheaa",
+    "phonetic": "ton-chheaa",
     "meaning": "早晨"
   },
   "แรนดี้": {
-    "phonetic": "ræn dii",
+    "phonetic": "raen-dii",
     "meaning": "兰迪"
   },
   "กล่อง": {
@@ -9888,19 +9863,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "盒子"
   },
   "ยุนโฮ": {
-    "phonetic": "yu n ho",
+    "phonetic": "yu-n-ho",
     "meaning": "允浩"
   },
   "มาตลอด": {
-    "phonetic": "maa tlod",
+    "phonetic": "maa-tlod",
     "meaning": "一直都在这里"
   },
   "คนโกหก": {
-    "phonetic": "khn kok",
+    "phonetic": "khn-kok",
     "meaning": "说谎者"
   },
   "อีชาน": {
-    "phonetic": "oii chhaan",
+    "phonetic": "oii-chhaan",
     "meaning": "伊坎"
   },
   "เรน": {
@@ -9908,7 +9883,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "雨"
   },
   "ดงอุก": {
-    "phonetic": "dng ouk",
+    "phonetic": "dng-ouk",
     "meaning": "东旭"
   },
   "หนัก": {
@@ -9916,7 +9891,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "重的"
   },
   "บราโว": {
-    "phonetic": "braa wo",
+    "phonetic": "braa-wo",
     "meaning": "太棒了"
   },
   "ดาว": {
@@ -9924,23 +9899,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "星星"
   },
   "ทางขวา": {
-    "phonetic": "thaang khwaa",
+    "phonetic": "thaang-khwaa",
     "meaning": "向右"
   },
   "พันเอก": {
-    "phonetic": "phan oek",
+    "phonetic": "phan-oek",
     "meaning": "上校"
   },
   "ซาช่า": {
-    "phonetic": "saa chhaa",
+    "phonetic": "saa-chhaa",
     "meaning": "萨莎"
   },
   "แล้วถ้า": {
-    "phonetic": "læw thaa",
+    "phonetic": "laew-thaa",
     "meaning": "如果"
   },
   "บายค่ะ": {
-    "phonetic": "baay kha",
+    "phonetic": "baay-kha",
     "meaning": "再见"
   },
   "ม้า": {
@@ -9952,7 +9927,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "天哪"
   },
   "คลาวด์": {
-    "phonetic": "khlaa wd",
+    "phonetic": "khlaa-wd",
     "meaning": "云"
   },
   "พาย": {
@@ -9960,43 +9935,43 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "馅饼"
   },
   "นก": {
-    "phonetic": "nk",
+    "phonetic": "nok",
     "meaning": "鸟"
   },
   "ลันดี้": {
-    "phonetic": "lan dii",
+    "phonetic": "lan-dii",
     "meaning": "伦迪"
   },
   "กับเขา": {
-    "phonetic": "kab kheaa",
+    "phonetic": "kab-kheaa",
     "meaning": "和他在一起"
   },
   "คำสั่ง": {
-    "phonetic": "kha sang",
+    "phonetic": "kha-sang",
     "meaning": "命令"
   },
   "ชั้นว่า": {
-    "phonetic": "chhan waa",
+    "phonetic": "chhan-waa",
     "meaning": "我说"
   },
   "เลยล่ะ": {
-    "phonetic": "lei la",
+    "phonetic": "lei-la",
     "meaning": "马上"
   },
   "นั้นไง": {
-    "phonetic": "nan ngi",
+    "phonetic": "nan-ngi",
     "meaning": "就是这样"
   },
   "ปาป๊า": {
-    "phonetic": "paap aa",
+    "phonetic": "paap-aa",
     "meaning": "爸爸"
   },
   "ซะอีก": {
-    "phonetic": "sa oiik",
+    "phonetic": "sa-oiik",
     "meaning": "再次"
   },
   "ราอิม": {
-    "phonetic": "raa oim",
+    "phonetic": "raa-oim",
     "meaning": "雷姆"
   },
   "เดลต้า": {
@@ -10004,39 +9979,39 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "三角洲"
   },
   "ราวๆ": {
-    "phonetic": "raaw«",
+    "phonetic": "raaw",
     "meaning": "大约"
   },
   "และนาย": {
-    "phonetic": "læa naay",
+    "phonetic": "laea-naay",
     "meaning": "和先生"
   },
   "หนาวจัง": {
-    "phonetic": "naaw chang",
+    "phonetic": "naaw-chang",
     "meaning": "天气太冷了"
   },
   "โดโลเรส": {
-    "phonetic": "do lores",
+    "phonetic": "do-lores",
     "meaning": "多洛丽丝"
   },
   "แปลกๆ": {
-    "phonetic": "pælk«",
+    "phonetic": "paelk",
     "meaning": "奇怪的"
   },
   "รร": {
-    "phonetic": "rr",
+    "phonetic": "roong-riian",
     "meaning": "学校"
   },
   "แต่ทว่า": {
-    "phonetic": "tæ thwaa",
+    "phonetic": "tae-thwaa",
     "meaning": "但是"
   },
   "ครับๆ": {
-    "phonetic": "khrab«",
+    "phonetic": "khrab",
     "meaning": "是的是的"
   },
   "เนลลี่": {
-    "phonetic": "nel lii",
+    "phonetic": "nel-lii",
     "meaning": "耐莉"
   },
   "ช่ายยย": {
@@ -10048,7 +10023,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "明"
   },
   "แมทท์": {
-    "phonetic": "mæthth",
+    "phonetic": "maethth",
     "meaning": "马特"
   },
   "ดุ๊ค": {
@@ -10056,15 +10031,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "公爵"
   },
   "ดีใจจัง": {
-    "phonetic": "diichı chang",
+    "phonetic": "diichai-chang",
     "meaning": "太高兴了"
   },
   "เล็กซ์": {
-    "phonetic": "lek s",
+    "phonetic": "lek-s",
     "meaning": "莱克斯"
   },
   "ริชชี่": {
-    "phonetic": "richh chhii",
+    "phonetic": "richh-chhii",
     "meaning": "里奇"
   },
   "ห้ะ": {
@@ -10072,31 +10047,31 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "呵呵"
   },
   "คินตะ": {
-    "phonetic": "khin ta",
+    "phonetic": "khin-ta",
     "meaning": "近打"
   },
   "ไอ้นี่": {
-    "phonetic": "oi nii",
+    "phonetic": "oi-nii",
     "meaning": "这个家伙"
   },
   "มานี้": {
-    "phonetic": "maa nii",
+    "phonetic": "maa-nii",
     "meaning": "过来吧"
   },
   "เรียว": {
-    "phonetic": "reiiaw",
+    "phonetic": "reiaw",
     "meaning": "苗条"
   },
   "ข้าชื่อ": {
-    "phonetic": "khaa chhueo",
+    "phonetic": "khaa-chhueo",
     "meaning": "我的名字是"
   },
   "ดอลล่า": {
-    "phonetic": "dol laa",
+    "phonetic": "dol-laa",
     "meaning": "美元"
   },
   "ตายแน่": {
-    "phonetic": "taay næ",
+    "phonetic": "taay-nae",
     "meaning": "肯定死了"
   },
   "เท": {
@@ -10104,7 +10079,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "倒"
   },
   "กราเซีย": {
-    "phonetic": "kraa seiia",
+    "phonetic": "kraa-seia",
     "meaning": "格拉齐亚"
   },
   "กระสุน": {
@@ -10112,11 +10087,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "弹药"
   },
   "แกรนด์": {
-    "phonetic": "kæ rnd",
+    "phonetic": "kae-rnd",
     "meaning": "盛大"
   },
   "ฮันนี่": {
-    "phonetic": "han nii",
+    "phonetic": "han-nii",
     "meaning": "蜂蜜"
   },
   "ทำลาย": {
@@ -10128,19 +10103,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "舞蹈"
   },
   "เบลี่ย์": {
-    "phonetic": "be lii y",
+    "phonetic": "be-lii-y",
     "meaning": "贝利"
   },
   "ล้านคน": {
-    "phonetic": "laan khn",
+    "phonetic": "laan-khn",
     "meaning": "数百万人"
   },
   "ริคกี้": {
-    "phonetic": "rikh kii",
+    "phonetic": "rikh-kii",
     "meaning": "瑞奇"
   },
   "รู้น่า": {
-    "phonetic": "ruu naa",
+    "phonetic": "ruu-naa",
     "meaning": "我知道"
   },
   "ฮืมมม": {
@@ -10160,23 +10135,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "真纪"
   },
   "ให้ผม": {
-    "phonetic": "ı phm",
+    "phonetic": "ai-phm",
     "meaning": "把它给我"
   },
   "แพ้": {
-    "phonetic": "phæ",
+    "phonetic": "phae",
     "meaning": "丢失的"
   },
   "ในนั้น": {
-    "phonetic": "nı nan",
+    "phonetic": "nai-nan",
     "meaning": "在其中"
   },
   "ทำไมอ่ะ": {
-    "phonetic": "thami oa",
+    "phonetic": "thami-oa",
     "meaning": "为什么"
   },
   "อึนซอง": {
-    "phonetic": "ouen song",
+    "phonetic": "ouen-song",
     "meaning": "恩成"
   },
   "วิธี": {
@@ -10184,11 +10159,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "方法"
   },
   "เบนเน็ต": {
-    "phonetic": "ben net",
+    "phonetic": "ben-net",
     "meaning": "班内特"
   },
   "เป็นสิ": {
-    "phonetic": "pen si",
+    "phonetic": "pen-si",
     "meaning": "这是"
   },
   "สวอน": {
@@ -10200,7 +10175,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "或者什么"
   },
   "พระช่วย": {
-    "phonetic": "phra chhwy",
+    "phonetic": "phra-chhwy",
     "meaning": "帕蔡"
   },
   "บอล": {
@@ -10212,15 +10187,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "体积"
   },
   "พาร์ค": {
-    "phonetic": "phaar kh",
+    "phonetic": "phaar-kh",
     "meaning": "公园"
   },
   "บรูโน่": {
-    "phonetic": "bruu no",
+    "phonetic": "bruu-no",
     "meaning": "布鲁诺"
   },
   "ข้างใน": {
-    "phonetic": "khaang nı",
+    "phonetic": "khaang-nai",
     "meaning": "里面"
   },
   "ฟิน": {
@@ -10228,7 +10203,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "太令人满意了"
   },
   "บริดเจท": {
-    "phonetic": "brid cheth",
+    "phonetic": "brid-cheth",
     "meaning": "布丽吉特"
   },
   "ก้าว": {
@@ -10236,7 +10211,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "步"
   },
   "นิ่งไว้": {
-    "phonetic": "ning wi",
+    "phonetic": "ning-wi",
     "meaning": "保持静止"
   },
   "ฟัน": {
@@ -10244,7 +10219,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "牙齿"
   },
   "ตาแก่": {
-    "phonetic": "taa kæ",
+    "phonetic": "taa-kae",
     "meaning": "老头儿"
   },
   "คุก": {
@@ -10260,31 +10235,31 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "风格"
   },
   "บอกผม": {
-    "phonetic": "bok phm",
+    "phonetic": "bok-phm",
     "meaning": "告诉我"
   },
   "แฮม": {
-    "phonetic": "hæm",
+    "phonetic": "haem",
     "meaning": "火腿"
   },
   "ได้จ้ะ": {
-    "phonetic": "di cha",
+    "phonetic": "di-cha",
     "meaning": "你可以"
   },
   "ชน": {
-    "phonetic": "chhn",
+    "phonetic": "chon",
     "meaning": "碰撞"
   },
   "พาเมล่า": {
-    "phonetic": "phaa me laa",
+    "phonetic": "phaa-me-laa",
     "meaning": "帕梅拉"
   },
   "วินสโตน": {
-    "phonetic": "win s ton",
+    "phonetic": "win-s-ton",
     "meaning": "温斯顿"
   },
   "อินเดีย": {
-    "phonetic": "oindeiia",
+    "phonetic": "oindeia",
     "meaning": "印度"
   },
   "บาทหลวง": {
@@ -10292,11 +10267,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "牧师"
   },
   "หยุดน่ะ": {
-    "phonetic": "yud na",
+    "phonetic": "yud-na",
     "meaning": "停止吧"
   },
   "รอนี่นะ": {
-    "phonetic": "ro nii na",
+    "phonetic": "ro-nii-na",
     "meaning": "在这里等一下"
   },
   "เร": {
@@ -10304,7 +10279,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "关于"
   },
   "ไอ้ชั่ว": {
-    "phonetic": "oi chhaw",
+    "phonetic": "oi-chhaw",
     "meaning": "邪恶的混蛋"
   },
   "วิทยุ": {
@@ -10320,51 +10295,51 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "店铺"
   },
   "หันไป": {
-    "phonetic": "an pi",
+    "phonetic": "an-pi",
     "meaning": "回转"
   },
   "ไมอามี่": {
-    "phonetic": "mi oaa mii",
+    "phonetic": "mi-oaa-mii",
     "meaning": "迈阿密"
   },
   "เฮริน": {
-    "phonetic": "he rin",
+    "phonetic": "he-rin",
     "meaning": "海林"
   },
   "พอๆ": {
-    "phonetic": "pho«",
+    "phonetic": "pho",
     "meaning": "足够的"
   },
   "สบายๆ": {
-    "phonetic": "sbaay«",
+    "phonetic": "sbaay",
     "meaning": "别紧张"
   },
   "ไม่นะคะ": {
-    "phonetic": "mi na kha",
+    "phonetic": "mi-na-kha",
     "meaning": "不"
   },
   "นาทีนี้": {
-    "phonetic": "naathii nii",
+    "phonetic": "naathii-nii",
     "meaning": "这一刻"
   },
   "ฮาโรลด์": {
-    "phonetic": "haa ro ld",
+    "phonetic": "haa-ro-ld",
     "meaning": "哈罗德"
   },
   "ท่านค่ะ": {
-    "phonetic": "thaan kha",
+    "phonetic": "thaan-kha",
     "meaning": "先生"
   },
   "ก็โอเค": {
-    "phonetic": "k ookhe",
+    "phonetic": "k-ookhe",
     "meaning": "没关系"
   },
   "เอเลน": {
-    "phonetic": "oe len",
+    "phonetic": "oe-len",
     "meaning": "伊莱恩"
   },
   "ซม": {
-    "phonetic": "sm",
+    "phonetic": "saw-maw",
     "meaning": "厘米"
   },
   "อดีต": {
@@ -10372,15 +10347,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "过去"
   },
   "น้องข้า": {
-    "phonetic": "nong khaa",
+    "phonetic": "nong-khaa",
     "meaning": "我的妹妹"
   },
   "พ่อผม": {
-    "phonetic": "pho phm",
+    "phonetic": "pho-phm",
     "meaning": "我的父亲"
   },
   "พลทหาร": {
-    "phonetic": "phl thaar",
+    "phonetic": "phl-thaar",
     "meaning": "士兵"
   },
   "เล็ง": {
@@ -10388,11 +10363,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "目的"
   },
   "นี้แหละ": {
-    "phonetic": "nii æla",
+    "phonetic": "nii-aela",
     "meaning": "就是这样"
   },
   "ฮโยริ": {
-    "phonetic": "h yo ri",
+    "phonetic": "h-yo-ri",
     "meaning": "孝利"
   },
   "ะพั": {
@@ -10404,15 +10379,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "剪刀"
   },
   "ออกมาสิ": {
-    "phonetic": "ook maa si",
+    "phonetic": "ook-maa-si",
     "meaning": "出来"
   },
   "ขวด": {
-    "phonetic": "khwd",
+    "phonetic": "khuat",
     "meaning": "瓶子"
   },
   "อันโด": {
-    "phonetic": "oan do",
+    "phonetic": "oan-do",
     "meaning": "安藤"
   },
   "ชเร็ค": {
@@ -10428,7 +10403,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "绝地武士"
   },
   "เคเล็บ": {
-    "phonetic": "khe leb",
+    "phonetic": "khe-leb",
     "meaning": "迦勒"
   },
   "ยาม": {
@@ -10436,27 +10411,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "警卫"
   },
   "ไปด้วย": {
-    "phonetic": "pi dwy",
+    "phonetic": "pi-dwy",
     "meaning": "附和"
   },
   "สุดๆ": {
-    "phonetic": "sud«",
+    "phonetic": "sud",
     "meaning": "极其"
   },
   "นี้คือ": {
-    "phonetic": "nii khueo",
+    "phonetic": "nii-khueo",
     "meaning": "这是"
   },
   "แชนน่อน": {
-    "phonetic": "chhæ nnon",
+    "phonetic": "chhae-nnon",
     "meaning": "香农"
   },
   "ในเมือง": {
-    "phonetic": "nı meueong",
+    "phonetic": "nai-mueang",
     "meaning": "在城市里"
   },
   "ไหนดูสิ": {
-    "phonetic": "in duu si",
+    "phonetic": "in-duu-si",
     "meaning": "无论你走到哪里都要看看"
   },
   "ลูค": {
@@ -10472,7 +10447,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "SIM"
   },
   "ตรง": {
-    "phonetic": "trng",
+    "phonetic": "trong",
     "meaning": "直的"
   },
   "ฟัก": {
@@ -10488,19 +10463,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "阿尔法"
   },
   "ว่าไป": {
-    "phonetic": "waa pi",
+    "phonetic": "waa-pi",
     "meaning": "继续"
   },
   "แองเจิล": {
-    "phonetic": "oæng cheil",
+    "phonetic": "oaeng-cheil",
     "meaning": "天使"
   },
   "พ่อขา": {
-    "phonetic": "pho khaa",
+    "phonetic": "pho-khaa",
     "meaning": "父亲"
   },
   "ห่าเอ๊ย": {
-    "phonetic": "aa oei",
+    "phonetic": "aa-oei",
     "meaning": "哎呀"
   },
   "เอม": {
@@ -10524,7 +10499,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "劳伦"
   },
   "แจ่ม": {
-    "phonetic": "chæm",
+    "phonetic": "chaem",
     "meaning": "惊人的"
   },
   "เวส": {
@@ -10536,31 +10511,31 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "黄"
   },
   "เบ็คกี้": {
-    "phonetic": "bekh kii",
+    "phonetic": "bekh-kii",
     "meaning": "贝基"
   },
   "ทรูแมน": {
-    "phonetic": "thruu mæn",
+    "phonetic": "thruu-maen",
     "meaning": "杜鲁门"
   },
   "ก็ดีนี่": {
-    "phonetic": "k dii nii",
+    "phonetic": "k-dii-nii",
     "meaning": "这很好"
   },
   "แคนดี้": {
-    "phonetic": "khæn dii",
+    "phonetic": "khaen-dii",
     "meaning": "糖果"
   },
   "คาลอส": {
-    "phonetic": "khaa los",
+    "phonetic": "khaa-los",
     "meaning": "卡洛斯"
   },
   "สโนวี่": {
-    "phonetic": "s no wii",
+    "phonetic": "s-no-wii",
     "meaning": "下雪了"
   },
   "ถูกฆ่า": {
-    "phonetic": "thuuk khaa",
+    "phonetic": "thuuk-khaa",
     "meaning": "被杀了"
   },
   "ยี้": {
@@ -10576,11 +10551,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "能"
   },
   "ว่ามั๊ย": {
-    "phonetic": "waa may",
+    "phonetic": "waa-may",
     "meaning": "你这么说吗"
   },
   "ไซรัส": {
-    "phonetic": "si ras",
+    "phonetic": "si-ras",
     "meaning": "赛勒斯"
   },
   "พระ": {
@@ -10592,7 +10567,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "贾"
   },
   "มาคิโนะ": {
-    "phonetic": "maa khi noa",
+    "phonetic": "maa-khi-noa",
     "meaning": "牧野"
   },
   "ฮาล": {
@@ -10604,7 +10579,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "N"
   },
   "บางที่": {
-    "phonetic": "baang thii",
+    "phonetic": "baang-thii",
     "meaning": "有些地方"
   },
   "ไมก้า": {
@@ -10612,11 +10587,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "云母"
   },
   "พันล้าน": {
-    "phonetic": "phan laan",
+    "phonetic": "phan-laan",
     "meaning": "十亿"
   },
   "แจ๊ส": {
-    "phonetic": "chæs",
+    "phonetic": "chaes",
     "meaning": "爵士乐"
   },
   "โอวว": {
@@ -10624,7 +10599,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哦"
   },
   "ถูกมั๊ย": {
-    "phonetic": "thuu kmay",
+    "phonetic": "thuu-kmay",
     "meaning": "是这样吗"
   },
   "มิกิ": {
@@ -10636,11 +10611,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "推"
   },
   "ตาฉัน": {
-    "phonetic": "taa chhan",
+    "phonetic": "taa-chhan",
     "meaning": "我的眼睛"
   },
   "อ่อนแอ": {
-    "phonetic": "oonoæ",
+    "phonetic": "oonoae",
     "meaning": "虚弱的"
   },
   "นอน": {
@@ -10648,7 +10623,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "睡觉"
   },
   "ลิลี่": {
-    "phonetic": "li lii",
+    "phonetic": "li-lii",
     "meaning": "百合"
   },
   "ดิง": {
@@ -10656,7 +10631,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "丁"
   },
   "หมอนั่น": {
-    "phonetic": "mo nan",
+    "phonetic": "mo-nan",
     "meaning": "那个家伙"
   },
   "เบท": {
@@ -10668,7 +10643,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "夜晚"
   },
   "ลบ": {
-    "phonetic": "lb",
+    "phonetic": "lop",
     "meaning": "删除"
   },
   "บรรยาย": {
@@ -10680,15 +10655,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "包"
   },
   "เดเมียน": {
-    "phonetic": "de meiia n",
+    "phonetic": "de-meia-n",
     "meaning": "达米安"
   },
   "อาจใช่": {
-    "phonetic": "oaach chhı",
+    "phonetic": "oaach-chhai",
     "meaning": "也许是的"
   },
   "คริสตี้": {
-    "phonetic": "kh ri stii",
+    "phonetic": "kh-ri-stii",
     "meaning": "克里斯蒂"
   },
   "เจอร์": {
@@ -10696,15 +10671,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "杰尔"
   },
   "คนแรก": {
-    "phonetic": "khn ræk",
+    "phonetic": "khn-raek",
     "meaning": "第一个人"
   },
   "ใช่สินะ": {
-    "phonetic": "chhı sina",
+    "phonetic": "chhai-sina",
     "meaning": "这是正确的"
   },
   "มินจี": {
-    "phonetic": "min chii",
+    "phonetic": "min-chii",
     "meaning": "敏吉"
   },
   "สถานี": {
@@ -10712,27 +10687,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "车站"
   },
   "เชียวนะ": {
-    "phonetic": "chheiiaw na",
+    "phonetic": "chheiaw-na",
     "meaning": "让我们来看看"
   },
   "จำได้สิ": {
-    "phonetic": "cha di si",
+    "phonetic": "cha-di-si",
     "meaning": "记住"
   },
   "พูดมาสิ": {
-    "phonetic": "phuud maa si",
+    "phonetic": "phuud-maa-si",
     "meaning": "说吧"
   },
   "โง่จริง": {
-    "phonetic": "ngo chring",
+    "phonetic": "ngo-chring",
     "meaning": "真是蠢啊"
   },
   "เรเวน": {
-    "phonetic": "re wen",
+    "phonetic": "re-wen",
     "meaning": "乌鸦"
   },
   "โคเฮซัง": {
-    "phonetic": "kho he sang",
+    "phonetic": "kho-he-sang",
     "meaning": "航平先生"
   },
   "ทู": {
@@ -10740,51 +10715,51 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "二"
   },
   "เยอึน": {
-    "phonetic": "yeoue n",
+    "phonetic": "yeoue-n",
     "meaning": "叶恩"
   },
   "ไคลน์": {
-    "phonetic": "khi ln",
+    "phonetic": "khi-ln",
     "meaning": "克莱因"
   },
   "พวกแก": {
-    "phonetic": "phwk kæ",
+    "phonetic": "phwk-kae",
     "meaning": "你们"
   },
   "ฮอดจ์": {
-    "phonetic": "hod ch",
+    "phonetic": "hod-ch",
     "meaning": "霍奇"
   },
   "จัดให้": {
-    "phonetic": "chad ı",
+    "phonetic": "chad-ai",
     "meaning": "假如"
   },
   "สุกกี้": {
-    "phonetic": "suk kii",
+    "phonetic": "suk-kii",
     "meaning": "苏琪"
   },
   "เคซีย์": {
-    "phonetic": "khe siia",
+    "phonetic": "khe-sia",
     "meaning": "凯西"
   },
   "แพนด้า": {
-    "phonetic": "phændaa",
+    "phonetic": "phaendaa",
     "meaning": "熊猫"
   },
   "ตลกดี": {
-    "phonetic": "tlk dii",
+    "phonetic": "tlk-dii",
     "meaning": "很搞笑"
   },
   "หน่อยสิ": {
-    "phonetic": "noy si",
+    "phonetic": "noy-si",
     "meaning": "请"
   },
   "ซานต้า": {
-    "phonetic": "saan taa",
+    "phonetic": "saan-taa",
     "meaning": "圣诞老人"
   },
   "ก็ได้นะ": {
-    "phonetic": "kdi na",
+    "phonetic": "kdi-na",
     "meaning": "好的"
   },
   "เบย์": {
@@ -10792,7 +10767,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "湾"
   },
   "ได้สิคะ": {
-    "phonetic": "di si kha",
+    "phonetic": "di-si-kha",
     "meaning": "你可以"
   },
   "ประกาศ": {
@@ -10800,11 +10775,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "公告"
   },
   "คานาโกะ": {
-    "phonetic": "khaa naa koa",
+    "phonetic": "khaa-naa-koa",
     "meaning": "加奈子"
   },
   "จองกุก": {
-    "phonetic": "chong kuk",
+    "phonetic": "chong-kuk",
     "meaning": "柾国"
   },
   "หลับตา": {
@@ -10820,11 +10795,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "军队"
   },
   "มีแค่": {
-    "phonetic": "mii khæ",
+    "phonetic": "mii-khae",
     "meaning": "只有"
   },
   "คิตตี้": {
-    "phonetic": "khit tii",
+    "phonetic": "khit-tii",
     "meaning": "猫咪"
   },
   "นางสาว": {
@@ -10832,19 +10807,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "小姐"
   },
   "โดโนแวน": {
-    "phonetic": "do no wæn",
+    "phonetic": "do-no-waen",
     "meaning": "多诺万"
   },
   "ห่าเอ้ย": {
-    "phonetic": "aa oe y",
+    "phonetic": "aa-oe-y",
     "meaning": "哎呀"
   },
   "ใด": {
-    "phonetic": "dı",
+    "phonetic": "dai",
     "meaning": "哪个"
   },
   "จอดรถ": {
-    "phonetic": "chod rth",
+    "phonetic": "chod-rth",
     "meaning": "把车停好"
   },
   "ฉบับ": {
@@ -10856,7 +10831,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "萨"
   },
   "ชอบสิ": {
-    "phonetic": "chhob si",
+    "phonetic": "chhob-si",
     "meaning": "我喜欢它"
   },
   "โนวา": {
@@ -10864,19 +10839,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "新星"
   },
   "เอาไงดี": {
-    "phonetic": "oeaa ngi dii",
+    "phonetic": "oeaa-ngi-dii",
     "meaning": "我应该怎么办"
   },
   "พูดอะไร": {
-    "phonetic": "phuud oari",
+    "phonetic": "phuud-oari",
     "meaning": "你说什么"
   },
   "ในอดีต": {
-    "phonetic": "nı odiit",
+    "phonetic": "nai-odiit",
     "meaning": "在过去"
   },
   "จูลส์": {
-    "phonetic": "chuu ls",
+    "phonetic": "chuu-ls",
     "meaning": "朱尔斯"
   },
   "สาบาน": {
@@ -10884,23 +10859,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "发誓"
   },
   "พอซะที": {
-    "phonetic": "pho sa thii",
+    "phonetic": "pho-sa-thii",
     "meaning": "足够的"
   },
   "ชางมิน": {
-    "phonetic": "chhaa ngmin",
+    "phonetic": "chhaa-ngmin",
     "meaning": "昌珉"
   },
   "แล้วล่ะ": {
-    "phonetic": "læw la",
+    "phonetic": "laew-la",
     "meaning": "进而"
   },
   "ถ้าหาก": {
-    "phonetic": "thaa aak",
+    "phonetic": "thaa-aak",
     "meaning": "如果"
   },
   "นั่นใช่": {
-    "phonetic": "nan chhı",
+    "phonetic": "nan-chhai",
     "meaning": "这是正确的"
   },
   "ฟอลส์": {
@@ -10912,7 +10887,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "下午"
   },
   "ได้มั๊ย": {
-    "phonetic": "di may",
+    "phonetic": "di-may",
     "meaning": "你可以吗"
   },
   "ตึก": {
@@ -10924,7 +10899,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "伙伴"
   },
   "ดอริส": {
-    "phonetic": "d ori s",
+    "phonetic": "d-ori-s",
     "meaning": "多丽丝"
   },
   "เซน": {
@@ -10932,23 +10907,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "禅"
   },
   "เฮ็นรี่": {
-    "phonetic": "he nrii",
+    "phonetic": "he-nrii",
     "meaning": "亨利"
   },
   "โจชัว": {
-    "phonetic": "cho chhaw",
+    "phonetic": "cho-chhaw",
     "meaning": "约书亚"
   },
   "แม่นาง": {
-    "phonetic": "mæ naang",
+    "phonetic": "mae-naang",
     "meaning": "女士"
   },
   "ถอยไปนะ": {
-    "phonetic": "thoy pi na",
+    "phonetic": "thoy-pi-na",
     "meaning": "移到一边"
   },
   "แชมป์": {
-    "phonetic": "chhæmp",
+    "phonetic": "chhaemp",
     "meaning": "冠军"
   },
   "โสเภณี": {
@@ -10960,19 +10935,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "脑"
   },
   "คนเลว": {
-    "phonetic": "khn lew",
+    "phonetic": "khn-lew",
     "meaning": "坏人"
   },
   "เบรนแนน": {
-    "phonetic": "be rn næn",
+    "phonetic": "be-rn-naen",
     "meaning": "布伦南"
   },
   "แน่ใจสิ": {
-    "phonetic": "næchı si",
+    "phonetic": "naechai-si",
     "meaning": "当然"
   },
   "หมดแล้ว": {
-    "phonetic": "md læw",
+    "phonetic": "md-laew",
     "meaning": "全部消失了"
   },
   "เทรุ": {
@@ -10980,15 +10955,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "辉"
   },
   "อาโซก้า": {
-    "phonetic": "oaa sok aa",
+    "phonetic": "oaa-sok-aa",
     "meaning": "阿索卡"
   },
   "วง": {
-    "phonetic": "wng",
+    "phonetic": "wong",
     "meaning": "乐队"
   },
   "มาร์โก้": {
-    "phonetic": "maar ko",
+    "phonetic": "maar-ko",
     "meaning": "马可"
   },
   "หล่อน": {
@@ -10996,27 +10971,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "她"
   },
   "รวมถึง": {
-    "phonetic": "rwm thueng",
+    "phonetic": "rwm-thueng",
     "meaning": "包括"
   },
   "ริเวอร์": {
-    "phonetic": "ri weor",
+    "phonetic": "ri-weor",
     "meaning": "河"
   },
   "พ่อแม่": {
-    "phonetic": "pho mæ",
+    "phonetic": "pho-mae",
     "meaning": "父母"
   },
   "นายโกหก": {
-    "phonetic": "naay kok",
+    "phonetic": "naay-kok",
     "meaning": "谎言先生"
   },
   "เจเน็ต": {
-    "phonetic": "che net",
+    "phonetic": "che-net",
     "meaning": "珍妮特"
   },
   "มินนี่": {
-    "phonetic": "mi n nii",
+    "phonetic": "mi-n-nii",
     "meaning": "米妮"
   },
   "จอนห์": {
@@ -11024,7 +10999,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "约翰"
   },
   "มีลูก": {
-    "phonetic": "mii luuk",
+    "phonetic": "mii-luuk",
     "meaning": "生个孩子吧"
   },
   "สับสน": {
@@ -11040,11 +11015,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嘘"
   },
   "โทรหา": {
-    "phonetic": "thor aa",
+    "phonetic": "thor-aa",
     "meaning": "称呼"
   },
   "ใช้เวลา": {
-    "phonetic": "chhı welaa",
+    "phonetic": "chhai-welaa",
     "meaning": "花点时间"
   },
   "วู้ด": {
@@ -11052,7 +11027,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "木头"
   },
   "ข้าคือ": {
-    "phonetic": "khaa khueo",
+    "phonetic": "khaa-khueo",
     "meaning": "我是"
   },
   "เชร็ค": {
@@ -11064,19 +11039,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "克"
   },
   "ถือไว้": {
-    "phonetic": "thueo wi",
+    "phonetic": "thueo-wi",
     "meaning": "握住它"
   },
   "นายเป็น": {
-    "phonetic": "naay pen",
+    "phonetic": "naay-pen",
     "meaning": "彭先生"
   },
   "คือคุณ": {
-    "phonetic": "khueo khun",
+    "phonetic": "khueo-khun",
     "meaning": "是你"
   },
   "คาเรฟ": {
-    "phonetic": "khaa ref",
+    "phonetic": "khaa-ref",
     "meaning": "卡列夫"
   },
   "พีช": {
@@ -11084,11 +11059,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "桃"
   },
   "แต่นาย": {
-    "phonetic": "tæ naay",
+    "phonetic": "tae-naay",
     "meaning": "但先生"
   },
   "อีกรอบ": {
-    "phonetic": "oiik rob",
+    "phonetic": "oiik-rob",
     "meaning": "再来一次"
   },
   "มีคน": {
@@ -11096,7 +11071,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "有人"
   },
   "กระดาษ": {
-    "phonetic": "kradaasʹ",
+    "phonetic": "gra-daat",
     "meaning": "纸"
   },
   "ออสติน": {
@@ -11104,15 +11079,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "奥斯汀"
   },
   "ฟลิ้นท์": {
-    "phonetic": "f lin th",
+    "phonetic": "f-lin-th",
     "meaning": "燧石"
   },
   "บ้าแล้ว": {
-    "phonetic": "baa læw",
+    "phonetic": "baa-laew",
     "meaning": "疯狂的"
   },
   "บนถนน": {
-    "phonetic": "bn thnn",
+    "phonetic": "bon-tha-non",
     "meaning": "在路上"
   },
   "เกรก": {
@@ -11120,7 +11095,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "格雷格"
   },
   "แหม่ม": {
-    "phonetic": "æmm",
+    "phonetic": "aemm",
     "meaning": "女士"
   },
   "ยูจิ": {
@@ -11128,15 +11103,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "裕二"
   },
   "ที่ชื่อ": {
-    "phonetic": "thii chhueo",
+    "phonetic": "thii-chhueo",
     "meaning": "就名字而言"
   },
   "แดง": {
-    "phonetic": "dæng",
+    "phonetic": "daeng",
     "meaning": "红色的"
   },
   "ซาโตรุ": {
-    "phonetic": "saa to ru",
+    "phonetic": "saa-to-ru",
     "meaning": "悟"
   },
   "นัม": {
@@ -11144,7 +11119,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "南"
   },
   "เบคกี้": {
-    "phonetic": "bekh kii",
+    "phonetic": "bekh-kii",
     "meaning": "贝基"
   },
   "จุ๊": {
@@ -11152,7 +11127,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嘘"
   },
   "แฮปปี้": {
-    "phonetic": "hæppii",
+    "phonetic": "haeppii",
     "meaning": "快乐的"
   },
   "รายการ": {
@@ -11172,19 +11147,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "足球"
   },
   "ดื่มสิ": {
-    "phonetic": "duem si",
+    "phonetic": "duem-si",
     "meaning": "喝吧"
   },
   "แน่นะ": {
-    "phonetic": "næ na",
+    "phonetic": "nae-na",
     "meaning": "确实"
   },
   "นี่นา": {
-    "phonetic": "nii naa",
+    "phonetic": "nii-naa",
     "meaning": "就是这样"
   },
   "แต่เขา": {
-    "phonetic": "tæ kheaa",
+    "phonetic": "tae-kheaa",
     "meaning": "但他"
   },
   "น้ำตาล": {
@@ -11192,7 +11167,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "糖"
   },
   "ผ่านมา": {
-    "phonetic": "phaan maa",
+    "phonetic": "phaan-maa",
     "meaning": "过去了"
   },
   "ฮอยท์": {
@@ -11208,15 +11183,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "尴尬的"
   },
   "อเล็ก": {
-    "phonetic": "o lek",
+    "phonetic": "o-lek",
     "meaning": "亚历克"
   },
   "ฮานน่า": {
-    "phonetic": "haa n naa",
+    "phonetic": "haa-n-naa",
     "meaning": "汉娜"
   },
   "มองผม": {
-    "phonetic": "mong phm",
+    "phonetic": "mong-phm",
     "meaning": "看着我"
   },
   "บอยด์": {
@@ -11224,15 +11199,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "博伊德"
   },
   "ชินจิ": {
-    "phonetic": "chhin chi",
+    "phonetic": "chhin-chi",
     "meaning": "真嗣"
   },
   "แมกกี้": {
-    "phonetic": "mæk kii",
+    "phonetic": "maek-kii",
     "meaning": "玛吉"
   },
   "คือมัน": {
-    "phonetic": "khueo man",
+    "phonetic": "khueo-man",
     "meaning": "就是它了"
   },
   "คยอง": {
@@ -11240,23 +11215,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "京"
   },
   "ว่าแล้ว": {
-    "phonetic": "waa læw",
+    "phonetic": "waa-laew",
     "meaning": "我说过了"
   },
   "บอกผมมา": {
-    "phonetic": "bok phm maa",
+    "phonetic": "bok-phm-maa",
     "meaning": "告诉我"
   },
   "คลาร่า": {
-    "phonetic": "khlaa raa",
+    "phonetic": "khlaa-raa",
     "meaning": "克拉拉"
   },
   "มีอยู่": {
-    "phonetic": "mii oyuu",
+    "phonetic": "mii-oyuu",
     "meaning": "存在"
   },
   "ชอนฮี": {
-    "phonetic": "chhon hii",
+    "phonetic": "chhon-hii",
     "meaning": "春熙"
   },
   "อุ๊บ": {
@@ -11276,7 +11251,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "医院"
   },
   "แซมมวล": {
-    "phonetic": "sæm mwl",
+    "phonetic": "saem-mwl",
     "meaning": "塞缪尔"
   },
   "ราล์ฟ": {
@@ -11284,27 +11259,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "拉尔夫"
   },
   "จีน่า": {
-    "phonetic": "chii naa",
+    "phonetic": "chii-naa",
     "meaning": "吉娜"
   },
   "โจนาห์": {
-    "phonetic": "cho naa",
+    "phonetic": "cho-naa",
     "meaning": "乔纳"
   },
   "รักนะ": {
-    "phonetic": "rak na",
+    "phonetic": "rak-na",
     "meaning": "我爱你"
   },
   "หมอนี่": {
-    "phonetic": "mo nii",
+    "phonetic": "mo-nii",
     "meaning": "这个家伙"
   },
   "โฟรโด": {
-    "phonetic": "for do",
+    "phonetic": "for-do",
     "meaning": "佛罗多"
   },
   "แม่ฉัน": {
-    "phonetic": "mæ chhan",
+    "phonetic": "mae-chhan",
     "meaning": "我的母亲"
   },
   "คนร้าย": {
@@ -11312,15 +11287,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "恶棍"
   },
   "ทางไหน": {
-    "phonetic": "thaang in",
+    "phonetic": "thaang-in",
     "meaning": "哪条路"
   },
   "ล้มเหลว": {
-    "phonetic": "lm elw",
+    "phonetic": "lm-elw",
     "meaning": "失败的"
   },
   "นี่เลย": {
-    "phonetic": "nii lei",
+    "phonetic": "nii-lei",
     "meaning": "这里是"
   },
   "ไลรา": {
@@ -11336,19 +11311,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "莱拉"
   },
   "พีต้า": {
-    "phonetic": "phii taa",
+    "phonetic": "phii-taa",
     "meaning": "皮塔"
   },
   "ดูมันสิ": {
-    "phonetic": "duu man si",
+    "phonetic": "duu-man-si",
     "meaning": "看看它"
   },
   "ฮันน่า": {
-    "phonetic": "han naa",
+    "phonetic": "han-naa",
     "meaning": "汉娜"
   },
   "เราควร": {
-    "phonetic": "reaa khwr",
+    "phonetic": "reaa-khwr",
     "meaning": "我们应该"
   },
   "ลื่": {
@@ -11360,15 +11335,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嗬"
   },
   "ตินติน": {
-    "phonetic": "tin tin",
+    "phonetic": "tin-tin",
     "meaning": "丁丁"
   },
   "ไอรีน": {
-    "phonetic": "oi riin",
+    "phonetic": "oi-riin",
     "meaning": "艾琳"
   },
   "แจซอก": {
-    "phonetic": "chæ sok",
+    "phonetic": "chae-sok",
     "meaning": "杰苏克"
   },
   "โบลท์": {
@@ -11376,11 +11351,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "螺栓"
   },
   "แต่จริง": {
-    "phonetic": "tæ chring",
+    "phonetic": "tae-chring",
     "meaning": "但事实如此"
   },
   "แต่เรา": {
-    "phonetic": "tæ reaa",
+    "phonetic": "tae-reaa",
     "meaning": "但我们"
   },
   "ทำได้": {
@@ -11400,15 +11375,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "原因"
   },
   "พบ": {
-    "phonetic": "phb",
+    "phonetic": "phop",
     "meaning": "成立"
   },
   "แมนดี้": {
-    "phonetic": "mæn dii",
+    "phonetic": "maen-dii",
     "meaning": "曼迪"
   },
   "อยู่ดีๆ": {
-    "phonetic": "oyuu dii«",
+    "phonetic": "oyuu-dii",
     "meaning": "突然"
   },
   "ดาบ": {
@@ -11416,7 +11391,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "剑"
   },
   "เดวอน": {
-    "phonetic": "de won",
+    "phonetic": "de-won",
     "meaning": "德文郡"
   },
   "ลอส": {
@@ -11424,11 +11399,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "洛斯"
   },
   "ท่านลุง": {
-    "phonetic": "thaan lung",
+    "phonetic": "thaan-lung",
     "meaning": "叔叔"
   },
   "วอลลี่": {
-    "phonetic": "wo l lii",
+    "phonetic": "wo-l-lii",
     "meaning": "沃利"
   },
   "เหลือ": {
@@ -11436,19 +11411,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "剩下的"
   },
   "กุ๊กจา": {
-    "phonetic": "kuk chaa",
+    "phonetic": "kuk-chaa",
     "meaning": "库克贾"
   },
   "วิ่งไป": {
-    "phonetic": "wing pi",
+    "phonetic": "wing-pi",
     "meaning": "跑步"
   },
   "ผบ": {
-    "phonetic": "phb",
+    "phonetic": "phaaw-baaw",
     "meaning": "指挥官"
   },
   "เอ่อคือ": {
-    "phonetic": "oeo khueo",
+    "phonetic": "oeo-khueo",
     "meaning": "嗯就是这样"
   },
   "หละ": {
@@ -11456,7 +11431,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "拉"
   },
   "ฮัมเมล": {
-    "phonetic": "ham mel",
+    "phonetic": "ham-mel",
     "meaning": "胡梅尔"
   },
   "บุช": {
@@ -11464,7 +11439,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "衬套"
   },
   "ดอโรธี": {
-    "phonetic": "do rothii",
+    "phonetic": "do-rothii",
     "meaning": "多萝西"
   },
   "คล๊าก": {
@@ -11472,7 +11447,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "克拉克"
   },
   "นาเซอร์": {
-    "phonetic": "naa seor",
+    "phonetic": "naa-seor",
     "meaning": "纳齐尔"
   },
   "วิญญาณ": {
@@ -11480,19 +11455,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "精神"
   },
   "ก็ใช่นะ": {
-    "phonetic": "k chhı na",
+    "phonetic": "k-chhai-na",
     "meaning": "这是正确的"
   },
   "รักคุณ": {
-    "phonetic": "rak khun",
+    "phonetic": "rak-khun",
     "meaning": "爱你"
   },
   "ที่คุณ": {
-    "phonetic": "thii khun",
+    "phonetic": "thii-khun",
     "meaning": "对你"
   },
   "เลสลี่": {
-    "phonetic": "le slii",
+    "phonetic": "le-slii",
     "meaning": "莱斯利"
   },
   "ริช": {
@@ -11504,11 +11479,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "信"
   },
   "จูวอน": {
-    "phonetic": "chuu won",
+    "phonetic": "chuu-won",
     "meaning": "朱元"
   },
   "เคนจิ": {
-    "phonetic": "khen chi",
+    "phonetic": "khen-chi",
     "meaning": "健二"
   },
   "เวิร์น": {
@@ -11528,11 +11503,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "力量"
   },
   "มีคนมา": {
-    "phonetic": "mii khn maa",
+    "phonetic": "mii-khn-maa",
     "meaning": "有人来了"
   },
   "แกรนท์": {
-    "phonetic": "kæ rnth",
+    "phonetic": "kae-rnth",
     "meaning": "授予"
   },
   "เหล้า": {
@@ -11544,7 +11519,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "火车"
   },
   "แต่เอ่อ": {
-    "phonetic": "tæ oeo",
+    "phonetic": "tae-oeo",
     "meaning": "但是呃"
   },
   "ติดต่อ": {
@@ -11556,7 +11531,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "检察官"
   },
   "ตอบมา": {
-    "phonetic": "tob maa",
+    "phonetic": "tob-maa",
     "meaning": "回答我"
   },
   "น้อง": {
@@ -11568,7 +11543,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "帕"
   },
   "มาร์รี": {
-    "phonetic": "maar rii",
+    "phonetic": "maar-rii",
     "meaning": "结婚吧"
   },
   "ดาจี": {
@@ -11576,7 +11551,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "妲己"
   },
   "คอยดูนะ": {
-    "phonetic": "khoy duu na",
+    "phonetic": "khoy-duu-na",
     "meaning": "等等看"
   },
   "ร๊อบ": {
@@ -11584,19 +11559,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "抢"
   },
   "ดาน่า": {
-    "phonetic": "daa naa",
+    "phonetic": "daa-naa",
     "meaning": "达纳"
   },
   "เอลซ่า": {
-    "phonetic": "oel saa",
+    "phonetic": "oel-saa",
     "meaning": "艾尔莎"
   },
   "วันเกิด": {
-    "phonetic": "wan keid",
+    "phonetic": "wan-keid",
     "meaning": "生日"
   },
   "ใกล้ๆ": {
-    "phonetic": "kıl«",
+    "phonetic": "kail",
     "meaning": "附近"
   },
   "เค้ก": {
@@ -11604,7 +11579,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "蛋糕"
   },
   "เออสิ": {
-    "phonetic": "oeo si",
+    "phonetic": "oeo-si",
     "meaning": "是的"
   },
   "คอร์ป": {
@@ -11620,7 +11595,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "莫娜"
   },
   "บ้างไหม": {
-    "phonetic": "baang im",
+    "phonetic": "baang-im",
     "meaning": "你有吗"
   },
   "อำนาจ": {
@@ -11636,7 +11611,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "呵呵"
   },
   "อย่าน่า": {
-    "phonetic": "oyaa naa",
+    "phonetic": "oyaa-naa",
     "meaning": "请不要"
   },
   "บารอน": {
@@ -11652,19 +11627,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "罗德斯"
   },
   "นานามิ": {
-    "phonetic": "naanaa mi",
+    "phonetic": "naanaa-mi",
     "meaning": "七海"
   },
   "สีเขียว": {
-    "phonetic": "sii kheiiaw",
+    "phonetic": "sii-kheiaw",
     "meaning": "绿色的"
   },
   "มันติด": {
-    "phonetic": "man tid",
+    "phonetic": "man-tid",
     "meaning": "它被卡住了"
   },
   "ทิ้งปืน": {
-    "phonetic": "thing puen",
+    "phonetic": "thing-puen",
     "meaning": "把枪扔掉"
   },
   "สงสัย": {
@@ -11672,23 +11647,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "想知道"
   },
   "ซิดนีย์": {
-    "phonetic": "sidniia",
+    "phonetic": "sidnia",
     "meaning": "悉尼"
   },
   "นักฆ่า": {
-    "phonetic": "nak khaa",
+    "phonetic": "nak-khaa",
     "meaning": "杀手"
   },
   "มิทช์": {
-    "phonetic": "mi thchh",
+    "phonetic": "mi-thchh",
     "meaning": "米奇"
   },
   "ลูน่า": {
-    "phonetic": "luu naa",
+    "phonetic": "luu-naa",
     "meaning": "卢娜"
   },
   "สายแล้ว": {
-    "phonetic": "saay læw",
+    "phonetic": "saay-laew",
     "meaning": "现在已经晚了"
   },
   "โมเน": {
@@ -11696,11 +11671,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "莫内"
   },
   "โมโมโกะ": {
-    "phonetic": "mo mo koa",
+    "phonetic": "mo-mo-koa",
     "meaning": "桃子"
   },
   "ซึคุชิ": {
-    "phonetic": "sue khu chhi",
+    "phonetic": "sue-khu-chhi",
     "meaning": "筑志"
   },
   "ทะเล": {
@@ -11708,7 +11683,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "海"
   },
   "ยัยโง่": {
-    "phonetic": "yay ngo",
+    "phonetic": "yay-ngo",
     "meaning": "愚蠢的女孩"
   },
   "คลาก": {
@@ -11724,15 +11699,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "露丝"
   },
   "นักโทษ": {
-    "phonetic": "nakthosʹ",
+    "phonetic": "nakthot",
     "meaning": "囚犯"
   },
   "โทรมานะ": {
-    "phonetic": "thor maana",
+    "phonetic": "thor-maana",
     "meaning": "打电话给我"
   },
   "แคทนิส": {
-    "phonetic": "khæ thnis",
+    "phonetic": "khae-thnis",
     "meaning": "凯特尼斯"
   },
   "อายะ": {
@@ -11740,11 +11715,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "绫"
   },
   "มาม่า": {
-    "phonetic": "maa maa",
+    "phonetic": "maa-maa",
     "meaning": "妈妈"
   },
   "ภรรยาผม": {
-    "phonetic": "phhrryaa phm",
+    "phonetic": "phhrryaa-phm",
     "meaning": "我的妻子"
   },
   "ฮอทช์": {
@@ -11756,7 +11731,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "超过"
   },
   "ไม่อยู่": {
-    "phonetic": "mi oyuu",
+    "phonetic": "mi-oyuu",
     "meaning": "不在这里"
   },
   "ว่ะ": {
@@ -11764,15 +11739,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哇"
   },
   "กับเรา": {
-    "phonetic": "kab reaa",
+    "phonetic": "kab-reaa",
     "meaning": "和我们一起"
   },
   "แหละ": {
-    "phonetic": "æla",
+    "phonetic": "aela",
     "meaning": "这是正确的"
   },
   "ซาเอะ": {
-    "phonetic": "saa oea",
+    "phonetic": "saa-oea",
     "meaning": "萨埃"
   },
   "ค้นหา": {
@@ -11780,55 +11755,55 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "搜索"
   },
   "ใช่ใหม": {
-    "phonetic": "chhı ım",
+    "phonetic": "chhai-aim",
     "meaning": "是这样吗"
   },
   "แล้วฉัน": {
-    "phonetic": "læw chhan",
+    "phonetic": "laew-chhan",
     "meaning": "然后我"
   },
   "ฮิโรชิ": {
-    "phonetic": "hi ro chhi",
+    "phonetic": "hi-ro-chhi",
     "meaning": "宏"
   },
   "ทุกเวลา": {
-    "phonetic": "thuk welaa",
+    "phonetic": "thuk-welaa",
     "meaning": "每次"
   },
   "ฟังนะคะ": {
-    "phonetic": "fang na kha",
+    "phonetic": "fang-na-kha",
     "meaning": "听"
   },
   "ได้คะ": {
-    "phonetic": "di kha",
+    "phonetic": "di-kha",
     "meaning": "你可以"
   },
   "โชคชะตา": {
-    "phonetic": "chhokh chhataa",
+    "phonetic": "chhokh-chhataa",
     "meaning": "命运"
   },
   "หาต่อไป": {
-    "phonetic": "aa to pi",
+    "phonetic": "aa-to-pi",
     "meaning": "继续寻找"
   },
   "ไบรอน": {
-    "phonetic": "bi ron",
+    "phonetic": "bi-ron",
     "meaning": "拜伦"
   },
   "ถ้าฉัน": {
-    "phonetic": "thaa chhan",
+    "phonetic": "thaa-chhan",
     "meaning": "如果我"
   },
   "จื่อซู่": {
-    "phonetic": "chueo suu",
+    "phonetic": "chueo-suu",
     "meaning": "紫苏"
   },
   "แฮริสัน": {
-    "phonetic": "hæ ri san",
+    "phonetic": "hae-ri-san",
     "meaning": "哈里森"
   },
   "มองผมสิ": {
-    "phonetic": "mong phm si",
+    "phonetic": "mong-phm-si",
     "meaning": "看着我"
   },
   "ที่สุด": {
@@ -11836,19 +11811,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "最好的"
   },
   "เอบิลีน": {
-    "phonetic": "oe bi liin",
+    "phonetic": "oe-bi-liin",
     "meaning": "阿比林"
   },
   "บาร์บี้": {
-    "phonetic": "baar bii",
+    "phonetic": "baar-bii",
     "meaning": "芭比"
   },
   "เฮเลน่า": {
-    "phonetic": "he len aa",
+    "phonetic": "he-len-aa",
     "meaning": "海伦娜"
   },
   "แผนที่": {
-    "phonetic": "phænthii",
+    "phonetic": "phaenthii",
     "meaning": "地图"
   },
   "ชุล": {
@@ -11868,35 +11843,35 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "诡异的"
   },
   "ลีน่า": {
-    "phonetic": "lii naa",
+    "phonetic": "lii-naa",
     "meaning": "莉娜"
   },
   "มีคุณไป": {
-    "phonetic": "mii khun pi",
+    "phonetic": "mii-khun-pi",
     "meaning": "就这样吧"
   },
   "โจแฮนนา": {
-    "phonetic": "cho hæ n naa",
+    "phonetic": "cho-hae-n-naa",
     "meaning": "约翰娜"
   },
   "โลอิส": {
-    "phonetic": "lo ois",
+    "phonetic": "lo-ois",
     "meaning": "路易斯"
   },
   "พูดจริง": {
-    "phonetic": "phuud chring",
+    "phonetic": "phuud-chring",
     "meaning": "说实话"
   },
   "ไมล์ส": {
-    "phonetic": "mil s",
+    "phonetic": "mil-s",
     "meaning": "迈尔斯"
   },
   "เนื้อ": {
-    "phonetic": "neueo",
+    "phonetic": "nueao",
     "meaning": "肉"
   },
   "มาร์นี่": {
-    "phonetic": "maar nii",
+    "phonetic": "maar-nii",
     "meaning": "玛妮"
   },
   "ทารก": {
@@ -11904,15 +11879,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "婴儿"
   },
   "ครับแม่": {
-    "phonetic": "khrab mæ",
+    "phonetic": "khrab-mae",
     "meaning": "是的妈妈"
   },
   "โจน่าห์": {
-    "phonetic": "cho naa",
+    "phonetic": "cho-naa",
     "meaning": "乔纳"
   },
   "ถามทำไม": {
-    "phonetic": "thaam thami",
+    "phonetic": "thaam-thami",
     "meaning": "你为什么问"
   },
   "ย่ะ": {
@@ -11944,23 +11919,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "渠道"
   },
   "ก็ถูก": {
-    "phonetic": "k thuuk",
+    "phonetic": "k-thuuk",
     "meaning": "这是正确的"
   },
   "ดิมิทรี": {
-    "phonetic": "di mi thrii",
+    "phonetic": "di-mi-thrii",
     "meaning": "迪米特里"
   },
   "รูปหล่อ": {
-    "phonetic": "ruup lo",
+    "phonetic": "ruup-lo",
     "meaning": "帅气的身材"
   },
   "ผู้ชนะ": {
-    "phonetic": "phuu chhna",
+    "phonetic": "phuu-chhna",
     "meaning": "优胜者"
   },
   "ทำไมค่ะ": {
-    "phonetic": "thami kha",
+    "phonetic": "thami-kha",
     "meaning": "为什么"
   },
   "ไปหา": {
@@ -11968,15 +11943,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "去找吧"
   },
   "อลาริค": {
-    "phonetic": "o laa rikh",
+    "phonetic": "o-laa-rikh",
     "meaning": "阿拉里克"
   },
   "อิชิดะ": {
-    "phonetic": "oi chhi da",
+    "phonetic": "oi-chhi-da",
     "meaning": "石田"
   },
   "เคล้าส์": {
-    "phonetic": "khelaa s",
+    "phonetic": "khelaa-s",
     "meaning": "克劳斯"
   },
   "มาย": {
@@ -11984,7 +11959,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "我的"
   },
   "บ้าจัง": {
-    "phonetic": "baa chang",
+    "phonetic": "baa-chang",
     "meaning": "太疯狂了"
   },
   "เบิร์น": {
@@ -11992,39 +11967,39 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "烧伤"
   },
   "อีหนู": {
-    "phonetic": "oii nuu",
+    "phonetic": "oii-nuu",
     "meaning": "电子不"
   },
   "รู้ว่า": {
-    "phonetic": "ruu waa",
+    "phonetic": "ruu-waa",
     "meaning": "知道这一点"
   },
   "แอสทริด": {
-    "phonetic": "oæ s thrid",
+    "phonetic": "oae-s-thrid",
     "meaning": "阿斯特丽德"
   },
   "รวมทั้ง": {
-    "phonetic": "rwm thang",
+    "phonetic": "rwm-thang",
     "meaning": "包括"
   },
   "แล้วกัน": {
-    "phonetic": "læw kan",
+    "phonetic": "laew-kan",
     "meaning": "然后"
   },
   "คนหนึ่ง": {
-    "phonetic": "khn nueng",
+    "phonetic": "khn-nueng",
     "meaning": "一个人"
   },
   "เดวิท": {
-    "phonetic": "de with",
+    "phonetic": "de-with",
     "meaning": "大卫"
   },
   "แม่ขา": {
-    "phonetic": "mæ khaa",
+    "phonetic": "mae-khaa",
     "meaning": "母亲"
   },
   "ทั้งวัน": {
-    "phonetic": "thang wan",
+    "phonetic": "thang-wan",
     "meaning": "一整天"
   },
   "เวสต์": {
@@ -12032,7 +12007,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "西方"
   },
   "อินดี้": {
-    "phonetic": "oin dii",
+    "phonetic": "oin-dii",
     "meaning": "独立"
   },
   "ทูนหัว": {
@@ -12040,27 +12015,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "教父"
   },
   "ทุกคืน": {
-    "phonetic": "thuk khuen",
+    "phonetic": "thuk-khuen",
     "meaning": "每个晚上"
   },
   "วิธีนี้": {
-    "phonetic": "withii nii",
+    "phonetic": "withii-nii",
     "meaning": "这边走"
   },
   "ฉันดีใจ": {
-    "phonetic": "chhan diichı",
+    "phonetic": "chhan-diichai",
     "meaning": "我很高兴"
   },
   "ยองรัน": {
-    "phonetic": "yong ran",
+    "phonetic": "yong-ran",
     "meaning": "英兰"
   },
   "เลาด้า": {
-    "phonetic": "leaa daa",
+    "phonetic": "leaa-daa",
     "meaning": "劳达"
   },
   "ฟัสโก้": {
-    "phonetic": "fas ko",
+    "phonetic": "fas-ko",
     "meaning": "富斯科"
   },
   "ชัยชนะ": {
@@ -12072,43 +12047,43 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "沃尔特"
   },
   "คืนก่อน": {
-    "phonetic": "khuen kon",
+    "phonetic": "khuen-kon",
     "meaning": "前一天晚上"
   },
   "มีปัญหา": {
-    "phonetic": "mii payaa",
+    "phonetic": "mii-payaa",
     "meaning": "有问题"
   },
   "พี่ฮะ": {
-    "phonetic": "phii ha",
+    "phonetic": "phii-ha",
     "meaning": "兄弟"
   },
   "เมเยอร์": {
-    "phonetic": "me yeo r",
+    "phonetic": "me-yeo-r",
     "meaning": "迈耶"
   },
   "ปัดโธ่": {
-    "phonetic": "pad tho",
+    "phonetic": "pad-tho",
     "meaning": "该死的"
   },
   "ห้านาที": {
-    "phonetic": "aa naathii",
+    "phonetic": "aa-naathii",
     "meaning": "五分钟"
   },
   "มิกกี้": {
-    "phonetic": "mi kkii",
+    "phonetic": "mi-kkii",
     "meaning": "米奇"
   },
   "แจ๊คสัน": {
-    "phonetic": "chækh san",
+    "phonetic": "chaekh-san",
     "meaning": "杰克逊"
   },
   "กินเลย": {
-    "phonetic": "kin lei",
+    "phonetic": "kin-lei",
     "meaning": "现在吃吧"
   },
   "อาคาริ": {
-    "phonetic": "oaa khaa ri",
+    "phonetic": "oaa-khaa-ri",
     "meaning": "阿卡里"
   },
   "โชจิ": {
@@ -12116,11 +12091,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "庄治"
   },
   "ทุกที่": {
-    "phonetic": "thuk thii",
+    "phonetic": "thuk-thii",
     "meaning": "到处"
   },
   "สักครู่": {
-    "phonetic": "sak khruu",
+    "phonetic": "sak-khruu",
     "meaning": "一会儿"
   },
   "หมื่น": {
@@ -12132,31 +12107,31 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "拒绝"
   },
   "คุณอา": {
-    "phonetic": "khun oaa",
+    "phonetic": "khun-oaa",
     "meaning": "叔叔"
   },
   "คลาร์ค": {
-    "phonetic": "khlaa rkh",
+    "phonetic": "khlaa-rkh",
     "meaning": "克拉克"
   },
   "ครูครับ": {
-    "phonetic": "khruu khrab",
+    "phonetic": "khruu-khrab",
     "meaning": "老师"
   },
   "คนใหม่": {
-    "phonetic": "khn ım",
+    "phonetic": "khn-aim",
     "meaning": "新人"
   },
   "เวรล่ะ": {
-    "phonetic": "wer la",
+    "phonetic": "wer-la",
     "meaning": "搞什么鬼"
   },
   "ไซลัส": {
-    "phonetic": "si las",
+    "phonetic": "si-las",
     "meaning": "塞拉斯"
   },
   "รึยัง": {
-    "phonetic": "rue yang",
+    "phonetic": "rue-yang",
     "meaning": "还没有"
   },
   "ควิน": {
@@ -12168,23 +12143,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嘘"
   },
   "ซูเคร": {
-    "phonetic": "suu kher",
+    "phonetic": "suu-kher",
     "meaning": "苏克雷"
   },
   "อ้าปาก": {
-    "phonetic": "oaa paak",
+    "phonetic": "oaa-paak",
     "meaning": "张开嘴"
   },
   "รัสเซีย": {
-    "phonetic": "rasseiia",
+    "phonetic": "rasseia",
     "meaning": "俄罗斯"
   },
   "มิลลี่": {
-    "phonetic": "mi l lii",
+    "phonetic": "mi-l-lii",
     "meaning": "米莉"
   },
   "อายูมุ": {
-    "phonetic": "oaa yuu mu",
+    "phonetic": "oaa-yuu-mu",
     "meaning": "阿玉木"
   },
   "นับ": {
@@ -12192,7 +12167,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "数数"
   },
   "เลิกกัน": {
-    "phonetic": "leik kan",
+    "phonetic": "leik-kan",
     "meaning": "拆散"
   },
   "เฮจู": {
@@ -12204,7 +12179,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "格温"
   },
   "เซลฟ์": {
-    "phonetic": "sel f",
+    "phonetic": "sel-f",
     "meaning": "自己"
   },
   "เกมส์": {
@@ -12212,31 +12187,31 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "游戏"
   },
   "เอาใหม่": {
-    "phonetic": "oeaa ım",
+    "phonetic": "oeaa-aim",
     "meaning": "再拿一下"
   },
   "สามีฉัน": {
-    "phonetic": "saamii chhan",
+    "phonetic": "saamii-chhan",
     "meaning": "我的丈夫"
   },
   "คอเนอร์": {
-    "phonetic": "kho neo r",
+    "phonetic": "kho-neo-r",
     "meaning": "康纳"
   },
   "ยิงสิ": {
-    "phonetic": "ying si",
+    "phonetic": "ying-si",
     "meaning": "射击"
   },
   "รับไปสิ": {
-    "phonetic": "rab pi si",
+    "phonetic": "rab-pi-si",
     "meaning": "拿走吧"
   },
   "ต่อเลย": {
-    "phonetic": "to lei",
+    "phonetic": "to-lei",
     "meaning": "继续"
   },
   "ทาโร่": {
-    "phonetic": "thaa ro",
+    "phonetic": "thaa-ro",
     "meaning": "芋头"
   },
   "ริคุ": {
@@ -12248,7 +12223,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "好的"
   },
   "โอเวน": {
-    "phonetic": "oo wen",
+    "phonetic": "oo-wen",
     "meaning": "欧文"
   },
   "ทะ": {
@@ -12256,7 +12231,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "Th"
   },
   "น่ะครับ": {
-    "phonetic": "na khrab",
+    "phonetic": "na-khrab",
     "meaning": "是的"
   },
   "โฮล์มส์": {
@@ -12268,23 +12243,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "石头"
   },
   "อีกนิด": {
-    "phonetic": "oiik nid",
+    "phonetic": "oiik-nid",
     "meaning": "再多一点"
   },
   "ไสหัวไป": {
-    "phonetic": "siaw pi",
+    "phonetic": "siaw-pi",
     "meaning": "离开"
   },
   "หรอคะ": {
-    "phonetic": "ro kha",
+    "phonetic": "ro-kha",
     "meaning": "真的吗"
   },
   "มาโกะ": {
-    "phonetic": "maa koa",
+    "phonetic": "maa-koa",
     "meaning": "马科"
   },
   "ผิวขาว": {
-    "phonetic": "phiw khaaw",
+    "phonetic": "phiw-khaaw",
     "meaning": "皮肤白"
   },
   "ราว": {
@@ -12296,7 +12271,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "英国"
   },
   "ฮุสตัน": {
-    "phonetic": "hus tan",
+    "phonetic": "hus-tan",
     "meaning": "休斯顿"
   },
   "บัม": {
@@ -12304,19 +12279,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "屁股"
   },
   "กันเถอะ": {
-    "phonetic": "kan theoa",
+    "phonetic": "kan-theoa",
     "meaning": "我们走吧"
   },
   "ไม่นิ": {
-    "phonetic": "mi ni",
+    "phonetic": "mi-ni",
     "meaning": "一点也不"
   },
   "คนเก่ง": {
-    "phonetic": "khn keng",
+    "phonetic": "khn-keng",
     "meaning": "聪明人"
   },
   "เดอร์": {
-    "phonetic": "de or",
+    "phonetic": "de-or",
     "meaning": "德"
   },
   "น้า": {
@@ -12324,15 +12299,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "叔叔"
   },
   "เห็นไม๊": {
-    "phonetic": "en mi",
+    "phonetic": "en-mi",
     "meaning": "你有没有看到"
   },
   "แบร์": {
-    "phonetic": "bær",
+    "phonetic": "baer",
     "meaning": "熊"
   },
   "เอริก": {
-    "phonetic": "oe rik",
+    "phonetic": "oe-rik",
     "meaning": "埃里克"
   },
   "ลูซ": {
@@ -12340,11 +12315,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "卢斯"
   },
   "ไม่เป็น": {
-    "phonetic": "mi pen",
+    "phonetic": "mi-pen",
     "meaning": "我不知道"
   },
   "อุ๊ยตาย": {
-    "phonetic": "ouy taay",
+    "phonetic": "ouy-taay",
     "meaning": "哎哟"
   },
   "ซารู": {
@@ -12352,7 +12327,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "萨鲁"
   },
   "เซ็กส์": {
-    "phonetic": "sek s",
+    "phonetic": "sek-s",
     "meaning": "性别"
   },
   "โว๊ว": {
@@ -12360,19 +12335,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哇"
   },
   "ทาคุมิ": {
-    "phonetic": "thaa khu mi",
+    "phonetic": "thaa-khu-mi",
     "meaning": "拓海"
   },
   "เลยเหรอ": {
-    "phonetic": "lei e ro",
+    "phonetic": "lei-e-ro",
     "meaning": "真的吗"
   },
   "ลองสิ": {
-    "phonetic": "long si",
+    "phonetic": "long-si",
     "meaning": "尝试一下"
   },
   "ปองโย่": {
-    "phonetic": "pong yo",
+    "phonetic": "pong-yo",
     "meaning": "彭约"
   },
   "ครึ่ง": {
@@ -12380,23 +12355,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "一半"
   },
   "บอกอะไร": {
-    "phonetic": "bok oari",
+    "phonetic": "bok-oari",
     "meaning": "你说什么"
   },
   "ออสก้า": {
-    "phonetic": "oo skaa",
+    "phonetic": "oo-skaa",
     "meaning": "奥斯卡"
   },
   "ใช่ๆๆ": {
-    "phonetic": "chhı« «",
+    "phonetic": "chhai-",
     "meaning": "是的是的"
   },
   "ถอยกลับ": {
-    "phonetic": "thoy klab",
+    "phonetic": "thoy-klab",
     "meaning": "撤退"
   },
   "แจ๋วมาก": {
-    "phonetic": "chæw maak",
+    "phonetic": "chaew-maak",
     "meaning": "非常酷"
   },
   "บอม": {
@@ -12404,23 +12379,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "邦"
   },
   "จุดนี้": {
-    "phonetic": "chud nii",
+    "phonetic": "chud-nii",
     "meaning": "这一点"
   },
   "คำตอบ": {
-    "phonetic": "kha tob",
+    "phonetic": "kha-tob",
     "meaning": "回答"
   },
   "เจิดจ้า": {
-    "phonetic": "cheid chaa",
+    "phonetic": "cheid-chaa",
     "meaning": "明亮的"
   },
   "ฮิวจ์": {
-    "phonetic": "hi wch",
+    "phonetic": "hi-wch",
     "meaning": "休"
   },
   "พูดถึง": {
-    "phonetic": "phuud thueng",
+    "phonetic": "phuud-thueng",
     "meaning": "谈论一下"
   },
   "ป่ะ": {
@@ -12432,11 +12407,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "德里克"
   },
   "ของจริง": {
-    "phonetic": "khong chring",
+    "phonetic": "khong-chring",
     "meaning": "真实的事情"
   },
   "คีย์ร่า": {
-    "phonetic": "khiia raa",
+    "phonetic": "khia-raa",
     "meaning": "凯拉"
   },
   "ฮิล": {
@@ -12448,11 +12423,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "禁止"
   },
   "อ่ะนะ": {
-    "phonetic": "oa na",
+    "phonetic": "oa-na",
     "meaning": "啊"
   },
   "จริงอ้ะ": {
-    "phonetic": "chring oa",
+    "phonetic": "chring-oa",
     "meaning": "这是真的"
   },
   "ยอด": {
@@ -12460,19 +12435,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哟"
   },
   "หายใจสิ": {
-    "phonetic": "aaychı si",
+    "phonetic": "aaychai-si",
     "meaning": "呼吸"
   },
   "แม็ค": {
-    "phonetic": "mækh",
+    "phonetic": "maekh",
     "meaning": "苹果"
   },
   "แย่ล่ะ": {
-    "phonetic": "yæ la",
+    "phonetic": "yae-la",
     "meaning": "那很糟糕"
   },
   "เจ็บจัง": {
-    "phonetic": "cheb chang",
+    "phonetic": "cheb-chang",
     "meaning": "太疼了"
   },
   "โจ๊บ": {
@@ -12480,11 +12455,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "工作"
   },
   "และมัน": {
-    "phonetic": "læa man",
+    "phonetic": "laea-man",
     "meaning": "还有它"
   },
   "หยุดๆ": {
-    "phonetic": "yud«",
+    "phonetic": "yud",
     "meaning": "停止"
   },
   "ตัวเลข": {
@@ -12492,15 +12467,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "数字"
   },
   "กระแอม": {
-    "phonetic": "kraoæm",
+    "phonetic": "kraoaem",
     "meaning": "清清喉咙"
   },
   "ริวซากิ": {
-    "phonetic": "riw saaki",
+    "phonetic": "riw-saaki",
     "meaning": "龙崎"
   },
   "ส่วนตัว": {
-    "phonetic": "swn taw",
+    "phonetic": "swn-taw",
     "meaning": "个人的"
   },
   "ทอง": {
@@ -12508,7 +12483,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "金子"
   },
   "แจอิน": {
-    "phonetic": "chæ oin",
+    "phonetic": "chae-oin",
     "meaning": "在仁"
   },
   "ต่อสู้": {
@@ -12516,7 +12491,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "斗争"
   },
   "ใส่": {
-    "phonetic": "sı",
+    "phonetic": "sai",
     "meaning": "进入"
   },
   "ฮัด": {
@@ -12524,7 +12499,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "平视显示器"
   },
   "แข็งแรง": {
-    "phonetic": "khæng ræng",
+    "phonetic": "khaeng-raeng",
     "meaning": "强的"
   },
   "กิ": {
@@ -12544,15 +12519,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "怪不得"
   },
   "บ้าฉิบ": {
-    "phonetic": "baa chhib",
+    "phonetic": "baa-chhib",
     "meaning": "完全疯了"
   },
   "นี่แก": {
-    "phonetic": "nii kæ",
+    "phonetic": "nii-kae",
     "meaning": "给你"
   },
   "ฮุนซู": {
-    "phonetic": "hun suu",
+    "phonetic": "hun-suu",
     "meaning": "贤秀"
   },
   "อุ๊บส์": {
@@ -12560,19 +12535,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哎呀"
   },
   "โนบิตะ": {
-    "phonetic": "no bi ta",
+    "phonetic": "no-bi-ta",
     "meaning": "大雄"
   },
   "เหี้ย": {
-    "phonetic": "eiia",
+    "phonetic": "eia",
     "meaning": "该死"
   },
   "ลูกข้า": {
-    "phonetic": "luuk khaa",
+    "phonetic": "luuk-khaa",
     "meaning": "我的儿子"
   },
   "จิโร่": {
-    "phonetic": "chi ro",
+    "phonetic": "chi-ro",
     "meaning": "二郎"
   },
   "รัฐ": {
@@ -12580,19 +12555,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "状态"
   },
   "ค่ะแม่": {
-    "phonetic": "kha mæ",
+    "phonetic": "kha-mae",
     "meaning": "是的妈妈"
   },
   "ตำแหน่ง": {
-    "phonetic": "taænng",
+    "phonetic": "taaenng",
     "meaning": "位置"
   },
   "โจดี้": {
-    "phonetic": "cho dii",
+    "phonetic": "cho-dii",
     "meaning": "乔迪"
   },
   "ซอนนี่": {
-    "phonetic": "son nii",
+    "phonetic": "son-nii",
     "meaning": "桑尼"
   },
   "ฟูจิ": {
@@ -12600,19 +12575,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "富士"
   },
   "เดนิส": {
-    "phonetic": "deni s",
+    "phonetic": "deni-s",
     "meaning": "丹尼斯"
   },
   "อยู่นะ": {
-    "phonetic": "oyuu na",
+    "phonetic": "oyuu-na",
     "meaning": "我在这儿"
   },
   "ถึงแม้": {
-    "phonetic": "thueng mæ",
+    "phonetic": "thueng-mae",
     "meaning": "虽然"
   },
   "แม๊กซ์": {
-    "phonetic": "mæks",
+    "phonetic": "maeks",
     "meaning": "最大限度"
   },
   "งู": {
@@ -12620,27 +12595,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "蛇"
   },
   "ฮัตโตริ": {
-    "phonetic": "hat to ri",
+    "phonetic": "hat-to-ri",
     "meaning": "服部"
   },
   "แต่ใช่": {
-    "phonetic": "tæ chhı",
+    "phonetic": "tae-chhai",
     "meaning": "但是是的"
   },
   "หลีกทาง": {
-    "phonetic": "liik thaang",
+    "phonetic": "liik-thaang",
     "meaning": "走开"
   },
   "ทอดด์": {
-    "phonetic": "thod d",
+    "phonetic": "thod-d",
     "meaning": "托德"
   },
   "โยโกยะ": {
-    "phonetic": "yo ko ya",
+    "phonetic": "yo-ko-ya",
     "meaning": "横哉"
   },
   "โดนัลด์": {
-    "phonetic": "dona ld",
+    "phonetic": "dona-ld",
     "meaning": "唐纳德"
   },
   "เกลน": {
@@ -12652,27 +12627,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "片剂"
   },
   "จามาล": {
-    "phonetic": "chaa maal",
+    "phonetic": "chaa-maal",
     "meaning": "贾马尔"
   },
   "จูโน่": {
-    "phonetic": "chuu no",
+    "phonetic": "chuu-no",
     "meaning": "朱诺"
   },
   "แม่ผม": {
-    "phonetic": "mæ phm",
+    "phonetic": "mae-phm",
     "meaning": "我的母亲"
   },
   "คลอเดีย": {
-    "phonetic": "khlo deiia",
+    "phonetic": "khlo-deia",
     "meaning": "克劳迪娅"
   },
   "บอกสิ": {
-    "phonetic": "bok si",
+    "phonetic": "bok-si",
     "meaning": "告诉我"
   },
   "อีแวน": {
-    "phonetic": "oii wæn",
+    "phonetic": "oii-waen",
     "meaning": "埃文"
   },
   "เหวอ": {
@@ -12680,11 +12655,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "深渊"
   },
   "คนๆ": {
-    "phonetic": "khn«",
+    "phonetic": "khon-khon",
     "meaning": "人们"
   },
   "ลูกฉัน": {
-    "phonetic": "luuk chhan",
+    "phonetic": "luuk-chhan",
     "meaning": "我的孩子"
   },
   "ฟรี": {
@@ -12692,7 +12667,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "自由的"
   },
   "แทจุน": {
-    "phonetic": "thæ chun",
+    "phonetic": "thae-chun",
     "meaning": "泰俊"
   },
   "ขาย": {
@@ -12704,15 +12679,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "跟随"
   },
   "ล่ะก็": {
-    "phonetic": "la k",
+    "phonetic": "la-k",
     "meaning": "嗯就是这样"
   },
   "มาคัส": {
-    "phonetic": "maa khas",
+    "phonetic": "maa-khas",
     "meaning": "马库斯"
   },
   "เกรต้า": {
-    "phonetic": "ke rtaa",
+    "phonetic": "ke-rtaa",
     "meaning": "格蕾塔"
   },
   "ริ": {
@@ -12720,11 +12695,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "里"
   },
   "ออกมานะ": {
-    "phonetic": "ook maana",
+    "phonetic": "ook-maana",
     "meaning": "出来"
   },
   "อีฟวา": {
-    "phonetic": "oiif waa",
+    "phonetic": "oiif-waa",
     "meaning": "前夕"
   },
   "ซอ": {
@@ -12732,11 +12707,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "锯"
   },
   "ตัวเล็ก": {
-    "phonetic": "taw lek",
+    "phonetic": "taw-lek",
     "meaning": "身体小"
   },
   "ปล่อยสิ": {
-    "phonetic": "ploy si",
+    "phonetic": "ploy-si",
     "meaning": "松手"
   },
   "ฮานะ": {
@@ -12744,11 +12719,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哈娜"
   },
   "โจแอน": {
-    "phonetic": "cho oæn",
+    "phonetic": "cho-oaen",
     "meaning": "琼"
   },
   "หนูแค่": {
-    "phonetic": "nuu khæ",
+    "phonetic": "nuu-khae",
     "meaning": "我只是"
   },
   "ช่า": {
@@ -12756,15 +12731,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "查"
   },
   "ไม่หล่ะ": {
-    "phonetic": "mi la",
+    "phonetic": "mi-la",
     "meaning": "不"
   },
   "มีคนตาย": {
-    "phonetic": "mii khn taay",
+    "phonetic": "mii-khn-taay",
     "meaning": "有人死了"
   },
   "โจนาส": {
-    "phonetic": "cho naas",
+    "phonetic": "cho-naas",
     "meaning": "乔纳斯"
   },
   "ขนมปัง": {
@@ -12772,11 +12747,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "面包"
   },
   "แทน": {
-    "phonetic": "thæn",
+    "phonetic": "thaen",
     "meaning": "反而"
   },
   "กับอีก": {
-    "phonetic": "kab oiik",
+    "phonetic": "kab-oiik",
     "meaning": "与另一个"
   },
   "ริน": {
@@ -12784,11 +12759,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "倒"
   },
   "ดันน์": {
-    "phonetic": "dan n",
+    "phonetic": "dan-n",
     "meaning": "邓恩"
   },
   "ดูดีนี่": {
-    "phonetic": "duu dii nii",
+    "phonetic": "duu-dii-nii",
     "meaning": "看看这个"
   },
   "เอิ่มม": {
@@ -12800,11 +12775,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "伤心"
   },
   "ในเมื่อ": {
-    "phonetic": "nı meueo",
+    "phonetic": "nai-muea",
     "meaning": "什么时候"
   },
   "ตัวฉัน": {
-    "phonetic": "taw chhan",
+    "phonetic": "taw-chhan",
     "meaning": "我"
   },
   "บาร์": {
@@ -12812,31 +12787,31 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "酒吧"
   },
   "อ่อใช่": {
-    "phonetic": "oo chhı",
+    "phonetic": "oo-chhai",
     "meaning": "哦是的"
   },
   "มิซึกิ": {
-    "phonetic": "mi sueki",
+    "phonetic": "mi-sueki",
     "meaning": "水木"
   },
   "ในเวลา": {
-    "phonetic": "nı welaa",
+    "phonetic": "nai-welaa",
     "meaning": "及时"
   },
   "น่ะสิ": {
-    "phonetic": "na si",
+    "phonetic": "na-si",
     "meaning": "没错"
   },
   "แจ็คกี้": {
-    "phonetic": "chækh kii",
+    "phonetic": "chaekh-kii",
     "meaning": "杰基"
   },
   "เจ้าลา": {
-    "phonetic": "cheaa laa",
+    "phonetic": "cheaa-laa",
     "meaning": "驴子"
   },
   "โซลิส": {
-    "phonetic": "so lis",
+    "phonetic": "so-lis",
     "meaning": "索利斯"
   },
   "ต๊าย": {
@@ -12844,7 +12819,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "呼"
   },
   "บาบาร่า": {
-    "phonetic": "baa baa raa",
+    "phonetic": "baa-baa-raa",
     "meaning": "芭芭拉"
   },
   "คิระ": {
@@ -12852,15 +12827,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "基拉"
   },
   "บิลโบ": {
-    "phonetic": "bil bo",
+    "phonetic": "bil-bo",
     "meaning": "比尔博"
   },
   "นั่นก็": {
-    "phonetic": "nan k",
+    "phonetic": "nan-k",
     "meaning": "就是这样"
   },
   "เคลวิน": {
-    "phonetic": "khel win",
+    "phonetic": "khel-win",
     "meaning": "开尔文"
   },
   "ชอง": {
@@ -12868,35 +12843,35 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "渠道"
   },
   "ชั้นเอง": {
-    "phonetic": "chhan oeng",
+    "phonetic": "chhan-oeng",
     "meaning": "这就是我"
   },
   "ทาคาชิ": {
-    "phonetic": "thaa khaa chhi",
+    "phonetic": "thaa-khaa-chhi",
     "meaning": "隆"
   },
   "เมลแมน": {
-    "phonetic": "mel mæn",
+    "phonetic": "mel-maen",
     "meaning": "梅尔曼"
   },
   "มิลส์": {
-    "phonetic": "mi ls",
+    "phonetic": "mi-ls",
     "meaning": "米尔斯"
   },
   "ให้ได้": {
-    "phonetic": "ı di",
+    "phonetic": "ai-di",
     "meaning": "你可以做到的"
   },
   "ทำไมรึ": {
-    "phonetic": "thami rue",
+    "phonetic": "thami-rue",
     "meaning": "为什么"
   },
   "มิชิมะ": {
-    "phonetic": "mi chhi ma",
+    "phonetic": "mi-chhi-ma",
     "meaning": "三岛"
   },
   "คนแล้ว": {
-    "phonetic": "khn læw",
+    "phonetic": "khn-laew",
     "meaning": "已经搅拌了"
   },
   "สี": {
@@ -12904,19 +12879,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "颜色"
   },
   "สตีเวน": {
-    "phonetic": "stii wen",
+    "phonetic": "stii-wen",
     "meaning": "史蒂文"
   },
   "มาร์โค": {
-    "phonetic": "maar kho",
+    "phonetic": "maar-kho",
     "meaning": "马可"
   },
   "เปิดไฟ": {
-    "phonetic": "peid fi",
+    "phonetic": "peid-fi",
     "meaning": "打开灯"
   },
   "ทางซ้าย": {
-    "phonetic": "thaang saay",
+    "phonetic": "thaang-saay",
     "meaning": "向左转"
   },
   "เมิร์ฟ": {
@@ -12928,23 +12903,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "车"
   },
   "ไปเร็วๆ": {
-    "phonetic": "pi rew«",
+    "phonetic": "pi-rew-rew",
     "meaning": "快点走吧"
   },
   "ดูดีนะ": {
-    "phonetic": "duu dii na",
+    "phonetic": "duu-dii-na",
     "meaning": "看起来不错"
   },
   "แจฮี": {
-    "phonetic": "chæhii",
+    "phonetic": "chaehii",
     "meaning": "杰熙"
   },
   "ของข้า": {
-    "phonetic": "khong khaa",
+    "phonetic": "khong-khaa",
     "meaning": "矿"
   },
   "และอีก": {
-    "phonetic": "læa oiik",
+    "phonetic": "laea-oiik",
     "meaning": "还有另一个"
   },
   "ฮวัง": {
@@ -12956,71 +12931,71 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "商业"
   },
   "จัสมิน": {
-    "phonetic": "chas min",
+    "phonetic": "chas-min",
     "meaning": "茉莉花"
   },
   "ตลกนะ": {
-    "phonetic": "tlk na",
+    "phonetic": "tlk-na",
     "meaning": "那很好笑"
   },
   "อะไรละ": {
-    "phonetic": "oari la",
+    "phonetic": "oari-la",
     "meaning": "什么"
   },
   "นิกกิ": {
-    "phonetic": "ni kki",
+    "phonetic": "ni-kki",
     "meaning": "尼基"
   },
   "อารุช": {
-    "phonetic": "oaa ruchh",
+    "phonetic": "oaa-ruchh",
     "meaning": "阿鲁什"
   },
   "แอลเอ": {
-    "phonetic": "oæl oe",
+    "phonetic": "oael-oe",
     "meaning": "洛杉矶"
   },
   "ไม่หรือ": {
-    "phonetic": "mi rueo",
+    "phonetic": "mi-rueo",
     "meaning": "或不"
   },
   "ก็แบบ": {
-    "phonetic": "k bæb",
+    "phonetic": "k-baeb",
     "meaning": "就是这样"
   },
   "ตัวจริง": {
-    "phonetic": "taw chring",
+    "phonetic": "taw-chring",
     "meaning": "真正的"
   },
   "แม่คุณ": {
-    "phonetic": "mækhun",
+    "phonetic": "maekhun",
     "meaning": "你的母亲"
   },
   "เข้าใจ๊": {
-    "phonetic": "kheaa chı",
+    "phonetic": "kheaa-chai",
     "meaning": "我明白"
   },
   "เรียวตะ": {
-    "phonetic": "reiiaw ta",
+    "phonetic": "reiaw-ta",
     "meaning": "良太"
   },
   "นั้นคือ": {
-    "phonetic": "nan khueo",
+    "phonetic": "nan-khueo",
     "meaning": "那是"
   },
   "อย่ามา": {
-    "phonetic": "oyaa maa",
+    "phonetic": "oyaa-maa",
     "meaning": "别来"
   },
   "คแลร์": {
-    "phonetic": "kh lær",
+    "phonetic": "kh-laer",
     "meaning": "克莱尔"
   },
   "อาชิยะ": {
-    "phonetic": "oaa chhi ya",
+    "phonetic": "oaa-chhi-ya",
     "meaning": "芦屋"
   },
   "ให้กับ": {
-    "phonetic": "ı kab",
+    "phonetic": "ai-kab",
     "meaning": "给予"
   },
   "เชา": {
@@ -13028,15 +13003,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "周"
   },
   "โลล่า": {
-    "phonetic": "lo laa",
+    "phonetic": "lo-laa",
     "meaning": "罗拉"
   },
   "มานามิ": {
-    "phonetic": "maa naa mi",
+    "phonetic": "maa-naa-mi",
     "meaning": "真奈美"
   },
   "มิลตัน": {
-    "phonetic": "mil tan",
+    "phonetic": "mil-tan",
     "meaning": "米尔顿"
   },
   "อิชา": {
@@ -13048,19 +13023,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "凯夫"
   },
   "อืมใช่": {
-    "phonetic": "ouem chhı",
+    "phonetic": "ouem-chhai",
     "meaning": "嗯是的"
   },
   "ไม่ใช่ๆ": {
-    "phonetic": "mi chhı«",
+    "phonetic": "mi-chhai",
     "meaning": "不"
   },
   "ทุงกุน": {
-    "phonetic": "thu ngkun",
+    "phonetic": "thu-ngkun",
     "meaning": "东贡"
   },
   "แท๊กซี่": {
-    "phonetic": "thæk sii",
+    "phonetic": "thaek-sii",
     "meaning": "出租车"
   },
   "โอกาส": {
@@ -13076,27 +13051,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "精神病"
   },
   "ตามไป": {
-    "phonetic": "taam pi",
+    "phonetic": "taam-pi",
     "meaning": "跟着走吧"
   },
   "ลืมตาสิ": {
-    "phonetic": "luemtaa si",
+    "phonetic": "luemtaa-si",
     "meaning": "睁开你的眼睛"
   },
   "เจค็อบ": {
-    "phonetic": "che kh ob",
+    "phonetic": "che-kh-ob",
     "meaning": "雅各布"
   },
   "จริงง่ะ": {
-    "phonetic": "chring nga",
+    "phonetic": "chring-nga",
     "meaning": "这是真的"
   },
   "นัตสึกิ": {
-    "phonetic": "nat sueki",
+    "phonetic": "nat-sueki",
     "meaning": "夏希"
   },
   "เทรนท์": {
-    "phonetic": "the rnth",
+    "phonetic": "the-rnth",
     "meaning": "特伦特"
   },
   "พัก": {
@@ -13104,11 +13079,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "休息"
   },
   "บอกตรงๆ": {
-    "phonetic": "bok trng«",
+    "phonetic": "bok-trong-trong",
     "meaning": "老实告诉我"
   },
   "ให้เขา": {
-    "phonetic": "ı kheaa",
+    "phonetic": "ai-kheaa",
     "meaning": "把它给他"
   },
   "หนะ": {
@@ -13128,23 +13103,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "教会"
   },
   "ติดสิ": {
-    "phonetic": "tid si",
+    "phonetic": "tid-si",
     "meaning": "坚持下去"
   },
   "ดาร์เรน": {
-    "phonetic": "daar ren",
+    "phonetic": "daar-ren",
     "meaning": "达伦"
   },
   "แพน": {
-    "phonetic": "phæn",
+    "phonetic": "phaen",
     "meaning": "平底锅"
   },
   "ยอมแพ้": {
-    "phonetic": "yom phæ",
+    "phonetic": "yom-phae",
     "meaning": "投降"
   },
   "หยุดซะ": {
-    "phonetic": "yud sa",
+    "phonetic": "yud-sa",
     "meaning": "停止吧"
   },
   "รุ่น": {
@@ -13152,27 +13127,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "模型"
   },
   "ปปส": {
-    "phonetic": "pps",
+    "phonetic": "bpaaw-bpaaw-saw",
     "meaning": "麻醉品管制局"
   },
   "ปีที่": {
-    "phonetic": "pii thii",
+    "phonetic": "pii-thii",
     "meaning": "年"
   },
   "ช่วงตึก": {
-    "phonetic": "chhwng tuek",
+    "phonetic": "chhwng-tuek",
     "meaning": "堵塞"
   },
   "ห้องนอน": {
-    "phonetic": "ong non",
+    "phonetic": "ong-non",
     "meaning": "卧室"
   },
   "ยาพิษ": {
-    "phonetic": "yaa phisʹ",
+    "phonetic": "yaa-phit",
     "meaning": "毒"
   },
   "อารอน": {
-    "phonetic": "oaa ron",
+    "phonetic": "oaa-ron",
     "meaning": "亚伦"
   },
   "จักรวาล": {
@@ -13180,11 +13155,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "宇宙"
   },
   "ที่แน่ๆ": {
-    "phonetic": "thii næ«",
+    "phonetic": "thii-nae",
     "meaning": "这是肯定的"
   },
   "บางสิ่ง": {
-    "phonetic": "baang sing",
+    "phonetic": "baang-sing",
     "meaning": "某物"
   },
   "ฮึ่ม": {
@@ -13196,11 +13171,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "节省"
   },
   "เดาสิ": {
-    "phonetic": "deaa si",
+    "phonetic": "deaa-si",
     "meaning": "猜测"
   },
   "ชอบมั้ย": {
-    "phonetic": "chhob may",
+    "phonetic": "chhob-may",
     "meaning": "你喜欢它"
   },
   "กริฟฟิน": {
@@ -13208,19 +13183,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "格里芬"
   },
   "ฟลอยด์": {
-    "phonetic": "f loy d",
+    "phonetic": "f-loy-d",
     "meaning": "弗洛伊德"
   },
   "จริงค่ะ": {
-    "phonetic": "chring kha",
+    "phonetic": "chring-kha",
     "meaning": "这是真的"
   },
   "แย่ละ": {
-    "phonetic": "yæ la",
+    "phonetic": "yae-la",
     "meaning": "那很糟糕"
   },
   "โนเอล": {
-    "phonetic": "no oel",
+    "phonetic": "no-oel",
     "meaning": "诺埃尔"
   },
   "บลู": {
@@ -13232,11 +13207,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "快速地"
   },
   "ข้าง": {
-    "phonetic": "k��haang",
+    "phonetic": "khaang",
     "meaning": "边"
   },
   "ทีละคน": {
-    "phonetic": "thii la khn",
+    "phonetic": "thii-la-khn",
     "meaning": "逐个"
   },
   "เฮย์": {
@@ -13244,19 +13219,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嘿"
   },
   "คุยกัน": {
-    "phonetic": "khuy kan",
+    "phonetic": "khuy-kan",
     "meaning": "我们来谈谈吧"
   },
   "เทียน": {
-    "phonetic": "theiian",
+    "phonetic": "theian",
     "meaning": "蜡烛"
   },
   "อยู่ใน": {
-    "phonetic": "oyuu nı",
+    "phonetic": "oyuu-nai",
     "meaning": "是在"
   },
   "เปิดมัน": {
-    "phonetic": "peid man",
+    "phonetic": "peid-man",
     "meaning": "打开它"
   },
   "ห๋า": {
@@ -13264,7 +13239,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哈"
   },
   "เออๆ": {
-    "phonetic": "oeo«",
+    "phonetic": "oeo",
     "meaning": "是的"
   },
   "เซธ": {
@@ -13276,11 +13251,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "德"
   },
   "แรนดอล": {
-    "phonetic": "rændol",
+    "phonetic": "raendol",
     "meaning": "兰德尔"
   },
   "ไปไปไป": {
-    "phonetic": "pi pi pi",
+    "phonetic": "pi-pi-pi",
     "meaning": "去去去"
   },
   "ธรรมดา": {
@@ -13296,43 +13271,43 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "太"
   },
   "พี่รู้": {
-    "phonetic": "phii ruu",
+    "phonetic": "phii-ruu",
     "meaning": "我知道"
   },
   "หลอกลวง": {
-    "phonetic": "lok lwng",
+    "phonetic": "lok-lwng",
     "meaning": "具有欺骗性"
   },
   "เพราะผม": {
-    "phonetic": "pheraaa phm",
+    "phonetic": "pheraaa-phm",
     "meaning": "因为我"
   },
   "เลือก": {
-    "phonetic": "leueok",
+    "phonetic": "lueaok",
     "meaning": "选择"
   },
   "เกียร์": {
-    "phonetic": "keiiar",
+    "phonetic": "keiar",
     "meaning": "齿轮"
   },
   "ตลอดมา": {
-    "phonetic": "tlod maa",
+    "phonetic": "tlod-maa",
     "meaning": "一直"
   },
   "แคลลี่": {
-    "phonetic": "khæ l lii",
+    "phonetic": "khae-l-lii",
     "meaning": "凯莉"
   },
   "อีเดน": {
-    "phonetic": "oii den",
+    "phonetic": "oii-den",
     "meaning": "伊甸园"
   },
   "ฮิคคัพ": {
-    "phonetic": "hi khkhaph",
+    "phonetic": "hi-khkhaph",
     "meaning": "打嗝"
   },
   "แล้วนาย": {
-    "phonetic": "læw naay",
+    "phonetic": "laew-naay",
     "meaning": "还有先生"
   },
   "เซ็น": {
@@ -13344,15 +13319,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "勒"
   },
   "โรมิโอ": {
-    "phonetic": "ro mi oo",
+    "phonetic": "ro-mi-oo",
     "meaning": "罗密欧"
   },
   "อู้ววว": {
-    "phonetic": "ouu www",
+    "phonetic": "ouu-www",
     "meaning": "哦"
   },
   "แชนนอน": {
-    "phonetic": "chhæ n non",
+    "phonetic": "chhae-n-non",
     "meaning": "香农"
   },
   "อาาา": {
@@ -13360,23 +13335,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "啊"
   },
   "ตรงโน้น": {
-    "phonetic": "trng non",
+    "phonetic": "trng-non",
     "meaning": "在那边"
   },
   "อากาเนะ": {
-    "phonetic": "oaa kaa nea",
+    "phonetic": "oaa-kaa-nea",
     "meaning": "阿金"
   },
   "เทสซ่า": {
-    "phonetic": "thes saa",
+    "phonetic": "thes-saa",
     "meaning": "泰莎"
   },
   "ดึกแล้ว": {
-    "phonetic": "duek læw",
+    "phonetic": "duek-laew",
     "meaning": "现在已经晚了"
   },
   "ดูแล้ว": {
-    "phonetic": "duu læw",
+    "phonetic": "duu-laew",
     "meaning": "已经看过了"
   },
   "ตัน": {
@@ -13384,15 +13359,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "吨"
   },
   "เคนตะ": {
-    "phonetic": "khen ta",
+    "phonetic": "khen-ta",
     "meaning": "健太"
   },
   "ชานติ": {
-    "phonetic": "chhaan ti",
+    "phonetic": "chhaan-ti",
     "meaning": "香蒂"
   },
   "วู้วว": {
-    "phonetic": "wuu ww",
+    "phonetic": "wuu-ww",
     "meaning": "呜呼"
   },
   "เลว": {
@@ -13400,11 +13375,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "坏的"
   },
   "คือใคร": {
-    "phonetic": "khueo khır",
+    "phonetic": "khueo-khair",
     "meaning": "这是谁"
   },
   "เอมส์": {
-    "phonetic": "oem s",
+    "phonetic": "oem-s",
     "meaning": "艾姆斯"
   },
   "ติ๊ก": {
@@ -13412,7 +13387,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "打钩"
   },
   "ชิบหาย": {
-    "phonetic": "chhi b aay",
+    "phonetic": "chhi-b-aay",
     "meaning": "破碎的"
   },
   "ขยะ": {
@@ -13420,19 +13395,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "垃圾"
   },
   "บัวนา": {
-    "phonetic": "baw naa",
+    "phonetic": "baw-naa",
     "meaning": "布阿纳"
   },
   "ถ้วย": {
-    "phonetic": "thwy",
+    "phonetic": "thuay",
     "meaning": "杯子"
   },
   "นะค่ะ": {
-    "phonetic": "na kha",
+    "phonetic": "na-kha",
     "meaning": "是的"
   },
   "คูมาร์": {
-    "phonetic": "khuu maar",
+    "phonetic": "khuu-maar",
     "meaning": "库马尔"
   },
   "จอด": {
@@ -13440,47 +13415,47 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "公园"
   },
   "และทำไม": {
-    "phonetic": "læa thami",
+    "phonetic": "laea-thami",
     "meaning": "以及为什么"
   },
   "ตลกจัง": {
-    "phonetic": "tlk chang",
+    "phonetic": "tlk-chang",
     "meaning": "太有趣了"
   },
   "ทางโน้น": {
-    "phonetic": "thaang non",
+    "phonetic": "thaang-non",
     "meaning": "在那边"
   },
   "เอาจริง": {
-    "phonetic": "oeaa chring",
+    "phonetic": "oeaa-chring",
     "meaning": "严重地"
   },
   "แถม": {
-    "phonetic": "thæm",
+    "phonetic": "thaem",
     "meaning": "加"
   },
   "โอคจา": {
-    "phonetic": "ookh chaa",
+    "phonetic": "ookh-chaa",
     "meaning": "好吧"
   },
   "เอ่อออ": {
-    "phonetic": "oeo oo",
+    "phonetic": "oeo-oo",
     "meaning": "呃哦"
   },
   "ออเดร์ย": {
-    "phonetic": "oo dery",
+    "phonetic": "oo-dery",
     "meaning": "奥黛丽"
   },
   "ซูจิน": {
-    "phonetic": "suu chin",
+    "phonetic": "suu-chin",
     "meaning": "苏进"
   },
   "เอามั้ย": {
-    "phonetic": "oeaa may",
+    "phonetic": "oeaa-may",
     "meaning": "你想要吗"
   },
   "มาร์วิน": {
-    "phonetic": "maar win",
+    "phonetic": "maar-win",
     "meaning": "马文"
   },
   "ปาก": {
@@ -13488,31 +13463,31 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嘴"
   },
   "คัมปาย": {
-    "phonetic": "kham paay",
+    "phonetic": "kham-paay",
     "meaning": "坎帕伊"
   },
   "ในป่า": {
-    "phonetic": "nı paa",
+    "phonetic": "nai-paa",
     "meaning": "在森林里"
   },
   "จะเป็น": {
-    "phonetic": "cha pen",
+    "phonetic": "cha-pen",
     "meaning": "将"
   },
   "ได้นะ": {
-    "phonetic": "di na",
+    "phonetic": "di-na",
     "meaning": "你可以"
   },
   "หวานใจ": {
-    "phonetic": "waan chı",
+    "phonetic": "waan-chai",
     "meaning": "亲爱的"
   },
   "สวัดดี": {
-    "phonetic": "s wad dii",
+    "phonetic": "s-wad-dii",
     "meaning": "你好"
   },
   "หญิงสาว": {
-    "phonetic": "ying saaw",
+    "phonetic": "ying-saaw",
     "meaning": "年轻女子"
   },
   "ซ่อน": {
@@ -13520,19 +13495,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "隐藏"
   },
   "พอดีเลย": {
-    "phonetic": "phodii lei",
+    "phonetic": "phodii-lei",
     "meaning": "正好"
   },
   "อย่าๆ": {
-    "phonetic": "oyaa«",
+    "phonetic": "oyaa",
     "meaning": "不"
   },
   "น่ะค่ะ": {
-    "phonetic": "na kha",
+    "phonetic": "na-kha",
     "meaning": "是的"
   },
   "ใกล้": {
-    "phonetic": "kıl",
+    "phonetic": "kail",
     "meaning": "靠近"
   },
   "บอย": {
@@ -13540,19 +13515,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "男生"
   },
   "ชั้นแค่": {
-    "phonetic": "chhan khæ",
+    "phonetic": "chhan-khae",
     "meaning": "我只是"
   },
   "มอสซี่": {
-    "phonetic": "mos sii",
+    "phonetic": "mos-sii",
     "meaning": "摩西"
   },
   "เจ็บปวด": {
-    "phonetic": "cheb pwd",
+    "phonetic": "cheb-pwd",
     "meaning": "痛苦"
   },
   "ถอยก่อน": {
-    "phonetic": "thoy kon",
+    "phonetic": "thoy-kon",
     "meaning": "先退后吧"
   },
   "สโลน": {
@@ -13560,7 +13535,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "斯隆"
   },
   "บ้าเหรอ": {
-    "phonetic": "baa e ro",
+    "phonetic": "baa-e-ro",
     "meaning": "你疯了"
   },
   "ฮวา": {
@@ -13568,15 +13543,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哇"
   },
   "แกโกหก": {
-    "phonetic": "kæ kok",
+    "phonetic": "kae-kok",
     "meaning": "你撒谎了"
   },
   "มีน่า": {
-    "phonetic": "mii naa",
+    "phonetic": "mii-naa",
     "meaning": "米娜"
   },
   "บอกมาซิ": {
-    "phonetic": "bok maa si",
+    "phonetic": "bok-maa-si",
     "meaning": "告诉我"
   },
   "วอร์เรน": {
@@ -13584,15 +13559,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "沃伦"
   },
   "ริกกี้": {
-    "phonetic": "rik kii",
+    "phonetic": "rik-kii",
     "meaning": "瑞奇"
   },
   "อึนยอง": {
-    "phonetic": "ouen yong",
+    "phonetic": "ouen-yong",
     "meaning": "恩英"
   },
   "รู้ไม๊": {
-    "phonetic": "ruu mi",
+    "phonetic": "ruu-mi",
     "meaning": "你可知道"
   },
   "อ้าห์": {
@@ -13608,7 +13583,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "技术"
   },
   "ไม่ไหว": {
-    "phonetic": "mi iw",
+    "phonetic": "mi-iw",
     "meaning": "我受不了"
   },
   "พลาซ่า": {
@@ -13620,11 +13595,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "泰特"
   },
   "โดโรธี": {
-    "phonetic": "do rothii",
+    "phonetic": "do-rothii",
     "meaning": "多萝西"
   },
   "อ่าใช่": {
-    "phonetic": "oaa chhı",
+    "phonetic": "oaa-chhai",
     "meaning": "啊是的"
   },
   "ญิ": {
@@ -13632,7 +13607,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "吉"
   },
   "ลืมไป": {
-    "phonetic": "luem pi",
+    "phonetic": "luem-pi",
     "meaning": "忘记了"
   },
   "ชิฟ": {
@@ -13640,35 +13615,35 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "芯片"
   },
   "แฮกริด": {
-    "phonetic": "hæ krid",
+    "phonetic": "hae-krid",
     "meaning": "海格"
   },
   "หยาบคาย": {
-    "phonetic": "yaab khaay",
+    "phonetic": "yaab-khaay",
     "meaning": "粗鲁的"
   },
   "เทสส์": {
-    "phonetic": "the ss",
+    "phonetic": "the-ss",
     "meaning": "苔丝"
   },
   "ลุงครับ": {
-    "phonetic": "lung khrab",
+    "phonetic": "lung-khrab",
     "meaning": "叔叔"
   },
   "ไม่เจอ": {
-    "phonetic": "mi cheo",
+    "phonetic": "mi-cheo",
     "meaning": "找不到它"
   },
   "ดูหนัง": {
-    "phonetic": "duu nang",
+    "phonetic": "duu-nang",
     "meaning": "看电影"
   },
   "อาร์ชี่": {
-    "phonetic": "oaar chhii",
+    "phonetic": "oaar-chhii",
     "meaning": "阿奇"
   },
   "ผ่านไป": {
-    "phonetic": "phaan pi",
+    "phonetic": "phaan-pi",
     "meaning": "通过了"
   },
   "ขาว": {
@@ -13676,11 +13651,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "白色的"
   },
   "นี่จ๊ะ": {
-    "phonetic": "nii cha",
+    "phonetic": "nii-cha",
     "meaning": "这里是"
   },
   "นิดนึง": {
-    "phonetic": "nid nueng",
+    "phonetic": "nid-nueng",
     "meaning": "一点点"
   },
   "อิล": {
@@ -13688,11 +13663,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "伊尔"
   },
   "ขอโทษฮะ": {
-    "phonetic": "khothosʹ ha",
+    "phonetic": "kho-thot-ha",
     "meaning": "对不起"
   },
   "แฟลช": {
-    "phonetic": "fælchh",
+    "phonetic": "faelchh",
     "meaning": "闪光"
   },
   "หิว": {
@@ -13700,7 +13675,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "饥饿的"
   },
   "ยก": {
-    "phonetic": "yk",
+    "phonetic": "yok",
     "meaning": "举起"
   },
   "โกลด์": {
@@ -13708,15 +13683,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "金子"
   },
   "ที่มี": {
-    "phonetic": "thii mii",
+    "phonetic": "thii-mii",
     "meaning": "那有"
   },
   "เกลียด": {
-    "phonetic": "keliiad",
+    "phonetic": "keliad",
     "meaning": "恨"
   },
   "โอริเอะ": {
-    "phonetic": "oo ri oea",
+    "phonetic": "oo-ri-oea",
     "meaning": "奥里"
   },
   "คนนะ": {
@@ -13732,7 +13707,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "西班牙"
   },
   "มิโอะ": {
-    "phonetic": "mi ooa",
+    "phonetic": "mi-ooa",
     "meaning": "澪"
   },
   "เทป": {
@@ -13740,11 +13715,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "磁带"
   },
   "ตกลงว่า": {
-    "phonetic": "tklng waa",
+    "phonetic": "tklng-waa",
     "meaning": "同意了"
   },
   "เห็นสิ": {
-    "phonetic": "en si",
+    "phonetic": "en-si",
     "meaning": "看"
   },
   "เยอะ": {
@@ -13752,7 +13727,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "很多"
   },
   "บาร์น": {
-    "phonetic": "baar n",
+    "phonetic": "baar-n",
     "meaning": "谷仓"
   },
   "ซุป": {
@@ -13760,51 +13735,51 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "汤"
   },
   "ฝนตก": {
-    "phonetic": "fntk",
+    "phonetic": "fon-tok",
     "meaning": "下雨了"
   },
   "ในชีวิต": {
-    "phonetic": "nı chhiiwit",
+    "phonetic": "nai-chhiiwit",
     "meaning": "在生活中"
   },
   "ช่วง": {
-    "phonetic": "chhwng",
+    "phonetic": "chuang",
     "meaning": "范围"
   },
   "ได้แก่": {
-    "phonetic": "di��kæ",
+    "phonetic": "daai-gae",
     "meaning": "包括"
   },
   "อืมๆ": {
-    "phonetic": "ouem«",
+    "phonetic": "ouem",
     "meaning": "唔"
   },
   "บวก": {
-    "phonetic": "bwk",
+    "phonetic": "buak",
     "meaning": "加"
   },
   "คามิยะ": {
-    "phonetic": "khaa mi ya",
+    "phonetic": "khaa-mi-ya",
     "meaning": "卡米亚"
   },
   "ไปทำงาน": {
-    "phonetic": "pi thangaan",
+    "phonetic": "pi-thangaan",
     "meaning": "上班"
   },
   "มิโดริ": {
-    "phonetic": "mi do ri",
+    "phonetic": "mi-do-ri",
     "meaning": "绿"
   },
   "หึหึ": {
-    "phonetic": "ueue",
+    "phonetic": "uuea",
     "meaning": "呵呵"
   },
   "คอนแลน": {
-    "phonetic": "khon læn",
+    "phonetic": "khon-laen",
     "meaning": "康兰"
   },
   "แปปนึง": {
-    "phonetic": "pæ pnueng",
+    "phonetic": "pae-pnueng",
     "meaning": "一会儿"
   },
   "พอดี": {
@@ -13812,7 +13787,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "正好"
   },
   "ๆนะ": {
-    "phonetic": "«na",
+    "phonetic": "na",
     "meaning": "请"
   },
   "เวล": {
@@ -13820,15 +13795,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "维尔"
   },
   "ยังงั้น": {
-    "phonetic": "yang ngan",
+    "phonetic": "yang-ngan",
     "meaning": "还没有"
   },
   "มากเลย": {
-    "phonetic": "maak lei",
+    "phonetic": "maak-lei",
     "meaning": "非常"
   },
   "พระบิดา": {
-    "phonetic": "phra bidaa",
+    "phonetic": "phra-bidaa",
     "meaning": "父亲"
   },
   "หวาน": {
@@ -13836,27 +13811,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "甜的"
   },
   "แตกต่าง": {
-    "phonetic": "tæk taang",
+    "phonetic": "taek-taang",
     "meaning": "不同的"
   },
   "เฮลี่ย์": {
-    "phonetic": "he lii y",
+    "phonetic": "he-lii-y",
     "meaning": "海莉"
   },
   "จีเซล": {
-    "phonetic": "chii sel",
+    "phonetic": "chii-sel",
     "meaning": "吉赛尔"
   },
   "แก้แค้น": {
-    "phonetic": "kæ khæn",
+    "phonetic": "kae-khaen",
     "meaning": "复仇"
   },
   "เคนเสะ": {
-    "phonetic": "khen sea",
+    "phonetic": "khen-sea",
     "meaning": "肯西"
   },
   "ฮ่าๆๆๆ": {
-    "phonetic": "haa« ««",
+    "phonetic": "haa-haa-",
     "meaning": "哈哈哈"
   },
   "นึง": {
@@ -13876,11 +13851,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "万"
   },
   "หยุดที": {
-    "phonetic": "yud thii",
+    "phonetic": "yud-thii",
     "meaning": "请停下来"
   },
   "ฮาวี่": {
-    "phonetic": "haa wii",
+    "phonetic": "haa-wii",
     "meaning": "豪伊"
   },
   "ก็มี": {
@@ -13892,11 +13867,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "德语"
   },
   "หรือคะ": {
-    "phonetic": "rueo kha",
+    "phonetic": "rueo-kha",
     "meaning": "或者"
   },
   "สุดหล่อ": {
-    "phonetic": "sud lo",
+    "phonetic": "sud-lo",
     "meaning": "很帅"
   },
   "คุง": {
@@ -13904,23 +13879,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "恭"
   },
   "ปรบมือ": {
-    "phonetic": "prb mueo",
+    "phonetic": "prb-mueo",
     "meaning": "拍拍手"
   },
   "ฝันร้าย": {
-    "phonetic": "fan raay",
+    "phonetic": "fan-raay",
     "meaning": "恶梦"
   },
   "หยุดเขา": {
-    "phonetic": "yud kheaa",
+    "phonetic": "yud-kheaa",
     "meaning": "阻止他"
   },
   "ผู้ช่วย": {
-    "phonetic": "phuu chhwy",
+    "phonetic": "phuu-chhwy",
     "meaning": "助手"
   },
   "สไตลส์": {
-    "phonetic": "s ti ls",
+    "phonetic": "s-ti-ls",
     "meaning": "风格"
   },
   "เลิก": {
@@ -13928,11 +13903,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "辞职"
   },
   "คอร่า": {
-    "phonetic": "kho raa",
+    "phonetic": "kho-raa",
     "meaning": "科拉"
   },
   "แม่ว่า": {
-    "phonetic": "mæ waa",
+    "phonetic": "mae-waa",
     "meaning": "妈妈说"
   },
   "มอร์": {
@@ -13940,51 +13915,51 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "莫"
   },
   "ฝูงชน": {
-    "phonetic": "fuung chhn",
+    "phonetic": "fuung-chhn",
     "meaning": "人群"
   },
   "ทัตซึยะ": {
-    "phonetic": "that sue ya",
+    "phonetic": "that-sue-ya",
     "meaning": "达也"
   },
   "มาที่": {
-    "phonetic": "maa thii",
+    "phonetic": "maa-thii",
     "meaning": "来吧"
   },
   "ชอลซู": {
-    "phonetic": "chhol suu",
+    "phonetic": "chhol-suu",
     "meaning": "哲尔苏"
   },
   "อะไรค่ะ": {
-    "phonetic": "oari kha",
+    "phonetic": "oari-kha",
     "meaning": "什么"
   },
   "ของมัน": {
-    "phonetic": "khong man",
+    "phonetic": "khong-man",
     "meaning": "它是"
   },
   "เดวี่": {
-    "phonetic": "de wii",
+    "phonetic": "de-wii",
     "meaning": "戴维"
   },
   "คงไม่": {
-    "phonetic": "khng mi",
+    "phonetic": "khng-mi",
     "meaning": "可能不会"
   },
   "ดูแล": {
-    "phonetic": "duulæ",
+    "phonetic": "duulae",
     "meaning": "小心"
   },
   "และอื่น": {
-    "phonetic": "læa ouen",
+    "phonetic": "laea-ouen",
     "meaning": "等等"
   },
   "คังแทโฮ": {
-    "phonetic": "khangthæ ho",
+    "phonetic": "khangthae-ho",
     "meaning": "姜泰浩"
   },
   "แบล็ก": {
-    "phonetic": "bæ lk",
+    "phonetic": "bae-lk",
     "meaning": "黑色的"
   },
   "มูน": {
@@ -13992,27 +13967,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "月亮"
   },
   "นายจะ": {
-    "phonetic": "naay cha",
+    "phonetic": "naay-cha",
     "meaning": "威尔先生"
   },
   "ๆๆๆ": {
-    "phonetic": "«««",
+    "phonetic": "ha-ha-ha",
     "meaning": "哈哈哈"
   },
   "คาลิด": {
-    "phonetic": "khaa lid",
+    "phonetic": "khaa-lid",
     "meaning": "哈立德"
   },
   "อย่ามอง": {
-    "phonetic": "oyaa mong",
+    "phonetic": "oyaa-mong",
     "meaning": "别看"
   },
   "กับนาย": {
-    "phonetic": "kab naay",
+    "phonetic": "kab-naay",
     "meaning": "与你"
   },
   "สัญญาณ": {
-    "phonetic": "sa���yaan",
+    "phonetic": "san-yaan",
     "meaning": "信号"
   },
   "ดักลาส": {
@@ -14020,15 +13995,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "道格拉斯"
   },
   "ขาฉัน": {
-    "phonetic": "khaa chhan",
+    "phonetic": "khaa-chhan",
     "meaning": "我的腿"
   },
   "อย่าคิด": {
-    "phonetic": "oyaa khid",
+    "phonetic": "oyaa-khid",
     "meaning": "别想了"
   },
   "โอปี้": {
-    "phonetic": "oo pii",
+    "phonetic": "oo-pii",
     "meaning": "奥佩"
   },
   "เจซ": {
@@ -14036,7 +14011,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "杰西"
   },
   "แอ็บบี้": {
-    "phonetic": "oæb bii",
+    "phonetic": "oaeb-bii",
     "meaning": "艾比"
   },
   "โอ่ว": {
@@ -14048,11 +14023,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "贝克特"
   },
   "ฮยองนิม": {
-    "phonetic": "h yong nim",
+    "phonetic": "h-yong-nim",
     "meaning": "亨宁"
   },
   "นานมาก": {
-    "phonetic": "naan maak",
+    "phonetic": "naan-maak",
     "meaning": "很长一段时间"
   },
   "หนาว": {
@@ -14060,7 +14035,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "寒冷的"
   },
   "ออโรร่า": {
-    "phonetic": "oo ro raa",
+    "phonetic": "oo-ro-raa",
     "meaning": "极光"
   },
   "ฝัน": {
@@ -14068,11 +14043,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "梦"
   },
   "โคจัง": {
-    "phonetic": "kho chang",
+    "phonetic": "kho-chang",
     "meaning": "小昌"
   },
   "ครับพ่อ": {
-    "phonetic": "khrab pho",
+    "phonetic": "khrab-pho",
     "meaning": "是的父亲"
   },
   "รัฐบาล": {
@@ -14080,23 +14055,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "政府"
   },
   "แคนาดา": {
-    "phonetic": "khænaadaa",
+    "phonetic": "khaenaadaa",
     "meaning": "加拿大"
   },
   "อาบน้ำ": {
-    "phonetic": "oaab na",
+    "phonetic": "oaab-na",
     "meaning": "洗个澡"
   },
   "มอยร่า": {
-    "phonetic": "mo y raa",
+    "phonetic": "mo-y-raa",
     "meaning": "莫伊拉"
   },
   "ตอแหล": {
-    "phonetic": "toæl",
+    "phonetic": "toael",
     "meaning": "说谎"
   },
   "พอใจยัง": {
-    "phonetic": "phochı yang",
+    "phonetic": "phochai-yang",
     "meaning": "你还满意吗"
   },
   "เห้อ": {
@@ -14104,19 +14079,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嘿"
   },
   "เด็ดขาด": {
-    "phonetic": "ded khaad",
+    "phonetic": "ded-khaad",
     "meaning": "绝对地"
   },
   "จากอะไร": {
-    "phonetic": "chaak oari",
+    "phonetic": "chaak-oari",
     "meaning": "从什么"
   },
   "เคนโซ": {
-    "phonetic": "khen so",
+    "phonetic": "khen-so",
     "meaning": "贤三"
   },
   "มัวร์": {
-    "phonetic": "maw r",
+    "phonetic": "maw-r",
     "meaning": "摩尔"
   },
   "หวา": {
@@ -14124,7 +14099,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哇"
   },
   "ไปก่อน": {
-    "phonetic": "pi kon",
+    "phonetic": "pi-kon",
     "meaning": "先走吧"
   },
   "อูย": {
@@ -14132,23 +14107,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哎呀"
   },
   "แม่หนู": {
-    "phonetic": "mæ nuu",
+    "phonetic": "mae-nuu",
     "meaning": "我的母亲"
   },
   "แสน": {
-    "phonetic": "sæn",
+    "phonetic": "saen",
     "meaning": "十万"
   },
   "นี่ฉัน": {
-    "phonetic": "nii chhan",
+    "phonetic": "nii-chhan",
     "meaning": "这就是我"
   },
   "ฮยอกจู": {
-    "phonetic": "h yok chuu",
+    "phonetic": "h-yok-chuu",
     "meaning": "赫州"
   },
   "โรแลนด์": {
-    "phonetic": "ro lænd",
+    "phonetic": "ro-laend",
     "meaning": "罗兰"
   },
   "บีน": {
@@ -14160,11 +14135,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "光"
   },
   "ไปยัง": {
-    "phonetic": "pi yang",
+    "phonetic": "pi-yang",
     "meaning": "到"
   },
   "เอลิสัน": {
-    "phonetic": "oe li san",
+    "phonetic": "oe-li-san",
     "meaning": "艾莉森"
   },
   "ภารกิจ": {
@@ -14180,7 +14155,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "将死"
   },
   "ได้จ๊ะ": {
-    "phonetic": "di cha",
+    "phonetic": "di-cha",
     "meaning": "你可以"
   },
   "อ้วน": {
@@ -14188,7 +14163,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "胖的"
   },
   "แรมโบ้": {
-    "phonetic": "ræm bo",
+    "phonetic": "raem-bo",
     "meaning": "兰博"
   },
   "ทริช": {
@@ -14196,7 +14171,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "崔西"
   },
   "โอ้ว้าว": {
-    "phonetic": "oo waa w",
+    "phonetic": "oo-waa-w",
     "meaning": "哦哇"
   },
   "วิฟ": {
@@ -14204,19 +14179,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "维维"
   },
   "เปิดเลย": {
-    "phonetic": "peid lei",
+    "phonetic": "peid-lei",
     "meaning": "现在开放"
   },
   "มีชีวิต": {
-    "phonetic": "mii chhiiwit",
+    "phonetic": "mii-chhiiwit",
     "meaning": "居住"
   },
   "เฟรดดี้": {
-    "phonetic": "fe rd dii",
+    "phonetic": "fe-rd-dii",
     "meaning": "弗雷迪"
   },
   "ตื่นๆ": {
-    "phonetic": "tuen«",
+    "phonetic": "tuen",
     "meaning": "醒来吧"
   },
   "โหมด": {
@@ -14224,7 +14199,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "模式"
   },
   "นายมี": {
-    "phonetic": "naay mii",
+    "phonetic": "naay-mii",
     "meaning": "梅先生"
   },
   "ท็อป": {
@@ -14232,15 +14207,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "顶部"
   },
   "บนนั้น": {
-    "phonetic": "bn nan",
+    "phonetic": "bn-nan",
     "meaning": "上面"
   },
   "ในฐานะ": {
-    "phonetic": "nı thaana",
+    "phonetic": "nai-thaana",
     "meaning": "作为"
   },
   "แบล็ค": {
-    "phonetic": "bæ lkh",
+    "phonetic": "bae-lkh",
     "meaning": "黑色的"
   },
   "มะเร็ง": {
@@ -14248,19 +14223,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "癌症"
   },
   "แอนา": {
-    "phonetic": "oænaa",
+    "phonetic": "oaenaa",
     "meaning": "安娜"
   },
   "แรลลี่": {
-    "phonetic": "rællii",
+    "phonetic": "raellii",
     "meaning": "集会"
   },
   "เกือบจะ": {
-    "phonetic": "keueob cha",
+    "phonetic": "kueaob-cha",
     "meaning": "几乎"
   },
   "โอ้ๆ": {
-    "phonetic": "oo«",
+    "phonetic": "oo",
     "meaning": "哦"
   },
   "สรุป": {
@@ -14268,11 +14243,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "概括"
   },
   "นี่ด้วย": {
-    "phonetic": "nii dwy",
+    "phonetic": "nii-dwy",
     "meaning": "这也是"
   },
   "ดอร์ริท": {
-    "phonetic": "d or rith",
+    "phonetic": "d-or-rith",
     "meaning": "杜丽特"
   },
   "นี": {
@@ -14280,7 +14255,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "尼"
   },
   "แฮร์ริส": {
-    "phonetic": "hær ris",
+    "phonetic": "haer-ris",
     "meaning": "哈里斯"
   },
   "ทริส": {
@@ -14292,11 +14267,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "桶"
   },
   "เอลวิส": {
-    "phonetic": "oe l wis",
+    "phonetic": "oe-l-wis",
     "meaning": "埃尔维斯"
   },
   "จองจู": {
-    "phonetic": "chong chuu",
+    "phonetic": "chong-chuu",
     "meaning": "正州"
   },
   "ฮอง": {
@@ -14308,23 +14283,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "嘻"
   },
   "นักแสดง": {
-    "phonetic": "nak sædng",
+    "phonetic": "nak-saedng",
     "meaning": "演员"
   },
   "โจซี่": {
-    "phonetic": "cho sii",
+    "phonetic": "cho-sii",
     "meaning": "乔西"
   },
   "เกรแฮม": {
-    "phonetic": "ker hæm",
+    "phonetic": "ker-haem",
     "meaning": "格雷厄姆"
   },
   "ขอเดานะ": {
-    "phonetic": "kho deaa na",
+    "phonetic": "kho-deaa-na",
     "meaning": "让我猜一下"
   },
   "ดาร์ซี่": {
-    "phonetic": "daar sii",
+    "phonetic": "daar-sii",
     "meaning": "达西"
   },
   "เช้า": {
@@ -14332,23 +14307,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "早晨"
   },
   "ทายสิ": {
-    "phonetic": "thaay si",
+    "phonetic": "thaay-si",
     "meaning": "你猜怎么着"
   },
   "ก้ได้": {
-    "phonetic": "k di",
+    "phonetic": "k-di",
     "meaning": "这是可以做到的"
   },
   "ไปๆๆๆ": {
-    "phonetic": "pi«««",
+    "phonetic": "pi-pi",
     "meaning": "去去去"
   },
   "อือม์": {
-    "phonetic": "oueo m",
+    "phonetic": "oueo-m",
     "meaning": "嗯"
   },
   "สว": {
-    "phonetic": "sw",
+    "phonetic": "saw-waaw",
     "meaning": "参议员"
   },
   "เนต": {
@@ -14356,23 +14331,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "净"
   },
   "ทุกสิ่ง": {
-    "phonetic": "thuk sing",
+    "phonetic": "thuk-sing",
     "meaning": "一切"
   },
   "เคนซ์": {
-    "phonetic": "khen s",
+    "phonetic": "khen-s",
     "meaning": "肯兹"
   },
   "โดมินิค": {
-    "phonetic": "do mi nikh",
+    "phonetic": "do-mi-nikh",
     "meaning": "多米尼克"
   },
   "สัญญาสิ": {
-    "phonetic": "sayyaa si",
+    "phonetic": "sayyaa-si",
     "meaning": "承诺"
   },
   "เห็นมะ": {
-    "phonetic": "en ma",
+    "phonetic": "en-ma",
     "meaning": "我懂了"
   },
   "ผะ": {
@@ -14384,27 +14359,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "鲨鱼"
   },
   "มาดูนี่": {
-    "phonetic": "maa duu nii",
+    "phonetic": "maa-duu-nii",
     "meaning": "快来看看这个"
   },
   "สนุกดี": {
-    "phonetic": "snuk dii",
+    "phonetic": "snuk-dii",
     "meaning": "很好玩"
   },
   "ผมเองนะ": {
-    "phonetic": "phm oeng na",
+    "phonetic": "phm-oeng-na",
     "meaning": "这就是我"
   },
   "ออกจาก": {
-    "phonetic": "ook chaak",
+    "phonetic": "ook-chaak",
     "meaning": "离开"
   },
   "ซีซั่น": {
-    "phonetic": "sii san",
+    "phonetic": "sii-san",
     "meaning": "季节"
   },
   "สตรีท": {
-    "phonetic": "strii th",
+    "phonetic": "strii-th",
     "meaning": "街道"
   },
   "บอง": {
@@ -14412,11 +14387,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "邦"
   },
   "จากนี้": {
-    "phonetic": "chaak nii",
+    "phonetic": "chaak-nii",
     "meaning": "今后"
   },
   "แถวๆ": {
-    "phonetic": "thæw«",
+    "phonetic": "thaew",
     "meaning": "大约"
   },
   "ตะ": {
@@ -14428,19 +14403,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "请"
   },
   "คอยดู": {
-    "phonetic": "khoy duu",
+    "phonetic": "khoy-duu",
     "meaning": "观察观察"
   },
   "แหม่": {
-    "phonetic": "æm",
+    "phonetic": "aem",
     "meaning": "哇"
   },
   "ทาคิดะ": {
-    "phonetic": "thaa khid a",
+    "phonetic": "thaa-khid-a",
     "meaning": "泷田"
   },
   "จิลล์": {
-    "phonetic": "chi ll",
+    "phonetic": "chi-ll",
     "meaning": "吉尔"
   },
   "การ์ด": {
@@ -14448,11 +14423,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "卡片"
   },
   "ไม่ทราบ": {
-    "phonetic": "mi thraab",
+    "phonetic": "mi-thraab",
     "meaning": "不知道"
   },
   "แค่ไหน": {
-    "phonetic": "khæ in",
+    "phonetic": "khae-in",
     "meaning": "多少"
   },
   "ท๊อป": {
@@ -14460,11 +14435,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "顶部"
   },
   "อะไรอะ": {
-    "phonetic": "oari oa",
+    "phonetic": "oari-oa",
     "meaning": "什么"
   },
   "ได้เหรอ": {
-    "phonetic": "di e ro",
+    "phonetic": "di-e-ro",
     "meaning": "你明白了吗"
   },
   "หลีก": {
@@ -14472,19 +14447,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "避免"
   },
   "ฮอบส์": {
-    "phonetic": "h obs",
+    "phonetic": "h-obs",
     "meaning": "霍布斯"
   },
   "ไปอีก": {
-    "phonetic": "pi oiik",
+    "phonetic": "pi-oiik",
     "meaning": "再去吧"
   },
   "ปีมานี้": {
-    "phonetic": "pii maa nii",
+    "phonetic": "pii-maa-nii",
     "meaning": "今年"
   },
   "ดูดีมาก": {
-    "phonetic": "duu dii maak",
+    "phonetic": "duu-dii-maak",
     "meaning": "看起来非常好"
   },
   "รูป": {
@@ -14492,11 +14467,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "图片"
   },
   "ตั้งใจ": {
-    "phonetic": "tangchı",
+    "phonetic": "tangchai",
     "meaning": "意图"
   },
   "แคตนิส": {
-    "phonetic": "khæ tnis",
+    "phonetic": "khae-tnis",
     "meaning": "凯特尼斯"
   },
   "ดำ": {
@@ -14504,7 +14479,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "黑色的"
   },
   "ปิแอร์": {
-    "phonetic": "pioær",
+    "phonetic": "pioaer",
     "meaning": "皮埃尔"
   },
   "ตำนาน": {
@@ -14512,15 +14487,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "传奇"
   },
   "เรมี่": {
-    "phonetic": "re mii",
+    "phonetic": "re-mii",
     "meaning": "雷米"
   },
   "เตรียม": {
-    "phonetic": "teriiam",
+    "phonetic": "teriam",
     "meaning": "准备"
   },
   "ซักวัน": {
-    "phonetic": "sak wan",
+    "phonetic": "sak-wan",
     "meaning": "有一天"
   },
   "ดัก": {
@@ -14528,11 +14503,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "陷阱"
   },
   "อาจเป็น": {
-    "phonetic": "oaach pen",
+    "phonetic": "oaach-pen",
     "meaning": "可能是的"
   },
   "แฮล": {
-    "phonetic": "hæl",
+    "phonetic": "hael",
     "meaning": "哈尔"
   },
   "บล็อก": {
@@ -14540,11 +14515,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "博客"
   },
   "อะไรหนะ": {
-    "phonetic": "oari na",
+    "phonetic": "oari-na",
     "meaning": "什么"
   },
   "นี่คะ": {
-    "phonetic": "nii kha",
+    "phonetic": "nii-kha",
     "meaning": "这里"
   },
   "กาย": {
@@ -14552,35 +14527,35 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "身体"
   },
   "สกาโว": {
-    "phonetic": "skaa wo",
+    "phonetic": "skaa-wo",
     "meaning": "斯卡沃"
   },
   "ไอ้แก่": {
-    "phonetic": "oi kæ",
+    "phonetic": "oi-kae",
     "meaning": "老头儿"
   },
   "ซีเลีย": {
-    "phonetic": "sii leiia",
+    "phonetic": "sii-leia",
     "meaning": "西莉亚"
   },
   "เอริน": {
-    "phonetic": "oe rin",
+    "phonetic": "oe-rin",
     "meaning": "艾琳"
   },
   "ชิโยโกะ": {
-    "phonetic": "chhi yo koa",
+    "phonetic": "chhi-yo-koa",
     "meaning": "千代子"
   },
   "ทำไมนาย": {
-    "phonetic": "thami naay",
+    "phonetic": "thami-naay",
     "meaning": "为什么先生"
   },
   "เคสซี่": {
-    "phonetic": "khes sii",
+    "phonetic": "khes-sii",
     "meaning": "凯西"
   },
   "คันซากิ": {
-    "phonetic": "khan saaki",
+    "phonetic": "khan-saaki",
     "meaning": "神崎"
   },
   "ประณาม": {
@@ -14592,11 +14567,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "福尔摩斯"
   },
   "โซเร็น": {
-    "phonetic": "so ren",
+    "phonetic": "so-ren",
     "meaning": "索伦"
   },
   "เมียย์": {
-    "phonetic": "meiia y",
+    "phonetic": "meia-y",
     "meaning": "妻子"
   },
   "ฟินซ์": {
@@ -14608,39 +14583,39 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "升"
   },
   "ฮาร์มอน": {
-    "phonetic": "haar mon",
+    "phonetic": "haar-mon",
     "meaning": "哈蒙"
   },
   "แอง": {
-    "phonetic": "oæng",
+    "phonetic": "oaeng",
     "meaning": "安"
   },
   "อมีเลีย": {
-    "phonetic": "omii leiia",
+    "phonetic": "omii-leia",
     "meaning": "阿米莉亚"
   },
   "เอดดี้": {
-    "phonetic": "oed dii",
+    "phonetic": "oed-dii",
     "meaning": "艾迪"
   },
   "คงใช่": {
-    "phonetic": "khng chhı",
+    "phonetic": "khng-chhai",
     "meaning": "可能是的"
   },
   "มาติน": {
-    "phonetic": "maa tin",
+    "phonetic": "maa-tin",
     "meaning": "马丁"
   },
   "โธ่เอ๋ย": {
-    "phonetic": "tho oei",
+    "phonetic": "tho-oei",
     "meaning": "天哪"
   },
   "ไฟเวิล": {
-    "phonetic": "fi weil",
+    "phonetic": "fi-weil",
     "meaning": "五界"
   },
   "โอแทซุก": {
-    "phonetic": "oo thæ suk",
+    "phonetic": "oo-thae-suk",
     "meaning": "哦泰硕"
   },
   "ไค": {
@@ -14648,11 +14623,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "凯"
   },
   "ฟิตซ์": {
-    "phonetic": "fit s",
+    "phonetic": "fit-s",
     "meaning": "菲茨"
   },
   "โฟรโด้": {
-    "phonetic": "for do",
+    "phonetic": "for-do",
     "meaning": "佛罗多"
   },
   "ศัตรู": {
@@ -14660,15 +14635,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "敌人"
   },
   "ดีจ๊ะ": {
-    "phonetic": "dii cha",
+    "phonetic": "dii-cha",
     "meaning": "好的"
   },
   "นีนี่": {
-    "phonetic": "nii nii",
+    "phonetic": "nii-nii",
     "meaning": "妮妮"
   },
   "อะนี่": {
-    "phonetic": "oa nii",
+    "phonetic": "oa-nii",
     "meaning": "阿尼"
   },
   "เอะ": {
@@ -14676,7 +14651,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "呃"
   },
   "คาเนดะ": {
-    "phonetic": "khaa ne da",
+    "phonetic": "khaa-ne-da",
     "meaning": "金田"
   },
   "เบค": {
@@ -14688,15 +14663,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "地区"
   },
   "ซิลเวีย": {
-    "phonetic": "silweiia",
+    "phonetic": "silweia",
     "meaning": "西尔维娅"
   },
   "โรนัลด์": {
-    "phonetic": "ro nald",
+    "phonetic": "ro-nald",
     "meaning": "罗纳德"
   },
   "ดูให้ดี": {
-    "phonetic": "duu ı dii",
+    "phonetic": "duu-ai-dii",
     "meaning": "仔细看"
   },
   "หนัง": {
@@ -14704,31 +14679,31 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "电影"
   },
   "รูปแบบ": {
-    "phonetic": "ruup bæb",
+    "phonetic": "ruup-baeb",
     "meaning": "格式"
   },
   "ขี้ขลาด": {
-    "phonetic": "khii khlaad",
+    "phonetic": "khii-khlaad",
     "meaning": "胆小"
   },
   "อะไรว่ะ": {
-    "phonetic": "oari wa",
+    "phonetic": "oari-wa",
     "meaning": "什么"
   },
   "อืมฮึ": {
-    "phonetic": "ouem hue",
+    "phonetic": "ouem-hue",
     "meaning": "唔"
   },
   "เคสึเกะ": {
-    "phonetic": "khesue kea",
+    "phonetic": "khesue-kea",
     "meaning": "圭介"
   },
   "ฮารุกะ": {
-    "phonetic": "haa ru ka",
+    "phonetic": "haa-ru-ka",
     "meaning": "遥"
   },
   "จากฉัน": {
-    "phonetic": "chaak chhan",
+    "phonetic": "chaak-chhan",
     "meaning": "来自我"
   },
   "วิสกี้": {
@@ -14736,11 +14711,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "威士忌酒"
   },
   "อ้อเหรอ": {
-    "phonetic": "oo e ro",
+    "phonetic": "oo-e-ro",
     "meaning": "哦对吧"
   },
   "เอาเป็น": {
-    "phonetic": "oeaa pen",
+    "phonetic": "oeaa-pen",
     "meaning": "让我们接受吧"
   },
   "ทำซะ": {
@@ -14748,27 +14723,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "做吧"
   },
   "จังโก้": {
-    "phonetic": "chang ko",
+    "phonetic": "chang-ko",
     "meaning": "姜戈"
   },
   "เดนท์": {
-    "phonetic": "den th",
+    "phonetic": "den-th",
     "meaning": "凹痕"
   },
   "แกตาย": {
-    "phonetic": "kæ taay",
+    "phonetic": "kae-taay",
     "meaning": "你死了"
   },
   "กล้าหาญ": {
-    "phonetic": "klaa aay",
+    "phonetic": "klaa-aay",
     "meaning": "勇敢的"
   },
   "จบข่าว": {
-    "phonetic": "chb khaaw",
+    "phonetic": "chb-khaaw",
     "meaning": "新闻结束"
   },
   "ซาดาโกะ": {
-    "phonetic": "saa daa koa",
+    "phonetic": "saa-daa-koa",
     "meaning": "贞子"
   },
   "โอว์": {
@@ -14776,23 +14751,23 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "哦"
   },
   "บ้ายบาย": {
-    "phonetic": "baay baay",
+    "phonetic": "baay-baay",
     "meaning": "再见"
   },
   "นายนี่": {
-    "phonetic": "naay nii",
+    "phonetic": "naay-nii",
     "meaning": "倪先生"
   },
   "เอ็มมา": {
-    "phonetic": "oem maa",
+    "phonetic": "oem-maa",
     "meaning": "艾玛"
   },
   "แอคชั่น": {
-    "phonetic": "oæ khchhan",
+    "phonetic": "oae-khchhan",
     "meaning": "行动"
   },
   "ไล่ออก": {
-    "phonetic": "li ook",
+    "phonetic": "li-ook",
     "meaning": "被解雇了"
   },
   "ฮีซู": {
@@ -14800,7 +14775,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "熙秀"
   },
   "ยูนซอง": {
-    "phonetic": "yuun song",
+    "phonetic": "yuun-song",
     "meaning": "尹成"
   },
   "โพ": {
@@ -14808,15 +14783,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "宝"
   },
   "ได้ผล": {
-    "phonetic": "di phl",
+    "phonetic": "di-phl",
     "meaning": "有用"
   },
   "บก": {
-    "phonetic": "bk",
+    "phonetic": "baaw-gaaw",
     "meaning": "编辑"
   },
   "ร่วมกัน": {
-    "phonetic": "rwm kan",
+    "phonetic": "rwm-kan",
     "meaning": "在一起"
   },
   "มุน": {
@@ -14824,11 +14799,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "蒙"
   },
   "ผีเสื้อ": {
-    "phonetic": "phiiseueo",
+    "phonetic": "phiisueao",
     "meaning": "蝴蝶"
   },
   "ดีเร็ค": {
-    "phonetic": "dii rekh",
+    "phonetic": "dii-rekh",
     "meaning": "德里克"
   },
   "อลิส": {
@@ -14836,7 +14811,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "爱丽丝"
   },
   "แคธี่": {
-    "phonetic": "khæ thii",
+    "phonetic": "khae-thii",
     "meaning": "凯茜"
   },
   "วัว": {
@@ -14844,11 +14819,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "奶牛"
   },
   "ลอปปี้": {
-    "phonetic": "lop pii",
+    "phonetic": "lop-pii",
     "meaning": "洛皮"
   },
   "ถ้ามี": {
-    "phonetic": "thaa mii",
+    "phonetic": "thaa-mii",
     "meaning": "如果有的话"
   },
   "ดอล": {
@@ -14856,19 +14831,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "美元"
   },
   "สส": {
-    "phonetic": "ss",
+    "phonetic": "saw-saw",
     "meaning": "国会议员"
   },
   "โคโน่": {
-    "phonetic": "kho no",
+    "phonetic": "kho-no",
     "meaning": "科诺"
   },
   "คล้ายๆ": {
-    "phonetic": "khlaay«",
+    "phonetic": "khlaay",
     "meaning": "相似的"
   },
   "สวยดีนะ": {
-    "phonetic": "swy dii na",
+    "phonetic": "swy-dii-na",
     "meaning": "很美丽"
   },
   "ทัค": {
@@ -14876,7 +14851,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "塔克"
   },
   "ตอบสิ": {
-    "phonetic": "tob si",
+    "phonetic": "tob-si",
     "meaning": "回答"
   },
   "เกลือ": {
@@ -14884,19 +14859,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "盐"
   },
   "ดื่มเลย": {
-    "phonetic": "duem lei",
+    "phonetic": "duem-lei",
     "meaning": "现在喝吧"
   },
   "สหายข้า": {
-    "phonetic": "saay khaa",
+    "phonetic": "saay-khaa",
     "meaning": "我的朋友"
   },
   "ไม่จ๊ะ": {
-    "phonetic": "mi cha",
+    "phonetic": "mi-cha",
     "meaning": "不"
   },
   "มาร์ก": {
-    "phonetic": "maar k",
+    "phonetic": "maar-k",
     "meaning": "马克"
   },
   "มามา": {
@@ -14908,7 +14883,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "抓住"
   },
   "ด่วนเลย": {
-    "phonetic": "dwn lei",
+    "phonetic": "dwn-lei",
     "meaning": "紧迫的"
   },
   "ดอก": {
@@ -14916,15 +14891,15 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "花"
   },
   "คิดดู": {
-    "phonetic": "khid duu",
+    "phonetic": "khid-duu",
     "meaning": "想一想"
   },
   "ตัวแทน": {
-    "phonetic": "tawthæn",
+    "phonetic": "tawthaen",
     "meaning": "代理人"
   },
   "ยังมี": {
-    "phonetic": "yang mii",
+    "phonetic": "yang-mii",
     "meaning": "还是有的"
   },
   "ประเภท": {
@@ -14932,11 +14907,11 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "类型"
   },
   "ชาแนล": {
-    "phonetic": "chhaa næl",
+    "phonetic": "chhaa-nael",
     "meaning": "香奈儿"
   },
   "ไม่ซิ": {
-    "phonetic": "mi si",
+    "phonetic": "mi-si",
     "meaning": "不"
   },
   "ยั": {
@@ -14944,27 +14919,27 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "是啊"
   },
   "พวกเจ้า": {
-    "phonetic": "phwk cheaa",
+    "phonetic": "phwk-cheaa",
     "meaning": "你们"
   },
   "มัลคอล์": {
-    "phonetic": "mal khol",
+    "phonetic": "mal-khol",
     "meaning": "马尔科"
   },
   "ฮอลลี": {
-    "phonetic": "hol lii",
+    "phonetic": "hol-lii",
     "meaning": "冬青"
   },
   "แม็คคอย": {
-    "phonetic": "mækh khoy",
+    "phonetic": "maekh-khoy",
     "meaning": "麦考伊"
   },
   "คาร์สัน": {
-    "phonetic": "khaar san",
+    "phonetic": "khaar-san",
     "meaning": "卡森"
   },
   "คาลลีสิ": {
-    "phonetic": "khaa l lii si",
+    "phonetic": "khaa-l-lii-si",
     "meaning": "卡里西"
   },
   "พัค": {
@@ -14972,7 +14947,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "公园"
   },
   "ซิสโก้": {
-    "phonetic": "si s ko",
+    "phonetic": "si-s-ko",
     "meaning": "思科"
   },
   "ซะที": {
@@ -14980,19 +14955,19 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "最后"
   },
   "ไอ้เสือ": {
-    "phonetic": "oi seueo",
+    "phonetic": "oi-sueao",
     "meaning": "属虎的家伙"
   },
   "เชื่อ": {
-    "phonetic": "chheueo",
+    "phonetic": "chhueao",
     "meaning": "相信"
   },
   "ก็ตามใจ": {
-    "phonetic": "ktaam chı",
+    "phonetic": "ktaam-chai",
     "meaning": "如你所愿"
   },
   "แฟต": {
-    "phonetic": "fæt",
+    "phonetic": "faet",
     "meaning": "胖的"
   },
   "สั่ง": {
@@ -15012,7 +14987,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "虾"
   },
   "สด": {
-    "phonetic": "sd",
+    "phonetic": "sot",
     "meaning": "鲜虾炒泰"
   },
   "จาน": {
@@ -15088,7 +15063,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "绿色"
   },
   "รส": {
-    "phonetic": "rs",
+    "phonetic": "rot",
     "meaning": "浓郁重口"
   },
   "จัด": {
@@ -15368,7 +15343,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "暹罗天地"
   },
   "สรรพ": {
-    "phonetic": "srrph",
+    "phonetic": "sap",
     "meaning": "暹罗天地"
   },
   "สินค้า": {
@@ -15484,7 +15459,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "词汇"
   },
   "ตรวจ": {
-    "phonetic": "dtrwj",
+    "phonetic": "dtruat",
     "meaning": "词汇"
   },
   "สอบ": {
@@ -15520,7 +15495,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "硬盘"
   },
   "เสีย": {
-    "phonetic": "siia",
+    "phonetic": "sia",
     "meaning": "坏了"
   },
   "สูญหาย": {
@@ -15664,7 +15639,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "云存储服"
   },
   "วด์": {
-    "phonetic": "wd",
+    "phonetic": "woet",
     "meaning": "云存储服"
   },
   "เก็บ": {
@@ -15712,7 +15687,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "EV零部"
   },
   "รถยนต์": {
-    "phonetic": "rthyndt",
+    "phonetic": "rot-yon",
     "meaning": "EV零部"
   },
   "ไฟฟ้า": {
@@ -15788,7 +15763,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "词汇"
   },
   "คง": {
-    "phonetic": "khng",
+    "phonetic": "khong",
     "meaning": "稳定/安"
   },
   "ทรัพยากร": {
@@ -15804,7 +15779,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "词汇"
   },
   "ผล": {
-    "phonetic": "phl",
+    "phonetic": "phon",
     "meaning": "词汇"
   },
   "ให้ท่า": {
@@ -15812,7 +15787,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "词汇"
   },
   "นท": {
-    "phonetic": "nth",
+    "phonetic": "naw-thaw",
     "meaning": "金枕头榴"
   },
   "ราบ": {
@@ -15856,7 +15831,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "糯米出口"
   },
   "ชวน": {
-    "phonetic": "chwn",
+    "phonetic": "chuan",
     "meaning": "词汇"
   },
   "คุย": {
@@ -15932,7 +15907,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "词汇"
   },
   "ล้ม": {
-    "phonetic": "lm",
+    "phonetic": "lom",
     "meaning": "词汇"
   },
   "เหลว": {
@@ -15952,7 +15927,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "词汇"
   },
   "ตน": {
-    "phonetic": "dtn",
+    "phonetic": "dton",
     "meaning": "词汇"
   },
   "สุข": {
@@ -15980,7 +15955,7 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "极简主义"
   },
   "ล": {
-    "phonetic": "l",
+    "phonetic": "law",
     "meaning": "龙功果"
   },
   "ลิ": {
@@ -16008,7 +15983,6 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
     "meaning": "复利的理"
   }
 };
-
 
 /**
  * 查询单词
