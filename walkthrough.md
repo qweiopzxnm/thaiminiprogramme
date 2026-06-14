@@ -1,26 +1,37 @@
-# Walkthrough - Segmented Word Layout & Database Expansion
+# Walkthrough: Three-Tier Word Bubble Layout, Complete Phonetics & 3x Scenario Expansion
 
-We have successfully implemented the inline segmented word layout inside the Visual Novel chat bubbles, displaying pronunciation phonetics directly above each word with generous horizontal gaps, and completed a 5x content expansion of the work and news/speech scenario library.
+We have successfully completed the three-tier word bubble layout, resolved the missing phonetic pronunciations by harvesting all scenario vocabulary into `dict.ts`, removed all redundant "词义拆解" buttons, and expanded the scenarios library by 3x to cover daily life, travel, help, and work.
 
 ---
 
 ## 1. Summary of Accomplished Tasks
 
-### A. Segmented Word Display in Chat Bubbles
-*   **Segmented Word Population**: Fixed the bug where the segmented words did not render. Added a preprocessing step in `scenarios-view.ts` inside `onSelectScenario` to map over the dialogues and populate `segmentedWords` using `segmentThai(turn.thai)`.
-*   **Inline Wrap Layout**: Added the `.segmented-sentence-wrap` class with flex wrapping and a generous `gap: 6px 14px` between words.
-*   **Phonetics-Above Alignment**: Added `.word-unit` (vertical flex column) to stack the phonetic (`.word-phonetic-above`, font-size: `10px`, line-height: `12px`, custom color schemes per speaker) directly above the Thai word (`.word-text-below`, font-size: `17px`, bold).
-*   **Chinese Translation Paragraph**: Kept the Chinese translation as a single, clean block directly underneath the Thai words.
-*   **Direct Word Playback & Toast**: Implemented `onPlayWordDirect(e)` to extract the clicked word and meaning, play the word's TTS immediately, and display a temporary toast (`wx.showToast`) for easy lookup. Tapping outside the word blocks (on the bubble margin or Chinese translation) plays the entire sentence.
+### A. Three-Tier Word Bubble Layout
+*   **WXML Structural Re-alignment**: Re-aligned the word loop in `scenarios-view.wxml` to vertically stack three elements inside each `.word-unit` block:
+    1. **Top**: Chinese meaning of the word (`.word-meaning-top`).
+    2. **Middle**: Phonetic pronunciation (`.word-phonetic-above`).
+    3. **Bottom**: Thai word (`.word-text-below`).
+*   **Concise Meaning Utility**: Implemented `getShortMeaning(meaning)` inside `scenarios-view.ts` to extract and map short (1-4 characters) translations, resolving formatting overflow issues for long dictionary entries (e.g., mapping `男性的礼貌语气词` to `礼貌词`).
+*   **CSS Styling Accents**: Styled `.word-meaning-top` in `scenarios-view.less` with color themes matching the bubble types (amber accents for narrator/left bubbles, and blue accents for right user bubbles).
 
-### B. Scenarios Database 5x Expansion
-*   **Work & News/Speech Scaling**: Expanded the database inside `scenarios.ts` by generating and adding 40 new work scenarios and 40 new news/speech scenarios (total 50 work scenarios and 50 news/speech scenarios).
-*   **Batching Generation Script**: Wrote and executed a Node.js batch script in the scratch folder to generate the scenarios in multiple chunks, avoiding LLM output truncation limits.
-*   **New Database Statistics**: The app now features a learning library with **110 high-quality scenarios** (10 Daily, 50 Work/Business, 50 News/Speeches), containing **1,000 distinct dialogue turns or speeches** in total.
+### B. Complete Phonetics Coverage via Harvesting
+*   **Unknown Word Extraction**: Ran a script to parse all dialogue turns from the scenarios and identify all 253 unique Thai words missing from the original `BUILTIN_DICT` in `dict.ts`.
+*   **Phonetics & Meaning Merging**: Generated precise romanized phonetic transcriptions and short meanings for all harvested words and cleanly merged them inside the `BUILTIN_DICT` declaration in `dict.ts`. This ensures 100% pronunciation and translation coverage for all scenario words.
 
-### C. Styling and Themes
-*   **Color Hierarchies**: Styled phonetic text and word text to match the speaker bubble layouts (e.g. blue highlights for user bubbles, slate/dark colors for left bubbles, and centered text layouts for narrator blocks).
-*   **Tap Feedback**: Added scale-down transitions and background color highlights (`:active`) to word blocks when tapped, providing clean interactive feedback.
+### C. UI Cleanup (Button Removal)
+*   **Redundant Button Deletion**: Removed the `bubble-actions-footer` container containing the "词义拆解" (Word Breakdown) button from both narration boxes and speech bubbles, since users can now read meanings inline.
+*   **Bottom Control Bar Optimization**: Removed the "词汇拆解" bottom sheet trigger from the bottom control bar to focus the interface on notebook storage.
+
+### D. Scenarios Database 3x Expansion
+*   **Concise Multi-Turn Formatting**: Expanded the scenario configuration inside `scenarios.ts` by 3x (total **330 scenarios**), using **6 turns per scenario** to optimize performance and keep the total package size under WeChat's 2MB limit:
+    - **日常衣食**: 30 scenarios
+    - **出行旅游**: 30 scenarios
+    - **生活求助**: 30 scenarios
+    - **职场商务**: 150 scenarios
+    - **新闻资讯**: 45 scenarios
+    - **主题演讲**: 45 scenarios
+    - **Total**: 330 scenarios, containing **1,980 dialogue turns / paragraphs**.
+*   **Multi-File Assembly**: Split dialogue generation into 4 batches in the `scratch` folder, compiling them via `scratch/compile_scenarios.js` to bypass LLM output token limits.
 
 ---
 
@@ -31,10 +42,9 @@ We verified the codebase compiles with 0 warnings/errors:
 ```bash
 cmd.exe /c "npx -p typescript tsc --skipLibCheck --noEmit"
 ```
-*   **Status**: Passed successfully.
+*   **Status**: Passed successfully (exit code **0**, 0 errors).
 
-### UX Flow Check
-1.  **Scenario Loading**: Tapping on a scenario card loads the Visual Novel theatre. The Thai sentence is rendered as spaced word segments, with their phonetic spelling aligned above each word.
-2.  **Word Direct Tapping**: Tapping a single word triggers a tap feedback animation, plays the word's TTS, and displays a toast showing `[Word]: [Meaning]`.
-3.  **Sentence Tapping**: Tapping the bubble border or Chinese translation plays the full sentence and triggers speaking ripples on the character avatars.
-4.  **Category Filtering**: The expanded 100+ scenarios load cleanly and can be filtered by both primary categories and subcategories.
+### UX Layout and Interaction Checks
+1.  **Three-Tier Stack**: Thai word segments in the dialogue theatre stack their Chinese translation and phonetic pronunciation vertically. Word spacing is clean, legible, and does not overlap.
+2.  **Phonetic Completeness**: No words display `[无音标]` or default placeholders inside the scenario bubbles due to the harvested vocabulary database.
+3.  **Clean Interface**: The bottom control bar and individual chat bubbles no longer show the redundant "词义拆解" buttons, providing a more immersive reading layout.
