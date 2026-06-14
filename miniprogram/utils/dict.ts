@@ -14994,8 +14994,1021 @@ export const BUILTIN_DICT: Record<string, DictWord> = {
   "แฟต": {
     "phonetic": "fæt",
     "meaning": "胖的"
+  },
+  "สั่ง": {
+    "phonetic": "sang",
+    "meaning": "词汇"
+  },
+  "ผัด": {
+    "phonetic": "phad",
+    "meaning": "鲜虾炒泰"
+  },
+  "ไทย": {
+    "phonetic": "aithy",
+    "meaning": "鲜虾炒泰"
+  },
+  "กุ้ง": {
+    "phonetic": "gung",
+    "meaning": "虾"
+  },
+  "สด": {
+    "phonetic": "sd",
+    "meaning": "鲜虾炒泰"
+  },
+  "จาน": {
+    "phonetic": "jaan",
+    "meaning": "词汇"
+  },
+  "รสชาติ": {
+    "phonetic": "rot-chaat",
+    "meaning": "味道"
+  },
+  "แข็ง": {
+    "phonetic": "aekhng",
+    "meaning": "词汇"
+  },
+  "เพิ่ม": {
+    "phonetic": "ephim",
+    "meaning": "词汇"
+  },
+  "ไหร่": {
+    "phonetic": "aihr",
+    "meaning": "词汇"
+  },
+  "ราคา100บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ครู่": {
+    "phonetic": "khru",
+    "meaning": "词汇"
+  },
+  "ต้มยำ": {
+    "phonetic": "tom-yam",
+    "meaning": "冬阴功"
+  },
+  "กลาง": {
+    "phonetic": "glaang",
+    "meaning": "词汇"
+  },
+  "มะนาว": {
+    "phonetic": "manaaw",
+    "meaning": "词汇"
+  },
+  "ราคา115บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "เหนียว": {
+    "phonetic": "ehniiyw",
+    "meaning": "芒果糯米"
+  },
+  "มะม่วง": {
+    "phonetic": "ma-muuang",
+    "meaning": "芒果"
+  },
+  "มะพร้าว": {
+    "phonetic": "maphraaw",
+    "meaning": "椰子冰沙"
+  },
+  "ปั่น": {
+    "phonetic": "bpan",
+    "meaning": "椰子冰沙"
+  },
+  "ราคา130บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "แกง": {
+    "phonetic": "aegng",
+    "meaning": "绿咖喱鸡"
+  },
+  "เขียว": {
+    "phonetic": "khiao",
+    "meaning": "绿色"
+  },
+  "รส": {
+    "phonetic": "rs",
+    "meaning": "浓郁重口"
+  },
+  "จัด": {
+    "phonetic": "jad",
+    "meaning": "浓郁重口"
+  },
+  "จ้าน": {
+    "phonetic": "jaan",
+    "meaning": "浓郁重口"
+  },
+  "ราคา145บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ส้มตำ": {
+    "phonetic": "som-tam",
+    "meaning": "青木瓜沙"
+  },
+  "น้ำส้ม": {
+    "phonetic": "namsm",
+    "meaning": "词汇"
+  },
+  "คั้น": {
+    "phonetic": "khan",
+    "meaning": "词汇"
+  },
+  "ราคา160บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ปู": {
+    "phonetic": "puu",
+    "meaning": "螃蟹"
+  },
+  "เปรี้ยว": {
+    "phonetic": "ebpriiyw",
+    "meaning": "词汇"
+  },
+  "อม": {
+    "phonetic": "om",
+    "meaning": "椰青"
+  },
+  "ราคา175บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ต้มข่า": {
+    "phonetic": "tom-khaa",
+    "meaning": "椰汁汤"
+  },
+  "นม": {
+    "phonetic": "nom",
+    "meaning": "牛奶"
+  },
+  "ราคา190บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "กะเพรา": {
+    "phonetic": "ga-phrao",
+    "meaning": "罗勒/九"
+  },
+  "สับ": {
+    "phonetic": "sab",
+    "meaning": "罗勒炒猪"
+  },
+  "ราคา205บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "เป็ด": {
+    "phonetic": "ebpd",
+    "meaning": "红咖喱烤"
+  },
+  "ย่าง": {
+    "phonetic": "yaang",
+    "meaning": "红咖喱烤"
+  },
+  "ราคา220บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "สะเต๊ะ": {
+    "phonetic": "sa-te",
+    "meaning": "沙爹"
+  },
+  "ราคา235บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ราคา250บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ราคา265บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ราคา280บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ราคา295บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ราคา310บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ราคา325บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ราคา340บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ราคา105บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ราคา120บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ราคา135บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ราคา150บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ราคา165บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ราคา180บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ราคา195บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ราคา210บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ราคา225บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ราคา240บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ราคา255บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ราคา270บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ราคา285บาท": {
+    "phonetic": "raakhaabaath",
+    "meaning": "词汇"
+  },
+  "ถาม": {
+    "phonetic": "thaam",
+    "meaning": "词汇"
+  },
+  "วัด": {
+    "phonetic": "wad",
+    "meaning": "玉佛寺"
+  },
+  "เลี้ยว": {
+    "phonetic": "eliiyw",
+    "meaning": "词汇"
+  },
+  "ทุเรียน": {
+    "phonetic": "thueriiyn",
+    "meaning": "金枕头榴"
+  },
+  "หมอน": {
+    "phonetic": "hmon",
+    "meaning": "金枕头榴"
+  },
+  "ทอ": {
+    "phonetic": "tho",
+    "meaning": "金枕头榴"
+  },
+  "งอ": {
+    "phonetic": "ngo",
+    "meaning": "芒果"
+  },
+  "ร่อยๆ": {
+    "phonetic": "roy",
+    "meaning": "词汇"
+  },
+  "ละ50บาท": {
+    "phonetic": "labaath",
+    "meaning": "词汇"
+  },
+  "ตุ๊ก": {
+    "phonetic": "dtug",
+    "meaning": "词汇"
+  },
+  "ไกล": {
+    "phonetic": "aigl",
+    "meaning": "词汇"
+  },
+  "ตลาด": {
+    "phonetic": "dtlaad",
+    "meaning": "乍都乍周"
+  },
+  "จตุจักร": {
+    "phonetic": "ja-dtu-jak",
+    "meaning": "乍都乍"
+  },
+  "มังคุด": {
+    "phonetic": "mang-khut",
+    "meaning": "山竹"
+  },
+  "คัด": {
+    "phonetic": "khad",
+    "meaning": "新鲜山竹"
+  },
+  "อร่อยๆ": {
+    "phonetic": "oroy",
+    "meaning": "词汇"
+  },
+  "ละ70บาท": {
+    "phonetic": "labaath",
+    "meaning": "词汇"
+  },
+  "อรุณ": {
+    "phonetic": "orun",
+    "meaning": "郑王庙"
+  },
+  "ราชวราราม": {
+    "phonetic": "raachwraaraam",
+    "meaning": "郑王庙"
+  },
+  "หอ": {
+    "phonetic": "ho",
+    "meaning": "椰青"
+  },
+  "มอ": {
+    "phonetic": "mo",
+    "meaning": "金枕头榴"
+  },
+  "ละ90บาท": {
+    "phonetic": "labaath",
+    "meaning": "词汇"
+  },
+  "กรุงเทพ": {
+    "phonetic": "grungethph",
+    "meaning": "曼谷火车"
+  },
+  "อก": {
+    "phonetic": "og",
+    "meaning": "芒果"
+  },
+  "ร่อ": {
+    "phonetic": "ro",
+    "meaning": "芒果"
+  },
+  "ละ110บาท": {
+    "phonetic": "labaath",
+    "meaning": "词汇"
+  },
+  "ห้าง": {
+    "phonetic": "haang",
+    "meaning": "暹罗天地"
+  },
+  "สรรพ": {
+    "phonetic": "srrph",
+    "meaning": "暹罗天地"
+  },
+  "สินค้า": {
+    "phonetic": "sinkhaa",
+    "meaning": "暹罗天地"
+  },
+  "ไอคอน": {
+    "phonetic": "aiokhon",
+    "meaning": "暹罗天地"
+  },
+  "สยาม": {
+    "phonetic": "syaam",
+    "meaning": "暹罗天地"
+  },
+  "เงาะ": {
+    "phonetic": "ngɔ́",
+    "meaning": "红毛丹"
+  },
+  "โรง": {
+    "phonetic": "oorng",
+    "meaning": "红毛丹"
+  },
+  "ละ130บาท": {
+    "phonetic": "labaath",
+    "meaning": "词汇"
+  },
+  "เยาวราช": {
+    "phonetic": "yao-wa-raat",
+    "meaning": "唐人街"
+  },
+  "กอ": {
+    "phonetic": "go",
+    "meaning": "龙功果"
+  },
+  "ละ150บาท": {
+    "phonetic": "labaath",
+    "meaning": "词汇"
+  },
+  "สับปะรด": {
+    "phonetic": "sap-bpa-rot",
+    "meaning": "菠萝"
+  },
+  "ภู": {
+    "phonetic": "phu",
+    "meaning": "小菠萝"
+  },
+  "แล": {
+    "phonetic": "ael",
+    "meaning": "小菠萝"
+  },
+  "ละ170บาท": {
+    "phonetic": "labaath",
+    "meaning": "词汇"
+  },
+  "ละ190บาท": {
+    "phonetic": "labaath",
+    "meaning": "词汇"
+  },
+  "ละ60บาท": {
+    "phonetic": "labaath",
+    "meaning": "词汇"
+  },
+  "ละ80บาท": {
+    "phonetic": "labaath",
+    "meaning": "词汇"
+  },
+  "ละ100บาท": {
+    "phonetic": "labaath",
+    "meaning": "词汇"
+  },
+  "ละ120บาท": {
+    "phonetic": "labaath",
+    "meaning": "词汇"
+  },
+  "ละ140บาท": {
+    "phonetic": "labaath",
+    "meaning": "词汇"
+  },
+  "ละ160บาท": {
+    "phonetic": "labaath",
+    "meaning": "词汇"
+  },
+  "ละ180บาท": {
+    "phonetic": "labaath",
+    "meaning": "词汇"
+  },
+  "ร้าย": {
+    "phonetic": "raay",
+    "meaning": "词汇"
+  },
+  "แรง": {
+    "phonetic": "aerng",
+    "meaning": "词汇"
+  },
+  "แอป": {
+    "phonetic": "aep",
+    "meaning": "APP"
+  },
+  "ใจ": {
+    "phonetic": "aij",
+    "meaning": "极简主义"
+  },
+  "เย็นๆ": {
+    "phonetic": "eyn",
+    "meaning": "词汇"
+  },
+  "ประสาน": {
+    "phonetic": "bprasaan",
+    "meaning": "词汇"
+  },
+  "หน้าที่": {
+    "phonetic": "hnaathii",
+    "meaning": "词汇"
+  },
+  "ตรวจ": {
+    "phonetic": "dtrwj",
+    "meaning": "词汇"
+  },
+  "สอบ": {
+    "phonetic": "sob",
+    "meaning": "词汇"
+  },
+  "สถาน": {
+    "phonetic": "sthaan",
+    "meaning": "曼谷火车"
+  },
+  "ดำเนิน": {
+    "phonetic": "damenin",
+    "meaning": "词汇"
+  },
+  "เน็ต": {
+    "phonetic": "net",
+    "meaning": "网络"
+  },
+  "หลุด": {
+    "phonetic": "lut",
+    "meaning": "断开"
+  },
+  "บ่อย": {
+    "phonetic": "bɔi",
+    "meaning": "经常"
+  },
+  "พิมพ์": {
+    "phonetic": "phimph",
+    "meaning": "打印机故"
+  },
+  "ฮาร์ดดิสก์": {
+    "phonetic": "haat-dis",
+    "meaning": "硬盘"
+  },
+  "เสีย": {
+    "phonetic": "siia",
+    "meaning": "坏了"
+  },
+  "สูญหาย": {
+    "phonetic": "suun-haai",
+    "meaning": "丢失"
+  },
+  "อัปเดต": {
+    "phonetic": "oabpeddt",
+    "meaning": "词汇"
+  },
+  "โครงการ": {
+    "phonetic": "ookhrnggaar",
+    "meaning": "太阳能光"
+  },
+  "พัฒนา": {
+    "phonetic": "phathnaa",
+    "meaning": "词汇"
+  },
+  "ระบบ": {
+    "phonetic": "rabb",
+    "meaning": "电商系统"
+  },
+  "ซื้อ": {
+    "phonetic": "sueo",
+    "meaning": "电商系统"
+  },
+  "ออนไลน์": {
+    "phonetic": "oonailn",
+    "meaning": "电商系统"
+  },
+  "อุปสรรค": {
+    "phonetic": "oubpsrrkh",
+    "meaning": "词汇"
+  },
+  "แก้ไข": {
+    "phonetic": "aegaikh",
+    "meaning": "词汇"
+  },
+  "เสร็จ": {
+    "phonetic": "esrj",
+    "meaning": "词汇"
+  },
+  "ทัน": {
+    "phonetic": "than",
+    "meaning": "词汇"
+  },
+  "ศุกร์": {
+    "phonetic": "sugr",
+    "meaning": "周五下午"
+  },
+  "เต็ม": {
+    "phonetic": "edtm",
+    "meaning": "词汇"
+  },
+  "สื่อ": {
+    "phonetic": "sʉʉ",
+    "meaning": "媒体"
+  },
+  "โฆษณา": {
+    "phonetic": "khoo-sa-naa",
+    "meaning": "广告"
+  },
+  "เชีย": {
+    "phonetic": "echiiy",
+    "meaning": "社交媒体"
+  },
+  "ลมี": {
+    "phonetic": "lmii",
+    "meaning": "社交媒体"
+  },
+  "เดีย": {
+    "phonetic": "ediiy",
+    "meaning": "社交媒体"
+  },
+  "ความ": {
+    "phonetic": "khwaam",
+    "meaning": "湿度传感"
+  },
+  "คืบ": {
+    "phonetic": "khueb",
+    "meaning": "词汇"
+  },
+  "ทราบ": {
+    "phonetic": "thraab",
+    "meaning": "词汇"
+  },
+  "เซ็นเซอร์": {
+    "phonetic": "sen-səə",
+    "meaning": "传感器"
+  },
+  "ความชื้น": {
+    "phonetic": "khwaam-chʉ́n",
+    "meaning": "湿度"
+  },
+  "สิ้น": {
+    "phonetic": "sin",
+    "meaning": "本月底五"
+  },
+  "งานการ": {
+    "phonetic": "ngaangaar",
+    "meaning": "词汇"
+  },
+  "จ้าง": {
+    "phonetic": "jaang",
+    "meaning": "聘请博主"
+  },
+  "เกอร์": {
+    "phonetic": "egor",
+    "meaning": "聘请博主"
+  },
+  "รีวิว": {
+    "phonetic": "ri-wiu",
+    "meaning": "测评"
+  },
+  "โปรแกรม": {
+    "phonetic": "proo-graem",
+    "meaning": "程序"
+  },
+  "บัญชี": {
+    "phonetic": "ban-chii",
+    "meaning": "账目/财"
+  },
+  "อังคาร": {
+    "phonetic": "oangkhaar",
+    "meaning": "下周二上"
+  },
+  "เสริม": {
+    "phonetic": "esrim",
+    "meaning": "邮件营销"
+  },
+  "อีเมล": {
+    "phonetic": "ii-mel",
+    "meaning": "邮件"
+  },
+  "บริการ": {
+    "phonetic": "brigaar",
+    "meaning": "云存储服"
+  },
+  "คลา": {
+    "phonetic": "khlaa",
+    "meaning": "云存储服"
+  },
+  "วด์": {
+    "phonetic": "wd",
+    "meaning": "云存储服"
+  },
+  "เก็บ": {
+    "phonetic": "egb",
+    "meaning": "云存储服"
+  },
+  "พรุ่ง": {
+    "phonetic": "phrung",
+    "meaning": "明天中午"
+  },
+  "เที่ยง": {
+    "phonetic": "ethiiyng",
+    "meaning": "明天中午"
+  },
+  "กิจกรรม": {
+    "phonetic": "gijgrrm",
+    "meaning": "线下巡展"
+  },
+  "แสดง": {
+    "phonetic": "aesdng",
+    "meaning": "线下巡展"
+  },
+  "นอก": {
+    "phonetic": "nog",
+    "meaning": "线下巡展"
+  },
+  "แพลตฟอร์ม": {
+    "phonetic": "phaet-fɔɔm",
+    "meaning": "平台"
+  },
+  "สอน": {
+    "phonetic": "son",
+    "meaning": "在线学习"
+  },
+  "เสนอ": {
+    "phonetic": "esno",
+    "meaning": "词汇"
+  },
+  "เติบโต": {
+    "phonetic": "edtiboodt",
+    "meaning": "EV零部"
+  },
+  "อุตสาหกรรม": {
+    "phonetic": "oudtsaahgrrm",
+    "meaning": "EV零部"
+  },
+  "รถยนต์": {
+    "phonetic": "rthyndt",
+    "meaning": "EV零部"
+  },
+  "ไฟฟ้า": {
+    "phonetic": "aiffaa",
+    "meaning": "EV零部"
+  },
+  "สนับสนุน": {
+    "phonetic": "snabsnun",
+    "meaning": "词汇"
+  },
+  "นโยบาย": {
+    "phonetic": "na-yoo-baai",
+    "meaning": "政策"
+  },
+  "เร่ง": {
+    "phonetic": "erng",
+    "meaning": "词汇"
+  },
+  "ฟื้นฟู": {
+    "phonetic": "fuenfu",
+    "meaning": "词汇"
+  },
+  "ค้า": {
+    "phonetic": "khaa",
+    "meaning": "暹罗天地"
+  },
+  "ผู้": {
+    "phonetic": "phu",
+    "meaning": "词汇"
+  },
+  "ประกอบ": {
+    "phonetic": "bpragob",
+    "meaning": "词汇"
+  },
+  "หลาย": {
+    "phonetic": "hlaay",
+    "meaning": "花纹"
+  },
+  "ขยาย": {
+    "phonetic": "khyaay",
+    "meaning": "词汇"
+  },
+  "ลงทุน": {
+    "phonetic": "lngthun",
+    "meaning": "太阳能光"
+  },
+  "คาด": {
+    "phonetic": "khaad",
+    "meaning": "词汇"
+  },
+  "สร้าง": {
+    "phonetic": "sraang",
+    "meaning": "情绪韧性"
+  },
+  "มหาศาล": {
+    "phonetic": "mhaasaal",
+    "meaning": "词汇"
+  },
+  "แก่": {
+    "phonetic": "aeg",
+    "meaning": "词汇"
+  },
+  "ประชาชน": {
+    "phonetic": "bprachaachn",
+    "meaning": "词汇"
+  },
+  "ทั่วไป": {
+    "phonetic": "thawaibp",
+    "meaning": "词汇"
+  },
+  "ท้าทาย": {
+    "phonetic": "thaathaay",
+    "meaning": "词汇"
+  },
+  "คง": {
+    "phonetic": "khng",
+    "meaning": "稳定/安"
+  },
+  "ทรัพยากร": {
+    "phonetic": "thraphyaagr",
+    "meaning": "词汇"
+  },
+  "บุคคล": {
+    "phonetic": "bukhkhl",
+    "meaning": "词汇"
+  },
+  "บริหาร": {
+    "phonetic": "brihaar",
+    "meaning": "词汇"
+  },
+  "ผล": {
+    "phonetic": "phl",
+    "meaning": "词汇"
+  },
+  "ให้ท่า": {
+    "phonetic": "aihthaa",
+    "meaning": "词汇"
+  },
+  "นท": {
+    "phonetic": "nth",
+    "meaning": "金枕头榴"
+  },
+  "ราบ": {
+    "phonetic": "raab",
+    "meaning": "词汇"
+  },
+  "พลังงาน": {
+    "phonetic": "phlangngaan",
+    "meaning": "太阳能光"
+  },
+  "แสง": {
+    "phonetic": "aesng",
+    "meaning": "太阳能光"
+  },
+  "มาตรการ": {
+    "phonetic": "maadtrgaar",
+    "meaning": "免签旅游"
+  },
+  "วีซ่า": {
+    "phonetic": "wii-sâa",
+    "meaning": "签证"
+  },
+  "กระตุ้น": {
+    "phonetic": "gradtun",
+    "meaning": "免签旅游"
+  },
+  "ท่อง": {
+    "phonetic": "thong",
+    "meaning": "免签旅游"
+  },
+  "เที่ยว": {
+    "phonetic": "ethiiyw",
+    "meaning": "免签旅游"
+  },
+  "ทะลุ": {
+    "phonetic": "thalu",
+    "meaning": "糯米出口"
+  },
+  "เป้า": {
+    "phonetic": "ebpaa",
+    "meaning": "糯米出口"
+  },
+  "ชวน": {
+    "phonetic": "chwn",
+    "meaning": "词汇"
+  },
+  "คุย": {
+    "phonetic": "khuy",
+    "meaning": "词汇"
+  },
+  "สำคัญ": {
+    "phonetic": "samkhay",
+    "meaning": "终身学习"
+  },
+  "ทัศนคติ": {
+    "phonetic": "that-sa-na-kha-ti",
+    "meaning": "态度"
+  },
+  "ยุค": {
+    "phonetic": "yukh",
+    "meaning": "词汇"
+  },
+  "ปัจจุบัน": {
+    "phonetic": "bpajjuban",
+    "meaning": "词汇"
+  },
+  "สภาพ": {
+    "phonetic": "sphaaph",
+    "meaning": "词汇"
+  },
+  "แวดล้อม": {
+    "phonetic": "aewdlom",
+    "meaning": "词汇"
+  },
+  "สลับ": {
+    "phonetic": "slab",
+    "meaning": "词汇"
+  },
+  "ซับ": {
+    "phonetic": "sab",
+    "meaning": "词汇"
+  },
+  "ซ้อน": {
+    "phonetic": "son",
+    "meaning": "词汇"
+  },
+  "ขีด": {
+    "phonetic": "khiid",
+    "meaning": "词汇"
+  },
+  "ผลัก": {
+    "phonetic": "phlag",
+    "meaning": "词汇"
+  },
+  "กรอบ": {
+    "phonetic": "grob",
+    "meaning": "词汇"
+  },
+  "หาก": {
+    "phonetic": "haag",
+    "meaning": "词汇"
+  },
+  "ปรับ": {
+    "phonetic": "bprab",
+    "meaning": "词汇"
+  },
+  "พฤติกรรม": {
+    "phonetic": "phdtigrrm",
+    "meaning": "词汇"
+  },
+  "ผลลัพธ์": {
+    "phonetic": "phllaphth",
+    "meaning": "词汇"
+  },
+  "ประทับ": {
+    "phonetic": "bprathab",
+    "meaning": "词汇"
+  },
+  "ล้ม": {
+    "phonetic": "lm",
+    "meaning": "词汇"
+  },
+  "เหลว": {
+    "phonetic": "ehlw",
+    "meaning": "词汇"
+  },
+  "หวัง": {
+    "phonetic": "hwang",
+    "meaning": "词汇"
+  },
+  "แนะนำ": {
+    "phonetic": "aenanam",
+    "meaning": "词汇"
+  },
+  "ประกาย": {
+    "phonetic": "bpragaay",
+    "meaning": "词汇"
+  },
+  "ตน": {
+    "phonetic": "dtn",
+    "meaning": "词汇"
+  },
+  "สุข": {
+    "phonetic": "sukh",
+    "meaning": "词汇"
+  },
+  "ยืดหยุ่น": {
+    "phonetic": "yuedhyun",
+    "meaning": "情绪韧性"
+  },
+  "อารมณ์": {
+    "phonetic": "oaarmn",
+    "meaning": "情绪韧性"
+  },
+  "รับมือ": {
+    "phonetic": "rabmueo",
+    "meaning": "情绪韧性"
+  },
+  "วิกฤต": {
+    "phonetic": "wi-grit",
+    "meaning": "危机"
+  },
+  "วิถี": {
+    "phonetic": "withii",
+    "meaning": "极简主义"
+  },
+  "ล": {
+    "phonetic": "l",
+    "meaning": "龙功果"
+  },
+  "ลิ": {
+    "phonetic": "li",
+    "meaning": "极简主义"
+  },
+  "ซึม": {
+    "phonetic": "suem",
+    "meaning": "极简主义"
+  },
+  "จิตใจ": {
+    "phonetic": "jit-jai",
+    "meaning": "心灵"
+  },
+  "มหัศจรรย์": {
+    "phonetic": "mhasjrry",
+    "meaning": "复利的理"
+  },
+  "วางแผน": {
+    "phonetic": "waangaephn",
+    "meaning": "复利的理"
+  },
+  "ระยะ": {
+    "phonetic": "raya",
+    "meaning": "复利的理"
   }
 };
+
 
 /**
  * 查询单词

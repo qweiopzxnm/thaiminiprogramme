@@ -138,6 +138,7 @@
                       data-word="{{w.word}}"
                       data-meaning="{{w.meaning}}"
                     >
+                      <text class="word-meaning-top">{{w.shortMeaning || ' '}}</text>
                       <text class="word-phonetic-above">{{w.phonetic || ' '}}</text>
                       <text class="word-text-below">{{w.word}}</text>
                     </view>
@@ -145,14 +146,6 @@
                   <image class="play-mini-icon" src="/assets/icons/volume-small.svg" />
                 </view>
                 <view class="narrative-chinese">{{item.chinese}}</view>
-                
-                <!-- 气泡下方快捷操作 -->
-                <view class="bubble-actions-footer" wx:if="{{index <= currentTurnIndex}}">
-                  <view class="bubble-action-split" catchtap="onOpenBreakdownForIndex" data-index="{{index}}">
-                    <image class="action-mini-icon" src="/assets/icons/edit.svg" />
-                    <text>词义拆解</text>
-                  </view>
-                </view>
               </view>
             </block>
             
@@ -185,6 +178,7 @@
                         data-word="{{w.word}}"
                         data-meaning="{{w.meaning}}"
                       >
+                        <text class="word-meaning-top">{{w.shortMeaning || ' '}}</text>
                         <text class="word-phonetic-above">{{w.phonetic || ' '}}</text>
                         <text class="word-text-below">{{w.word}}</text>
                       </view>
@@ -192,14 +186,6 @@
                     <image class="play-mini-icon" src="/assets/icons/volume-small.svg" />
                   </view>
                   <view class="speech-chinese">{{item.chinese}}</view>
-                  
-                  <!-- 气泡下方快捷操作 -->
-                  <view class="bubble-actions-footer" wx:if="{{index <= currentTurnIndex}}">
-                    <view class="bubble-action-split" catchtap="onOpenBreakdownForIndex" data-index="{{index}}">
-                      <image class="action-mini-icon" src="/assets/icons/edit.svg" />
-                      <text>词义拆解</text>
-                    </view>
-                  </view>
                 </view>
               </view>
             </block>
@@ -245,13 +231,8 @@
         </button>
       </view>
       
-      <!-- 二级工具面板 (拆解与加入笔记本) -->
+      <!-- 二级工具面板 (加入笔记本) -->
       <view class="utility-actions">
-        <view class="util-action-btn breakdown-trigger" bindtap="onOpenBreakdown">
-          <image class="util-icon" src="/assets/icons/edit.svg" />
-          <text>词汇拆解</text>
-        </view>
-        
         <view class="util-action-btn star-trigger" bindtap="onToggleStarSentence">
           <text class="util-star-icon {{isSentenceStarred ? 'starred' : ''}}">★</text>
           <text>{{isSentenceStarred ? '已存笔记' : '存笔记本'}}</text>

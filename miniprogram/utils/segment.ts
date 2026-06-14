@@ -9,6 +9,7 @@ export interface SegmentedWord {
   meaning: string;
   isCustom: boolean; // 是否是自定义词汇或临时添加的词
   isUnknown: boolean; // 是否是未识别词
+  shortMeaning?: string; // 精简版中文释义，用于气泡直观展示
 }
 
 /**

@@ -495,6 +495,32 @@
   background-color: rgba(100, 116, 139, 0.1);
 }
 
+.word-meaning-top {
+  font-size: 10px;
+  line-height: 12px;
+  color: #b45309; /* 温暖明亮的琥珀褐，用于默认/左侧气泡，易于辨识 */
+  margin-bottom: 2px;
+  text-align: center;
+  font-weight: 500;
+  white-space: nowrap;
+  max-width: 65px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 12px;
+}
+
+.right-speech .word-meaning-top {
+  color: #3b82f6; /* 右侧用户气泡为深蓝色系以契合底色 */
+}
+
+.left-speech .word-meaning-top {
+  color: #b45309;
+}
+
+.center-narrative .word-meaning-top {
+  color: #78350f; /* 居中旁白板使用深沉琥珀褐 */
+}
+
 .word-phonetic-above {
   font-size: 10px;
   line-height: 12px;

@@ -1,0 +1,242 @@
+{
+  "กะเพรา": {
+    "phonetic": "ga-phrao",
+    "meaning": "罗勒/九层塔"
+  },
+  "กะเพราหมูสับ": {
+    "phonetic": "ga-phraoหมูสับ",
+    "meaning": "罗勒炒猪肉碎"
+  },
+  "แกงเขียวหวานไก่": {
+    "phonetic": "gaeng-khiao-waan-gai",
+    "meaning": "绿咖喱鸡"
+  },
+  "ข้าวเหนียวมะม่วง": {
+    "phonetic": "khaaw-niaw-ma-muuang",
+    "meaning": "芒果糯米饭"
+  },
+  "ผัดไทยกุ้งสด": {
+    "phonetic": "phat-thai-gung-sot",
+    "meaning": "鲜虾炒泰粉"
+  },
+  "ต้มยำกุ้ง": {
+    "phonetic": "tom-yam-gung",
+    "meaning": "冬阴功汤"
+  },
+  "ส้มตำไทย": {
+    "phonetic": "som-tam-thai",
+    "meaning": "泰式青木瓜沙拉"
+  },
+  "ข้าวผัดปู": {
+    "phonetic": "khaaw-phat-puu",
+    "meaning": "蟹肉炒饭"
+  },
+  "ต้มข่าไก่": {
+    "phonetic": "tom-khaa-gai",
+    "meaning": "椰奶鸡汤"
+  },
+  "แกงเผ็ดเป็ดย่าง": {
+    "phonetic": "gaeng-phet-bpet-yaang",
+    "meaning": "红咖喱烤鸭"
+  },
+  "หมูสะเต๊ะ": {
+    "phonetic": "muu-sa-te",
+    "meaning": "沙爹烤猪肉"
+  },
+  "รสจัดจ้าน": {
+    "phonetic": "rot-jat-jaan",
+    "meaning": "浓郁重口"
+  },
+  "น้ำมะพร้าวปั่น": {
+    "phonetic": "nam-ma-phraaw-bpan",
+    "meaning": "椰子冰沙"
+  },
+  "น้ำมะม่วงปั่น": {
+    "phonetic": "nam-ma-muuang-bpan",
+    "meaning": "芒果冰沙"
+  },
+  "ชาเขียวนม": {
+    "phonetic": "chaa-khiao-nom",
+    "meaning": "冰绿奶茶"
+  },
+  "ทุเรียนหมอนทอง": {
+    "phonetic": "thu-rian-mɔɔn-thɔɔng",
+    "meaning": "金枕头榴莲"
+  },
+  "มังคุดคัด": {
+    "phonetic": "mang-khut-khat",
+    "meaning": "新鲜山竹"
+  },
+  "มะพร้าวน้ำหอม": {
+    "phonetic": "ma-phraaw-nam-hɔ̌ɔm",
+    "meaning": "椰青"
+  },
+  "มะม่วงอกร่อง": {
+    "phonetic": "ma-muuang-ok-rɔ́ng",
+    "meaning": "芒果"
+  },
+  "เงาะโรงเรียน": {
+    "phonetic": "ngɔ́-roong-rian",
+    "meaning": "红毛丹"
+  },
+  "ลองกอง": {
+    "phonetic": "lɔɔng-gɔɔng",
+    "meaning": "龙功果"
+  },
+  "สับปะรดภูแล": {
+    "phonetic": "sap-bpa-rot-phuu-lae",
+    "meaning": "小菠萝"
+  },
+  "เสื้อยืดลายน่ารัก": {
+    "phonetic": "sʉ̂a-yʉ̂at-laai-naa-rak",
+    "meaning": "印花T恤"
+  },
+  "กางเกงเลขาเดี่ยว": {
+    "phonetic": "gaang-geeng-lee-khaa-diiaw",
+    "meaning": "休闲长裤"
+  },
+  "เดรสผ้าฝ้ายแท้": {
+    "phonetic": "dret-phaa-faai-thae",
+    "meaning": "纯棉连衣裙"
+  },
+  "เสื้อเชิ้ตลายดอก": {
+    "phonetic": "sʉ̂a-chə́ət-laai-dɔɔk",
+    "meaning": "印花衬衫"
+  },
+  "กางเกงมวยไทย": {
+    "phonetic": "gaang-geeng-muai-thai",
+    "meaning": "泰拳短裤"
+  },
+  "กระโปรงผ้าซิ่น": {
+    "phonetic": "gra-bproong-phaa-sîn",
+    "meaning": "传统泰式裙"
+  },
+  "วัดพระแก้ว": {
+    "phonetic": "wat-phra-gaeaw",
+    "meaning": "玉佛寺"
+  },
+  "ตลาดนัดจตุจักร": {
+    "phonetic": "dta-laat-nat-ja-dtu-jak",
+    "meaning": "乍都乍周末市场"
+  },
+  "วัดอรุณราชวราราม": {
+    "phonetic": "wat-a-run-raat-cha-wa-raa-raam",
+    "meaning": "郑王庙"
+  },
+  "สถานีรถไฟกรุงเทพ": {
+    "phonetic": "sa-thaa-nii-rot-fai-grung-theep",
+    "meaning": "曼谷火车站"
+  },
+  "ห้างสรรพสินค้าไอคอนสยาม": {
+    "phonetic": "haang-sap-pha-sin-khaa-ai-khɔn-sa-yaam",
+    "meaning": "暹罗天地"
+  },
+  "ถนนเยาวราช": {
+    "phonetic": "tha-non-yao-wa-raat",
+    "meaning": "唐人街"
+  },
+  "แอปเปิดไม่ขึ้น": {
+    "phonetic": "aep-bpeet-mai-khʉn",
+    "meaning": "APP打不开"
+  },
+  "เน็ตหลุดบ่อย": {
+    "phonetic": "net-lut-bɔi",
+    "meaning": "网络频繁掉线"
+  },
+  "พิมพ์งานไม่ได้": {
+    "phonetic": "phim-ngaan-mai-daai",
+    "meaning": "打印机故障"
+  },
+  "ฮาร์ดดิสก์เสีย": {
+    "phonetic": "haat-dik-siia",
+    "meaning": "硬盘故障"
+  },
+  "ข้อมูลสูญหาย": {
+    "phonetic": "khaaw-muun-suun-haai",
+    "meaning": "数据丢失"
+  },
+  "ระบบแอปซื้อขายออนไลน์": {
+    "phonetic": "ra-bop-aep-sʉʉ-khaai-ɔɔn-laai",
+    "meaning": "电商系统"
+  },
+  "เซ็นเซอร์ไอโอทีวัดความชื้น": {
+    "phonetic": "sen-səə-ai-oo-thii-wat-khwaam-chʉ́n",
+    "meaning": "湿度传感器"
+  },
+  "โปรแกรมระบบบัญชีใหม่": {
+    "phonetic": "proo-graem-ra-bop-ban-chii-mai",
+    "meaning": "新财务软件"
+  },
+  "บริการคลาวด์จัดเก็บข้อมูล": {
+    "phonetic": "bɔɔ-ri-gaan-khlaao-jat-gep-khaaw-muun",
+    "meaning": "云存储服务"
+  },
+  "แพลตฟอร์มการจัดการเรียนการสอน": {
+    "phonetic": "phaet-fɔɔm-gaan-jat-gaan-rian-gaan-sɔ̌ɔn",
+    "meaning": "在线学习教育平台"
+  },
+  "วันศุกร์นี้บ่ายสามโมง": {
+    "phonetic": "wan-suk-nii-baai-saam-moong",
+    "meaning": "周五下午三点"
+  },
+  "สิ้นเดือนนี้ก่อนห้าโมงเย็น": {
+    "phonetic": "sin-dʉan-nii-gɔɔn-haa-moong-yen",
+    "meaning": "本月底五点前"
+  },
+  "สัปดาห์หน้าวันอังคารเช้า": {
+    "phonetic": "sap-daa-naa-wan-ang-khaan-chaaw",
+    "meaning": "下周二上午"
+  },
+  "วันพรุ่งนี้เที่ยงตรง": {
+    "phonetic": "wan-phrung-nii-thiang-trong",
+    "meaning": "明天中午"
+  },
+  "สื่อโฆษณาโซเชียลมีเดีย": {
+    "phonetic": "sʉʉ-khoo-sa-naa-soo-chian-mii-diia",
+    "meaning": "社交媒体广告"
+  },
+  "การจ้างบล็อกเกอร์รีวิวสินค้า": {
+    "phonetic": "gaan-jaang-blok-gəə-ri-wiu-sin-khaa",
+    "meaning": "聘请博主测评"
+  },
+  "การส่งเสริมการขายผ่านอีเมล": {
+    "phonetic": "gaan-song-səəm-gaan-khaai-phaan-ii-mel",
+    "meaning": "邮件营销"
+  },
+  "กิจกรรมจัดแสดงสินค้านอกสถานที่": {
+    "phonetic": "gi-ja-gam-jat-sa-daeng-sin-khaa-nɔɔk-sa-thaan-thii",
+    "meaning": "线下巡展活动"
+  },
+  "การเติบโตอุตสาหกรรมชิ้นส่วนรถยนต์ไฟฟ้า": {
+    "phonetic": "gaan-təəp-dtoo-ut-saa-ha-gam-chin-suan-rot-yon-fai-faa",
+    "meaning": "EV零部件增长"
+  },
+  "โครงการลงทุนพลังงานแสงอาทิตย์ขนาดใหญ่": {
+    "phonetic": "khroong-gaan-lon-thun-pha-lang-gaan-saeng-aa-thit-kha-naat-yai",
+    "meaning": "太阳能光伏投资"
+  },
+  "มาตรการฟรีวีซ่าเพื่อกระตุ้นการท่องเที่ยว": {
+    "phonetic": "maat-dtra-gaan-frii-wii-saa-phʉa-gra-dtuun-gaan-thɔng-thiaw",
+    "meaning": "免签旅游政策"
+  },
+  "การส่งออกข้าวเหนียวไทยมียอดขายทะลุเป้า": {
+    "phonetic": "gaan-song-ɔɔk-khaaw-niaw-thai-mii-yɔɔt-khaai-tha-lu-bpao",
+    "meaning": "糯米出口大涨"
+  },
+  "ความสำคัญของทัศนคติการเรียนรู้ตลอดชีวิต": {
+    "phonetic": "khwaam-sam-khan-khɔɔng-that-sa-na-kha-ti-gaan-rian-ruu-dtlaawt-chii-wit",
+    "meaning": "终身学习的态度"
+  },
+  "การสร้างความยืดหยุ่นทางอารมณ์เพื่อรับมือกับวิกฤต": {
+    "phonetic": "gaan-saang-khwaam-yʉʉt-yun-thaang-aa-rom-phʉa-rap-mʉʉ-gap-wi-grit",
+    "meaning": "情绪韧性对危机"
+  },
+  "วิถีชีวิตแบบมินิมอลลิซึมที่ช่วยให้จิตใจเป็นอิสระ": {
+    "phonetic": "wi-thii-chii-wit-baep-mi-ni-mɔɔl-li-sum-thii-chuay-hai-jit-jai-pen-i-sa-ra",
+    "meaning": "极简主义生活方式"
+  },
+  "ความมหัศจรรย์ของ复利ในการวางแผนการเงินระยะยาว": {
+    "phonetic": "khwaam-ma-hat-sa-jan-khɔng-fup-li-nai-gaan-waang-phaen-gaan-gən-ra-ya-yaao",
+    "meaning": "复利的理财魔力"
+  }
+}

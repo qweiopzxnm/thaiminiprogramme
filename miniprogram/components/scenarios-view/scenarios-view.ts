@@ -25,6 +25,45 @@ interface SegmentedWordUI extends SegmentedWord {
   starred: boolean;
 }
 
+/**
+ * 辅助函数：精简词义（从长的字典释义中截取 1-4 个字，防止单词块撑开变形）
+ */
+function getShortMeaning(meaning: string): string {
+  if (!meaning) return '';
+  
+  // 常见语气词或功能词的特殊精简映射
+  const overrides: Record<string, string> = {
+    '男性的礼貌语气词': '礼貌词',
+    '女性的礼貌陈述': '礼貌词',
+    '女性的礼貌陈述语气词': '礼貌词',
+    '女性的礼貌疑问': '疑问词',
+    '女性的礼貌疑问语气词': '疑问词',
+    '语气缓和词': '语气词',
+    '表示“啊/吧/哦/哈”': '语气词',
+    '亲昵语气词': '亲昵词',
+    '用于句末': '语气词',
+    '点击添加注释': '点击添加'
+  };
+
+  // 移除英文括号与中文括号内容
+  let clean = meaning.replace(/\([^)]*\)/g, '').replace(/（[^）]*）/g, '').trim();
+  
+  for (const [key, val] of Object.entries(overrides)) {
+    if (clean.includes(key)) {
+      return val;
+    }
+  }
+
+  // 截取第一个标点符号或空格前的词语
+  const parts = clean.split(/[,，;；、\s]+/);
+  let short = parts[0] || '';
+  
+  if (short.length > 4) {
+    short = short.substring(0, 4);
+  }
+  return short || '生词';
+}
+
 Component({
   /**
    * 组件的属性列表
@@ -136,7 +175,12 @@ Component({
       const dialoguesWithSegments = scenario.dialogues.map(turn => {
         return {
           ...turn,
-          segmentedWords: segmentThai(turn.thai)
+          segmentedWords: segmentThai(turn.thai).map(w => {
+            return {
+              ...w,
+              shortMeaning: getShortMeaning(w.meaning)
+            };
+          })
         };
       });
 
