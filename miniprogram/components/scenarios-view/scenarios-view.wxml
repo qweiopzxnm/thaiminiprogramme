@@ -3,17 +3,40 @@
   
   <!-- 1. 场景/课文列表页 -->
   <view class="list-wrapper" wx:if="{{!activeScenario}}">
-    <!-- 分类筛选器 -->
+    <!-- 大分类筛选器 -->
     <view class="category-tabs">
       <view class="category-tab {{selectedCategory === 'all' ? 'active' : ''}}" data-cat="all" bindtap="onSwitchCategory">
         全部
       </view>
-      <view class="category-tab {{selectedCategory === '생활情景' ? 'active' : ''}}" data-cat="생활情景" bindtap="onSwitchCategory">
+      <view class="category-tab {{selectedCategory === '生活情景' ? 'active' : ''}}" data-cat="生活情景" bindtap="onSwitchCategory">
         日常情景
       </view>
-      <view class="category-tab {{selectedCategory === '经典课文' ? 'active' : ''}}" data-cat="经典课文" bindtap="onSwitchCategory">
-        经典课文
+      <view class="category-tab {{selectedCategory === '新闻演讲' ? 'active' : ''}}" data-cat="新闻演讲" bindtap="onSwitchCategory">
+        新闻演讲
       </view>
+    </view>
+
+    <!-- 二级子分类筛选器 (仅在大分类不为 "all" 时展示) -->
+    <view class="subcategory-bar" wx:if="{{selectedCategory !== 'all'}}">
+      <view 
+        class="sub-pill {{selectedSubCategory === 'all' ? 'active' : ''}}" 
+        data-sub="all" 
+        bindtap="onSwitchSubCategory"
+      >
+        全部
+      </view>
+      
+      <block wx:if="{{selectedCategory === '生活情景'}}">
+        <view class="sub-pill {{selectedSubCategory === '日常衣食' ? 'active' : ''}}" data-sub="日常衣食" bindtap="onSwitchSubCategory">日常衣食</view>
+        <view class="sub-pill {{selectedSubCategory === '出行旅游' ? 'active' : ''}}" data-sub="出行旅游" bindtap="onSwitchSubCategory">出行旅游</view>
+        <view class="sub-pill {{selectedSubCategory === '职场商务' ? 'active' : ''}}" data-sub="职场商务" bindtap="onSwitchSubCategory">职场商务</view>
+        <view class="sub-pill {{selectedSubCategory === '生活求助' ? 'active' : ''}}" data-sub="生活求助" bindtap="onSwitchSubCategory">生活求助</view>
+      </block>
+      
+      <block wx:if="{{selectedCategory === '新闻演讲'}}">
+        <view class="sub-pill {{selectedSubCategory === '新闻资讯' ? 'active' : ''}}" data-sub="新闻资讯" bindtap="onSwitchSubCategory">新闻资讯</view>
+        <view class="sub-pill {{selectedSubCategory === '主题演讲' ? 'active' : ''}}" data-sub="主题演讲" bindtap="onSwitchSubCategory">主题演讲</view>
+      </block>
     </view>
 
     <!-- 列表内容 -->
@@ -27,7 +50,7 @@
           data-id="{{item.id}}"
         >
           <view class="card-header">
-            <text class="category-badge {{item.category === '经典课文' ? 'classic' : 'daily'}}">{{item.category}}</text>
+            <text class="category-badge {{item.category === '新闻演讲' ? 'classic' : 'daily'}}">{{item.category === '新闻演讲' ? '新闻演讲' : '日常情景'}}</text>
             <text class="difficulty-badge {{item.difficulty === '初级' ? 'easy' : (item.difficulty === '中级' ? 'medium' : 'hard')}}">{{item.difficulty}}</text>
           </view>
           
@@ -35,7 +58,7 @@
           <view class="card-desc">{{item.description}}</view>
           
           <view class="card-footer">
-            <text class="turns-count">共 {{item.dialogues.length}} 句对话</text>
+            <text class="turns-count">共 {{item.dialogues.length}} 句对话/段落</text>
             <view class="start-btn">
               <text>进入学习</text>
               <text class="arrow">➔</text>
@@ -45,7 +68,7 @@
       </view>
       
       <view class="empty-tip" wx:if="{{filteredScenarios.length === 0}}">
-        暂无该分类的场景课文
+        暂无该分类的场景或演讲新闻
       </view>
       <view class="bottom-padding"></view>
     </scroll-view>
@@ -94,10 +117,10 @@
         <block wx:for="{{activeScenario.dialogues}}" wx:key="id" wx:for-index="index">
           <view 
             id="bubble_{{item.id}}" 
-            class="dialogue-line-container {{index <= currentTurnIndex ? 'visible-line' : 'hidden-line'}} {{item.roleId === 'P' || item.roleId === 'N' || activeScenario.characters[item.roleId].avatar === 'narrator' ? 'center-narrative' : (item.roleId === leftRoleId ? 'left-speech' : 'right-speech')}}"
+            class="dialogue-line-container {{index <= currentTurnIndex ? 'visible-line' : 'hidden-line'}} {{item.roleId === 'P' || item.roleId === 'S' || activeScenario.characters[item.roleId].avatar === 'narrator' ? 'center-narrative' : (item.roleId === leftRoleId ? 'left-speech' : 'right-speech')}}"
           >
-            <!-- 旁白叙事块 -->
-            <block wx:if="{{item.roleId === 'P' || item.roleId === 'N' || activeScenario.characters[item.roleId].avatar === 'narrator'}}">
+            <!-- 旁白/演讲叙事块 -->
+            <block wx:if="{{item.roleId === 'P' || item.roleId === 'S' || activeScenario.characters[item.roleId].avatar === 'narrator'}}">
               <view 
                 class="narrative-box {{index === currentTurnIndex ? 'active-highlight' : ''}}"
                 bindtap="onTapTurn" 
@@ -108,6 +131,14 @@
                   <image class="play-mini-icon" src="/assets/icons/volume-small.svg" />
                 </view>
                 <view class="narrative-chinese">{{item.chinese}}</view>
+                
+                <!-- 气泡下方快捷操作 -->
+                <view class="bubble-actions-footer" wx:if="{{index <= currentTurnIndex}}">
+                  <view class="bubble-action-split" catchtap="onOpenBreakdownForIndex" data-index="{{index}}">
+                    <image class="action-mini-icon" src="/assets/icons/edit.svg" />
+                    <text>查词拆解</text>
+                  </view>
+                </view>
               </view>
             </block>
             
@@ -133,6 +164,14 @@
                     <image class="play-mini-icon" src="/assets/icons/volume-small.svg" />
                   </view>
                   <view class="speech-chinese">{{item.chinese}}</view>
+                  
+                  <!-- 气泡下方快捷操作 -->
+                  <view class="bubble-actions-footer" wx:if="{{index <= currentTurnIndex}}">
+                    <view class="bubble-action-split" catchtap="onOpenBreakdownForIndex" data-index="{{index}}">
+                      <image class="action-mini-icon" src="/assets/icons/edit.svg" />
+                      <text>查词拆解</text>
+                    </view>
+                  </view>
                 </view>
               </view>
             </block>
@@ -186,7 +225,6 @@
         </view>
         
         <view class="util-action-btn star-trigger" bindtap="onToggleStarSentence">
-          <!-- 我们在 settings-active.svg 类似用星号，这里使用 Emoji 或样式替代 -->
           <text class="util-star-icon {{isSentenceStarred ? 'starred' : ''}}">★</text>
           <text>{{isSentenceStarred ? '已存笔记' : '存笔记本'}}</text>
         </view>

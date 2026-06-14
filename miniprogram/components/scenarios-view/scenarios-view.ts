@@ -39,7 +39,8 @@ Component({
   data: {
     scenarios: SCENARIOS,
     filteredScenarios: [] as Scenario[],
-    selectedCategory: 'all' as 'all' | '生活情景' | '经典课文',
+    selectedCategory: 'all' as 'all' | '生活情景' | '新闻演讲',
+    selectedSubCategory: 'all', // 二级子分类，如 '日常衣食'、'出行旅游' 等
     
     // 播放器状态
     activeScenario: null as Scenario | null,
@@ -81,24 +82,44 @@ Component({
    */
   methods: {
     /**
-     * 过滤显示场景
+     * 过滤显示场景 (支持一级大类 + 二级子类过滤)
      */
     filterScenarios() {
-      const { selectedCategory, scenarios } = this.data;
-      if (selectedCategory === 'all') {
-        this.setData({ filteredScenarios: scenarios });
-      } else {
-        const filtered = scenarios.filter(s => s.category === selectedCategory);
-        this.setData({ filteredScenarios: filtered });
+      const { selectedCategory, selectedSubCategory, scenarios } = this.data;
+      let filtered = scenarios;
+
+      // 1. 过滤一级大类
+      if (selectedCategory !== 'all') {
+        filtered = filtered.filter(s => s.category === selectedCategory);
+
+        // 2. 过滤二级子类
+        if (selectedSubCategory !== 'all') {
+          filtered = filtered.filter(s => s.subCategory === selectedSubCategory);
+        }
       }
+
+      this.setData({ filteredScenarios: filtered });
     },
 
     /**
-     * 切换分类 Tab
+     * 切换一级分类 Tab
      */
     onSwitchCategory(e: any) {
-      const cat = e.currentTarget.dataset.cat as 'all' | '生活情景' | '经典课文';
-      this.setData({ selectedCategory: cat }, () => {
+      const cat = e.currentTarget.dataset.cat as 'all' | '生活情景' | '新闻演讲';
+      this.setData({ 
+        selectedCategory: cat,
+        selectedSubCategory: 'all' // 切换大类时，二级子类重置为 'all'
+      }, () => {
+        this.filterScenarios();
+      });
+    },
+
+    /**
+     * 切换二级子分类 Pill
+     */
+    onSwitchSubCategory(e: any) {
+      const sub = e.currentTarget.dataset.sub as string;
+      this.setData({ selectedSubCategory: sub }, () => {
         this.filterScenarios();
       });
     },
@@ -268,7 +289,7 @@ Component({
         // 已到最后一句，询问或退出
         wx.showModal({
           title: '恭喜完成',
-          content: '您已读完全部场景对话。是否返回列表？',
+          content: '您已读完全部场景对话/段落。是否返回列表？',
           confirmText: '返回列表',
           cancelText: '再听一遍',
           success: (res) => {
@@ -341,7 +362,7 @@ Component({
         // 播完了，重设自动播放
         this.setData({ autoPlay: false });
         wx.showToast({
-          title: '对话播完啦 🎉',
+          title: '内容播完啦 🎉',
           icon: 'success'
         });
       }
@@ -409,14 +430,32 @@ Component({
     },
 
     /**
-     * 弹出词汇拆解面板
+     * 弹出当前激活行的词汇拆解面板
      */
     onOpenBreakdown() {
       const { activeScenario, currentTurnIndex } = this.data;
       if (!activeScenario) return;
+      this.openBreakdownForIndex(currentTurnIndex);
+    },
 
-      const turn = activeScenario.dialogues[currentTurnIndex];
-      
+    /**
+     * 点击气泡下方的“查词拆解”时，直接定位到该行并弹出分词拆解面板
+     */
+    onOpenBreakdownForIndex(e: any) {
+      const index = e.currentTarget.dataset.index as number;
+      this.openBreakdownForIndex(index);
+    },
+
+    /**
+     * 核心分词展示实现
+     */
+    openBreakdownForIndex(index: number) {
+      const { activeScenario } = this.data;
+      if (!activeScenario) return;
+
+      const turn = activeScenario.dialogues[index];
+      if (!turn) return;
+
       // 分词
       const segmented = segmentThai(turn.thai);
       const userDict = getUserDict();
@@ -429,10 +468,16 @@ Component({
         };
       });
 
+      // 同步当前播放行的状态，并显示底板
       this.setData({
-        activeTurnText: turn.thai,
-        segmentedWords,
-        showBreakdown: true
+        currentTurnIndex: index
+      }, () => {
+        this.updateTurnState();
+        this.setData({
+          activeTurnText: turn.thai,
+          segmentedWords,
+          showBreakdown: true
+        });
       });
     },
 
@@ -465,7 +510,6 @@ Component({
           icon: 'success'
         });
       } else {
-        // 音标为空的话，设一个占位符
         saveUserWord(word, phonetic || '', meaning || '生词');
         wx.showToast({
           title: '已加人生词库',

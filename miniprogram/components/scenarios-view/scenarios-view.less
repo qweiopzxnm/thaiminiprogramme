@@ -25,7 +25,7 @@
   background: #e2e8f0;
   border-radius: 12px;
   padding: 4px;
-  margin-bottom: 16px;
+  margin-bottom: 12px;
   gap: 4px;
 }
 
@@ -44,6 +44,37 @@
   background: #ffffff;
   color: #4f46e5;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+/* 二级子分类药丸样式 */
+.subcategory-bar {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 16px;
+  padding: 0 4px;
+}
+
+.sub-pill {
+  font-size: 12px;
+  color: #475569;
+  background: #f1f5f9;
+  padding: 5px 12px;
+  border-radius: 99px;
+  border: 1px solid #e2e8f0;
+  transition: all 0.2s ease;
+  font-weight: 500;
+}
+
+.sub-pill:active {
+  background: #e2e8f0;
+}
+
+.sub-pill.active {
+  color: #ffffff;
+  background: #4f46e5;
+  border-color: #4f46e5;
+  box-shadow: 0 2px 8px rgba(79, 70, 229, 0.2);
 }
 
 .list-scroll {
@@ -356,6 +387,8 @@
   text-align: center;
   border: 1px solid rgba(203, 213, 225, 0.4);
   transition: all 0.2s;
+  display: flex;
+  flex-direction: column;
 }
 
 .narrative-box.active-highlight {
@@ -383,6 +416,7 @@
 .narrative-chinese {
   font-size: 13px;
   color: #64748b;
+  margin-bottom: 4px;
 }
 
 /* 左右气泡布局 */
@@ -412,6 +446,8 @@
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.02);
   transition: all 0.25s ease;
   position: relative;
+  display: flex;
+  flex-direction: column;
 }
 
 .speech-thai {
@@ -430,6 +466,7 @@
 .speech-chinese {
   font-size: 13px;
   line-height: 1.4;
+  margin-bottom: 4px;
 }
 
 .play-mini-icon {
@@ -437,6 +474,39 @@
   height: 14px;
   opacity: 0.5;
   flex-shrink: 0;
+}
+
+/* 气泡下方的操作栏 */
+.bubble-actions-footer {
+  display: flex;
+  justify-content: flex-end;
+  margin-top: 6px;
+  border-top: 0.5px solid rgba(0, 0, 0, 0.05);
+  padding-top: 6px;
+}
+
+.right-speech .bubble-actions-footer {
+  border-top-color: rgba(59, 130, 246, 0.1);
+}
+
+.bubble-action-split {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: #4f46e5;
+  font-weight: 600;
+  padding: 2px 4px;
+}
+
+.right-speech .bubble-action-split {
+  color: #2563eb;
+}
+
+.action-mini-icon {
+  width: 12px;
+  height: 12px;
+  opacity: 0.7;
 }
 
 /* 左侧气泡风格 (角色 A/左角色) */
@@ -915,7 +985,7 @@
 
 
 /* ==========================================
-   5. 关键帧帧动画定义 (Animations)
+   5. 关键帧动画定义 (Animations)
    ========================================== */
 
 /* 角色说话时的弹跳动效 */
