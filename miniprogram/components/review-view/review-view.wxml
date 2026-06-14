@@ -1,0 +1,231 @@
+<!-- components/review-view/review-view.wxml -->
+<view class="view-container">
+  <!-- Mode Selector -->
+  <view class="mode-selector">
+    <view class="mode-btn {{activeMode === 'list' ? 'active' : ''}}" data-mode="list" bindtap="onChangeMode">
+      学习笔记本
+    </view>
+    <view class="mode-btn {{activeMode === 'card' ? 'active' : ''}}" data-mode="card" bindtap="onChangeMode">
+      闪卡记忆
+    </view>
+  </view>
+
+  <!-- --- Mode 1: Notebook List --- -->
+  <view class="notebook-section" wx:if="{{activeMode === 'list'}}">
+    <!-- Search Bar -->
+    <view class="search-box">
+      <icon type="search" size="16" class="search-icon" />
+      <input 
+        class="search-input" 
+        placeholder="搜索中文或泰文..." 
+        value="{{searchQuery}}" 
+        bindinput="onSearch"
+      />
+      <icon type="clear" size="16" class="clear-icon" bindtap="onClearSearch" wx:if="{{searchQuery}}" />
+    </view>
+
+    <!-- Empty State -->
+    <view class="empty-state" wx:if="{{filteredHistory.length === 0}}">
+      <image class="empty-img" src="/assets/icons/empty.svg" />
+      <text class="empty-text">笔记本空空如也~</text>
+      <text class="empty-sub">在“翻译”页面翻译过的句子会自动记录到这里哦</text>
+    </view>
+
+    <!-- Notebook Cards -->
+    <scroll-view class="history-scroll" scroll-y type="list" wx:else>
+      <view 
+        class="history-card card {{expandedId === item.id ? 'expanded' : ''}}" 
+        wx:for="{{filteredHistory}}" 
+        wx:key="id"
+        data-id="{{item.id}}"
+        bindtap="onToggleExpand"
+      >
+        <view class="card-header">
+          <view class="header-left">
+            <text class="chinese-title">{{item.chinese}}</text>
+            <text class="time-label">{{item.formattedTime}}</text>
+          </view>
+          <view class="header-right">
+            <!-- Star Button -->
+            <view class="icon-btn star-btn {{item.starred ? 'active' : ''}}" data-id="{{item.id}}" catchtap="onToggleStar">
+              ★
+            </view>
+            <!-- Delete Button -->
+            <view class="icon-btn delete-btn" data-id="{{item.id}}" catchtap="onDeleteHistory">
+              ✕
+            </view>
+          </view>
+        </view>
+
+        <!-- Preview (Only shown when collapsed) -->
+        <view class="card-preview" wx:if="{{expandedId !== item.id}}">
+          <text class="thai-preview">{{item.thai}}</text>
+        </view>
+
+        <!-- Expanded Content -->
+        <view class="card-detail" wx:else catchtap="preventBubble">
+          <view class="divider"></view>
+          
+          <!-- Full Sentence Play -->
+          <view class="thai-full-box" bindtap="playHistorySentence" data-thai="{{item.thai}}">
+            <text class="thai-full-text">{{item.thai}}</text>
+            <view class="mini-volume-box {{playingSentenceText === item.thai ? 'playing' : ''}}">
+              <image class="vol-icon" src="/assets/icons/volume-small.svg" />
+            </view>
+          </view>
+
+          <!-- Breakdown List -->
+          <view class="breakdown-title">单词详情：</view>
+          <view class="breakdown-list">
+            <view 
+              class="breakdown-item" 
+              wx:for="{{item.words}}" 
+              wx:for-item="w" 
+              wx:for-index="widx" 
+              wx:key="widx"
+              data-word="{{w.word}}"
+              data-widx="{{widx}}"
+              bindtap="playHistoryWord"
+            >
+              <view class="b-line-box">
+                <text class="b-word">“{{w.word}}”</text>
+                <text class="b-equal"> = </text>
+                <text class="b-meaning">{{w.meaning}}</text>
+                <text class="b-phonetic" wx:if="{{w.phonetic}}">({{w.phonetic}})</text>
+                <text class="b-phonetic unknown-label" wx:else>(未知音标)</text>
+              </view>
+              <view class="b-right-action">
+                <view class="b-vol {{playingWordKey === (w.word + '-' + widx) ? 'playing' : ''}}">
+                  <image class="vol-icon" src="/assets/icons/volume-small.svg" />
+                </view>
+              </view>
+            </view>
+          </view>
+        </view>
+      </view>
+    </scroll-view>
+  </view>
+
+  <!-- --- Mode 2: Flashcard Review --- -->
+  <view class="flashcard-section" wx:if="{{activeMode === 'card'}}">
+    <!-- Empty State -->
+    <view class="empty-state" wx:if="{{cardList.length === 0}}">
+      <image class="empty-img" src="/assets/icons/empty.svg" />
+      <text class="empty-text">没有需要复习的词句</text>
+      <text class="empty-sub">请先通过翻译记录几句话，然后开启闪卡记忆吧！</text>
+    </view>
+
+    <!-- Review Session Complete -->
+    <view class="card congratulations-card" wx:elif="{{reviewFinished}}">
+      <view class="congrats-title">🎉 复习完成！</view>
+      <view class="congrats-summary">
+        <view class="stat-item">
+          <text class="stat-num color-green">{{scoreRemember}}</text>
+          <text class="stat-label">记得</text>
+        </view>
+        <view class="stat-item">
+          <text class="stat-num color-orange">{{scoreForgot}}</text>
+          <text class="stat-label">模糊</text>
+        </view>
+      </view>
+      <button class="btn btn-primary restart-btn" bindtap="onRestartReview">重新学习</button>
+    </view>
+
+    <!-- Playing Flashcards -->
+    <view class="card-game-container" wx:else>
+      <!-- Language Mode Selector -->
+      <view class="card-lang-selector">
+        <view class="lang-btn {{cardLanguageMode === 'zh' ? 'active' : ''}}" data-lang="zh" bindtap="onChangeCardLang">
+          中文正面
+        </view>
+        <view class="lang-btn {{cardLanguageMode === 'th' ? 'active' : ''}}" data-lang="th" bindtap="onChangeCardLang">
+          泰文正面
+        </view>
+      </view>
+
+      <view class="progress-bar-container">
+        <text class="progress-text">学习进度: {{currentIndex + 1}} / {{cardList.length}}</text>
+        <view class="progress-track">
+          <view class="progress-fill" style="width: {{((currentIndex + 1) / cardList.length) * 100}}%"></view>
+        </view>
+      </view>
+
+      <!-- 3D Flipping Card -->
+      <view class="flashcard-wrapper" bindtap="onFlipCard">
+        <view class="flashcard-inner {{isFlipped ? 'is-flipped' : ''}}">
+          <!-- Card Front (Chinese or Thai) -->
+          <view class="card-side card-front">
+            <view class="front-content">
+              <block wx:if="{{cardLanguageMode === 'zh'}}">
+                <text class="card-chinese">{{currentCard.chinese}}</text>
+              </block>
+              <block wx:else>
+                <view class="thai-front-box" catchtap="playCardSentence">
+                  <text class="card-thai">{{currentCard.thai}}</text>
+                  <view class="large-volume-box {{playingSentenceText === currentCard.thai ? 'playing' : ''}}">
+                    <image class="vol-icon-large" src="/assets/icons/volume-small.svg" />
+                  </view>
+                </view>
+              </block>
+            </view>
+            <text class="tap-hint">点击卡片翻面看{{cardLanguageMode === 'zh' ? '泰' : '中'}}语</text>
+          </view>
+
+          <!-- Card Back (Thai Breakdown) -->
+          <view class="card-side card-back" catchtap="preventBubble">
+            <scroll-view class="back-scroll" scroll-y>
+              <view class="back-header">
+                <text class="back-chinese-preview">{{currentCard.chinese}}</text>
+              </view>
+              <view class="divider"></view>
+              
+              <!-- Thai Text -->
+              <view class="back-thai-box" bindtap="playCardSentence">
+                <text class="back-thai">{{currentCard.thai}}</text>
+                <view class="back-volume-box {{playingSentenceText === currentCard.thai ? 'playing' : ''}}">
+                  <image class="vol-icon" src="/assets/icons/volume-small.svg" />
+                </view>
+              </view>
+
+              <!-- Word list -->
+              <view class="back-word-list">
+                <view 
+                  class="back-word-item" 
+                  wx:for="{{currentCard.words}}" 
+                  wx:key="index"
+                  data-word="{{item.word}}"
+                  data-widx="{{index}}"
+                  bindtap="playCardWord"
+                >
+                  <view class="bw-line-box">
+                    <text class="bw-thai">“{{item.word}}”</text>
+                    <text class="bw-equal"> = </text>
+                    <text class="bw-meaning">{{item.meaning}}</text>
+                    <text class="bw-phonetic" wx:if="{{item.phonetic}}">({{item.phonetic}})</text>
+                    <text class="bw-phonetic unknown-label" wx:else>(未知音标)</text>
+                  </view>
+                  <view class="bw-right-action">
+                    <view class="b-vol {{playingWordKey === (item.word + '-' + index) ? 'playing' : ''}}">
+                      <image class="vol-icon" src="/assets/icons/volume-small.svg" />
+                    </view>
+                  </view>
+                </view>
+              </view>
+            </scroll-view>
+            <text class="tap-hint" bindtap="onFlipCard">点击卡片翻回正面</text>
+          </view>
+        </view>
+      </view>
+
+      <!-- Self Grading Buttons (Only visible when flipped) -->
+      <view class="grade-footer {{isFlipped ? 'visible' : ''}}">
+        <button class="grade-btn btn-forgot" data-grade="forgot" bindtap="onGradeCard">
+          ⚠️ 模糊
+        </button>
+        <button class="grade-btn btn-remember" data-grade="remember" bindtap="onGradeCard">
+          ✓ 记得
+        </button>
+      </view>
+    </view>
+  </view>
+</view>

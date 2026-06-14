@@ -1,0 +1,138 @@
+<!-- components/translate-view/translate-view.wxml -->
+<view class="view-container">
+  <!-- Input Area Card -->
+  <view class="card input-card">
+    <textarea 
+      class="chinese-input" 
+      placeholder="请输入需要翻译的中文内容... (例如: 你好，这个多少钱？)" 
+      value="{{chineseText}}" 
+      bindinput="onInput"
+      maxlength="200"
+    />
+    <view class="input-footer">
+      <text class="char-count">{{chineseText.length}}/200</text>
+      <view class="btn-group">
+        <button class="btn btn-secondary clear-btn" bindtap="onClear" wx:if="{{chineseText.length > 0}}">清空</button>
+        <button class="btn btn-primary translate-btn" bindtap="onTranslate" loading="{{loading}}">翻译并拆解</button>
+      </view>
+    </view>
+  </view>
+
+  <!-- Suggestion/Preset Example List (Only shown when input is empty and no translation result is displayed) -->
+  <view class="preset-section" wx:if="{{!chineseText && !translationResult}}">
+    <view class="section-title">你可以试着输入以下中文例句：</view>
+    <view class="preset-list">
+      <view 
+        class="preset-item" 
+        wx:for="{{presets}}" 
+        wx:key="*this" 
+        data-text="{{item}}" 
+        bindtap="onSelectPreset"
+      >
+        <text class="preset-text">{{item}}</text>
+        <text class="preset-arrow">→</text>
+      </view>
+    </view>
+  </view>
+
+  <!-- Translation Result Section -->
+  <view class="result-section" wx:if="{{translationResult}}">
+    <!-- Sentence Card -->
+    <view class="card result-card">
+      <view class="original-box">
+        <text class="label">原文：</text>
+        <text class="text">{{originalChinese}}</text>
+      </view>
+      <view class="divider"></view>
+      <view class="thai-box" bindtap="playSentence">
+        <view class="thai-content">
+          <text class="thai-text">{{translationResult}}</text>
+        </view>
+        <view class="play-icon-box {{playingSentence ? 'playing' : ''}}">
+          <image class="volume-icon" src="/assets/icons/volume.svg" wx:if="{{!playingSentence}}"/>
+          <view class="playing-animation" wx:else>
+            <view class="bar bar1"></view>
+            <view class="bar bar2"></view>
+            <view class="bar bar3"></view>
+          </view>
+        </view>
+      </view>
+    </view>
+
+    <!-- Word Breakdown Section -->
+    <view class="section-title-row">
+      <text class="section-title">单词拆解与拼音发音</text>
+      <text class="helper-text">(点击单词行即可播放发音)</text>
+    </view>
+    
+    <view class="word-list">
+      <view 
+        class="word-item {{item.isUnknown ? 'unknown-item' : ''}}" 
+        wx:for="{{segmentedWords}}" 
+        wx:key="index"
+        data-word="{{item.word}}"
+        data-index="{{index}}"
+        bindtap="playWord"
+      >
+        <view class="word-line-box">
+          <text class="word-thai">“{{item.word}}”</text>
+          <text class="word-equal"> = </text>
+          <text class="word-meaning {{item.isUnknown ? 'unknown-meaning' : ''}}">{{item.meaning}}</text>
+          <text class="word-phonetic" wx:if="{{!item.isUnknown}}">({{item.phonetic}})</text>
+          <text class="word-phonetic unknown-label" wx:else>(未知音标)</text>
+        </view>
+        
+        <view class="word-actions">
+          <!-- Edit Button for Custom/Unknown Word -->
+          <view class="action-btn edit-btn" data-word="{{item.word}}" data-index="{{index}}" catchtap="onStartEditWord">
+            <image class="edit-icon" src="/assets/icons/edit.svg" />
+          </view>
+          <!-- Play Indicator -->
+          <view class="mini-play-box {{playingIndex === index ? 'playing' : ''}}">
+            <image class="mini-volume" src="/assets/icons/volume-small.svg" />
+          </view>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>
+
+<!-- Edit Word Modal -->
+<view class="modal-overlay" wx:if="{{showEditModal}}" catchtouchmove="preventBubble">
+  <view class="modal-card">
+    <view class="modal-header">
+      <text class="modal-title">完善泰语生词</text>
+      <view class="modal-close" bindtap="onCancelEditWord">✕</view>
+    </view>
+    <view class="modal-body">
+      <view class="form-item">
+        <text class="form-label">泰语单词</text>
+        <input class="form-input disabled" value="{{editWordData.word}}" disabled />
+      </view>
+      <view class="form-item">
+        <text class="form-label">罗马音标 (发音拼写)</text>
+        <input 
+          class="form-input" 
+          placeholder="例如: lûuk-kháa" 
+          value="{{editWordData.phonetic}}" 
+          bindinput="onEditPhonetic" 
+          focus="{{showEditModal}}"
+        />
+      </view>
+      <view class="form-item">
+        <text class="form-label">中文释义</text>
+        <input 
+          class="form-input" 
+          placeholder="例如: 客人" 
+          value="{{editWordData.meaning}}" 
+          bindinput="onEditMeaning" 
+        />
+      </view>
+      <view class="modal-tip">💡 保存后，该单词的信息会被存入您的本地词库中，再次翻译遇到它时将自动识别分词并支持发音。</view>
+    </view>
+    <view class="modal-footer">
+      <button class="modal-btn btn-cancel" bindtap="onCancelEditWord">取消</button>
+      <button class="modal-btn btn-save" bindtap="onSaveWord">保存</button>
+    </view>
+  </view>
+</view>

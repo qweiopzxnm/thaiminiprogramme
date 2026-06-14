@@ -1,0 +1,55 @@
+<!--pages/index/index.wxml-->
+<navigation-bar title="{{navTitle}}" back="{{false}}" color="#111827" background="#FFFFFF"></navigation-bar>
+<view class="page-container">
+  <!-- View Container -->
+  <view class="view-wrapper">
+    <translate-view 
+      id="translateView" 
+      class="view-item" 
+      wx:if="{{activeTab === 'translate'}}" 
+      bind:historychange="onHistoryChange"
+    ></translate-view>
+    
+    <import-view 
+      id="importView" 
+      class="view-item" 
+      wx:elif="{{activeTab === 'import'}}" 
+      bind:historychange="onHistoryChange"
+      bind:switchtab="onSwitchTabFromComponent"
+    ></import-view>
+    
+    <review-view 
+      id="reviewView" 
+      class="view-item" 
+      wx:elif="{{activeTab === 'review'}}" 
+      bind:historychange="onHistoryChange"
+    ></review-view>
+    
+    <settings-view 
+      id="settingsView" 
+      class="view-item" 
+      wx:elif="{{activeTab === 'settings'}}" 
+      bind:historychange="onHistoryChange"
+    ></settings-view>
+  </view>
+  
+  <!-- Custom TabBar -->
+  <view class="custom-tab-bar">
+    <view class="tab-item {{activeTab === 'translate' ? 'active' : ''}}" data-tab="translate" bindtap="onSwitchTab">
+      <image class="tab-icon" src="/assets/icons/translate{{activeTab === 'translate' ? '-active' : ''}}.svg" />
+      <text class="tab-text">翻译</text>
+    </view>
+    <view class="tab-item {{activeTab === 'import' ? 'active' : ''}}" data-tab="import" bindtap="onSwitchTab">
+      <image class="tab-icon" src="/assets/icons/import{{activeTab === 'import' ? '-active' : ''}}.svg" />
+      <text class="tab-text">自建</text>
+    </view>
+    <view class="tab-item {{activeTab === 'review' ? 'active' : ''}}" data-tab="review" bindtap="onSwitchTab">
+      <image class="tab-icon" src="/assets/icons/review{{activeTab === 'review' ? '-active' : ''}}.svg" />
+      <text class="tab-text">笔记本</text>
+    </view>
+    <view class="tab-item {{activeTab === 'settings' ? 'active' : ''}}" data-tab="settings" bindtap="onSwitchTab">
+      <image class="tab-icon" src="/assets/icons/settings{{activeTab === 'settings' ? '-active' : ''}}.svg" />
+      <text class="tab-text">设置</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "navigation-bar": "/components/navigation-bar/navigation-bar",
+    "translate-view": "/components/translate-view/translate-view",
+    "import-view": "/components/import-view/import-view",
+    "review-view": "/components/review-view/review-view",
+    "settings-view": "/components/settings-view/settings-view"
+  }
+}
