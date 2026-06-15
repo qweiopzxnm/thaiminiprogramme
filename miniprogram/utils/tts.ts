@@ -459,7 +459,8 @@ export function getStaticAudioPath(text: string): string {
   if (staticHashes.has(hash)) {
     // 使用大数取模将哈希非常均匀地分流到 10 个包中
     const pkgNum = (parseInt(hash.substring(0, 6), 16) % 10) + 1;
-    return `/audio_pkg_${pkgNum}/${hash}.mp3`;
+    // 返回 Gitee 仓库的 raw 绝对地址
+    return `https://gitee.com/jiaxu-wang/thai_-mini-programme/raw/audio-assets/miniprogram/audio_pkg_${pkgNum}/${hash}.mp3`;
   }
   return '';
 }
