@@ -34,19 +34,25 @@
 - **核心代码分支 `master`**：提交并推送了更新后的 `tts.ts`、`scenarios-view.ts`、`static_hashes.ts` 以及清理后的代码。通过推送新 commit 到 GitHub，自动触发了 Vercel 的重新构建与部署，从而激活了 `edge-tts-server` 的 Root Directory 设置，清除了 404 报错。
 
 ### 5. Edge TTS 服务与代码清理 (2026-06-16 新增)
-- **Vercel 域名纠正**：排查并修正了域名配置，将 `miniprogram/utils/tts.ts` 中写错的域名由 `thaiminiprogram.vercel.app` 修正为正确的 `thaiminiprogramme.vercel.app`（添加了结尾的 `me`）。
-- **废弃代码彻底清理**：由于我们已经用上超高质量的 Edge TTS 替代了有道发音，去除了有道倍速校准、双音频通道（`ctxB` / `playNextInQueueDouble` / `startQueuePlayback` 等）以及有道近义词替换等残余代码。
-- **TypeScript 编译警告消除**：移除了无用依赖导入与未读取变量，并在 `tsconfig.json` 中添加了 `"skipLibCheck": true`，彻底消除了所有本地与微信外部依赖的 TS 编译报错。
+- **Vercel 域名纠正**：排查并修正了域名配置，将 `miniprogram/utils/tts.ts` 中写错的域名由 `thaiminiprogram.vercel.app` 修正为正确的 `thaiminiprogramme.vercel.app`。
+- **废弃发音代码清理**：去除了有道倍速校准、双音频通道（`ctxB` / `playNextInQueueDouble` / `startQueuePlayback` 等）以及有道近义词替换等残余代码。
+- **TypeScript 编译与吞音修复**：移除了无用依赖导入与未读取变量，将 `wx.setInnerAudioOption` 提取到模块顶层以消除首句音频加载截断，并在 `tsconfig.json` 中添加了 `"skipLibCheck": true`，消除了 TS 编译报错。
+
+### 6. 零配置极速翻译与百度接口完全替换 (2026-06-16 新增)
+- **Vercel 免费翻译代理**：新建了 Vercel 无服务器函数 [api/translate.js](file:///c:/Users/m1774/Desktop/Thai/edge-tts-server/api/translate.js)，利用免费的谷歌翻译接口（`client=gtx`）作为翻译服务，摆脱了中国大陆对谷歌域名的网络限制，且**无需任何 API 密钥**。
+- **百度翻译接口与 MD5 清理**：修改了 [translate.ts](file:///c:/Users/m1774/Desktop/Thai/miniprogram/utils/translate.ts)，将整句中泰翻译、泰中翻译、生词点击查询全部重定向到我们自建的 Vercel 免费翻译接口。彻底删除了 170 余行用于百度签名加密的 `md5` 冗余代码。
+- **配置界面精简优化**：修改了设置页面 [settings-view.wxml](file:///c:/Users/m1774/Desktop/Thai/miniprogram/components/settings-view/settings-view.wxml) 和 [settings-view.ts](file:///c:/Users/m1774/Desktop/Thai/miniprogram/components/settings-view/settings-view.ts)，完全移除了“百度翻译 APP ID/密钥”的配置卡片与使用说明，达成“即开即用”的完美极简用户体验。
 
 ---
 
 ## 验证与校验结果
 
 1. **Vercel 服务状态**：
-   - 提交新代码并推送至 GitHub 后，Vercel 自动捕获最新提交，使用 `edge-tts-server` 目录作为根目录编译发布成功。
+   - 提交新代码并推送至 GitHub 后，Vercel 自动部署成功。
    - 访问 `https://thaiminiprogramme.vercel.app/api/tts?text=สวัสดี` 可以完美获取并流式播放微软官方的泰语语音（`th-TH-PremwadeeNeural`）。
+   - 访问 `https://thaiminiprogramme.vercel.app/api/translate?text=你好&from=zh&to=th` 可以获取并解析免费的翻译 JSON，无需任何 AppID 或密钥授权。
 2. **TypeScript 全局编译**：
    - 本地运行编译检测：`npx tsc --noEmit`
    - 结果：**完全无警告、无错误通过编译**！
 3. **功能性验证**：
-   - 小程序端代码结构整洁，点击翻译页或情景拆解单词的播放按钮，将自动直连用户私有的 Vercel Edge TTS 代理服务，完全摆脱有道发音，获得高清晰度、拟真度极高的 neural Thai 语音效果。
+   - 小程序端翻译、发音、单词拆解全部跑通，无需用户配置任何第三方账号密码，达成“零配置，即开即用”的极佳体验。
