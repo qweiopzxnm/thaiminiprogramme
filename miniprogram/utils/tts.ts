@@ -202,10 +202,8 @@ function isAudioCached(localPath: string): boolean {
 export function getStaticAudioPath(text: string): string {
   const hash = getSafeHash(text);
   if (staticHashes.has(hash)) {
-    // 使用大数取模将哈希非常均匀地分流到 10 个包中
-    const pkgNum = (parseInt(hash.substring(0, 6), 16) % 10) + 1;
-    // 使用高速 jsDelivr 镜像节点，在大陆拥有极佳的访问速度与极低的音频流缓冲时延
-    return `https://jsd.onmicrosoft.cn/gh/qweiopzxnm/thaiminiprogramme@audio-assets/miniprogram/audio_pkg_${pkgNum}/${hash}.mp3`;
+    // 使用 Vercel CDN 代理缓存节点，在大陆拥有极佳的访问速度与极低的音频流缓冲时延
+    return `https://thaiminiprogramme.vercel.app/api/static?hash=${hash}`;
   }
   return '';
 }
@@ -279,8 +277,8 @@ export function preFetchGoogleTTS(text: string): Promise<string> {
     return Promise.resolve(staticPath);
   }
 
-  // 2. 否则在线下载 Google TTS
-  const downloadUrl = `https://translate.googleapis.com/translate_tts?ie=UTF-8&client=tw-ob&tl=th&q=${encodeURIComponent(cleanText)}`;
+  // 2. 否则在线下载 Vercel Edge TTS
+  const downloadUrl = `https://thaiminiprogramme.vercel.app/api/tts?text=${encodeURIComponent(cleanText)}`;
   return downloadAndSaveAudio(downloadUrl, localPath)
     .then((res) => { cleanup(); return res; })
     .catch((err) => { cleanup(); throw err; });
@@ -424,7 +422,7 @@ export function playThaiTTS(
 
     // 3. 用户启用了 Google 通道，去尝试下载并缓存播放
     if (config.useGoogleTTS) {
-      const googleUrl = `https://translate.googleapis.com/translate_tts?ie=UTF-8&client=tw-ob&tl=th&q=${encodeURIComponent(cleanText)}`;
+      const googleUrl = `https://thaiminiprogramme.vercel.app/api/tts?text=${encodeURIComponent(cleanText)}`;
       // 立即在线播放以避免延迟
       playAudio(googleUrl);
       // 后台静默下载缓存
@@ -434,17 +432,8 @@ export function playThaiTTS(
       return;
     }
 
-    // 4. 默认回退使用有道发音方案
-    if (disableYoudao) {
-      console.warn(`Audio "${cleanText}" not found in static hashes, and Youdao is disabled. Playback skipped.`);
-      if (onEnded) {
-        try {
-          onEnded();
-        } catch (err) {}
-      }
-    } else {
-      playViaYoudao(cleanText, rate, onStart, onEnded);
-    }
+    // 4. 默认回退使用 Edge TTS 发音方案
+    playViaYoudao(cleanText, rate, onStart, onEnded);
 
   } catch (e) {
     console.error('Error playing TTS:', e);

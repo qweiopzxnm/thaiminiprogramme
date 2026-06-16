@@ -56,3 +56,54 @@
    - 结果：**完全无警告、无错误通过编译**！
 3. **功能性验证**：
    - 小程序端翻译、发音、单词拆解全部跑通，无需用户配置任何第三方账号密码，达成“零配置，即开即用”的极佳体验。
+
+---
+
+## 2026-06-16 22:30 优化：情景页延迟彻底消除与高频词翻译分词精细校准
+
+我们已成功完成并验证了以下优化，彻底消除了残留的 3 秒播放延迟，并精细校准了情景页的高频词翻译与分词展示：
+
+### 1. 彻底根除 Google TTS 残留 3 秒超时延迟
+- **问题分析**：
+  1. 在 `preFetchGoogleTTS` 和 `playThaiTTS` 中，当本地无缓存且哈希不存在时，会硬编码去尝试下载/播放 `translate.googleapis.com` 的音频。由于大陆网络对 Google TTS 的封锁，导致请求阻塞挂起并触发 3 秒以上的连接超时延迟，才艰难回退到 Edge 代理接口。
+  2. 即使是后台预载（Pre-fetch），大量的挂起网络连接也会耗尽微信小程序的并发网络连接数（限制为 10 个），间接拖慢其他所有页面的音频和翻译请求速度。
+- **解决方案**：
+  1. 彻底清除了 `tts.ts` 中所有对 `translate.googleapis.com` 的请求，将其完全重定向至我们在 Vercel 上自建的高速 Edge TTS 接口 `https://thaiminiprogramme.vercel.app/api/tts?text=...`。
+  2. 废弃了可能会引发静音的 `disableYoudao` 严格校验，统一将高音质微软 Neural 语音（Premwadee）作为万能的兜底备份，从而确保用户在任何极端离线或缓存受损情况下点击，都能在半秒内平滑听到高品质发音。
+
+### 2. 部署 Vercel 静态音频 Edge CDN 代理服务 (api/static.js)
+- **问题分析**：
+  - 之前版本中，若本地未缓存，小程序会直接通过流媒体在线拉取 GitHub (jsDelivr 镜像) `https://jsd.onmicrosoft.cn/gh/...` 的文件。jsDelivr 节点在大陆网络下响应极不稳定，常伴有高达数秒的 DNS 和首包延迟，是“情景页有些句子发音依然有 3 秒延迟”的核心元凶。
+- **解决方案**：
+  1. 在 [api/static.js](file:///c:/Users/m1774/Desktop/Thai/edge-tts-server/api/static.js) 部署了全新的无服务器函数，将对 GitHub `audio-assets` 分支下 3064 个静态音频文件的访问全部通过 Vercel 全球 Edge CDN 进行高速代理。
+  2. Vercel 服务器在海外拥有毫秒级获取 GitHub 文件的极速响应，并在流式返回时设置了强缓存响应头 `Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable`。
+  3. 一旦任意地区的用户点击播放，该静态音频将被永久缓存在 Vercel Edge 边缘节点上。后续其他用户再次点击，无需回源 GitHub，直接由 Vercel Edge CDN 瞬时秒开。
+  4. 修改了客户端 `tts.ts` 中的 `getStaticAudioPath` 指向该 Vercel 静态代理。
+
+### 3. 校准 `getShortMeaning` 斜杠分词精简 bug
+- **问题分析**：
+  - 部分词义较长的单词在字典中用斜杠 `/` 分隔（例如 `拖把/抹布`）。在 `getShortMeaning` 的过滤中，原本的正则 `/[,，;；、\s]+/` 漏掉了斜杠 `\/`，导致无法在该符号处分割，从而导致整体字符超出 4 字限制，最终丑陋截断为 `拖把/抹` 这种无意义词汇。
+- **解决方案**：
+  - 在 `getShortMeaning` 的分割正则中加入斜杠：`clean.split(/[,，;；、\/\s]+/);`，使此类长词汇正确分割，气泡下方的缩略释义变得清爽、通顺。
+
+### 4. 纠正 15+ 个高频核心泰语词汇的字典翻译谬误
+- **问题分析**：
+  - 运行了自动化翻译与词典对比差异审计脚本 `find_translation_discrepancies.js`，通过 Vercel 翻译接口逐个校准所有情景词汇，发现词典 `dict.ts` 存在多处历史残留的严重汉字机器翻译谬误（例如受英文 multi-meanings “like/right/hour” 翻译偏置导致）：
+- **精细校准对照表**：
+  - `ขวา`（khwaa）：`正确的`（Error） -> **`右 / 右边`**（Correct）
+  - `อย่าง`（oyaang）：`喜欢`（Error） -> **`样 / 种类 / 方式 / 像`**（Correct）
+  - `เลย`（lei）：`黎府`（Error，仅作地名） -> **`直接 / 完全 / 就 / 黎府 / 非常`**（Correct，大幅提高句子分词展示合理度）
+  - `กำลัง`（kalang）：`力量`（Error，偏离句意） -> **`正在 / 力量`**（Correct，解决情景中进行时态词组解释的困惑）
+  - `ชม`（chom）：`小时`（Error） -> **`观看 / 欣赏 / 赞美 / 参观`**（Correct，校正 `เดินชม` 等参观词组的解释）
+  - `การ`（kaar）：`这`（Error） -> **`前缀(动词/形容词名词化) / 事务 / 工作`**（Correct）
+  - `ขอ`（kho）：`问`（Error，与 ถาม 混淆） -> **`求 / 请 / 请求`**（Correct）
+  - `ข้อ`（kho）：`物品`（Error） -> **`条 / 项 / 条款 / 关节`**（Correct）
+  - `ยอด`（yod）：`哟`（Error） -> **`顶峰 / 极好的 / 总额 / 金额`**（Correct，纠正金额结算情景下的误导）
+  - `รอบ`（rob）：`大约`（Error） -> **`轮 / 周 / 圈 / 环绕 / 周围`**（Correct）
+  - `ที`（thii）：`T`（Error） -> **`次 / 下`**（Correct）
+  - `ลำ`（la）：`林`（Error） -> **`艘 / 架 / 根 / 量词(船、飞机等)`**（Correct，修正在水路包船情景下的错误）
+  - `พบ`（phop）：`成立`（Error） -> **`遇见 / 发现 / 见面`**（Correct）
+  - `แล้ว`（laew）：`进而`（Error） -> **`已经 / 然后 / 了`**（Correct）
+  - `ไปด้วย`（pi-dwy）：`附和`（Error） -> **`一起去 / 顺带 / 一起`**（Correct）
+
+同时在 [scenarios.ts](file:///c:/Users/m1774/Desktop/Thai/miniprogram/utils/scenarios.ts#L4536-4541) 中，将 `business_16_d4` 的中文整句翻译修改为“是的，无法连接。包括数据库和其他管理系统也都会受影响。”，使整句意思与词汇“ฐานข้อมูล”（数据库）、“ระบบการจัดการ”（管理系统）保持 100% 同步通顺。

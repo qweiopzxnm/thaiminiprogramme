@@ -4536,7 +4536,7 @@ export const SCENARIOS: Scenario[] = [
         "id": "business_16_d4",
         "roleId": "B",
         "thai": "ไม่ได้ค่ะ รวมถึงฐานข้อมูลและระบบการจัดการอื่นๆ ด้วยค่ะ",
-        "chinese": "是的，无法连接。包括OA系统和财务报销系统都会暂时停机。"
+        "chinese": "是的，无法连接。包括数据库和其他管理系统也都会受影响。"
       },
       {
         "id": "business_16_d5",

@@ -57,7 +57,7 @@ function getShortMeaning(meaning: string): string {
   }
 
   // 截取第一个标点符号或空格前的词语
-  const parts = clean.split(/[,，;；、\s]+/);
+  const parts = clean.split(/[,，;；、\/\s]+/);
   let short = parts[0] || '';
   
   if (short.length > 4) {

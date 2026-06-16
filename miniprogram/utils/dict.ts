@@ -56,7 +56,7 @@ export const BUILTIN_DICT: { [key: string]: DictEntry } = {
   },
   "กรอบ": {
     "phonetic": "grɔɔp",
-    "meaning": "框架/边框"
+    "meaning": "酥脆 / 框架 / 边框"
   },
   "กระจาย": {
     "phonetic": "gra-jaai",
@@ -384,7 +384,7 @@ export const BUILTIN_DICT: { [key: string]: DictEntry } = {
   },
   "การ": {
     "phonetic": "kaar",
-    "meaning": "这"
+    "meaning": "前缀(动词/形容词名词化) / 事务 / 工作"
   },
   "การจ้าง": {
     "phonetic": "gaan-jaang",
@@ -432,7 +432,7 @@ export const BUILTIN_DICT: { [key: string]: DictEntry } = {
   },
   "กำลัง": {
     "phonetic": "kalang",
-    "meaning": "力量"
+    "meaning": "正在 / 力量"
   },
   "กำลังมา": {
     "phonetic": "kalang-maa",
@@ -756,11 +756,11 @@ export const BUILTIN_DICT: { [key: string]: DictEntry } = {
   },
   "ขวา": {
     "phonetic": "khwaa",
-    "meaning": "正确的"
+    "meaning": "右 / 右边"
   },
   "ขอ": {
     "phonetic": "kho",
-    "meaning": "问"
+    "meaning": "求 / 请 / 请求"
   },
   "ของ": {
     "phonetic": "khong",
@@ -1024,7 +1024,7 @@ export const BUILTIN_DICT: { [key: string]: DictEntry } = {
   },
   "ข้อ": {
     "phonetic": "kho",
-    "meaning": "物品"
+    "meaning": "条 / 项 / 条款 / 关节"
   },
   "ข้อกำหนด": {
     "phonetic": "khâaw-gam-nòt",
@@ -2732,7 +2732,7 @@ export const BUILTIN_DICT: { [key: string]: DictEntry } = {
   },
   "ชม": {
     "phonetic": "chom",
-    "meaning": "小时"
+    "meaning": "观看 / 欣赏 / 赞美 / 参观"
   },
   "ชมิดท์": {
     "phonetic": "chhmidth",
@@ -4136,11 +4136,11 @@ export const BUILTIN_DICT: { [key: string]: DictEntry } = {
   },
   "ตอน": {
     "phonetic": "ton",
-    "meaning": "插曲"
+    "meaning": "部分 / 阶段 / 时候 / 章节"
   },
   "ตอนที่": {
     "phonetic": "ton-thii",
-    "meaning": "插曲"
+    "meaning": "第...部 / 第...章 / 时候 / 集"
   },
   "ตอนนั้น": {
     "phonetic": "ton-nan",
@@ -5116,7 +5116,7 @@ export const BUILTIN_DICT: { [key: string]: DictEntry } = {
   },
   "ที": {
     "phonetic": "thii",
-    "meaning": "T"
+    "meaning": "次 / 下"
   },
   "ทีท่า": {
     "phonetic": "thii-thâa",
@@ -7460,7 +7460,7 @@ export const BUILTIN_DICT: { [key: string]: DictEntry } = {
   },
   "พบ": {
     "phonetic": "phop",
-    "meaning": "成立"
+    "meaning": "遇见 / 发现 / 见面"
   },
   "พยากรณ์": {
     "phonetic": "phá-yaa-gɔɔn",
@@ -8932,7 +8932,7 @@ export const BUILTIN_DICT: { [key: string]: DictEntry } = {
   },
   "ยอด": {
     "phonetic": "yod",
-    "meaning": "哟"
+    "meaning": "顶峰 / 极好的 / 总额 / 金额"
   },
   "ยอดขาย": {
     "phonetic": "yɔ̂ɔt-khǎai",
@@ -9344,7 +9344,7 @@ export const BUILTIN_DICT: { [key: string]: DictEntry } = {
   },
   "รอบ": {
     "phonetic": "rob",
-    "meaning": "大约"
+    "meaning": "轮 / 周 / 圈 / 环绕 / 周围"
   },
   "รอบคอบ": {
     "phonetic": "rɔ̂ɔp-khɔ̂ɔp",
@@ -10080,7 +10080,7 @@ export const BUILTIN_DICT: { [key: string]: DictEntry } = {
   },
   "ลำ": {
     "phonetic": "la",
-    "meaning": "林"
+    "meaning": "艘 / 架 / 根 / 量词(船、飞机等)"
   },
   "ลำไส้": {
     "phonetic": "lam-sâi",
@@ -12596,7 +12596,7 @@ export const BUILTIN_DICT: { [key: string]: DictEntry } = {
   },
   "อย่าง": {
     "phonetic": "oyaang",
-    "meaning": "喜欢"
+    "meaning": "样 / 种类 / 方式 / 像"
   },
   "อย่างไร": {
     "phonetic": "yàang-rai",
@@ -15968,7 +15968,7 @@ export const BUILTIN_DICT: { [key: string]: DictEntry } = {
   },
   "เลย": {
     "phonetic": "lei",
-    "meaning": "黎府"
+    "meaning": "直接 / 完全 / 就 / 黎府 / 非常"
   },
   "เลยนะ": {
     "phonetic": "lei-na",
@@ -18084,7 +18084,7 @@ export const BUILTIN_DICT: { [key: string]: DictEntry } = {
   },
   "แล้ว": {
     "phonetic": "laew",
-    "meaning": "进而"
+    "meaning": "已经 / 然后 / 了"
   },
   "แล้วกัน": {
     "phonetic": "laew-kan",
@@ -19836,7 +19836,7 @@ export const BUILTIN_DICT: { [key: string]: DictEntry } = {
   },
   "ไปด้วย": {
     "phonetic": "pi-dwy",
-    "meaning": "附和"
+    "meaning": "一起去 / 顺带 / 一起"
   },
   "ไปตายซะ": {
     "phonetic": "pi-taay-sa",
