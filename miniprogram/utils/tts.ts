@@ -464,8 +464,15 @@ function getLocalAudioPath(text: string): string {
 
 function isAudioCached(localPath: string): boolean {
   try {
-    fs.accessSync(localPath);
-    return true;
+    const stat = fs.statSync(localPath);
+    // 正常的 MP3 音频即使极短也会大于 200 字节。如果小于 200 字节可能是空文件或保存了 HTML 错误页面
+    if (stat.size > 200) {
+      return true;
+    }
+    try {
+      fs.unlinkSync(localPath);
+    } catch (err) {}
+    return false;
   } catch (e) {
     return false;
   }
