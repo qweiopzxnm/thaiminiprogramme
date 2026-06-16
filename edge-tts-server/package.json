@@ -1,0 +1,9 @@
+{
+  "name": "edge-tts-server",
+  "version": "1.0.0",
+  "description": "Serverless Microsoft Edge TTS Proxy for Thai Mini-Program",
+  "main": "api/tts.js",
+  "dependencies": {
+    "ws": "^8.16.0"
+  }
+}
