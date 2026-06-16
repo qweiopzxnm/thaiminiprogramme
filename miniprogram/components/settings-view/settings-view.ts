@@ -13,8 +13,6 @@ Component({
    */
   data: {
     config: {} as AppConfig,
-    baiduAppId: '',
-    baiduApiKey: '',
     customWords: [] as UserDictWord[]
   },
 
@@ -49,46 +47,7 @@ Component({
 
       this.setData({
         config,
-        baiduAppId: config.baiduAppId,
-        baiduApiKey: config.baiduApiKey,
         customWords: customWordsList
-      });
-    },
-
-    onInputAppId(e: any) {
-      this.setData({
-        baiduAppId: e.detail.value
-      });
-    },
-
-    onInputApiKey(e: any) {
-      this.setData({
-        baiduApiKey: e.detail.value
-      });
-    },
-
-    /**
-     * 保存百度 AppID 和 Key
-     */
-    onSaveBaiduKeys() {
-      const { baiduAppId, baiduApiKey } = this.data;
-      if (!baiduAppId.trim() || !baiduApiKey.trim()) {
-        wx.showToast({
-          title: '请填写 AppID 和 密钥',
-          icon: 'none'
-        });
-        return;
-      }
-
-      setConfig({
-        baiduAppId: baiduAppId.trim(),
-        baiduApiKey: baiduApiKey.trim()
-      });
-      this.loadSettings();
-
-      wx.showToast({
-        title: '配置保存成功',
-        icon: 'success'
       });
     },
 
