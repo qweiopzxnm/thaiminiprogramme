@@ -198,7 +198,7 @@ export function getStaticAudioPath(text: string): string {
     // 使用大数取模将哈希非常均匀地分流到 10 个包中
     const pkgNum = (parseInt(hash.substring(0, 6), 16) % 10) + 1;
     // 使用 jsDelivr 官方备用高速镜像节点（对国内网络有极佳的加速效果，完全免去 Captcha 拦截和 302 重定向）
-    return `https://gcore.jsdelivr.net/gh/qweiopzxnm/Thai_MiniProgramme@audio-assets/miniprogram/audio_pkg_${pkgNum}/${hash}.mp3`;
+    return `https://gcore.jsdelivr.net/gh/qweiopzxnm/thaiminiprogramme@audio-assets/miniprogram/audio_pkg_${pkgNum}/${hash}.mp3`;
   }
   return '';
 }
