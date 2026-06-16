@@ -6,14 +6,14 @@
     <translate-view 
       id="translateView" 
       class="view-item" 
-      hidden="{{activeTab !== 'translate'}}" 
+      wx:if="{{activeTab === 'translate'}}" 
       bind:historychange="onHistoryChange"
     ></translate-view>
     
     <import-view 
       id="importView" 
       class="view-item" 
-      hidden="{{activeTab !== 'import'}}" 
+      wx:elif="{{activeTab === 'import'}}" 
       bind:historychange="onHistoryChange"
       bind:switchtab="onSwitchTabFromComponent"
     ></import-view>
@@ -21,14 +21,14 @@
     <scenarios-view
       id="scenariosView"
       class="view-item"
-      hidden="{{activeTab !== 'scenarios'}}"
+      wx:elif="{{activeTab === 'scenarios'}}"
       bind:historychange="onHistoryChange"
     ></scenarios-view>
     
     <review-view 
       id="reviewView" 
       class="view-item" 
-      hidden="{{activeTab !== 'review'}}" 
+      wx:elif="{{activeTab === 'review'}}" 
       bind:historychange="onHistoryChange"
     ></review-view>
   </view>

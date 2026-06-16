@@ -68,23 +68,15 @@ Component({
      */
     refreshActiveComponent(tab: string) {
       try {
-        if (tab === 'translate') {
-          const comp = this.selectComponent('#translateView');
-          if (comp && typeof comp.loadSpeechRate === 'function') {
-            comp.loadSpeechRate();
+        if (tab === 'review') {
+          const comp = this.selectComponent('#reviewView');
+          if (comp && typeof comp.onRefresh === 'function') {
+            comp.onRefresh();
           }
         } else if (tab === 'scenarios') {
           const comp = this.selectComponent('#scenariosView');
           if (comp && typeof comp.updateTurnState === 'function') {
             comp.updateTurnState();
-          }
-          if (comp && typeof comp.loadSpeechRate === 'function') {
-            comp.loadSpeechRate();
-          }
-        } else if (tab === 'review') {
-          const comp = this.selectComponent('#reviewView');
-          if (comp && typeof comp.onRefresh === 'function') {
-            comp.onRefresh();
           }
         }
       } catch (e) {
