@@ -1,72 +1,38 @@
-# Walkthrough: Three-Tier Layout, 3x Scenario Expansion, and Comprehensive Linguistic Audit
+# 泰语学习小程序：情景页有道发音屏蔽与全量分词离线音频库补全报告 (2026-06-16)
 
-We have successfully implemented the three-tier word bubble layout, completed a 3x scenarios database expansion (total 330 scenarios), and executed a comprehensive linguistic audit and correction on the 1,980 sentences and 4,300+ dictionary entries.
-
----
-
-## 1. Summary of Accomplished Tasks
-
-### A. Three-Tier Word Bubble Layout
-*   **Vertical Three-Line Stack**: Re-aligned the chat bubble word elements to stack vertically:
-    1. **Top**: Chinese meaning (`.word-meaning-top`).
-    2. **Middle**: Syllable-hyphenated phonetic pronunciation (`.word-phonetic-above`).
-    3. **Bottom**: Thai word (`.word-text-below`).
-*   **Concise Meaning Filter**: Implemented `getShortMeaning` to map and limit all vocabulary Chinese translations to a clean 1-4 character length, avoiding layout warping.
-*   **Clean Bubble Space**: Removed the redundant "词义拆解" (Word Breakdown) buttons from all bubbles and narrator boxes, and deleted the "词汇拆解" trigger from the bottom control bar.
-
-### B. WeChat Storage Assessment
-*   **Main Package Size**: The static `scenarios.ts` database (330 scenarios * 6 turns = 1,980 sentences) takes 900KB. The entire main package is **~1.1MB**, which is well below WeChat's strict **2MB主包限制**.
-*   **Local Storage & File System**: The app's bookmark storage takes under 100KB (max 10MB allowed), and the TTS file cache fits easily inside WeChat's 200MB file limit.
-
-### C. Comprehensive Linguistic Audit & Corrections
-We ran a detailed audit script and corrected spelling, pronunciations, and translations in both `scenarios.ts` and `dict.ts`:
-*   **Dialogue Turn Verification**: Audited all 1,980 turns. Confirmed that conversational flow is natural and polite particles match character gender (`ครับ` for male, `ค่ะ` / `คะ` for female).
-*   **Dictionary Key Cleaning**: Identified and deleted 6 duplicate entries using Chinese keys (`"我们"`, `"他们"`, `"不"`, `"和"`, `"去"`, `"喜欢"`), keeping only correct Thai-keyed equivalents.
-*   **RTGS Phonetics Standardization**: 
-    *   Surgically replaced space separations with syllable hyphens (e.g. `'sà-baai-dii-mǎi'` instead of `'sà-baai-dii mǎi'`) across **2,015 entries**.
-    *   Normalized vowel conventions across **488 entries** (e.g., converting `æ` $\rightarrow$ `ae`, `ı` $\rightarrow$ `ai`, `eue` $\rightarrow$ `uea`, `iia` $\rightarrow$ `ia`, `oeaa` $\rightarrow$ `ao`).
-    *   Restored **95 implicit short vowels** (e.g., `tklng` $\rightarrow$ `dtok-long`, `khn` $\rightarrow$ `khon`).
-    *   Fixed **8 corrupted Unicode entries** (e.g., `"ดูนี่สิ"` $\rightarrow$ `"duu-nii-si"`, `"อยู่"` $\rightarrow$ `"yuu"`).
+我们已成功完成并验证了情景页屏蔽有道发音以及离线发音白名单库 100% 覆盖的终极修复。
 
 ---
 
-## 2. Verification & Validation
+## 做出修改的清单
 
-### TypeScript Compiler Check
-Verified that the codebase compiles with 0 errors:
-```bash
-cmd.exe /c "npx -p typescript tsc --skipLibCheck --noEmit"
-```
-*   **Status**: Passed successfully.
+### 1. 彻底屏蔽有道发音
+- **问题分析**：在之前的版本中，如果本地缓存或远程 GitHub 托管音频因为文件缺失或哈希未录入而加载失败，`playThaiTTS` 会自动回退调用 `playViaYoudao`（有道接口发音）。由于有道的泰语发音质量较差，这导致了较差的用户体验。
+- **解决方案**：
+  1. 在 [tts.ts](file:///c:/Users/m1774/Desktop/Thai/miniprogram/utils/tts.ts) 中的 `playThaiTTS` 接口添加了 `disableYoudao?: boolean` 参数。
+  2. 当 `disableYoudao` 为 `true` 时，若本地/远程 CDN 音频播放失败，直接触发结束回调并报错，绝对不调用 `playViaYoudao` 回退。
+  3. 修改了 [scenarios-view.ts](file:///c:/Users/m1774/Desktop/Thai/miniprogram/components/scenarios-view/scenarios-view.ts) 中所有的 `playThaiTTS` 调用（包括情景句播放、常用短语播放、以及点击单词拆解时的单字播放），全部强制传入 `disableYoudao = true`，从物理层屏蔽了有道在情景页的使用。
 
-### Scenario Validation Check
-Verified scenarios configuration structural integrity:
-```bash
-node scratch/validate_scenarios.js
-```
-*   **Status**: 0 errors found.
+### 2. 补全 1519 个缺失的分词/单字离线音频
+- **问题分析**：情景对话的整句和短语之前已经全部预载并生成了哈希，但用户在情景页点击**单字/词组拆解**（如“ข้าวเหนียวมะม่วง” 芒果糯米饭）时，这些单独的词条并不在 `static_hashes.ts` 白名单中，从而因量大缺失触发了有道发音。
+- **解决方案**：
+  1. 编写了自动化提取脚本 [download_all_scenario_assets.js](file:///c:/Users/m1774/Desktop/Thai/scratch/download_all_scenario_assets.js)，利用字典的最大匹配（Greedy Match）分词算法，将所有情景对话及短语的句子完全拆解成可能点击的单词。
+  2. 提取出整句与分词后，总计有 **3064** 个唯一的 playable text。
+  3. 比对已有的 1545 个音频，计算出缺失的分词音频为 **1519** 个（例如“ครับ”、“ได้ค่ะ”、“รสชาติ”、“ข้าวเหนียวมะม่วง”等词组）。
+  4. 脚本以并发线程自动下载这 1519 个缺失音频 of Google TTS 文件，并通过本地 `ffmpeg` 压缩为低延迟高质量音频（16kbps、单声道、16000 采样率），分流保存至各 `audio_pkg_*` 目录下。
+  5. 重新生成并更新了 [static_hashes.ts](file:///c:/Users/m1774/Desktop/Thai/miniprogram/utils/static_hashes.ts)，使哈希白名单记录扩充至完整的 **3064** 个，达成 100% 覆盖。
 
-### Git Checkpoint Commit
-All audited modifications are committed to the local repository under commit `e3fa07f`.
-
----
-
-## 3. GitHub Audio Hosting & WeChat Upload Bypass
-
-To bypass WeChat's upload restriction blocking packages with >200KB of audio files:
-1. **Branch Segmentation**: Created a dedicated `audio-assets` branch containing the 10 pre-compiled Google TTS audio packages (`miniprogram/audio_pkg_1` to `miniprogram/audio_pkg_10`), while keeping the `master` branch clean and lightweight (~1.07MB).
-2. **Remote Streaming Resolution**: Replaced the local audio path generation in `miniprogram/utils/tts.ts` to fetch from the GitHub repository's jsDelivr CDN mirror pointing to the `audio-assets` branch:
-   `https://gcore.jsdelivr.net/gh/qweiopzxnm/Thai_MiniProgramme@audio-assets/miniprogram/audio_pkg_${pkgNum}/${hash}.mp3`
-3. **Local Cleanup**: Deleted the local `audio_pkg_*` subdirectories and removed the `subpackages` array configurations from `miniprogram/app.json`.
-4. **Compile Validation**: Confirmed that the project compiles with 0 errors (`npx.cmd -p typescript tsc --skipLibCheck --noEmit`).
+### 3. 多分支同步推送
+- **远程音频分支 `audio-assets`**：切换到 `audio-assets` 分支，利用 `git add -f` 强制将新增的 1519 个压缩音频 `.mp3` 提交并推送到 GitHub 远程仓库，实现 CDN 瞬时分发。
+- **核心代码分支 `master`**：提交并推送了更新后的 `tts.ts`、`scenarios-view.ts`、`static_hashes.ts` 以及清理后的未使用 import。
 
 ---
 
-## 4. Performance Optimizations & Caching Fixes
+## 验证与校验结果
 
-We have resolved the Gitee latency, playback speed rate incompatibilities, and notebook loading lag with the following implementations:
-1. **jsDelivr Audio Caching**: Enhanced `preFetchGoogleTTS` and `playThaiTTS` in `miniprogram/utils/tts.ts` to automatically download and persist jsDelivr-hosted `.mp3` files in the WeChat local sandbox file system (`wx.env.USER_DATA_PATH/tts_cache`). This ensures that on subsequent plays, audio starts instantly without network requests.
-2. **Playback Rate Snapping**: Introduced `getSupportedPlaybackRate(rate)` to automatically align any calculated play rates (such as Youdao's speed rate modifiers) to WeChat's strictly supported list: `0.5`, `0.8`, `1.0`, `1.25`, `1.5`, `2.0`. This prevents silent playback failures on various iOS/Android client engines.
-3. **Lazy Notebook Segmentation**: Modified `review-view.ts` to defer the heavy maximum-matching segmentation logic (`segmentThai`) until a card is actually expanded by the user or shown in the active flashcard view. This reduces startup blocking calculations to 0ms, making notebook tab-switching completely instant.
-
-
+1. **白名单覆盖率检测**：
+   - 运行校验脚本：`node scratch/extract_all_scenarios_segmented_words.js`
+   - 结果：**情景句子、短语及全部拆解分词的哈希缺失数降为 0**！所有词汇均可在白名单内通过 CDN 直连秒开播放。
+2. **TypeScript 全局编译**：
+   - 运行：`npx.cmd -p typescript tsc --skipLibCheck --noEmit`
+   - 结果：**编译完美通过，无任何类型或声明警告**。
