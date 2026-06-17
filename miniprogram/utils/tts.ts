@@ -202,8 +202,10 @@ function isAudioCached(localPath: string): boolean {
 export function getStaticAudioPath(text: string): string {
   const hash = getSafeHash(text);
   if (staticHashes.has(hash)) {
-    // 使用 Vercel CDN 代理缓存节点，在大陆拥有极佳的访问速度与极低的音频流缓冲时延
-    return `https://thaiminiprogramme.vercel.app/api/static?hash=${hash}`;
+    // 使用大数取模将哈希非常均匀地分流到 10 个包中
+    const pkgNum = (parseInt(hash.substring(0, 6), 16) % 10) + 1;
+    // 使用国内高可用 GitHub CDN 加速镜像 cdn.jsdmirror.com，完全解耦 Vercel，提供极低音频缓冲延迟
+    return `https://cdn.jsdmirror.com/gh/qweiopzxnm/thaiminiprogramme@audio-assets/miniprogram/audio_pkg_${pkgNum}/${hash}.mp3`;
   }
   return '';
 }

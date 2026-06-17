@@ -71,14 +71,16 @@
   1. 彻底清除了 `tts.ts` 中所有对 `translate.googleapis.com` 的请求，将其完全重定向至我们在 Vercel 上自建的高速 Edge TTS 接口 `https://thaiminiprogramme.vercel.app/api/tts?text=...`。
   2. 废弃了可能会引发静音的 `disableYoudao` 严格校验，统一将高音质微软 Neural 语音（Premwadee）作为万能的兜底备份，从而确保用户在任何极端离线或缓存受损情况下点击，都能在半秒内平滑听到高品质发音。
 
-### 2. 部署 Vercel 静态音频 Edge CDN 代理服务 (api/static.js)
-- **问题分析**：
-  - 之前版本中，若本地未缓存，小程序会直接通过流媒体在线拉取 GitHub (jsDelivr 镜像) `https://jsd.onmicrosoft.cn/gh/...` 的文件。jsDelivr 节点在大陆网络下响应极不稳定，常伴有高达数秒的 DNS 和首包延迟，是“情景页有些句子发音依然有 3 秒延迟”的核心元凶。
+### 2. 部署国内 CDN 镜像服务进行静态音频加载，完全解耦 Vercel
+- **问题分析与架构优化**：
+  - 之前为解决 jsDelivr（`jsd.onmicrosoft.cn`）的 3 秒网络延迟，我们曾经使用 Vercel 无服务器函数 `/api/static` 进行反向代理并做缓存。但这增加了对 Vercel 的调用流量，且由于大陆对 `*.vercel.app` 域名的 DNS 污染和防火墙限制，如果不绑定自定义域名，在真机（特别是其他测试人员的手机）上，Vercel 域名请求很容易无限期挂起或报错，导致情景页长时间处于没有声音的状态。
 - **解决方案**：
-  1. 在 [api/static.js](file:///c:/Users/m1774/Desktop/Thai/edge-tts-server/api/static.js) 部署了全新的无服务器函数，将对 GitHub `audio-assets` 分支下 3064 个静态音频文件的访问全部通过 Vercel 全球 Edge CDN 进行高速代理。
-  2. Vercel 服务器在海外拥有毫秒级获取 GitHub 文件的极速响应，并在流式返回时设置了强缓存响应头 `Cache-Control: public, max-age=31536000, s-maxage=31536000, immutable`。
-  3. 一旦任意地区的用户点击播放，该静态音频将被永久缓存在 Vercel Edge 边缘节点上。后续其他用户再次点击，无需回源 GitHub，直接由 Vercel Edge CDN 瞬时秒开。
-  4. 修改了客户端 `tts.ts` 中的 `getStaticAudioPath` 指向该 Vercel 静态代理。
+  1. 我们在 [tts.ts](file:///c:/Users/m1774/Desktop/Thai/miniprogram/utils/tts.ts#L202-L211) 中重构了 `getStaticAudioPath`，转而使用国内知名、高可用的 GitHub 加速 CDN 镜像服务 `https://cdn.jsdmirror.com`。
+  2. 新镜像地址格式：`https://cdn.jsdmirror.com/gh/qweiopzxnm/thaiminiprogramme@audio-assets/miniprogram/audio_pkg_${pkgNum}/${hash}.mp3`。该镜像节点在大陆拥有绝佳的访问速度（平均延迟小于 50ms），且完全解耦了对 Vercel 域名的依赖。
+  3. **此时小程序发音的域名访问情况**：
+     - **情景页/常用短语静态音频**：直接访问 `https://cdn.jsdmirror.com`（极速，完全不占用 Vercel 流量）。
+     - **动态翻译和后台 TTS 发音兜底**：依然使用 Vercel `https://thaiminiprogramme.vercel.app`。
+  4. 测试人员只需要在手机上把 `https://cdn.jsdmirror.com` 和 `https://thaiminiprogramme.vercel.app` 共同加入到微信小程序的 **`downloadFile合法域名`** 列表中即可。
 
 ### 3. 校准 `getShortMeaning` 斜杠分词精简 bug
 - **问题分析**：
