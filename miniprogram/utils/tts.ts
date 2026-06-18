@@ -23,6 +23,22 @@ let ctxA: WechatMiniprogram.InnerAudioContext | null = null;
 let playTimeoutId: number | null = null;
 let globalOnEnded: (() => void) | null = null;
 let activePlayDownloadTask: WechatMiniprogram.DownloadTask | null = null;
+let playbackWatchdogTimerId: number | null = null;
+
+function clearPlaybackWatchdog(): void {
+  if (playbackWatchdogTimerId) {
+    clearTimeout(playbackWatchdogTimerId);
+    playbackWatchdogTimerId = null;
+  }
+}
+
+function startPlaybackWatchdog(onTimeout: () => void): void {
+  clearPlaybackWatchdog();
+  playbackWatchdogTimerId = setTimeout(() => {
+    playbackWatchdogTimerId = null;
+    onTimeout();
+  }, 4500) as unknown as number; // 4.5秒看门狗超时，防止微信播放通道无限卡挂起或转圈
+}
 
 let simProgressTimerId: any = null;
 let currentSimProgress = 0;
@@ -157,6 +173,9 @@ export function stopThaiTTS(): void {
     playTimeoutId = null;
   }
   
+  // 清除播放看门狗
+  clearPlaybackWatchdog();
+  
   globalOnEnded = null;
 
   // 通知全局隐藏进度条并清理仿真定时器
@@ -173,13 +192,11 @@ export function stopThaiTTS(): void {
   if (ctxA) {
     try {
       ctxA.stop();
-      ctxA.offPlay();
-      ctxA.offCanplay();
-      ctxA.offEnded();
-      ctxA.offError();
+      ctxA.destroy(); // 销毁实例并释放微信底层音频资源，彻底防止微信底层播放通道挂起或状态死锁
     } catch (e) {
-      console.error('Failed to stop ctxA:', e);
+      console.error('Failed to stop/destroy ctxA:', e);
     }
+    ctxA = null; // 设置为 null，下次播放时自动创建全新实例
   }
 }
 
@@ -208,6 +225,7 @@ function playViaEdgeTTS(
     const adjustedRate = getSupportedPlaybackRate(rate);
 
     ctxA.onPlay(() => {
+      clearPlaybackWatchdog(); // 成功开始播放，清除看门狗
       if (adjustedRate !== 1.0) {
         ctxA.playbackRate = adjustedRate;
       }
@@ -227,6 +245,7 @@ function playViaEdgeTTS(
     });
 
     ctxA.onEnded(() => {
+      clearPlaybackWatchdog();
       const cb = globalOnEnded;
       stopThaiTTS();
       if (cb) {
@@ -239,6 +258,7 @@ function playViaEdgeTTS(
     });
 
     ctxA.onError((err) => {
+      clearPlaybackWatchdog();
       console.error(`Edge TTS playback failed for "${cleanText}" (src: ${edgeSrc}). Error:`, err);
       stopThaiTTS();
       const cb = globalOnEnded;
@@ -246,6 +266,21 @@ function playViaEdgeTTS(
         try {
           cb();
         } catch (e) {}
+      }
+    });
+
+    // 启动播放看门狗守护定时器
+    startPlaybackWatchdog(() => {
+      console.warn(`Edge TTS playback watchdog timeout for text: "${cleanText}". Forcing reset.`);
+      const cb = globalOnEnded;
+      stopThaiTTS();
+      wx.showToast({
+        title: '音频播放超时，请重听',
+        icon: 'none',
+        duration: 2000
+      });
+      if (cb) {
+        try { cb(); } catch (e) {}
       }
     });
 
@@ -259,6 +294,7 @@ function playViaEdgeTTS(
     }, 30) as unknown as number;
 
   } catch (e) {
+    clearPlaybackWatchdog();
     console.error('Error in playViaEdgeTTS:', e);
     if (onEnded) {
       try {
@@ -384,15 +420,15 @@ function downloadAndSaveAudio(
       }
       activePlayDownloadTask = downloadTask;
 
-      // 2.5秒下载超时限制，超时则自动 abort 任务以快速尝试下一个镜像或流式直接播放
+      // 1.5秒下载超时限制，超时则自动 abort 任务以快速尝试下一个镜像或流式直接播放，减少重试时延
       timeoutId = setTimeout(() => {
         if (downloadTask) {
           try {
-            console.warn(`Download task timed out (2.5s), aborting: ${url}`);
+            console.warn(`Download task timed out (1.5s), aborting: ${url}`);
             downloadTask.abort();
           } catch (e) {}
         }
-      }, 2500) as unknown as number;
+      }, 1500) as unknown as number;
     }
 
     if (onProgress && downloadTask && typeof downloadTask.onProgressUpdate === 'function') {
@@ -486,6 +522,7 @@ export function playThaiTTS(
       ctxA.offError();
 
       ctxA.onPlay(() => {
+        clearPlaybackWatchdog(); // 成功播放，清除看门狗
         if (adjustedRate !== 1.0) {
           ctxA.playbackRate = adjustedRate;
         }
@@ -505,6 +542,7 @@ export function playThaiTTS(
       });
 
       ctxA.onEnded(() => {
+        clearPlaybackWatchdog();
         const cb = globalOnEnded;
         stopThaiTTS();
         if (cb) {
@@ -517,6 +555,7 @@ export function playThaiTTS(
       });
 
       ctxA.onError((err) => {
+        clearPlaybackWatchdog();
         // Self-healing: if playing a local file fails, delete the local file because it's probably corrupt/HTML!
         if (src.startsWith(localFolder)) {
           console.warn(`Local cached audio failed to play, deleting corrupted cache file: ${src}. Error:`, err);
@@ -536,9 +575,44 @@ export function playThaiTTS(
           }
         }
 
-        // 已完全废弃有道，发生播放错误时直接统一使用 Edge TTS 兜底播放
+        // 已完全废弃有道，发生播放错误时直接统一使用 Edge TTS 兜底播放，确保透传 onStart 回调以取消转圈状态
         console.warn(`Playback failed for "${cleanText}" (src: ${src}), falling back to Edge TTS streaming. Error:`, err);
-        playViaEdgeTTS(cleanText, rate, undefined, onEnded);
+        playViaEdgeTTS(cleanText, rate, onStart, onEnded);
+      });
+
+      // 启动播放看门狗守护定时器
+      startPlaybackWatchdog(() => {
+        console.warn(`Playback watchdog timeout for src: ${src}. Forcing fallback/reset.`);
+        
+        // 如果是本地缓存文件加载超时，删除本地缓存并尝试在线 CDN
+        if (src.startsWith(localFolder)) {
+          try {
+            fs.unlinkSync(src);
+          } catch (e) {}
+          if (staticPath) {
+            playAudio(staticPath);
+            return;
+          }
+        }
+        
+        // 如果是在线 CDN 镜像加载超时，尝试直接 fallback 到 Edge TTS
+        if (src !== `https://www.barryapp.xyz/api/tts?text=${encodeURIComponent(cleanText)}`) {
+          console.log('Online CDN timed out, falling back to Edge TTS...');
+          playViaEdgeTTS(cleanText, rate, onStart, onEnded);
+          return;
+        }
+
+        // 如果已经是 Edge TTS 依然超时，直接停止并释放 UI 状态，提示用户
+        const cb = globalOnEnded;
+        stopThaiTTS();
+        wx.showToast({
+          title: '发音加载超时，请重听',
+          icon: 'none',
+          duration: 2000
+        });
+        if (cb) {
+          try { cb(); } catch (e) {}
+        }
       });
 
       playTimeoutId = setTimeout(() => {
@@ -564,17 +638,15 @@ export function playThaiTTS(
     // 开启进度条模拟
     startProgressSimulation(onProgress);
 
-    // 2. 准备候选下载地址列表 (包含国内高速 CDN 镜像及 Vercel 兜底)
+    // 2. 准备候选下载地址列表 (包含国内最稳定的 2 个 CDN 镜像及 Vercel 兜底)
     const urls: string[] = [];
     if (staticPath) {
       const hash = getSafeHash(cleanText);
       const pkgNum = (parseInt(hash.substring(0, 6), 16) % 10) + 1;
       
-      // 按在国内的访问稳定性/速度优先级排列 CDN 镜像地址
-      urls.push(`https://mirror.ghproxy.com/https://raw.githubusercontent.com/qweiopzxnm/thaiminiprogramme/audio-assets/miniprogram/audio_pkg_${pkgNum}/${hash}.mp3`);
+      // 只保留国内速度极快、高可用的 2 个核心 CDN 镜像，缩短 Failover 链条以大幅减小重试积压延迟
       urls.push(`https://cdn.jsdmirror.com/gh/qweiopzxnm/thaiminiprogramme@audio-assets/miniprogram/audio_pkg_${pkgNum}/${hash}.mp3`);
       urls.push(`https://jsd.onmicrosoft.cn/gh/qweiopzxnm/thaiminiprogramme@audio-assets/miniprogram/audio_pkg_${pkgNum}/${hash}.mp3`);
-      urls.push(`https://gcore.jsdelivr.net/gh/qweiopzxnm/thaiminiprogramme@audio-assets/miniprogram/audio_pkg_${pkgNum}/${hash}.mp3`);
     }
     
     // 把 Vercel Edge TTS 地址作为最后保底下载地址加入队列
