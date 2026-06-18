@@ -1,5 +1,11 @@
 <!--pages/index/index.wxml-->
 <navigation-bar title="{{navTitle}}" back="{{false}}" color="#111827" background="#FFFFFF"></navigation-bar>
+
+<!-- 全局音频下载进度条 -->
+<view class="global-audio-progress-container {{showAudioProgress ? 'show' : ''}}">
+  <view class="global-audio-progress-bar" style="width: {{audioLoadingProgress}}%"></view>
+</view>
+
 <view class="page-container">
   <!-- View Container -->
   <view class="view-wrapper">

@@ -87,3 +87,25 @@ page {
   color: #4f46e5;
   font-weight: 600;
 }
+
+/* 全局音频下载进度条样式 */
+.global-audio-progress-container {
+  height: 3px;
+  background: transparent;
+  width: 100%;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.2s ease;
+  flex-shrink: 0;
+  
+  &.show {
+    opacity: 1;
+  }
+}
+
+.global-audio-progress-bar {
+  height: 100%;
+  background: linear-gradient(90deg, #4f46e5, #818cf8);
+  transition: width 0.1s ease;
+  width: 0;
+}

@@ -55,6 +55,14 @@ export function stopThaiTTS(): void {
   
   globalOnEnded = null;
 
+  // 通知全局隐藏进度条
+  try {
+    const app = getApp<IAppOption>();
+    if (app && app.globalData && typeof app.globalData.audioProgressListener === 'function') {
+      app.globalData.audioProgressListener(-1);
+    }
+  } catch (e) {}
+
   // 终止正在进行的播放下载任务，防止积压堵塞及旧发音在切换后突然播放
   if (activePlayDownloadTask) {
     try {
@@ -355,6 +363,14 @@ export function playThaiTTS(
   disableYoudao: boolean = false,
   onProgress?: (progress: number) => void
 ): void {
+  // 全局进度汇报辅助函数
+  const app = getApp<IAppOption>();
+  const triggerGlobalProgress = (p: number) => {
+    if (app && app.globalData && typeof app.globalData.audioProgressListener === 'function') {
+      app.globalData.audioProgressListener(p);
+    }
+  };
+
   try {
     // 停止当前播放并清空状态
     stopThaiTTS();
@@ -367,6 +383,9 @@ export function playThaiTTS(
       if (onEnded) onEnded();
       return;
     }
+
+    // 触发全局进度开始 (0%)
+    triggerGlobalProgress(0);
 
     const { ctxA } = getAudioContexts();
     globalOnEnded = onEnded || null;
@@ -462,6 +481,7 @@ export function playThaiTTS(
       if (onProgress) {
         onProgress(100);
       }
+      triggerGlobalProgress(100);
       playAudio(localPath);
       return;
     }
@@ -487,6 +507,7 @@ export function playThaiTTS(
       if (urlIndex >= urls.length) {
         // 如果所有 CDN 镜像和 Vercel 均失败，最终走有道接口流式播放（最终兜底）
         console.warn(`All download options failed for "${cleanText}", falling back to Youdao direct streaming.`);
+        triggerGlobalProgress(100);
         if (disableYoudao) {
           playAudio(urls[urls.length - 1]);
         } else {
@@ -499,12 +520,19 @@ export function playThaiTTS(
       if (onProgress) {
         onProgress(0);
       }
+      triggerGlobalProgress(0);
 
-      downloadAndSaveAudio(currentUrl, localPath, onProgress, true)
+      downloadAndSaveAudio(currentUrl, localPath, (p) => {
+        if (onProgress) {
+          onProgress(p);
+        }
+        triggerGlobalProgress(p);
+      }, true)
         .then((savedPath) => {
           if (onProgress) {
             onProgress(100);
           }
+          triggerGlobalProgress(100);
           playAudio(savedPath);
         })
         .catch((err) => {
@@ -517,6 +545,7 @@ export function playThaiTTS(
 
   } catch (e) {
     console.error('Error playing TTS:', e);
+    triggerGlobalProgress(100);
     if (onEnded) {
       try {
         onEnded();

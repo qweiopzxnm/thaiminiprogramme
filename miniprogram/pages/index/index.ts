@@ -6,7 +6,9 @@ Component({
    */
   data: {
     activeTab: 'scenarios' as 'translate' | 'scenarios' | 'review',
-    navTitle: '情景与经典课文'
+    navTitle: '情景与经典课文',
+    audioLoadingProgress: 0,
+    showAudioProgress: false
   },
 
   /**
@@ -14,7 +16,35 @@ Component({
    */
   methods: {
     onLoad() {
-      // 页面初始化
+      // 监听全局音频下载进度事件
+      const app = getApp<IAppOption>();
+      if (app && app.globalData) {
+        app.globalData.audioProgressListener = (progress: number) => {
+          if (progress === -1) {
+            this.setData({
+              audioLoadingProgress: 0,
+              showAudioProgress: false
+            });
+          } else if (progress === 100) {
+            this.setData({
+              audioLoadingProgress: 100
+            });
+            // 延迟淡出，确保视觉上能看到 100% 满格的状态，提升体验
+            setTimeout(() => {
+              if (this.data.audioLoadingProgress === 100) {
+                this.setData({
+                  showAudioProgress: false
+                });
+              }
+            }, 600);
+          } else {
+            this.setData({
+              audioLoadingProgress: progress,
+              showAudioProgress: true
+            });
+          }
+        };
+      }
     },
 
     /**
