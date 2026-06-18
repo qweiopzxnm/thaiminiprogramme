@@ -115,7 +115,7 @@ Component({
      */
     onShareAppMessage() {
       return {
-        title: '大象泰语 - 零基础智能泰语发音与拆解助手',
+        title: '泰想学APP - 泰语情景学习与智能拆解发音助手',
         path: '/pages/index/index'
       };
     },
@@ -125,7 +125,7 @@ Component({
      */
     onShareTimeline() {
       return {
-        title: '大象泰语 - 零基础智能泰语发音与拆解助手',
+        title: '泰想学APP - 泰语情景对话学习与智能拆解拼读神器',
         query: ''
       };
     }
