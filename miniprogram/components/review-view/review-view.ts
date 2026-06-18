@@ -1,6 +1,6 @@
 // components/review-view/review-view.ts
 import { getHistory, deleteHistoryItem, saveHistoryItem, TranslationItem } from '../../utils/db';
-import { playThaiTTS, stopThaiTTS } from '../../utils/tts';
+import { playThaiTTS, stopThaiTTS, preFetchGoogleTTS } from '../../utils/tts';
 import { SCENARIOS } from '../../utils/scenarios';
 import { segmentThai } from '../../utils/segment';
 
@@ -129,6 +129,8 @@ Component({
         historyList: formattedList
       }, () => {
         this.applyFilter();
+        // 后台预载历史列表前 30 项的发音，保障即时播放，解决超时卡顿问题
+        this.preFetchCardsAudio(formattedList);
       });
     },
 
@@ -345,6 +347,9 @@ Component({
         reviewFinished: false,
         scoreRemember: 0,
         scoreForgot: 0
+      }, () => {
+        // 后台预载所有复习卡片发音（包括整句和单词拆解），解决卡顿和超时问题
+        this.preFetchCardsAudio(shuffled);
       });
     },
 
@@ -507,6 +512,49 @@ Component({
 
     preventBubble() {
       // 阻止冒泡
+    },
+
+    /**
+     * 后台静默批量下载预载复习卡片发音（包括整句和单词分拆）
+     */
+    preFetchCardsAudio(cards: any[]) {
+      if (!cards || cards.length === 0) return;
+      
+      const itemsToFetch: string[] = [];
+      cards.forEach(card => {
+        if (card.thai && !itemsToFetch.includes(card.thai)) {
+          itemsToFetch.push(card.thai);
+        }
+        if (card.words && card.words.length > 0) {
+          card.words.forEach((w: any) => {
+            if (w.word && !itemsToFetch.includes(w.word)) {
+              itemsToFetch.push(w.word);
+            }
+          });
+        }
+      });
+
+      let index = 0;
+      const fetchNext = () => {
+        // 如果切到了历史列表（或者非卡片模式且数量巨大），我们只预载前 30 个项目，防止高并发带宽滥用
+        if (this.data.activeMode === 'history' && itemsToFetch.length > 30) {
+          if (index >= 30) return;
+        }
+        
+        if (index >= itemsToFetch.length) return;
+        const text = itemsToFetch[index];
+        index++;
+        
+        preFetchGoogleTTS(text)
+          .then(() => {
+            setTimeout(fetchNext, 120);
+          })
+          .catch(() => {
+            setTimeout(fetchNext, 120);
+          });
+      };
+      
+      fetchNext();
     }
   }
 });

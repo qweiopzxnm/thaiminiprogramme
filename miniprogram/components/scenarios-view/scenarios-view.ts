@@ -340,6 +340,19 @@ Component({
       const visible = this.getFilteredPhrasesData(selectedPhraseCategory, phrasesLimit);
       this.setData({
         phrasesData: visible
+      }, () => {
+        // 提取所有可见短语的泰语文本，加入后台静默预载队列
+        const flatItems: string[] = [];
+        visible.forEach((category: any) => {
+          if (category.items) {
+            category.items.forEach((item: any) => {
+              if (item.thai) {
+                flatItems.push(item.thai);
+              }
+            });
+          }
+        });
+        this.preFetchAudioQueue(flatItems);
       });
     },
 
@@ -486,6 +499,8 @@ Component({
         this.updateTurnState();
         // 自动播放首句
         this.playCurrentTurn();
+        // 后台并发预载当前情景下的所有对话，确保在切换时 0 网络等待，根治超时和卡顿
+        this.preFetchAudioQueue(activeScenario.dialogues);
       });
     },
 
@@ -887,6 +902,40 @@ Component({
      */
     noBubble() {
       // no-op
+    },
+
+    /**
+     * 后台串行队列下载预载音频，避免高并发占用连接通道
+     */
+    preFetchAudioQueue(items: Array<any>) {
+      if (!items || items.length === 0) return;
+      
+      let index = 0;
+      const downloadNext = () => {
+        // 如果当前已经退出了情景页且没有选中的子Tab，则停止预载释放网络
+        if (!this.data.activeScenario && this.data.activeSubTab === 'scenarios') return;
+        
+        if (index >= items.length) return;
+        
+        const item = items[index];
+        const text = typeof item === 'string' ? item : (item.thai || '');
+        index++;
+        
+        if (!text.trim()) {
+          downloadNext();
+          return;
+        }
+        
+        preFetchGoogleTTS(text)
+          .then(() => {
+            setTimeout(downloadNext, 120);
+          })
+          .catch(() => {
+            setTimeout(downloadNext, 120);
+          });
+      };
+      
+      downloadNext();
     }
   }
 });

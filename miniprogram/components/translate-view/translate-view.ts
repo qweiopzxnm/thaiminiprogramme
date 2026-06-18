@@ -1,7 +1,7 @@
 import { translateChineseToThai, translateThaiToChinese, lookupUnknownWord } from '../../utils/translate';
 import { segmentThai, SegmentedWord } from '../../utils/segment';
 import { saveHistoryItem, saveUserWord, getHistory } from '../../utils/db';
-import { playThaiTTS, stopThaiTTS } from '../../utils/tts';
+import { playThaiTTS, stopThaiTTS, preFetchGoogleTTS } from '../../utils/tts';
 import { getConfig, setConfig } from '../../utils/config';
 
 Component({
@@ -153,6 +153,9 @@ Component({
             icon: 'success',
             duration: 1000
           });
+
+          // 后台静默预载翻译结果及单词拆解的发音，保障即时播放，解决超时卡顿问题
+          this.preFetchTranslationAudios(thaiText, words);
 
           // 后台静默查询所有未知生词
           const unknownWords = words.filter(w => w.isUnknown);
@@ -327,6 +330,38 @@ Component({
 
     preventBubble() {
       // 阻止事件冒泡与滚动穿透
+    },
+
+    /**
+     * 后台静默预载翻译整句和拆解单词的发音音频
+     */
+    preFetchTranslationAudios(thaiText: string, words: any[]) {
+      if (!thaiText) return;
+      
+      const itemsToFetch: string[] = [thaiText];
+      if (words && words.length > 0) {
+        words.forEach(w => {
+          if (w.word && !itemsToFetch.includes(w.word)) {
+            itemsToFetch.push(w.word);
+          }
+        });
+      }
+
+      let index = 0;
+      const fetchNext = () => {
+        if (index >= itemsToFetch.length) return;
+        const text = itemsToFetch[index];
+        index++;
+        
+        preFetchGoogleTTS(text)
+          .then(() => {
+            setTimeout(fetchNext, 120);
+          })
+          .catch(() => {
+            setTimeout(fetchNext, 120);
+          });
+      };
+      fetchNext();
     }
   }
 });
