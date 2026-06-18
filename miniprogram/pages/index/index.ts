@@ -16,6 +16,12 @@ Component({
    */
   methods: {
     onLoad() {
+      // 启用分享给朋友和分享到朋友圈菜单
+      wx.showShareMenu({
+        withShareTicket: true,
+        menus: ['shareAppMessage', 'shareTimeline']
+      });
+
       // 监听全局音频下载进度事件
       const app = getApp<IAppOption>();
       if (app && app.globalData) {
@@ -102,6 +108,26 @@ Component({
       } catch (e) {
         console.error('Failed to refresh tab component:', e);
       }
+    },
+
+    /**
+     * 用户点击右上角分享给朋友
+     */
+    onShareAppMessage() {
+      return {
+        title: '大象泰语 - 零基础智能泰语发音与拆解助手',
+        path: '/pages/index/index'
+      };
+    },
+
+    /**
+     * 用户分享到朋友圈
+     */
+    onShareTimeline() {
+      return {
+        title: '大象泰语 - 零基础智能泰语发音与拆解助手',
+        query: ''
+      };
     }
   }
 });
