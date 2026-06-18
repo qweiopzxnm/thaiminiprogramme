@@ -22,6 +22,7 @@ export function getSupportedPlaybackRate(rate: number): number {
 let ctxA: WechatMiniprogram.InnerAudioContext | null = null;
 let playTimeoutId: number | null = null;
 let globalOnEnded: (() => void) | null = null;
+let activePlayDownloadTask: WechatMiniprogram.DownloadTask | null = null;
 
 // 在模块加载时提前设置全局音频选项，避免在首次播放时触发系统音频通道重置导致首句声音截断
 if (wx.setInnerAudioOption) {
@@ -53,6 +54,14 @@ export function stopThaiTTS(): void {
   }
   
   globalOnEnded = null;
+
+  // 终止正在进行的播放下载任务，防止积压堵塞及旧发音在切换后突然播放
+  if (activePlayDownloadTask) {
+    try {
+      activePlayDownloadTask.abort();
+    } catch (e) {}
+    activePlayDownloadTask = null;
+  }
 
   if (ctxA) {
     try {
@@ -204,8 +213,8 @@ export function getStaticAudioPath(text: string): string {
   if (staticHashes.has(hash)) {
     // 使用大数取模将哈希非常均匀地分流到 10 个包中
     const pkgNum = (parseInt(hash.substring(0, 6), 16) % 10) + 1;
-    // 使用国内高可用 GitHub CDN 加速镜像 cdn.jsdmirror.com，完全解耦 Vercel，提供极低音频缓冲延迟
-    return `https://cdn.jsdmirror.com/gh/qweiopzxnm/thaiminiprogramme@audio-assets/miniprogram/audio_pkg_${pkgNum}/${hash}.mp3`;
+    // 优先使用国内访问极速且高可用的 GitHub 代理镜像，彻底避免连接阻塞
+    return `https://mirror.ghproxy.com/https://raw.githubusercontent.com/qweiopzxnm/thaiminiprogramme/audio-assets/miniprogram/audio_pkg_${pkgNum}/${hash}.mp3`;
   }
   return '';
 }
@@ -216,12 +225,27 @@ export function getStaticAudioPath(text: string): string {
 function downloadAndSaveAudio(
   url: string, 
   localPath: string,
-  onProgress?: (progress: number) => void
+  onProgress?: (progress: number) => void,
+  isPlayTask: boolean = false
 ): Promise<string> {
   return new Promise((resolve, reject) => {
-    const downloadTask = wx.downloadFile({
+    let timeoutId: number | null = null;
+    let downloadTask: WechatMiniprogram.DownloadTask | null = null;
+
+    const cleanup = () => {
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+        timeoutId = null;
+      }
+      if (isPlayTask && activePlayDownloadTask === downloadTask) {
+        activePlayDownloadTask = null;
+      }
+    };
+
+    downloadTask = wx.downloadFile({
       url: url,
       success: (res) => {
+        cleanup();
         if (res.statusCode === 200) {
           fs.saveFile({
             tempFilePath: res.tempFilePath,
@@ -240,9 +264,29 @@ function downloadAndSaveAudio(
         }
       },
       fail: (err) => {
+        cleanup();
         reject(err);
       }
     });
+
+    if (isPlayTask) {
+      if (activePlayDownloadTask) {
+        try {
+          activePlayDownloadTask.abort();
+        } catch (e) {}
+      }
+      activePlayDownloadTask = downloadTask;
+
+      // 2.5秒下载超时限制，超时则自动 abort 任务以快速尝试下一个镜像或流式直接播放
+      timeoutId = setTimeout(() => {
+        if (downloadTask) {
+          try {
+            console.warn(`Download task timed out (2.5s), aborting: ${url}`);
+            downloadTask.abort();
+          } catch (e) {}
+        }
+      }, 2500) as unknown as number;
+    }
 
     if (onProgress && downloadTask && typeof downloadTask.onProgressUpdate === 'function') {
       downloadTask.onProgressUpdate((res) => {
@@ -422,33 +466,54 @@ export function playThaiTTS(
       return;
     }
 
-    // 2. 如果本地未缓存，我们需要去远程下载并保存，期间提供进度反馈
-    let downloadUrl = '';
-    if (staticPath && staticPath.startsWith('http')) {
-      downloadUrl = staticPath;
-    } else {
-      downloadUrl = `https://www.barryapp.xyz/api/tts?text=${encodeURIComponent(cleanText)}`;
+    // 2. 准备候选下载地址列表 (包含国内高速 CDN 镜像及 Vercel 兜底)
+    const urls: string[] = [];
+    if (staticPath) {
+      const hash = getSafeHash(cleanText);
+      const pkgNum = (parseInt(hash.substring(0, 6), 16) % 10) + 1;
+      
+      // 按在国内的访问稳定性/速度优先级排列 CDN 镜像地址
+      urls.push(`https://mirror.ghproxy.com/https://raw.githubusercontent.com/qweiopzxnm/thaiminiprogramme/audio-assets/miniprogram/audio_pkg_${pkgNum}/${hash}.mp3`);
+      urls.push(`https://cdn.jsdmirror.com/gh/qweiopzxnm/thaiminiprogramme@audio-assets/miniprogram/audio_pkg_${pkgNum}/${hash}.mp3`);
+      urls.push(`https://jsd.onmicrosoft.cn/gh/qweiopzxnm/thaiminiprogramme@audio-assets/miniprogram/audio_pkg_${pkgNum}/${hash}.mp3`);
+      urls.push(`https://gcore.jsdelivr.net/gh/qweiopzxnm/thaiminiprogramme@audio-assets/miniprogram/audio_pkg_${pkgNum}/${hash}.mp3`);
     }
+    
+    // 把 Vercel Edge TTS 地址作为最后保底下载地址加入队列
+    urls.push(`https://www.barryapp.xyz/api/tts?text=${encodeURIComponent(cleanText)}`);
 
-    if (onProgress) {
-      onProgress(0);
-    }
-
-    downloadAndSaveAudio(downloadUrl, localPath, onProgress)
-      .then((savedPath) => {
-        if (onProgress) {
-          onProgress(100);
-        }
-        playAudio(savedPath);
-      })
-      .catch((err) => {
-        console.warn(`Failed to download audio from ${downloadUrl}, falling back to direct play/Youdao. Error:`, err);
+    // 3. 依次尝试候选下载地址，每个地址拥有 2.5s 独立超时限制
+    const tryDownloadAndPlay = (urlIndex: number) => {
+      if (urlIndex >= urls.length) {
+        // 如果所有 CDN 镜像和 Vercel 均失败，最终走有道接口流式播放（最终兜底）
+        console.warn(`All download options failed for "${cleanText}", falling back to Youdao direct streaming.`);
         if (disableYoudao) {
-          playAudio(downloadUrl);
+          playAudio(urls[urls.length - 1]);
         } else {
           playViaYoudao(cleanText, rate, onStart, onEnded);
         }
-      });
+        return;
+      }
+
+      const currentUrl = urls[urlIndex];
+      if (onProgress) {
+        onProgress(0);
+      }
+
+      downloadAndSaveAudio(currentUrl, localPath, onProgress, true)
+        .then((savedPath) => {
+          if (onProgress) {
+            onProgress(100);
+          }
+          playAudio(savedPath);
+        })
+        .catch((err) => {
+          console.warn(`Download failed or timed out for ${currentUrl} (Index: ${urlIndex}), switching to next... Error:`, err);
+          tryDownloadAndPlay(urlIndex + 1);
+        });
+    };
+
+    tryDownloadAndPlay(0);
 
   } catch (e) {
     console.error('Error playing TTS:', e);
