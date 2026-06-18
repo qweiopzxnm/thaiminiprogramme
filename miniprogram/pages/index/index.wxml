@@ -1,9 +1,26 @@
 <!--pages/index/index.wxml-->
 <navigation-bar title="{{navTitle}}" back="{{false}}" color="#111827" background="#FFFFFF"></navigation-bar>
 
-<!-- 全局音频下载进度条 -->
-<view class="global-audio-progress-container {{showAudioProgress ? 'show' : ''}}">
-  <view class="global-audio-progress-bar" style="width: {{audioLoadingProgress}}%"></view>
+<!-- 全局音频下载进度悬浮窗 -->
+<view class="global-audio-loading-overlay {{showAudioProgress && audioLoadingProgress < 100 ? 'show' : ''}}">
+  <view class="loading-card">
+    <view class="loading-icon-wrap">
+      <view class="loading-wave">
+        <view class="wave-bar"></view>
+        <view class="wave-bar"></view>
+        <view class="wave-bar"></view>
+        <view class="wave-bar"></view>
+      </view>
+    </view>
+    <view class="loading-title">正在下载泰语发音...</view>
+    <view class="progress-box">
+      <view class="progress-track">
+        <view class="progress-bar" style="width: {{audioLoadingProgress}}%"></view>
+      </view>
+      <text class="progress-percent">{{audioLoadingProgress}}%</text>
+    </view>
+    <view class="loading-tip">首次下载可能较慢，请稍候...</view>
+  </view>
 </view>
 
 <view class="page-container">
